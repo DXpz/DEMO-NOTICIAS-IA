@@ -1,0 +1,247 @@
+{
+  "config": {
+    "titulo_sitio": "EL MUNDO - Diario Online Líder",
+    "edicion": "Edición El Salvador",
+    "fecha_actualizacion": "Martes, 10 de Diciembre de 2025 • Actualizado a las 18:30",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
+  },
+  
+  "noticia_principal": {
+    "id": "samsara-operaciones-conectadas",
+    "categoria": "Actualidad",
+    "titulo": "Samsara premia a los líderes de la logística inteligente y refuerza el papel de la IA en las operaciones conectadas",
+    "resumen": "La tecnológica Samsara anunció los ganadores de sus Premios de Operaciones Conectadas 2025, destacando proyectos que usan inteligencia artificial para optimizar flotas, rutas y seguridad en la cadena de suministro.",
+    "autor": "Redacción El Mundo",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-LICAcLDzyxFf9OFYEHUnjEb4/user-t5zTeY15Y5Rp98M4qMHCCWzQ/img-1JKH9J8FMWxaFe4OaSzF2tIj.png?st=2025-12-10T16%3A55%3A24Z&se=2025-12-10T18%3A55%3A24Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-10T17%3A55%3A24Z&ske=2025-12-11T17%3A55%3A24Z&sks=b&skv=2024-08-04&sig=EkD9i%2BeBbrcnICDkkt3VPwyCz6D4ptktueQ76m0RyXU%3D",
+    "imagen_alt": "Ilustración de logística inteligente con IA",
+    "imagen_caption": "Ilustración IA | El Mundo",
+    "subtitulo": "Innovación en la cadena de suministro regional",
+    "contenido_completo": [
+      "La compañía tecnológica Samsara anunció el 17 de junio de 2025 a los ganadores de sus Premios de Operaciones Conectadas 2025, una distinción que reconoce a empresas de transporte y cadena de suministro que han logrado transformaciones medibles mediante el uso de inteligencia artificial (IA) y analítica avanzada.",
+      "El anuncio, difundido a través de Business Wire y recogido por La Prensa Gráfica, sitúa a la IA como eje de las nuevas estrategias para optimizar flotas, mejorar la seguridad vial y reducir el impacto ambiental de las operaciones logísticas.",
+      "Según la información divulgada, los casos reconocidos se apoyan en la plataforma de Samsara para integrar datos en tiempo real de vehículos, conductores y activos, automatizar procesos operativos y generar recomendaciones basadas en algoritmos de IA. Entre los resultados destacados se incluyen reducciones en tiempos de entrega, menor consumo de combustible, disminución de accidentes y una gestión más eficiente del mantenimiento preventivo de las unidades.",
+      "<h2>Optimización de flotas, seguridad y sostenibilidad</h2>",
+      "Los premiados representan distintos segmentos de la cadena de suministro, desde operadores de transporte de larga distancia hasta empresas con complejas redes de distribución urbana. En todos los casos, la IA se emplea para tareas como enrutamiento dinámico, detección de comportamientos de riesgo al volante, monitoreo de activos en tiempo real y análisis predictivo para evitar averías críticas.",
+      "La plataforma de operaciones conectadas permite consolidar datos procedentes de sensores, cámaras y sistemas de gestión de transporte. Sobre esa base, los algoritmos generan alertas y paneles de control que facilitan decisiones inmediatas, así como informes estratégicos sobre eficiencia y sostenibilidad.",
+      "<h2>Contexto regional que acelera la adopción de IA</h2>",
+      "El reconocimiento a estas experiencias llega en un momento en que la IA gana peso en la discusión económica y tecnológica de El Salvador y la región. Proyecciones recientes citadas por medios salvadoreños apuntan a que la IA podría sumar entre 0,1 % y 0,8 % al crecimiento global, siempre que los países inviertan en infraestructura digital, talento y marcos regulatorios adecuados.",
+      "En paralelo, iniciativas como la primera academia regional especializada en inteligencia artificial, que prevé formar a más de 10.000 personas entre 2025 y 2030, buscan crear el capital humano necesario para desarrollar soluciones locales en sectores como transporte, distribución y comercio electrónico."
+    ],
+    "citas": [
+      "La IA no es el futuro de la logística, es el presente. Los ganadores demuestran que las operaciones conectadas ya transforman resultados reales."
+    ],
+    "puntos_clave": [
+      "Samsara premia iniciativas que usan IA para optimizar flotas y cadenas de suministro.",
+      "Reducción de tiempos de entrega, consumo de combustible y accidentes.",
+      "La IA podría aportar entre 0,1% y 0,8% al crecimiento económico global.",
+      "El Salvador apuesta por formar 10.000 expertos en IA entre 2025 y 2030."
+    ]
+  },
+  
+  "noticias_secundarias": [
+    {
+      "id": "mexlog-paquetexpress-premios",
+      "categoria": "Actualidad",
+      "titulo": "La IA logística premia a Mexlog y Paquetexpress en los Premios de Operaciones Conectadas 2025",
+      "resumen": null,
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "Ciudad de México",
+      "imagen": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-LICAcLDzyxFf9OFYEHUnjEb4/user-t5zTeY15Y5Rp98M4qMHCCWzQ/img-AClA4nm2XQ27kDQWxHiobJhn.png?st=2025-12-10T17%3A01%3A38Z&se=2025-12-10T19%3A01%3A38Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=32836cae-d25f-4fe9-827b-1c8c59c442cc&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-10T17%3A58%3A15Z&ske=2025-12-11T17%3A58%3A15Z&sks=b&skv=2024-08-04&sig=ekITy61P0362mhOCdFiNKBi8KkDlD3Q6fUSEz3kCuys%3D",
+      "imagen_alt": "Premios logística México",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Reconocimiento a la transformación digital en México",
+      "contenido_completo": [
+        "La plataforma de Operaciones Conectadas de Samsara distingue en Ciudad de México a dos compañías mexicanas por el uso de inteligencia artificial para mejorar seguridad, eficiencia y sostenibilidad en el transporte y la distribución.",
+        "La inteligencia artificial aplicada a la logística dio un nuevo paso de consolidación en la región con el anuncio de los ganadores de los Premios de Operaciones Conectadas 2025 de Samsara, difundidos por La Prensa Gráfica a partir de información de BusinessWire.",
+        "El reconocimiento, presentado en Ciudad de México, distinguió a las empresas Mexlog y Paquetexpress como ganadoras, mientras que García's Trucking y Grupo Express del Norte fueron seleccionadas como finalistas.",
+        "<h2>Transformación digital medible</h2>",
+        "Los galardones buscan destacar a organizaciones e individuos que lideran procesos de transformación digital en sus operaciones mediante el uso de la plataforma de Operaciones Conectadas de Samsara, impulsada por inteligencia artificial. Según la comunicación oficial, el objetivo es reconocer iniciativas que hayan logrado mejoras comprobables en tres ejes clave: seguridad, eficiencia y sostenibilidad.",
+        "Mexlog y Paquetexpress, ambas con operaciones relevantes en México, fueron señaladas por su adopción avanzada de soluciones de IA en la gestión de flotas y en la cadena de suministro. El uso de análisis de datos en tiempo real, monitoreo inteligente de activos y optimización algorítmica de rutas ha permitido reducir riesgos en carretera, optimizar el consumo de combustible y mejorar la puntualidad en las entregas.",
+        "<h2>Referente para América Latina</h2>",
+        "Aunque la convocatoria se centra en el mercado mexicano y la región circundante, el caso tiene implicaciones más amplias para América Latina. Para países como El Salvador, donde la modernización logística es un reto clave para la competitividad, la experiencia de las empresas reconocidas ofrece un referente sobre cómo la IA puede traducirse en mejoras medibles de productividad y sostenibilidad."
+      ],
+      "citas": [
+        "Este es un día histórico para la logística digital en México y toda la región."
+      ],
+      "puntos_clave": [
+        "Mexlog y Paquetexpress ganan por su uso avanzado de IA en logística.",
+        "Mejoras en seguridad, eficiencia y sostenibilidad comprobadas.",
+        "La experiencia mexicana sirve de referente para El Salvador.",
+        "García's Trucking y Grupo Express del Norte, finalistas destacados."
+      ]
+    },
+    {
+      "id": "apps-logistica-salvador",
+      "categoria": "Actualidad",
+      "titulo": "Tres apps salvadoreñas impulsan una revolución logística con IA y tecnología local",
+      "resumen": null,
+      "autor": "Evelyn Alas",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-LICAcLDzyxFf9OFYEHUnjEb4/user-t5zTeY15Y5Rp98M4qMHCCWzQ/img-796Mv0XCzRfCcrrHZ3NhHNn6.png?st=2025-12-10T17%3A06%3A46Z&se=2025-12-10T19%3A06%3A46Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=38e27a3b-6174-4d3e-90ac-d7d9ad49543f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-10T18%3A06%3A46Z&ske=2025-12-11T18%3A06%3A46Z&sks=b&skv=2024-08-04&sig=msFYay96tjEmfuGed0mG57ABy8pJOptsMkBiCbf%2BTlw%3D",
+      "imagen_alt": "Apps salvadoreñas de logística",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Innovación local transforma el delivery y el e-commerce",
+      "contenido_completo": [
+        "Trucker App, Weris y Boxful están transformando la logística urbana y el comercio electrónico en El Salvador mediante soluciones digitales que optimizan entregas, reducen costos para PYMEs y atraen inversión tecnológica.",
+        "<h2>Startups locales convierten a El Salvador en polo emergente de logística digital</h2>",
+        "Tres aplicaciones salvadoreñas están redefiniendo la logística en el país al integrar inteligencia artificial, análisis de datos y soluciones digitales de última milla para pequeños negocios y emprendedores. De acuerdo con un reportaje publicado el 5 de octubre de 2025 en la sección Dinero y Negocios, estas plataformas están generando eficiencia operativa, empleo y nueva inversión en el ecosistema tecnológico local.",
+        "<h2>Trucker App: entregas en menos de dos horas</h2>",
+        "Trucker App es una plataforma de logística de desarrollo local que ofrece entregas en menos de dos horas en el Gran San Salvador. La solución integra rastreo en tiempo real, rutas optimizadas mediante algoritmos y una plataforma unificada para negocios y repartidores. También incorpora tecnología NFC para gestión de pedidos sin papel.",
+        "Su impacto económico se refleja en la reducción de costos de distribución para PYMEs, el aumento de su competitividad frente a plataformas internacionales y la generación de empleo directo tanto para repartidores como para personal técnico.",
+        "<h2>Weris App: comisiones más bajas para delivery local</h2>",
+        "Weris App se presenta como una aplicación 100 % salvadoreña de delivery. La plataforma opera en el área metropolitana de San Salvador y ofrece comisiones menores al 16 %, lo que representa un alivio para pequeños comercios frente a otros servicios de reparto de mayor costo.",
+        "Esto incrementa el margen de ganancia para los comercios, fomenta el uso de tecnología local e impulsa la inclusión digital al retener más valor dentro de la economía salvadoreña.",
+        "<h2>Boxful El Salvador: logística integral para e-commerce</h2>",
+        "Boxful El Salvador es una startup especializada en logística para comercio electrónico. La empresa ofrece un servicio integral que incluye almacenamiento, empaquetado, distribución, lockers inteligentes e integración con múltiples paqueterías.",
+        "Boxful cerró en 2025 una ronda de capital por 1,9 millones de dólares, un dato que confirma el interés de inversionistas en el sector logístico digital salvadoreño. Esta inyección de recursos facilita a pequeños negocios vender y entregar en línea con mayor eficiencia."
+      ],
+      "citas": [
+        "Estas tres plataformas posicionan a El Salvador como un actor emergente en logística digital en Centroamérica."
+      ],
+      "puntos_clave": [
+        "Trucker App: entregas en menos de 2 horas con IA y NFC.",
+        "Weris App: comisiones bajo 16% para PYMEs salvadoreñas.",
+        "Boxful cerró ronda de 1,9 millones de dólares en 2025.",
+        "El Salvador se consolida como polo de innovación logística regional."
+      ]
+    }
+  ],
+  
+  "noticias_lo_ultimo": [
+    {
+      "id": "ia-logistica-agricola",
+      "categoria": "Actualidad",
+      "titulo": "La inteligencia artificial revoluciona la logística agrícola salvadoreña y refuerza las exportaciones",
+      "resumen": null,
+      "autor": "Redacción Dinero y Negocios",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-LICAcLDzyxFf9OFYEHUnjEb4/user-t5zTeY15Y5Rp98M4qMHCCWzQ/img-gAHrFGnf8qURDDutEDDEr0q1.png?st=2025-12-10T17%3A02%3A56Z&se=2025-12-10T19%3A02%3A56Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=b2c0e1c0-cf97-4e19-8986-8073905d5723&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-10T18%3A02%3A56Z&ske=2025-12-11T18%3A02%3A56Z&sks=b&skv=2024-08-04&sig=oN8O%2Blm33btlJkPTkkgEx2R3gNbltu7lTuOCg5yWQW0%3D",
+      "imagen_alt": "Logística agrícola con IA",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Trazabilidad y eficiencia para productos de exportación",
+      "contenido_completo": [
+        "El Salvador impulsa la transformación de su cadena agroexportadora mediante soluciones de inteligencia artificial que mejoran la trazabilidad, elevan la eficiencia logística y liberan al talento humano de tareas repetitivas para enfocarse en labores estratégicas.",
+        "<h2>La IA entra de lleno en la cadena agroexportadora</h2>",
+        "El Salvador ha comenzado a consolidar un cambio de fondo en su sector agroexportador mediante la incorporación de soluciones de inteligencia artificial a lo largo de toda la cadena de valor, desde la siembra hasta la logística de exportación.",
+        "La apuesta tecnológica se centra en cultivos de alto valor como arándanos, aguacates, espárragos y uvas, cuya competitividad internacional depende cada vez más de la trazabilidad y de la eficiencia en el movimiento de mercancías.",
+        "<h2>Trazabilidad y confianza para mercados internacionales</h2>",
+        "Los sistemas basados en IA registran el historial completo del producto: desde el lote y la parcela donde fue cultivado hasta las condiciones de frío, humedad y manipulación durante el transporte y el embarque. Esta capacidad de seguimiento detallado se traduce en mayor transparencia ante importadores y cadenas de distribución internacionales.",
+        "La información generada facilita la certificación de origen, el cumplimiento de normativas sanitarias y la respuesta rápida ante incidencias, lo que reduce rechazos en frontera, pérdidas de producto y costos asociados a reclamaciones.",
+        "<h2>Apoyo al talento humano y reto de integración</h2>",
+        "La IA no sustituye al trabajador, sino que libera al talento humano de tareas repetitivas para que pueda concentrarse en funciones estratégicas de planificación, análisis y toma de decisiones. De acuerdo con declaraciones de Gonzalo Martín, director de Producto e Innovación de Hispatec, la clave está en que los equipos se apoyen en la tecnología para elevar la productividad y la calidad del servicio logístico."
+      ],
+      "citas": [
+        "La IA no sustituye al trabajador, libera su potencial estratégico."
+      ],
+      "puntos_clave": [
+        "IA mejora trazabilidad en cultivos de alto valor: arándanos, aguacates, espárragos.",
+        "Reducción de rechazos en frontera y pérdidas de producto.",
+        "El talento humano se enfoca en planificación estratégica.",
+        "El Salvador se posiciona como referente agroexportador con IA."
+      ]
+    },
+    {
+      "id": "turismo-digital-sv",
+      "categoria": "Economía",
+      "titulo": "El turismo salvadoreño crece un 45% impulsado por campañas digitales y conectividad",
+      "resumen": null,
+      "autor": "Patricia Hernández",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://www.mercadosyfinanzas.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-01-04-at-5.17.19-PM-1.jpeg",
+      "imagen_alt": "Turismo digital en El Salvador",
+      "imagen_caption": "El Tunco, uno de los destinos más promocionados digitalmente. | Archivo",
+      "subtitulo": "Inversión en marketing digital transforma el sector",
+      "contenido_completo": [
+        "El sector turístico de El Salvador registró un crecimiento del 45% en llegadas internacionales durante 2025, impulsado por agresivas campañas de marketing digital, mejora en infraestructura de conectividad y una estrategia de posicionamiento de marca país en redes sociales.",
+        "<h2>Redes sociales y contenido viral</h2>",
+        "La campaña 'El Salvador Impresionante' alcanzó más de 500 millones de impresiones en plataformas como Instagram, TikTok y YouTube. Influencers internacionales y creadores de contenido fueron invitados a recorrer destinos como Suchitoto, Ruta de las Flores, El Tunco y Alegría, generando contenido orgánico que multiplicó el alcance de la inversión publicitaria tradicional.",
+        "Según el Ministerio de Turismo, cada dólar invertido en marketing digital generó un retorno promedio de 12 dólares en ingresos turísticos, convirtiendo a la estrategia digital en la más rentable de la historia del sector.",
+        "<h2>Conectividad aérea y facilitación de visados</h2>",
+        "El aumento de frecuencias aéreas desde ciudades clave de Estados Unidos, México y Centroamérica, combinado con la simplificación del proceso de visados electrónicos, facilitó la llegada de turistas. La implementación de sistemas digitales de check-in migratorio redujo los tiempos de espera en aeropuertos en un 60%.",
+        "Hoteles y operadores turísticos reportan niveles de ocupación récord, especialmente en fines de semana largos y temporadas altas, con proyecciones de cerrar el año con más de 2.5 millones de visitantes internacionales."
+      ],
+      "citas": [
+        "El Salvador está en el mapa turístico mundial gracias a una estrategia digital inteligente y contenido auténtico."
+      ],
+      "puntos_clave": [
+        "Crecimiento del 45% en llegadas internacionales en 2025.",
+        "Campaña digital alcanzó 500 millones de impresiones.",
+        "Retorno de 12 dólares por cada dólar invertido en marketing.",
+        "Proyección de 2.5 millones de visitantes internacionales."
+      ]
+    },
+    {
+      "id": "bitcoin-remesas",
+      "categoria": "Tecnología",
+      "titulo": "Bitcoin y remesas: El Salvador se consolida como laboratorio de pagos digitales transfronterizos",
+      "resumen": null,
+      "autor": "Mario Sánchez",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP4z1Y_h00E0Q0eKpmRm1g5geyvegQFVg0Ng&s",
+      "imagen_alt": "Bitcoin y remesas en El Salvador",
+      "imagen_caption": "Cajero Bitcoin en San Salvador. | Archivo",
+      "subtitulo": "Reducción de costos y mayor inclusión financiera",
+      "contenido_completo": [
+        "El uso de Bitcoin y otras criptomonedas para el envío de remesas familiares a El Salvador creció un 35% durante 2025, según datos de plataformas especializadas. La reducción de comisiones, la velocidad de transferencia y la creciente familiaridad con tecnologías digitales están transformando un sector clave para la economía nacional.",
+        "<h2>Menores costos, mayor velocidad</h2>",
+        "Mientras las remesas tradicionales pueden tardar hasta 48 horas y cobrar comisiones de entre 5% y 10%, las transferencias en criptomonedas se completan en minutos con costos inferiores al 2%. Esta diferencia se traduce en ahorros significativos para las familias salvadoreñas que dependen de estos ingresos.",
+        "Plataformas locales e internacionales han desarrollado aplicaciones que permiten convertir Bitcoin a dólares de forma instantánea, facilitando su uso cotidiano en comercios, supermercados y servicios básicos.",
+        "<h2>Inclusión financiera y educación digital</h2>",
+        "El fenómeno ha impulsado programas de educación financiera digital en comunidades rurales, donde el acceso a servicios bancarios tradicionales es limitado. Organizaciones no gubernamentales y empresas tecnológicas ofrecen talleres gratuitos sobre el uso seguro de billeteras digitales y criptomonedas.",
+        "A pesar del crecimiento, analistas advierten que la volatilidad de Bitcoin sigue siendo un riesgo para usuarios sin experiencia, y recomiendan diversificar los métodos de recepción de remesas y mantener educación continua sobre gestión de activos digitales."
+      ],
+      "citas": [
+        "El Salvador es el laboratorio mundial de pagos digitales transfronterizos. Lo que aprendamos aquí impactará a toda la región."
+      ],
+      "puntos_clave": [
+        "Crecimiento del 35% en remesas vía criptomonedas en 2025.",
+        "Comisiones menores al 2% vs 5-10% en métodos tradicionales.",
+        "Transferencias en minutos en lugar de 48 horas.",
+        "Programas de educación digital en comunidades rurales."
+      ]
+    }
+  ],
+  
+  "articulos_opinion": [
+    {
+      "id": "opinion-ia-futuro",
+      "autor": "Editorial El Mundo",
+      "titulo": "La IA llegó para quedarse en la logística salvadoreña",
+      "categoria": "Opinión",
+      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=ED",
+      "contenido_completo": [
+        "La consolidación de plataformas locales como Trucker App, Weris y Boxful, sumada a los reconocimientos internacionales en logística inteligente, confirman que El Salvador no es solo observador de la revolución tecnológica: es protagonista.",
+        "El desafío ahora es escalar estas soluciones, formar más talento especializado y construir marcos regulatorios que impulsen, sin frenar, la innovación. El futuro de la competitividad está en los datos y en la inteligencia que sepamos extraer de ellos."
+      ]
+    },
+    {
+      "id": "opinion-pymes",
+      "autor": "Roberto Martínez",
+      "titulo": "Las PYMEs son las grandes ganadoras",
+      "categoria": "Opinión",
+      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=RM",
+      "contenido_completo": [
+        "Durante años, la tecnología logística fue patrimonio de las grandes corporaciones. Hoy, aplicaciones como Weris y Trucker democratizan el acceso a herramientas de clase mundial para negocios de barrio.",
+        "Esta revolución silenciosa está nivelando el campo de juego y permitiendo que un pequeño comercio compita en eficiencia con las cadenas multinacionales. Es, quizás, el cambio más importante en la economía salvadoreña de los últimos años."
+      ]
+    },
+    {
+      "id": "opinion-agro",
+      "autor": "Ana Solórzano",
+      "titulo": "Del campo a la exportación: el rol clave de la trazabilidad",
+      "categoria": "Opinión",
+      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=AS",
+      "contenido_completo": [
+        "La trazabilidad impulsada por IA no es un lujo tecnológico: es una exigencia de los mercados internacionales. Los países que no la adopten quedarán fuera de las cadenas de valor globales.",
+        "El Salvador está haciendo la tarea. La transformación digital del agro no solo protege empleos, sino que abre puertas a nuevos mercados y genera confianza en compradores cada vez más exigentes."
+      ]
+    }
+  ]
+}

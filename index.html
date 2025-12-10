@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL MUNDO - Diario Online Líder</title>
+    <!-- Importamos fuentes elegantes de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* VARIABLES Y CONFIGURACIÓN BASE */
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        /* LAYOUT GENERAL */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .top-bar {
+            background-color: var(--light-grey);
+            font-size: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+            cursor: pointer; /* Para volver al home */
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /* NAVEGACIÓN */
+        .main-nav {
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            overflow-x: auto;
+        }
+
+        .nav-item {
+            padding: 15px 20px;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .nav-item:hover {
+            color: var(--brand-red);
+            border-bottom: 3px solid var(--brand-red);
+            margin-bottom: -1px;
+        }
+
+
+        /* GRID PRINCIPAL DE NOTICIAS (HOME) */
+        .news-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        /* ESTILOS DE ARTÍCULOS (PREVIEW) */
+        .article {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+        
+        .article:last-child {
+            border-bottom: none;
+        }
+
+        .article-kicker {
+            color: var(--brand-red);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .article-title {
+            font-family: var(--serif-font);
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 10px;
+        }
+
+        .article-title:hover {
+            color: var(--brand-red);
+            cursor: pointer;
+        }
+
+        .article-summary {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .article-author {
+            font-size: 12px;
+            color: #888;
+            text-transform: uppercase;
+        }
+
+        .article-author strong {
+            color: var(--brand-dark);
+        }
+
+        .article-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            filter: brightness(0.95);
+            transition: filter 0.3s;
+            cursor: pointer;
+        }
+
+        .article-img:hover {
+            filter: brightness(1);
+        }
+
+        .hero-article .article-title { font-size: 42px; }
+        .hero-article .article-summary { font-size: 18px; line-height: 1.6; }
+        .list-article .article-title { font-size: 20px; }
+        .list-article .article-img { aspect-ratio: 16/9; object-fit: cover; }
+
+        /* SIDEBAR Y ANUNCIO */
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .ad-box {
+            border: 2px solid var(--brand-red);
+            background-color: #fdfdfd;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .ad-label {
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            background: var(--brand-red); color: white;
+            font-size: 10px; padding: 2px 8px;
+            text-transform: uppercase; font-weight: bold;
+        }
+
+        .ad-box h3 {
+            font-family: var(--sans-font); font-weight: 900;
+            color: var(--brand-red); font-size: 24px; margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .btn-subscribe {
+            display: inline-block; background-color: var(--brand-red); color: white;
+            padding: 12px 25px; font-weight: 700; text-transform: uppercase;
+            font-size: 13px; transition: background 0.3s;
+        }
+        .btn-subscribe:hover { background-color: #a30e1e; }
+
+        .opinion-item { display: flex; align-items: center; margin-bottom: 20px; border-bottom: 1px dotted #ccc; padding-bottom: 15px; }
+        .opinion-img { width: 50px; height: 50px; border-radius: 50%; margin-right: 15px; object-fit: cover; }
+        .opinion-content h4 { font-family: var(--serif-font); font-size: 16px; margin-bottom: 4px; }
+        .opinion-author { font-size: 11px; text-transform: uppercase; color: var(--brand-red); font-weight: bold; }
+
+        /* FOOTER */
+        footer { background-color: var(--brand-dark); color: #fff; padding: 50px 0; margin-top: 50px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-bottom: 40px; }
+        .footer-col h4 { color: #fff; text-transform: uppercase; margin-bottom: 20px; font-size: 14px; letter-spacing: 1px; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 10px; }
+        .footer-col a { color: #999; font-size: 13px; }
+        .footer-col a:hover { color: #fff; }
+
+        @media (max-width: 1024px) {
+            .news-grid { grid-template-columns: 1fr; }
+            .sidebar-col { display: none; } /* Simplificado para tablet */
+        }
+        @media (max-width: 768px) {
+            .sidebar-col { display: block; margin-top: 40px; } /* Sidebar vuelve abajo en móvil */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        <div class="container">
+            <span>Edición España | <a href="#">Cambiar</a></span>
+            <div>
+                <a href="#" style="margin-right: 15px;">Iniciar Sesión</a>
+                <a href="#" style="font-weight: bold;">Suscríbete</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="index.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png" alt="El Mundo" class="logo">
+            </a>
+            <div class="date-line">
+                Miércoles, 11 de Diciembre de 2025 &bull; Actualizado a las 10:30
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Portada</a></li>
+                <li class="nav-item"><a href="#">España</a></li>
+                <li class="nav-item"><a href="#">Opinión</a></li>
+                <li class="nav-item"><a href="#">Economía</a></li>
+                <li class="nav-item"><a href="#">Internacional</a></li>
+                <li class="nav-item"><a href="#">Deportes</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+        
+        <!-- ======================= VISTA: PORTADA (HOME) ======================= -->
+        <div id="home-view">
+            <div class="news-grid">
+                
+                <!-- COLUMNA 1: PRINCIPAL -->
+                <section class="main-col">
+                <article class="article hero-article">
+                    <span class="article-kicker">Política Nacional</span>
+                    <a href="noticias/hero.html">
+                        <img src="https://via.placeholder.com/800x450/333333/ffffff?text=Debate+Parlamentario" alt="Noticia Principal" class="article-img">
+                    </a>
+                    <h1 class="article-title"><a href="noticias/hero.html">El Gobierno aprueba la reforma histórica del sistema energético tras un debate de doce horas</a></h1>
+                        <p class="article-summary">
+                            La oposición califica la medida de "improvisada" mientras Bruselas aplaude el paso hacia la sostenibilidad. Todos los detalles de una jornada tensa en el hemiciclo.
+                        </p>
+                        <div class="article-author">
+                            Por <strong>María González</strong> y <strong>Javier Ruiz</strong> | Madrid
+                        </div>
+                    </article>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <article class="article">
+                            <span class="article-kicker">Tribunales</span>
+                            <h3 class="article-title" style="font-size: 22px;"><a href="noticias/tribunales.html">El Supremo admite a trámite la querella contra el consorcio tecnológico</a></h3>
+                        </article>
+                        <article class="article">
+                            <span class="article-kicker">Sanidad</span>
+                            <h3 class="article-title" style="font-size: 22px;"><a href="noticias/sanidad.html">Nuevo plan de choque para reducir las listas de espera en 2026</a></h3>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- COLUMNA 2: SECUNDARIAS -->
+                <section class="center-col">
+                    <div class="sidebar-title">Lo último</div>
+
+                <article class="article list-article">
+                    <a href="noticias/guerra.html">
+                        <img src="https://via.placeholder.com/400x225/dddddd/333333?text=Internacional" alt="Foto" class="article-img">
+                    </a>
+                    <span class="article-kicker">Conflicto Global</span>
+                    <h3 class="article-title"><a href="noticias/guerra.html">Tensión en la frontera oriental: Despliegue de nuevas tropas</a></h3>
+                </article>
+
+                <article class="article list-article">
+                    <a href="noticias/bolsa.html">
+                        <img src="https://via.placeholder.com/400x225/dddddd/333333?text=Economia" alt="Foto" class="article-img">
+                    </a>
+                    <span class="article-kicker">Mercados</span>
+                    <h3 class="article-title"><a href="noticias/bolsa.html">El IBEX 35 recupera los 10.000 puntos impulsado por la banca</a></h3>
+                </article>
+
+                <article class="article list-article">
+                    <span class="article-kicker">Tecnología</span>
+                    <h3 class="article-title"><a href="noticias/tecnologia.html">¿Es seguro el nuevo estándar de encriptación cuántica?</a></h3>
+                </article>
+            </section>
+
+                <!-- COLUMNA 3: SIDEBAR HOME -->
+                <section class="sidebar-col">
+                    <!-- ANUNCIO -->
+                    <div class="ad-box">
+                        <span class="ad-label">Promoción</span>
+                        <h3>Suscríbete sin límites</h3>
+                        <p>Accede a todo el contenido Premium.</p>
+                        <div style="font-size: 30px; font-weight: bold; margin-bottom: 10px; color: #111;">1€ <span style="font-size: 14px; font-weight: normal;">/mes</span></div>
+                        <a href="#" class="btn-subscribe">Suscribirme Ahora</a>
+                    </div>
+
+                    <!-- OPINIÓN -->
+                    <div class="sidebar-title">Opinión</div>
+                    <div class="opinion-item">
+                        <img src="https://via.placeholder.com/50x50/cccccc/ffffff?text=JP" alt="Autor" class="opinion-img">
+                        <div class="opinion-content">
+                            <div class="opinion-author">Jorge Plaza</div>
+                            <h4>El silencio de los corderos políticos</h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png" alt="Logo Footer" width="150" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
+                    <p style="font-size: 13px; color: #999;">El diario líder en información general en español.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Secciones</h4>
+                    <ul>
+                        <li><a href="index.html">Portada</a></li>
+                        <li><a href="#">España</a></li>
+                        <li><a href="#">Economía</a></li>
+                        <li><a href="#">Internacional</a></li>
+                    </ul>
+                </div>
+                <!-- ... -->
+            </div>
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 12px; color: #666;">
+                &copy; 2025 Unidad Editorial Información General, S.L.U.
+            </div>
+        </div>
+    </footer>
+
+    <!-- LÓGICA JAVASCRIPT CON JSON DINÁMICO -->
+    <script>
+        let noticiasData = {}; // Almacenará todos los datos cargados desde el JSON
+
+        // ========== CARGAR JSON AL INICIO ==========
+        async function cargarNoticias() {
+            try {
+                const response = await fetch('noticias.json');
+                noticiasData = await response.json();
+                
+                // Llenar la página con los datos
+                llenarPortada();
+                
+            } catch (error) {
+                console.error('Error al cargar noticias:', error);
+            }
+        }
+
+        // ========== LLENAR LA PORTADA CON DATOS DEL JSON ==========
+        function llenarPortada() {
+            // Actualizar fecha y config
+            document.querySelector('.date-line').textContent = noticiasData.config.fecha_actualizacion;
+            
+            // NOTICIA PRINCIPAL (HERO)
+            const hero = noticiasData.noticia_principal;
+            const heroSection = document.querySelector('.hero-article');
+            heroSection.querySelector('.article-kicker').textContent = hero.categoria;
+            heroSection.querySelector('.article-img').src = hero.imagen;
+            heroSection.querySelector('.article-img').alt = hero.imagen_alt;
+            heroSection.querySelector('.article-img').parentElement.href = `noticias/${hero.id}.html`;
+            heroSection.querySelector('.article-title a').textContent = hero.titulo;
+            heroSection.querySelector('.article-title a').href = `noticias/${hero.id}.html`;
+            heroSection.querySelector('.article-summary').textContent = hero.resumen;
+            
+            let autorTexto = `Por <strong>${hero.autor}</strong>`;
+            if (hero.coautor) autorTexto += ` y <strong>${hero.coautor}</strong>`;
+            autorTexto += ` | ${hero.ciudad}`;
+            heroSection.querySelector('.article-author').innerHTML = autorTexto;
+            
+            // NOTICIAS SECUNDARIAS (Columna 1)
+            const secundarias = noticiasData.noticias_secundarias;
+            const secunGrid = document.querySelector('.main-col > div[style*="grid"]');
+            const secunArticles = secunGrid.querySelectorAll('.article');
+            
+            secundarias.forEach((noticia, index) => {
+                if (secunArticles[index]) {
+                    secunArticles[index].querySelector('.article-kicker').textContent = noticia.categoria;
+                    const titleLink = secunArticles[index].querySelector('.article-title a');
+                    titleLink.textContent = noticia.titulo;
+                    titleLink.href = `noticias/${noticia.id}.html`;
+                }
+            });
+            
+            // LO ÚLTIMO (Columna 2)
+            const loUltimo = noticiasData.noticias_lo_ultimo;
+            const ultimoSection = document.querySelector('.center-col');
+            const ultimoArticles = ultimoSection.querySelectorAll('.list-article');
+            
+            loUltimo.forEach((noticia, index) => {
+                if (ultimoArticles[index]) {
+                    const article = ultimoArticles[index];
+                    
+                    // Si tiene imagen
+                    if (noticia.imagen) {
+                        const imgLink = article.querySelector('a[href*="noticias"]');
+                        if (imgLink) {
+                            imgLink.href = `noticias/${noticia.id}.html`;
+                            const img = imgLink.querySelector('.article-img');
+                            if (img) {
+                                img.src = noticia.imagen;
+                                img.alt = noticia.imagen_alt;
+                            }
+                        }
+                    }
+                    
+                    article.querySelector('.article-kicker').textContent = noticia.categoria;
+                    const titleLink = article.querySelector('.article-title a');
+                    titleLink.textContent = noticia.titulo;
+                    titleLink.href = `noticias/${noticia.id}.html`;
+                }
+            });
+            
+            // OPINIÓN (Sidebar)
+            const opiniones = noticiasData.articulos_opinion;
+            const opinionItems = document.querySelectorAll('.sidebar-col .opinion-item');
+            
+            opiniones.forEach((opinion, index) => {
+                if (opinionItems[index]) {
+                    const item = opinionItems[index];
+                    item.querySelector('.opinion-img').src = opinion.imagen_autor;
+                    item.querySelector('.opinion-author').textContent = opinion.autor;
+                    item.querySelector('h4').textContent = opinion.titulo;
+                }
+            });
+        }
+
+        // ========== INICIAR AL CARGAR LA PÁGINA ==========
+        window.addEventListener('DOMContentLoaded', cargarNoticias);
+    </script>
+
+</body>
+</html>
