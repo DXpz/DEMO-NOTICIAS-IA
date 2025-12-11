@@ -8,6 +8,7 @@
   
   "noticia_principal": {
     "id": "china-ia-ecosistema",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/china-ia-ecosistema.html",
     "categoria": "Actualidad",
     "titulo": "China consolida un ecosistema de más de 5,000 empresas de IA y refuerza el peso de Asia en la economía digital global",
     "resumen": "El desarrollo de una amplia cadena industrial de inteligencia artificial en China, con miles de empresas, fábricas inteligentes y zonas piloto, afianza el liderazgo asiático en una tecnología que, según el FMI, podría impulsar el crecimiento mundial del PIB hasta un 0.8%.",
@@ -44,6 +45,7 @@
   "noticias_secundarias": [
     {
       "id": "cyber-monday-ia-record",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/cyber-monday-ia-record.html",
       "categoria": "Actualidad",
       "titulo": "La inteligencia artificial impulsa un Cyber Monday récord en Estados Unidos con US$14,200 millones en compras en línea",
       "resumen": null,
@@ -77,6 +79,7 @@
     },
     {
       "id": "meta-acuerdos-medios-ia",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/meta-acuerdos-medios-ia.html",
       "categoria": "Actualidad",
       "titulo": "Meta sella acuerdos plurianuales con grandes medios para nutrir con noticias en tiempo real a su IA en redes sociales",
       "resumen": null,
@@ -114,6 +117,7 @@
   "noticias_lo_ultimo": [
     {
       "id": "samsara-premios-logistica-ia",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/samsara-premios-logistica-ia.html",
       "categoria": "Actualidad",
       "titulo": "La inteligencia artificial de Samsara redefine la seguridad y eficiencia logística en los Premios de Operaciones Conectadas 2025",
       "resumen": null,
@@ -146,6 +150,7 @@
     },
     {
       "id": "ia-hospitales-salvador",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-hospitales-salvador.html",
       "categoria": "Actualidad",
       "titulo": "El Salvador integra la inteligencia artificial en hospitales públicos y acelera diagnósticos médicos",
       "resumen": null,
@@ -178,6 +183,7 @@
     },
     {
       "id": "turismo-digital-sv",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/turismo-digital-sv.html",
       "categoria": "Economía",
       "titulo": "El turismo salvadoreño crece un 45% impulsado por campañas digitales y conectividad",
       "resumen": null,
@@ -209,6 +215,7 @@
     },
     {
       "id": "bitcoin-remesas",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/bitcoin-remesas.html",
       "categoria": "Tecnología",
       "titulo": "Bitcoin y remesas: El Salvador se consolida como laboratorio de pagos digitales transfronterizos",
       "resumen": null,
