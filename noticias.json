@@ -7,142 +7,173 @@
   },
   
   "noticia_principal": {
-    "id": "samsara-operaciones-conectadas",
+    "id": "china-ia-ecosistema",
     "categoria": "Actualidad",
-    "titulo": "Samsara premia a los líderes de la logística inteligente y refuerza el papel de la IA en las operaciones conectadas",
-    "resumen": "La tecnológica Samsara anunció los ganadores de sus Premios de Operaciones Conectadas 2025, destacando proyectos que usan inteligencia artificial para optimizar flotas, rutas y seguridad en la cadena de suministro.",
+    "titulo": "China consolida un ecosistema de más de 5,000 empresas de IA y refuerza el peso de Asia en la economía digital global",
+    "resumen": "El desarrollo de una amplia cadena industrial de inteligencia artificial en China, con miles de empresas, fábricas inteligentes y zonas piloto, afianza el liderazgo asiático en una tecnología que, según el FMI, podría impulsar el crecimiento mundial del PIB hasta un 0.8%.",
     "autor": "Redacción El Mundo",
     "coautor": null,
     "ciudad": "San Salvador",
-    "imagen": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-LICAcLDzyxFf9OFYEHUnjEb4/user-t5zTeY15Y5Rp98M4qMHCCWzQ/img-1JKH9J8FMWxaFe4OaSzF2tIj.png?st=2025-12-10T16%3A55%3A24Z&se=2025-12-10T18%3A55%3A24Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-10T17%3A55%3A24Z&ske=2025-12-11T17%3A55%3A24Z&sks=b&skv=2024-08-04&sig=EkD9i%2BeBbrcnICDkkt3VPwyCz6D4ptktueQ76m0RyXU%3D",
-    "imagen_alt": "Ilustración de logística inteligente con IA",
+    "imagen": "https://i.ibb.co/gFfX9x2j/usb-GUg.png",
+    "imagen_alt": "Ecosistema de IA en China",
     "imagen_caption": "Ilustración IA | El Mundo",
-    "subtitulo": "Innovación en la cadena de suministro regional",
+    "subtitulo": "Asia emerge como núcleo industrial de la inteligencia artificial",
     "contenido_completo": [
-      "La compañía tecnológica Samsara anunció el 17 de junio de 2025 a los ganadores de sus Premios de Operaciones Conectadas 2025, una distinción que reconoce a empresas de transporte y cadena de suministro que han logrado transformaciones medibles mediante el uso de inteligencia artificial (IA) y analítica avanzada.",
-      "El anuncio, difundido a través de Business Wire y recogido por La Prensa Gráfica, sitúa a la IA como eje de las nuevas estrategias para optimizar flotas, mejorar la seguridad vial y reducir el impacto ambiental de las operaciones logísticas.",
-      "Según la información divulgada, los casos reconocidos se apoyan en la plataforma de Samsara para integrar datos en tiempo real de vehículos, conductores y activos, automatizar procesos operativos y generar recomendaciones basadas en algoritmos de IA. Entre los resultados destacados se incluyen reducciones en tiempos de entrega, menor consumo de combustible, disminución de accidentes y una gestión más eficiente del mantenimiento preventivo de las unidades.",
-      "<h2>Optimización de flotas, seguridad y sostenibilidad</h2>",
-      "Los premiados representan distintos segmentos de la cadena de suministro, desde operadores de transporte de larga distancia hasta empresas con complejas redes de distribución urbana. En todos los casos, la IA se emplea para tareas como enrutamiento dinámico, detección de comportamientos de riesgo al volante, monitoreo de activos en tiempo real y análisis predictivo para evitar averías críticas.",
-      "La plataforma de operaciones conectadas permite consolidar datos procedentes de sensores, cámaras y sistemas de gestión de transporte. Sobre esa base, los algoritmos generan alertas y paneles de control que facilitan decisiones inmediatas, así como informes estratégicos sobre eficiencia y sostenibilidad.",
-      "<h2>Contexto regional que acelera la adopción de IA</h2>",
-      "El reconocimiento a estas experiencias llega en un momento en que la IA gana peso en la discusión económica y tecnológica de El Salvador y la región. Proyecciones recientes citadas por medios salvadoreños apuntan a que la IA podría sumar entre 0,1 % y 0,8 % al crecimiento global, siempre que los países inviertan en infraestructura digital, talento y marcos regulatorios adecuados.",
-      "En paralelo, iniciativas como la primera academia regional especializada en inteligencia artificial, que prevé formar a más de 10.000 personas entre 2025 y 2030, buscan crear el capital humano necesario para desarrollar soluciones locales en sectores como transporte, distribución y comercio electrónico."
+      "China ha consolidado en los últimos años uno de los ecosistemas de inteligencia artificial (IA) más grandes del mundo, con más de 5,000 empresas dedicadas al sector hasta septiembre de 2025, según datos difundidos por la agencia Xinhua y recogidos por medios de la región.",
+      "Esta masa crítica de compañías se inserta en una cadena industrial que abarca desde el diseño de algoritmos hasta la integración de sistemas inteligentes en manufactura, transporte y servicios.",
+      "<h2>Infraestructura productiva en transformación</h2>",
+      "El crecimiento del sector se apoya en una infraestructura productiva en rápida transformación: se contabilizan más de 40,000 fábricas inteligentes que incorporan soluciones de IA para automatización, análisis predictivo y control de calidad en tiempo real.",
+      "A ello se suman 11 zonas piloto nacionales y 17 zonas de demostración dedicadas a pruebas de vehículos autónomos y otras aplicaciones avanzadas, lo que convierte al país en uno de los principales laboratorios abiertos de innovación en IA a escala urbana e industrial.",
+      "<h2>Impacto regional y proyección global</h2>",
+      "El papel de China como motor de la IA en Asia se enmarca en una dinámica más amplia en la que el continente asiático se posiciona como uno de los polos decisivos de la economía digital. Los datos industriales chinos ofrecen una referencia cuantitativa del peso de Asia frente a otros bloques económicos.",
+      "Un informe del Fondo Monetario Internacional sitúa el posible aumento del PIB global por efecto de la IA entre el 0.1% y el 0.8%, dependiendo del ritmo de adopción y de las políticas públicas que acompañen su desarrollo.",
+      "<h2>Competencia regulatoria global</h2>",
+      "Mientras Asia consolida su base industrial de IA, otras regiones aceleran su respuesta regulatoria y formativa. En Europa se han aprobado marcos normativos específicos para la IA, y países de América Latina avanzan en leyes y programas educativos orientados a formar talento y atraer inversión tecnológica."
     ],
     "citas": [
-      "La IA no es el futuro de la logística, es el presente. Los ganadores demuestran que las operaciones conectadas ya transforman resultados reales."
+      "Asia, con China a la cabeza, se ha convertido en un actor imprescindible para el desarrollo y la difusión global de la inteligencia artificial."
     ],
     "puntos_clave": [
-      "Samsara premia iniciativas que usan IA para optimizar flotas y cadenas de suministro.",
-      "Reducción de tiempos de entrega, consumo de combustible y accidentes.",
-      "La IA podría aportar entre 0,1% y 0,8% al crecimiento económico global.",
-      "El Salvador apuesta por formar 10.000 expertos en IA entre 2025 y 2030."
+      "Más de 5,000 empresas de IA operando en China hasta septiembre 2025.",
+      "40,000 fábricas inteligentes con soluciones de IA implementadas.",
+      "11 zonas piloto nacionales y 17 zonas de demostración de vehículos autónomos.",
+      "FMI proyecta crecimiento del PIB global entre 0.1% y 0.8% por IA."
     ]
   },
   
   "noticias_secundarias": [
     {
-      "id": "mexlog-paquetexpress-premios",
+      "id": "cyber-monday-ia-record",
       "categoria": "Actualidad",
-      "titulo": "La IA logística premia a Mexlog y Paquetexpress en los Premios de Operaciones Conectadas 2025",
+      "titulo": "La inteligencia artificial impulsa un Cyber Monday récord en Estados Unidos con US$14,200 millones en compras en línea",
       "resumen": null,
       "autor": "Redacción El Mundo",
       "coautor": null,
-      "ciudad": "Ciudad de México",
-      "imagen": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-LICAcLDzyxFf9OFYEHUnjEb4/user-t5zTeY15Y5Rp98M4qMHCCWzQ/img-AClA4nm2XQ27kDQWxHiobJhn.png?st=2025-12-10T17%3A01%3A38Z&se=2025-12-10T19%3A01%3A38Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=32836cae-d25f-4fe9-827b-1c8c59c442cc&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-10T17%3A58%3A15Z&ske=2025-12-11T17%3A58%3A15Z&sks=b&skv=2024-08-04&sig=ekITy61P0362mhOCdFiNKBi8KkDlD3Q6fUSEz3kCuys%3D",
-      "imagen_alt": "Premios logística México",
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/p65qtBCM/png-skoid-b2c0e1c0-cf97-4e19-8986-8073905d5723-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "Cyber Monday con IA",
       "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "Reconocimiento a la transformación digital en México",
+      "subtitulo": "IA generativa transforma el comercio electrónico",
       "contenido_completo": [
-        "La plataforma de Operaciones Conectadas de Samsara distingue en Ciudad de México a dos compañías mexicanas por el uso de inteligencia artificial para mejorar seguridad, eficiencia y sostenibilidad en el transporte y la distribución.",
-        "La inteligencia artificial aplicada a la logística dio un nuevo paso de consolidación en la región con el anuncio de los ganadores de los Premios de Operaciones Conectadas 2025 de Samsara, difundidos por La Prensa Gráfica a partir de información de BusinessWire.",
-        "El reconocimiento, presentado en Ciudad de México, distinguió a las empresas Mexlog y Paquetexpress como ganadoras, mientras que García's Trucking y Grupo Express del Norte fueron seleccionadas como finalistas.",
-        "<h2>Transformación digital medible</h2>",
-        "Los galardones buscan destacar a organizaciones e individuos que lideran procesos de transformación digital en sus operaciones mediante el uso de la plataforma de Operaciones Conectadas de Samsara, impulsada por inteligencia artificial. Según la comunicación oficial, el objetivo es reconocer iniciativas que hayan logrado mejoras comprobables en tres ejes clave: seguridad, eficiencia y sostenibilidad.",
-        "Mexlog y Paquetexpress, ambas con operaciones relevantes en México, fueron señaladas por su adopción avanzada de soluciones de IA en la gestión de flotas y en la cadena de suministro. El uso de análisis de datos en tiempo real, monitoreo inteligente de activos y optimización algorítmica de rutas ha permitido reducir riesgos en carretera, optimizar el consumo de combustible y mejorar la puntualidad en las entregas.",
-        "<h2>Referente para América Latina</h2>",
-        "Aunque la convocatoria se centra en el mercado mexicano y la región circundante, el caso tiene implicaciones más amplias para América Latina. Para países como El Salvador, donde la modernización logística es un reto clave para la competitividad, la experiencia de las empresas reconocidas ofrece un referente sobre cómo la IA puede traducirse en mejoras medibles de productividad y sostenibilidad."
+        "Datos de Adobe Analytics indican que el Cyber Monday 2025 en Estados Unidos alcanzó un gasto online proyectado de US$14,200 millones, según datos citados por medios regionales. La cifra consolida el peso del canal digital en la temporada navideña y refuerza el papel de la inteligencia artificial (IA) como motor del consumo.",
+        "<h2>IA generativa como motor de compra</h2>",
+        "De acuerdo con el informe, la IA generativa está jugando un papel central en el comportamiento de los consumidores. Algoritmos de recomendación cada vez más sofisticados guían la búsqueda de productos, sugieren alternativas personalizadas y optimizan cupones y descuentos en tiempo real.",
+        "El análisis de Adobe señala que el 58% de las compras del Cyber Monday se realizan desde dispositivos móviles, consolidando al teléfono inteligente como el principal punto de acceso al comercio electrónico. La franja horaria de mayor actividad se concentra entre las 8 y las 10 de la noche.",
+        "<h2>Electrónica, moda y muebles lideran el gasto</h2>",
+        "Por sectores, la electrónica encabeza el gasto con alrededor de US$3,600 millones, seguida por la ropa, con aproximadamente US$2,700 millones en compras, y el segmento de muebles y artículos para el hogar, que ronda los US$1,800 millones.",
+        "La combinación de publicidad segmentada, recomendaciones automatizadas y experiencias de compra asistidas por chatbots y asistentes virtuales está redefiniendo el ciclo de decisión del consumidor estadounidense.",
+        "<h2>Oportunidades para emprendedores globales</h2>",
+        "Para emprendedores y empresas de países como El Salvador que operan en plataformas internacionales, esta dinámica abre nuevas oportunidades de inserción en el mercado estadounidense. El dominio de herramientas de IA para marketing digital, segmentación de audiencias y gestión de inventarios se vuelve clave para capturar parte de este flujo de gasto transnacional."
       ],
       "citas": [
-        "Este es un día histórico para la logística digital en México y toda la región."
+        "La IA no solo incentiva el volumen total de transacciones, sino que también reconfigura la forma en que se consumen bienes duraderos."
       ],
       "puntos_clave": [
-        "Mexlog y Paquetexpress ganan por su uso avanzado de IA en logística.",
-        "Mejoras en seguridad, eficiencia y sostenibilidad comprobadas.",
-        "La experiencia mexicana sirve de referente para El Salvador.",
-        "García's Trucking y Grupo Express del Norte, finalistas destacados."
+        "US$14,200 millones en compras online en Cyber Monday 2025.",
+        "58% de las compras se realizan desde dispositivos móviles.",
+        "Electrónica lidera con US$3,600 millones en ventas.",
+        "IA generativa guía recomendaciones y optimiza descuentos en tiempo real."
       ]
     },
     {
-      "id": "apps-logistica-salvador",
+      "id": "meta-acuerdos-medios-ia",
       "categoria": "Actualidad",
-      "titulo": "Tres apps salvadoreñas impulsan una revolución logística con IA y tecnología local",
+      "titulo": "Meta sella acuerdos plurianuales con grandes medios para nutrir con noticias en tiempo real a su IA en redes sociales",
       "resumen": null,
-      "autor": "Evelyn Alas",
+      "autor": "Redacción El Mundo",
       "coautor": null,
       "ciudad": "San Salvador",
-      "imagen": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-LICAcLDzyxFf9OFYEHUnjEb4/user-t5zTeY15Y5Rp98M4qMHCCWzQ/img-796Mv0XCzRfCcrrHZ3NhHNn6.png?st=2025-12-10T17%3A06%3A46Z&se=2025-12-10T19%3A06%3A46Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=38e27a3b-6174-4d3e-90ac-d7d9ad49543f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-10T18%3A06%3A46Z&ske=2025-12-11T18%3A06%3A46Z&sks=b&skv=2024-08-04&sig=msFYay96tjEmfuGed0mG57ABy8pJOptsMkBiCbf%2BTlw%3D",
-      "imagen_alt": "Apps salvadoreñas de logística",
+      "imagen": "https://i.ibb.co/svdbrQKV/c-Ut-Su4s-ROgz-Zr-B7hj-Eg0op-T8-Ndkte-JSAFR02zlr-Wl8.png",
+      "imagen_alt": "Meta AI y medios de comunicación",
       "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "Innovación local transforma el delivery y el e-commerce",
+      "subtitulo": "CNN, Fox News, USA Today y Le Monde entre los socios iniciales",
       "contenido_completo": [
-        "Trucker App, Weris y Boxful están transformando la logística urbana y el comercio electrónico en El Salvador mediante soluciones digitales que optimizan entregas, reducen costos para PYMEs y atraen inversión tecnológica.",
-        "<h2>Startups locales convierten a El Salvador en polo emergente de logística digital</h2>",
-        "Tres aplicaciones salvadoreñas están redefiniendo la logística en el país al integrar inteligencia artificial, análisis de datos y soluciones digitales de última milla para pequeños negocios y emprendedores. De acuerdo con un reportaje publicado el 5 de octubre de 2025 en la sección Dinero y Negocios, estas plataformas están generando eficiencia operativa, empleo y nueva inversión en el ecosistema tecnológico local.",
-        "<h2>Trucker App: entregas en menos de dos horas</h2>",
-        "Trucker App es una plataforma de logística de desarrollo local que ofrece entregas en menos de dos horas en el Gran San Salvador. La solución integra rastreo en tiempo real, rutas optimizadas mediante algoritmos y una plataforma unificada para negocios y repartidores. También incorpora tecnología NFC para gestión de pedidos sin papel.",
-        "Su impacto económico se refleja en la reducción de costos de distribución para PYMEs, el aumento de su competitividad frente a plataformas internacionales y la generación de empleo directo tanto para repartidores como para personal técnico.",
-        "<h2>Weris App: comisiones más bajas para delivery local</h2>",
-        "Weris App se presenta como una aplicación 100 % salvadoreña de delivery. La plataforma opera en el área metropolitana de San Salvador y ofrece comisiones menores al 16 %, lo que representa un alivio para pequeños comercios frente a otros servicios de reparto de mayor costo.",
-        "Esto incrementa el margen de ganancia para los comercios, fomenta el uso de tecnología local e impulsa la inclusión digital al retener más valor dentro de la economía salvadoreña.",
-        "<h2>Boxful El Salvador: logística integral para e-commerce</h2>",
-        "Boxful El Salvador es una startup especializada en logística para comercio electrónico. La empresa ofrece un servicio integral que incluye almacenamiento, empaquetado, distribución, lockers inteligentes e integración con múltiples paqueterías.",
-        "Boxful cerró en 2025 una ronda de capital por 1,9 millones de dólares, un dato que confirma el interés de inversionistas en el sector logístico digital salvadoreño. Esta inyección de recursos facilita a pequeños negocios vender y entregar en línea con mayor eficiencia."
+        "Meta anunció el 5 de diciembre de 2025 la firma de acuerdos plurianuales con varios grupos de comunicación internacionales para utilizar su contenido periodístico en el entrenamiento y funcionamiento de Meta AI, el asistente de inteligencia artificial integrado en Facebook, Instagram, WhatsApp y Messenger.",
+        "La iniciativa permitirá ofrecer respuestas en tiempo real basadas en noticias verificadas y acompañadas de enlaces a los artículos originales.",
+        "<h2>Socios editoriales de primer nivel</h2>",
+        "Según la información, entre los socios iniciales figuran cabeceras y grupos editoriales como CNN, Fox News, USA Today, People, Le Monde, The Daily Caller y Washington Examiner, entre otros. Los términos económicos de los acuerdos no han sido divulgados, pero se trata de licencias comerciales específicas para uso en sistemas de IA.",
+        "<h2>Respuestas con trazabilidad y enlaces</h2>",
+        "Meta sostiene que el objetivo central es incrementar la precisión, diversidad temática y verificabilidad de las respuestas de Meta AI, especialmente en consultas relacionadas con noticias de última hora y actualidad.",
+        "El asistente no solo utilizará ese contenido para mejorar sus capacidades, sino que mostrará respuestas que incluirán la referencia explícita al medio de origen y un enlace directo al artículo correspondiente.",
+        "<h2>Carrera por contenidos verificados</h2>",
+        "Los acuerdos sitúan a Meta en el centro de una competencia creciente entre grandes tecnológicas por asegurar acceso licenciado a contenido periodístico para entrenar y alimentar sus modelos de IA. Editores y reguladores han cuestionado el uso no autorizado de noticias, lo que ha impulsado negociaciones para establecer marcos de compensación y colaboración.",
+        "Para los medios, las alianzas abren una vía de ingresos y de visibilidad adicional, al tiempo que plantean interrogantes sobre la dependencia de grandes plataformas para la distribución de sus contenidos."
       ],
       "citas": [
-        "Estas tres plataformas posicionan a El Salvador como un actor emergente en logística digital en Centroamérica."
+        "Este es un paso hacia una experiencia de IA más transparente y responsable en nuestras plataformas."
       ],
       "puntos_clave": [
-        "Trucker App: entregas en menos de 2 horas con IA y NFC.",
-        "Weris App: comisiones bajo 16% para PYMEs salvadoreñas.",
-        "Boxful cerró ronda de 1,9 millones de dólares en 2025.",
-        "El Salvador se consolida como polo de innovación logística regional."
+        "Acuerdos plurianuales con CNN, Fox News, USA Today, Le Monde y otros.",
+        "Meta AI ofrecerá respuestas con enlaces directos a fuentes originales.",
+        "Integración en Facebook, Instagram, WhatsApp y Messenger.",
+        "Competencia por contenido licenciado entre grandes tecnológicas."
       ]
     }
   ],
   
   "noticias_lo_ultimo": [
     {
-      "id": "ia-logistica-agricola",
+      "id": "samsara-premios-logistica-ia",
       "categoria": "Actualidad",
-      "titulo": "La inteligencia artificial revoluciona la logística agrícola salvadoreña y refuerza las exportaciones",
+      "titulo": "La inteligencia artificial de Samsara redefine la seguridad y eficiencia logística en los Premios de Operaciones Conectadas 2025",
       "resumen": null,
-      "autor": "Redacción Dinero y Negocios",
+      "autor": "Redacción El Mundo",
       "coautor": null,
       "ciudad": "San Salvador",
-      "imagen": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-LICAcLDzyxFf9OFYEHUnjEb4/user-t5zTeY15Y5Rp98M4qMHCCWzQ/img-gAHrFGnf8qURDDutEDDEr0q1.png?st=2025-12-10T17%3A02%3A56Z&se=2025-12-10T19%3A02%3A56Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=b2c0e1c0-cf97-4e19-8986-8073905d5723&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-12-10T18%3A02%3A56Z&ske=2025-12-11T18%3A02%3A56Z&sks=b&skv=2024-08-04&sig=oN8O%2Blm33btlJkPTkkgEx2R3gNbltu7lTuOCg5yWQW0%3D",
-      "imagen_alt": "Logística agrícola con IA",
+      "imagen": "https://i.ibb.co/fYJGttf1/ae-y-XNKh-Pz-V6-UMn9ewyoa-Lr-Zg-MEx3mj-U.png",
+      "imagen_alt": "Premios Samsara Operaciones Conectadas",
       "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "Trazabilidad y eficiencia para productos de exportación",
+      "subtitulo": "Métricas impactantes en flotas mexicanas",
       "contenido_completo": [
-        "El Salvador impulsa la transformación de su cadena agroexportadora mediante soluciones de inteligencia artificial que mejoran la trazabilidad, elevan la eficiencia logística y liberan al talento humano de tareas repetitivas para enfocarse en labores estratégicas.",
-        "<h2>La IA entra de lleno en la cadena agroexportadora</h2>",
-        "El Salvador ha comenzado a consolidar un cambio de fondo en su sector agroexportador mediante la incorporación de soluciones de inteligencia artificial a lo largo de toda la cadena de valor, desde la siembra hasta la logística de exportación.",
-        "La apuesta tecnológica se centra en cultivos de alto valor como arándanos, aguacates, espárragos y uvas, cuya competitividad internacional depende cada vez más de la trazabilidad y de la eficiencia en el movimiento de mercancías.",
-        "<h2>Trazabilidad y confianza para mercados internacionales</h2>",
-        "Los sistemas basados en IA registran el historial completo del producto: desde el lote y la parcela donde fue cultivado hasta las condiciones de frío, humedad y manipulación durante el transporte y el embarque. Esta capacidad de seguimiento detallado se traduce en mayor transparencia ante importadores y cadenas de distribución internacionales.",
-        "La información generada facilita la certificación de origen, el cumplimiento de normativas sanitarias y la respuesta rápida ante incidencias, lo que reduce rechazos en frontera, pérdidas de producto y costos asociados a reclamaciones.",
-        "<h2>Apoyo al talento humano y reto de integración</h2>",
-        "La IA no sustituye al trabajador, sino que libera al talento humano de tareas repetitivas para que pueda concentrarse en funciones estratégicas de planificación, análisis y toma de decisiones. De acuerdo con declaraciones de Gonzalo Martín, director de Producto e Innovación de Hispatec, la clave está en que los equipos se apoyen en la tecnología para elevar la productividad y la calidad del servicio logístico."
+        "La inteligencia artificial (IA) aplicada a la logística se consolida como un factor determinante de competitividad, a la luz de los resultados presentados en los Premios de Operaciones Conectadas 2025, anunciados por Samsara y difundidos por La Prensa Gráfica a través de Business Wire el 17 de junio de 2025.",
+        "<h2>Casos destacados en México</h2>",
+        "En la categoría Excelencia en Seguridad Patrimonial, el reconocimiento principal recayó en Mexlog. Cifras reportadas por Mexlog:",
+        "<ul><li>Reducción del 80% en los tiempos de detección de emergencias.</li><li>33% menos incidentes de robo en los últimos tres años.</li><li>Disminución del 97% en el robo de pernos, junto con mejoras en inventarios y control patrimonial.</li></ul>",
+        "En la categoría Mejor Conductor (México), fue distinguida la empresa Paquetexpress, que utiliza cámaras de tablero impulsadas por IA:",
+        "<ul><li>Reducción del 30% en eventos de seguridad.</li><li>20% menos gravedad en los incidentes.</li><li>Disminución del 40% en la siniestralidad global de la flota en los últimos dos años.</li></ul>",
+        "<h2>Recuperación de activos</h2>",
+        "Grupo Express del Norte, finalista, ha logrado recuperar el 100% de las unidades con intento de robo y mercancía valorada en aproximadamente 169,753 dólares. Estos resultados se traducen en menores costos por accidentes y pólizas de seguro."
       ],
       "citas": [
-        "La IA no sustituye al trabajador, libera su potencial estratégico."
+        "La IA se convierte en un motor verificable de reducción de riesgos, mejora operativa y sostenibilidad."
       ],
       "puntos_clave": [
-        "IA mejora trazabilidad en cultivos de alto valor: arándanos, aguacates, espárragos.",
-        "Reducción de rechazos en frontera y pérdidas de producto.",
-        "El talento humano se enfoca en planificación estratégica.",
-        "El Salvador se posiciona como referente agroexportador con IA."
+        "Mexlog redujo 80% tiempos de detección de emergencias y 33% incidentes de robo.",
+        "Paquetexpress disminuyó 40% la siniestralidad global de su flota.",
+        "Grupo Express del Norte recuperó 100% de unidades con intento de robo.",
+        "Plataforma integra monitoreo en tiempo real y cámaras con IA."
+      ]
+    },
+    {
+      "id": "ia-hospitales-salvador",
+      "categoria": "Actualidad",
+      "titulo": "El Salvador integra la inteligencia artificial en hospitales públicos y acelera diagnósticos médicos",
+      "resumen": null,
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/6RSvYRcj/a-I9-Ka476-NZlro-Pj-ZAnfd-Y.png",
+      "imagen_alt": "IA en hospitales de El Salvador",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Análisis de radiografías en segundos",
+      "contenido_completo": [
+        "El sistema público de salud de El Salvador ha comenzado a incorporar herramientas de inteligencia artificial (IA) en hospitales nacionales para analizar radiografías y pruebas de laboratorio, con el objetivo de agilizar diagnósticos y apoyar la toma de decisiones clínicas.",
+        "Según El Diario de Hoy (6 de octubre de 2025), el Ministerio de Salud ha puesto en marcha sistemas capaces de procesar imágenes médicas y resultados de laboratorio 'en segundos', con especial foco en enfermedades respiratorias, cardíacas y oncológicas.",
+        "<h2>Impacto en la atención diaria</h2>",
+        "La adopción de IA se traduce en: priorización más rápida de casos urgentes, detección temprana de anomalías en estudios de tórax y cardiología, y clasificación automatizada de resultados de laboratorio para alertar de valores críticos.",
+        "Esta integración en servicios de salud pública convierte a la IA en una herramienta aplicada al día a día con potencial para reducir errores médicos.",
+        "<h2>Estrategia nacional de IA</h2>",
+        "La introducción de IA en hospitales se enmarca en una adopción más amplia de estas tecnologías en el país. Otros despliegues incluyen pruebas de IA en los centros de monitoreo de ANDA desde marzo de 2025 para mejorar la eficiencia del servicio.",
+        "Diario El Salvador ha reseñado iniciativas de formación como la conversión de Kodigo en una academia regional de inteligencia artificial, que busca formar el talento necesario para sostener estos avances tecnológicos."
+      ],
+      "citas": [
+        "La IA se integra como herramienta de apoyo para fortalecer la labor médica y basar las decisiones clínicas en evidencia procesada de forma automatizada."
+      ],
+      "puntos_clave": [
+        "IA analiza radiografías y pruebas de laboratorio en segundos.",
+        "Foco en enfermedades respiratorias, cardíacas y oncológicas.",
+        "Detección temprana de anomalías y clasificación automatizada de resultados.",
+        "Parte de estrategia nacional de adopción de IA en servicios públicos."
       ]
     },
     {
@@ -211,36 +242,36 @@
   
   "articulos_opinion": [
     {
-      "id": "opinion-ia-futuro",
+      "id": "opinion-ia-china",
       "autor": "Editorial El Mundo",
-      "titulo": "La IA llegó para quedarse en la logística salvadoreña",
+      "titulo": "El liderazgo asiático en IA no es casualidad",
       "categoria": "Opinión",
       "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=ED",
       "contenido_completo": [
-        "La consolidación de plataformas locales como Trucker App, Weris y Boxful, sumada a los reconocimientos internacionales en logística inteligente, confirman que El Salvador no es solo observador de la revolución tecnológica: es protagonista.",
-        "El desafío ahora es escalar estas soluciones, formar más talento especializado y construir marcos regulatorios que impulsen, sin frenar, la innovación. El futuro de la competitividad está en los datos y en la inteligencia que sepamos extraer de ellos."
+        "Mientras Occidente debate regulaciones, China construye. Más de 5,000 empresas de IA y 40,000 fábricas inteligentes no surgen de la noche a la mañana: son el resultado de una estrategia industrial coordinada, inversión sostenida y visión de largo plazo.",
+        "América Latina debe aprender de este modelo: la IA no se regula primero y se desarrolla después. Se impulsa, se adopta y se regula simultáneamente, o simplemente se importa eternamente."
       ]
     },
     {
-      "id": "opinion-pymes",
-      "autor": "Roberto Martínez",
-      "titulo": "Las PYMEs son las grandes ganadoras",
+      "id": "opinion-ecommerce-ia",
+      "autor": "Carlos Mendoza",
+      "titulo": "La IA ya no predice: decide por nosotros",
       "categoria": "Opinión",
-      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=RM",
+      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=CM",
       "contenido_completo": [
-        "Durante años, la tecnología logística fue patrimonio de las grandes corporaciones. Hoy, aplicaciones como Weris y Trucker democratizan el acceso a herramientas de clase mundial para negocios de barrio.",
-        "Esta revolución silenciosa está nivelando el campo de juego y permitiendo que un pequeño comercio compita en eficiencia con las cadenas multinacionales. Es, quizás, el cambio más importante en la economía salvadoreña de los últimos años."
+        "US$14,200 millones en un solo día no son fruto del azar ni de descuentos generosos. Son el resultado de algoritmos que conocen nuestros gustos mejor que nosotros mismos, que predicen lo que compraremos antes de saberlo.",
+        "La pregunta ya no es si la IA cambiará el comercio: es si estamos preparados para un mundo donde nuestras decisiones de compra sean, en realidad, sugerencias automatizadas que aceptamos sin cuestionar."
       ]
     },
     {
-      "id": "opinion-agro",
-      "autor": "Ana Solórzano",
-      "titulo": "Del campo a la exportación: el rol clave de la trazabilidad",
+      "id": "opinion-salud-sv",
+      "autor": "Dra. Sofía Ramírez",
+      "titulo": "La IA en salud pública: una apuesta necesaria",
       "categoria": "Opinión",
-      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=AS",
+      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=SR",
       "contenido_completo": [
-        "La trazabilidad impulsada por IA no es un lujo tecnológico: es una exigencia de los mercados internacionales. Los países que no la adopten quedarán fuera de las cadenas de valor globales.",
-        "El Salvador está haciendo la tarea. La transformación digital del agro no solo protege empleos, sino que abre puertas a nuevos mercados y genera confianza en compradores cada vez más exigentes."
+        "Que El Salvador integre IA en hospitales públicos no es un lujo tecnológico: es una necesidad urgente. Cuando los diagnósticos se aceleran de horas a segundos, vidas se salvan. Cuando errores médicos disminuyen, el sistema gana credibilidad.",
+        "El reto ahora es escalar: más hospitales, más especialidades, más capacitación. La tecnología está lista. La pregunta es si la voluntad política y el presupuesto lo estarán también."
       ]
     }
   ]
