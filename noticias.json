@@ -2,148 +2,42 @@
   "config": {
     "titulo_sitio": "EL MUNDO - Diario Online Líder",
     "edicion": "Edición El Salvador",
-    "fecha_actualizacion": "Martes, 10 de Diciembre de 2025 • Actualizado a las 18:30",
+    "fecha_actualizacion": "Lunes, 16 de Diciembre de 2025 • Actualizado a las 13:25",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
   },
   "noticia_principal": {
-    "id": "china-ia-ecosistema",
-    "url": "https://demo-noticias-ia.vercel.app/noticias/china-ia-ecosistema.html",
+    "id": "ia-pronosticos-deportes-entretenimiento",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-pronosticos-deportes-entretenimiento.html",
     "categoria": "Actualidad",
-    "titulo": "China consolida un ecosistema de más de 5,000 empresas de IA y refuerza el peso de Asia en la economía digital global",
-    "resumen": "El desarrollo de una amplia cadena industrial de inteligencia artificial en China, con miles de empresas, fábricas inteligentes y zonas piloto, afianza el liderazgo asiático en una tecnología que, según el FMI, podría impulsar el crecimiento mundial del PIB hasta un 0.8%.",
+    "titulo": "La inteligencia artificial se consolida en el pronóstico deportivo y la industria del entretenimiento",
+    "resumen": "Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la integración de personajes y contenidos en modelos generativos.",
     "autor": "Redacción El Mundo",
     "coautor": null,
     "ciudad": "San Salvador",
-    "imagen": "https://i.ibb.co/gFfX9x2j/usb-GUg.png",
-    "imagen_alt": "Ecosistema de IA en China",
+    "imagen": "https://i.ibb.co/Q3RHgV2H/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+    "imagen_alt": "IA en deportes y entretenimiento",
     "imagen_caption": "Ilustración IA | El Mundo",
-    "subtitulo": "Asia emerge como núcleo industrial de la inteligencia artificial",
+    "subtitulo": "Del fútbol salvadoreño a Hollywood: la IA redefine predicciones y contenidos",
     "contenido_completo": [
-      "China ha consolidado en los últimos años uno de los ecosistemas de inteligencia artificial (IA) más grandes del mundo, con más de 5,000 empresas dedicadas al sector hasta septiembre de 2025, según datos difundidos por la agencia Xinhua y recogidos por medios de la región.",
-      "Esta masa crítica de compañías se inserta en una cadena industrial que abarca desde el diseño de algoritmos hasta la integración de sistemas inteligentes en manufactura, transporte y servicios.",
-      "<h2>Infraestructura productiva en transformación</h2>",
-      "El crecimiento del sector se apoya en una infraestructura productiva en rápida transformación: se contabilizan más de 40,000 fábricas inteligentes que incorporan soluciones de IA para automatización, análisis predictivo y control de calidad en tiempo real.",
-      "A ello se suman 11 zonas piloto nacionales y 17 zonas de demostración dedicadas a pruebas de vehículos autónomos y otras aplicaciones avanzadas, lo que convierte al país en uno de los principales laboratorios abiertos de innovación en IA a escala urbana e industrial.",
-      "<h2>Impacto regional y proyección global</h2>",
-      "El papel de China como motor de la IA en Asia se enmarca en una dinámica más amplia en la que el continente asiático se posiciona como uno de los polos decisivos de la economía digital. Los datos industriales chinos ofrecen una referencia cuantitativa del peso de Asia frente a otros bloques económicos.",
-      "Un informe del Fondo Monetario Internacional sitúa el posible aumento del PIB global por efecto de la IA entre el 0.1% y el 0.8%, dependiendo del ritmo de adopción y de las políticas públicas que acompañen su desarrollo.",
-      "<h2>Competencia regulatoria global</h2>",
-      "Mientras Asia consolida su base industrial de IA, otras regiones aceleran su respuesta regulatoria y formativa. En Europa se han aprobado marcos normativos específicos para la IA, y países de América Latina avanzan en leyes y programas educativos orientados a formar talento y atraer inversión tecnológica."
+      "Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la integración de personajes y contenidos en modelos generativos.",
+      "<h2>La IA entra a las canchas: pronósticos para el Apertura 2025</h2>",
+      "Modelos de lenguaje como ChatGPT y Gemini han comenzado a utilizarse para pronosticar al posible campeón del torneo Apertura 2025 de fútbol en El Salvador. Estos sistemas articulan sus respuestas a partir de variables como el rendimiento histórico de los clubes, resultados recientes, estadísticas de goles y desempeño en fases finales.",
+      "Este uso evidencia la incorporación de algoritmos de IA en predicciones deportivas, abriendo el debate sobre su papel en casas de apuestas, análisis de clubes y coberturas periodísticas. Expertos señalan que los resultados de la IA dependen de la calidad y actualización de los datos, y que factores imprevistos como lesiones o decisiones arbitrales siguen siendo difíciles de modelar.",
+      "<h2>Entretenimiento y derechos de autor: grandes inversiones en IA generativa</h2>",
+      "En paralelo, la IA generativa está redefiniendo el negocio del entretenimiento. Una de las principales compañías globales de contenidos anunció una inversión de alrededor de 1,000 millones de dólares en una empresa líder de inteligencia artificial. Además, firmó un acuerdo para que los modelos de IA puedan utilizar personajes y propiedades intelectuales de su amplio catálogo.",
+      "El convenio permite a sistemas como chatbots y generadores de contenido incorporar de forma autorizada el universo de personajes de la firma, creando nuevas experiencias interactivas para los usuarios. Especialistas advierten sobre los retos de este tipo de acuerdos, como la delimitación de usos, la protección frente a manipulación de contenidos y la remuneración adecuada a los titulares de derechos."
     ],
     "citas": [
-      "Asia, con China a la cabeza, se ha convertido en un actor imprescindible para el desarrollo y la difusión global de la inteligencia artificial."
+      "La IA no solo predice resultados deportivos: está transformando la forma en que consumimos y creamos contenido de entretenimiento."
     ],
     "puntos_clave": [
-      "Más de 5,000 empresas de IA operando en China hasta septiembre 2025.",
-      "40,000 fábricas inteligentes con soluciones de IA implementadas.",
-      "11 zonas piloto nacionales y 17 zonas de demostración de vehículos autónomos.",
-      "FMI proyecta crecimiento del PIB global entre 0.1% y 0.8% por IA."
+      "ChatGPT y Gemini usados para pronosticar campeón del Apertura 2025 en El Salvador.",
+      "Inversión de US$1,000 millones en IA generativa para entretenimiento.",
+      "Acuerdos permiten uso autorizado de personajes en chatbots y generadores de contenido.",
+      "Debate sobre derechos de autor, usos y remuneración en la industria."
     ]
   },
   "noticias_secundarias": [
-    {
-      "id": "cyber-monday-ia-record",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/cyber-monday-ia-record.html",
-      "categoria": "Actualidad",
-      "titulo": "La inteligencia artificial impulsa un Cyber Monday récord en Estados Unidos con US$14,200 millones en compras en línea",
-      "resumen": null,
-      "autor": "Redacción El Mundo",
-      "coautor": null,
-      "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/p65qtBCM/png-skoid-b2c0e1c0-cf97-4e19-8986-8073905d5723-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-      "imagen_alt": "Cyber Monday con IA",
-      "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "IA generativa transforma el comercio electrónico",
-      "contenido_completo": [
-        "Datos de Adobe Analytics indican que el Cyber Monday 2025 en Estados Unidos alcanzó un gasto online proyectado de US$14,200 millones, según datos citados por medios regionales. La cifra consolida el peso del canal digital en la temporada navideña y refuerza el papel de la inteligencia artificial (IA) como motor del consumo.",
-        "<h2>IA generativa como motor de compra</h2>",
-        "De acuerdo con el informe, la IA generativa está jugando un papel central en el comportamiento de los consumidores. Algoritmos de recomendación cada vez más sofisticados guían la búsqueda de productos, sugieren alternativas personalizadas y optimizan cupones y descuentos en tiempo real.",
-        "El análisis de Adobe señala que el 58% de las compras del Cyber Monday se realizan desde dispositivos móviles, consolidando al teléfono inteligente como el principal punto de acceso al comercio electrónico. La franja horaria de mayor actividad se concentra entre las 8 y las 10 de la noche.",
-        "<h2>Electrónica, moda y muebles lideran el gasto</h2>",
-        "Por sectores, la electrónica encabeza el gasto con alrededor de US$3,600 millones, seguida por la ropa, con aproximadamente US$2,700 millones en compras, y el segmento de muebles y artículos para el hogar, que ronda los US$1,800 millones.",
-        "La combinación de publicidad segmentada, recomendaciones automatizadas y experiencias de compra asistidas por chatbots y asistentes virtuales está redefiniendo el ciclo de decisión del consumidor estadounidense.",
-        "<h2>Oportunidades para emprendedores globales</h2>",
-        "Para emprendedores y empresas de países como El Salvador que operan en plataformas internacionales, esta dinámica abre nuevas oportunidades de inserción en el mercado estadounidense. El dominio de herramientas de IA para marketing digital, segmentación de audiencias y gestión de inventarios se vuelve clave para capturar parte de este flujo de gasto transnacional."
-      ],
-      "citas": [
-        "La IA no solo incentiva el volumen total de transacciones, sino que también reconfigura la forma en que se consumen bienes duraderos."
-      ],
-      "puntos_clave": [
-        "US$14,200 millones en compras online en Cyber Monday 2025.",
-        "58% de las compras se realizan desde dispositivos móviles.",
-        "Electrónica lidera con US$3,600 millones en ventas.",
-        "IA generativa guía recomendaciones y optimiza descuentos en tiempo real."
-      ]
-    },
-    {
-      "id": "meta-acuerdos-medios-ia",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/meta-acuerdos-medios-ia.html",
-      "categoria": "Actualidad",
-      "titulo": "Meta sella acuerdos plurianuales con grandes medios para nutrir con noticias en tiempo real a su IA en redes sociales",
-      "resumen": null,
-      "autor": "Redacción El Mundo",
-      "coautor": null,
-      "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/svdbrQKV/c-Ut-Su4s-ROgz-Zr-B7hj-Eg0op-T8-Ndkte-JSAFR02zlr-Wl8.png",
-      "imagen_alt": "Meta AI y medios de comunicación",
-      "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "CNN, Fox News, USA Today y Le Monde entre los socios iniciales",
-      "contenido_completo": [
-        "Meta anunció el 5 de diciembre de 2025 la firma de acuerdos plurianuales con varios grupos de comunicación internacionales para utilizar su contenido periodístico en el entrenamiento y funcionamiento de Meta AI, el asistente de inteligencia artificial integrado en Facebook, Instagram, WhatsApp y Messenger.",
-        "La iniciativa permitirá ofrecer respuestas en tiempo real basadas en noticias verificadas y acompañadas de enlaces a los artículos originales.",
-        "<h2>Socios editoriales de primer nivel</h2>",
-        "Según la información, entre los socios iniciales figuran cabeceras y grupos editoriales como CNN, Fox News, USA Today, People, Le Monde, The Daily Caller y Washington Examiner, entre otros. Los términos económicos de los acuerdos no han sido divulgados, pero se trata de licencias comerciales específicas para uso en sistemas de IA.",
-        "<h2>Respuestas con trazabilidad y enlaces</h2>",
-        "Meta sostiene que el objetivo central es incrementar la precisión, diversidad temática y verificabilidad de las respuestas de Meta AI, especialmente en consultas relacionadas con noticias de última hora y actualidad.",
-        "El asistente no solo utilizará ese contenido para mejorar sus capacidades, sino que mostrará respuestas que incluirán la referencia explícita al medio de origen y un enlace directo al artículo correspondiente.",
-        "<h2>Carrera por contenidos verificados</h2>",
-        "Los acuerdos sitúan a Meta en el centro de una competencia creciente entre grandes tecnológicas por asegurar acceso licenciado a contenido periodístico para entrenar y alimentar sus modelos de IA. Editores y reguladores han cuestionado el uso no autorizado de noticias, lo que ha impulsado negociaciones para establecer marcos de compensación y colaboración.",
-        "Para los medios, las alianzas abren una vía de ingresos y de visibilidad adicional, al tiempo que plantean interrogantes sobre la dependencia de grandes plataformas para la distribución de sus contenidos."
-      ],
-      "citas": [
-        "Este es un paso hacia una experiencia de IA más transparente y responsable en nuestras plataformas."
-      ],
-      "puntos_clave": [
-        "Acuerdos plurianuales con CNN, Fox News, USA Today, Le Monde y otros.",
-        "Meta AI ofrecerá respuestas con enlaces directos a fuentes originales.",
-        "Integración en Facebook, Instagram, WhatsApp y Messenger.",
-        "Competencia por contenido licenciado entre grandes tecnológicas."
-      ]
-    }
-  ],
-  "noticias_lo_ultimo": [
-    {
-      "id": "ia-pronosticos-deportes-entretenimiento",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-pronosticos-deportes-entretenimiento.html",
-      "categoria": "Actualidad",
-      "titulo": "La inteligencia artificial se consolida en el pronóstico deportivo y la industria del entretenimiento",
-      "resumen": "Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la integración de personajes y contenidos en modelos generativos.",
-      "autor": "Redacción El Mundo",
-      "coautor": null,
-      "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/Q3RHgV2H/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-      "imagen_alt": "IA en deportes y entretenimiento",
-      "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "Del fútbol salvadoreño a Hollywood: la IA redefine predicciones y contenidos",
-      "contenido_completo": [
-        "Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la integración de personajes y contenidos en modelos generativos.",
-        "<h2>La IA entra a las canchas: pronósticos para el Apertura 2025</h2>",
-        "Modelos de lenguaje como ChatGPT y Gemini han comenzado a utilizarse para pronosticar al posible campeón del torneo Apertura 2025 de fútbol en El Salvador. Estos sistemas articulan sus respuestas a partir de variables como el rendimiento histórico de los clubes, resultados recientes, estadísticas de goles y desempeño en fases finales.",
-        "Este uso evidencia la incorporación de algoritmos de IA en predicciones deportivas, abriendo el debate sobre su papel en casas de apuestas, análisis de clubes y coberturas periodísticas. Expertos señalan que los resultados de la IA dependen de la calidad y actualización de los datos, y que factores imprevistos como lesiones o decisiones arbitrales siguen siendo difíciles de modelar.",
-        "<h2>Entretenimiento y derechos de autor: grandes inversiones en IA generativa</h2>",
-        "En paralelo, la IA generativa está redefiniendo el negocio del entretenimiento. Una de las principales compañías globales de contenidos anunció una inversión de alrededor de 1,000 millones de dólares en una empresa líder de inteligencia artificial. Además, firmó un acuerdo para que los modelos de IA puedan utilizar personajes y propiedades intelectuales de su amplio catálogo.",
-        "El convenio permite a sistemas como chatbots y generadores de contenido incorporar de forma autorizada el universo de personajes de la firma, creando nuevas experiencias interactivas para los usuarios. Especialistas advierten sobre los retos de este tipo de acuerdos, como la delimitación de usos, la protección frente a manipulación de contenidos y la remuneración adecuada a los titulares de derechos."
-      ],
-      "citas": [
-        "La IA no solo predice resultados deportivos: está transformando la forma en que consumimos y creamos contenido de entretenimiento."
-      ],
-      "puntos_clave": [
-        "ChatGPT y Gemini usados para pronosticar campeón del Apertura 2025 en El Salvador.",
-        "Inversión de US$1,000 millones en IA generativa para entretenimiento.",
-        "Acuerdos permiten uso autorizado de personajes en chatbots y generadores de contenido.",
-        "Debate sobre derechos de autor, usos y remuneración en la industria."
-      ]
-    },
     {
       "id": "ia-logistica-global-camiones-autonomos",
       "url": "https://demo-noticias-ia.vercel.app/noticias/ia-logistica-global-camiones-autonomos.html",
@@ -216,7 +110,9 @@
         "OMS advierte de sesgos, errores clínicos y falta de transparencia.",
         "Reclamo de marcos regulatorios robustos y evaluación independiente."
       ]
-    },
+    }
+  ],
+  "noticias_lo_ultimo": [
     {
       "id": "ia-salvador-salud-educacion-vigilancia",
       "url": "https://demo-noticias-ia.vercel.app/noticias/ia-salvador-salud-educacion-vigilancia.html",
@@ -283,39 +179,5 @@
       ]
     }
   ],
-  "articulos_opinion": [
-    {
-      "id": "opinion-ia-china",
-      "autor": "Editorial El Mundo",
-      "titulo": "El liderazgo asiático en IA no es casualidad",
-      "categoria": "Opinión",
-      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=ED",
-      "contenido_completo": [
-        "Mientras Occidente debate regulaciones, China construye. Más de 5,000 empresas de IA y 40,000 fábricas inteligentes no surgen de la noche a la mañana: son el resultado de una estrategia industrial coordinada, inversión sostenida y visión de largo plazo.",
-        "América Latina debe aprender de este modelo: la IA no se regula primero y se desarrolla después. Se impulsa, se adopta y se regula simultáneamente, o simplemente se importa eternamente."
-      ]
-    },
-    {
-      "id": "opinion-ecommerce-ia",
-      "autor": "Carlos Mendoza",
-      "titulo": "La IA ya no predice: decide por nosotros",
-      "categoria": "Opinión",
-      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=CM",
-      "contenido_completo": [
-        "US$14,200 millones en un solo día no son fruto del azar ni de descuentos generosos. Son el resultado de algoritmos que conocen nuestros gustos mejor que nosotros mismos, que predicen lo que compraremos antes de saberlo.",
-        "La pregunta ya no es si la IA cambiará el comercio: es si estamos preparados para un mundo donde nuestras decisiones de compra sean, en realidad, sugerencias automatizadas que aceptamos sin cuestionar."
-      ]
-    },
-    {
-      "id": "opinion-salud-sv",
-      "autor": "Dra. Sofía Ramírez",
-      "titulo": "La IA en salud pública: una apuesta necesaria",
-      "categoria": "Opinión",
-      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=SR",
-      "contenido_completo": [
-        "Que El Salvador integre IA en hospitales públicos no es un lujo tecnológico: es una necesidad urgente. Cuando los diagnósticos se aceleran de horas a segundos, vidas se salvan. Cuando errores médicos disminuyen, el sistema gana credibilidad.",
-        "El reto ahora es escalar: más hospitales, más especialidades, más capacitación. La tecnología está lista. La pregunta es si la voluntad política y el presupuesto lo estarán también."
-      ]
-    }
-  ]
+  "articulos_opinion": []
 }
