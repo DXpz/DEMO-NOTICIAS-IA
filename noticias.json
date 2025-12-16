@@ -1,0 +1,451 @@
+{
+  "config": {
+    "titulo_sitio": "EL MUNDO - Diario Online Líder",
+    "edicion": "Edición El Salvador",
+    "fecha_actualizacion": "Martes, 10 de Diciembre de 2025 • Actualizado a las 18:30",
+    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
+  },
+  "noticia_principal": {
+    "id": "china-ia-ecosistema",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/china-ia-ecosistema.html",
+    "categoria": "Actualidad",
+    "titulo": "China consolida un ecosistema de más de 5,000 empresas de IA y refuerza el peso de Asia en la economía digital global",
+    "resumen": "El desarrollo de una amplia cadena industrial de inteligencia artificial en China, con miles de empresas, fábricas inteligentes y zonas piloto, afianza el liderazgo asiático en una tecnología que, según el FMI, podría impulsar el crecimiento mundial del PIB hasta un 0.8%.",
+    "autor": "Redacción El Mundo",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/gFfX9x2j/usb-GUg.png",
+    "imagen_alt": "Ecosistema de IA en China",
+    "imagen_caption": "Ilustración IA | El Mundo",
+    "subtitulo": "Asia emerge como núcleo industrial de la inteligencia artificial",
+    "contenido_completo": [
+      "China ha consolidado en los últimos años uno de los ecosistemas de inteligencia artificial (IA) más grandes del mundo, con más de 5,000 empresas dedicadas al sector hasta septiembre de 2025, según datos difundidos por la agencia Xinhua y recogidos por medios de la región.",
+      "Esta masa crítica de compañías se inserta en una cadena industrial que abarca desde el diseño de algoritmos hasta la integración de sistemas inteligentes en manufactura, transporte y servicios.",
+      "<h2>Infraestructura productiva en transformación</h2>",
+      "El crecimiento del sector se apoya en una infraestructura productiva en rápida transformación: se contabilizan más de 40,000 fábricas inteligentes que incorporan soluciones de IA para automatización, análisis predictivo y control de calidad en tiempo real.",
+      "A ello se suman 11 zonas piloto nacionales y 17 zonas de demostración dedicadas a pruebas de vehículos autónomos y otras aplicaciones avanzadas, lo que convierte al país en uno de los principales laboratorios abiertos de innovación en IA a escala urbana e industrial.",
+      "<h2>Impacto regional y proyección global</h2>",
+      "El papel de China como motor de la IA en Asia se enmarca en una dinámica más amplia en la que el continente asiático se posiciona como uno de los polos decisivos de la economía digital. Los datos industriales chinos ofrecen una referencia cuantitativa del peso de Asia frente a otros bloques económicos.",
+      "Un informe del Fondo Monetario Internacional sitúa el posible aumento del PIB global por efecto de la IA entre el 0.1% y el 0.8%, dependiendo del ritmo de adopción y de las políticas públicas que acompañen su desarrollo.",
+      "<h2>Competencia regulatoria global</h2>",
+      "Mientras Asia consolida su base industrial de IA, otras regiones aceleran su respuesta regulatoria y formativa. En Europa se han aprobado marcos normativos específicos para la IA, y países de América Latina avanzan en leyes y programas educativos orientados a formar talento y atraer inversión tecnológica."
+    ],
+    "citas": [
+      "Asia, con China a la cabeza, se ha convertido en un actor imprescindible para el desarrollo y la difusión global de la inteligencia artificial."
+    ],
+    "puntos_clave": [
+      "Más de 5,000 empresas de IA operando en China hasta septiembre 2025.",
+      "40,000 fábricas inteligentes con soluciones de IA implementadas.",
+      "11 zonas piloto nacionales y 17 zonas de demostración de vehículos autónomos.",
+      "FMI proyecta crecimiento del PIB global entre 0.1% y 0.8% por IA."
+    ]
+  },
+  "noticias_secundarias": [
+    {
+      "id": "cyber-monday-ia-record",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/cyber-monday-ia-record.html",
+      "categoria": "Actualidad",
+      "titulo": "La inteligencia artificial impulsa un Cyber Monday récord en Estados Unidos con US$14,200 millones en compras en línea",
+      "resumen": null,
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/p65qtBCM/png-skoid-b2c0e1c0-cf97-4e19-8986-8073905d5723-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "Cyber Monday con IA",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "IA generativa transforma el comercio electrónico",
+      "contenido_completo": [
+        "Datos de Adobe Analytics indican que el Cyber Monday 2025 en Estados Unidos alcanzó un gasto online proyectado de US$14,200 millones, según datos citados por medios regionales. La cifra consolida el peso del canal digital en la temporada navideña y refuerza el papel de la inteligencia artificial (IA) como motor del consumo.",
+        "<h2>IA generativa como motor de compra</h2>",
+        "De acuerdo con el informe, la IA generativa está jugando un papel central en el comportamiento de los consumidores. Algoritmos de recomendación cada vez más sofisticados guían la búsqueda de productos, sugieren alternativas personalizadas y optimizan cupones y descuentos en tiempo real.",
+        "El análisis de Adobe señala que el 58% de las compras del Cyber Monday se realizan desde dispositivos móviles, consolidando al teléfono inteligente como el principal punto de acceso al comercio electrónico. La franja horaria de mayor actividad se concentra entre las 8 y las 10 de la noche.",
+        "<h2>Electrónica, moda y muebles lideran el gasto</h2>",
+        "Por sectores, la electrónica encabeza el gasto con alrededor de US$3,600 millones, seguida por la ropa, con aproximadamente US$2,700 millones en compras, y el segmento de muebles y artículos para el hogar, que ronda los US$1,800 millones.",
+        "La combinación de publicidad segmentada, recomendaciones automatizadas y experiencias de compra asistidas por chatbots y asistentes virtuales está redefiniendo el ciclo de decisión del consumidor estadounidense.",
+        "<h2>Oportunidades para emprendedores globales</h2>",
+        "Para emprendedores y empresas de países como El Salvador que operan en plataformas internacionales, esta dinámica abre nuevas oportunidades de inserción en el mercado estadounidense. El dominio de herramientas de IA para marketing digital, segmentación de audiencias y gestión de inventarios se vuelve clave para capturar parte de este flujo de gasto transnacional."
+      ],
+      "citas": [
+        "La IA no solo incentiva el volumen total de transacciones, sino que también reconfigura la forma en que se consumen bienes duraderos."
+      ],
+      "puntos_clave": [
+        "US$14,200 millones en compras online en Cyber Monday 2025.",
+        "58% de las compras se realizan desde dispositivos móviles.",
+        "Electrónica lidera con US$3,600 millones en ventas.",
+        "IA generativa guía recomendaciones y optimiza descuentos en tiempo real."
+      ]
+    },
+    {
+      "id": "meta-acuerdos-medios-ia",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/meta-acuerdos-medios-ia.html",
+      "categoria": "Actualidad",
+      "titulo": "Meta sella acuerdos plurianuales con grandes medios para nutrir con noticias en tiempo real a su IA en redes sociales",
+      "resumen": null,
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/svdbrQKV/c-Ut-Su4s-ROgz-Zr-B7hj-Eg0op-T8-Ndkte-JSAFR02zlr-Wl8.png",
+      "imagen_alt": "Meta AI y medios de comunicación",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "CNN, Fox News, USA Today y Le Monde entre los socios iniciales",
+      "contenido_completo": [
+        "Meta anunció el 5 de diciembre de 2025 la firma de acuerdos plurianuales con varios grupos de comunicación internacionales para utilizar su contenido periodístico en el entrenamiento y funcionamiento de Meta AI, el asistente de inteligencia artificial integrado en Facebook, Instagram, WhatsApp y Messenger.",
+        "La iniciativa permitirá ofrecer respuestas en tiempo real basadas en noticias verificadas y acompañadas de enlaces a los artículos originales.",
+        "<h2>Socios editoriales de primer nivel</h2>",
+        "Según la información, entre los socios iniciales figuran cabeceras y grupos editoriales como CNN, Fox News, USA Today, People, Le Monde, The Daily Caller y Washington Examiner, entre otros. Los términos económicos de los acuerdos no han sido divulgados, pero se trata de licencias comerciales específicas para uso en sistemas de IA.",
+        "<h2>Respuestas con trazabilidad y enlaces</h2>",
+        "Meta sostiene que el objetivo central es incrementar la precisión, diversidad temática y verificabilidad de las respuestas de Meta AI, especialmente en consultas relacionadas con noticias de última hora y actualidad.",
+        "El asistente no solo utilizará ese contenido para mejorar sus capacidades, sino que mostrará respuestas que incluirán la referencia explícita al medio de origen y un enlace directo al artículo correspondiente.",
+        "<h2>Carrera por contenidos verificados</h2>",
+        "Los acuerdos sitúan a Meta en el centro de una competencia creciente entre grandes tecnológicas por asegurar acceso licenciado a contenido periodístico para entrenar y alimentar sus modelos de IA. Editores y reguladores han cuestionado el uso no autorizado de noticias, lo que ha impulsado negociaciones para establecer marcos de compensación y colaboración.",
+        "Para los medios, las alianzas abren una vía de ingresos y de visibilidad adicional, al tiempo que plantean interrogantes sobre la dependencia de grandes plataformas para la distribución de sus contenidos."
+      ],
+      "citas": [
+        "Este es un paso hacia una experiencia de IA más transparente y responsable en nuestras plataformas."
+      ],
+      "puntos_clave": [
+        "Acuerdos plurianuales con CNN, Fox News, USA Today, Le Monde y otros.",
+        "Meta AI ofrecerá respuestas con enlaces directos a fuentes originales.",
+        "Integración en Facebook, Instagram, WhatsApp y Messenger.",
+        "Competencia por contenido licenciado entre grandes tecnológicas."
+      ]
+    }
+  ],
+  "noticias_lo_ultimo": [
+    {
+      "id": "samsara-premios-logistica-ia",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/samsara-premios-logistica-ia.html",
+      "categoria": "Actualidad",
+      "titulo": "La inteligencia artificial de Samsara redefine la seguridad y eficiencia logística en los Premios de Operaciones Conectadas 2025",
+      "resumen": null,
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/fYJGttf1/ae-y-XNKh-Pz-V6-UMn9ewyoa-Lr-Zg-MEx3mj-U.png",
+      "imagen_alt": "Premios Samsara Operaciones Conectadas",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Métricas impactantes en flotas mexicanas",
+      "contenido_completo": [
+        "La inteligencia artificial (IA) aplicada a la logística se consolida como un factor determinante de competitividad, a la luz de los resultados presentados en los Premios de Operaciones Conectadas 2025, anunciados por Samsara y difundidos por La Prensa Gráfica a través de Business Wire el 17 de junio de 2025.",
+        "<h2>Casos destacados en México</h2>",
+        "En la categoría Excelencia en Seguridad Patrimonial, el reconocimiento principal recayó en Mexlog. Cifras reportadas por Mexlog:",
+        "<ul><li>Reducción del 80% en los tiempos de detección de emergencias.</li><li>33% menos incidentes de robo en los últimos tres años.</li><li>Disminución del 97% en el robo de pernos, junto con mejoras en inventarios y control patrimonial.</li></ul>",
+        "En la categoría Mejor Conductor (México), fue distinguida la empresa Paquetexpress, que utiliza cámaras de tablero impulsadas por IA:",
+        "<ul><li>Reducción del 30% en eventos de seguridad.</li><li>20% menos gravedad en los incidentes.</li><li>Disminución del 40% en la siniestralidad global de la flota en los últimos dos años.</li></ul>",
+        "<h2>Recuperación de activos</h2>",
+        "Grupo Express del Norte, finalista, ha logrado recuperar el 100% de las unidades con intento de robo y mercancía valorada en aproximadamente 169,753 dólares. Estos resultados se traducen en menores costos por accidentes y pólizas de seguro."
+      ],
+      "citas": [
+        "La IA se convierte en un motor verificable de reducción de riesgos, mejora operativa y sostenibilidad."
+      ],
+      "puntos_clave": [
+        "Mexlog redujo 80% tiempos de detección de emergencias y 33% incidentes de robo.",
+        "Paquetexpress disminuyó 40% la siniestralidad global de su flota.",
+        "Grupo Express del Norte recuperó 100% de unidades con intento de robo.",
+        "Plataforma integra monitoreo en tiempo real y cámaras con IA."
+      ]
+    },
+    {
+      "id": "ia-hospitales-salvador",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-hospitales-salvador.html",
+      "categoria": "Actualidad",
+      "titulo": "El Salvador integra la inteligencia artificial en hospitales públicos y acelera diagnósticos médicos",
+      "resumen": null,
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/6RSvYRcj/a-I9-Ka476-NZlro-Pj-ZAnfd-Y.png",
+      "imagen_alt": "IA en hospitales de El Salvador",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Análisis de radiografías en segundos",
+      "contenido_completo": [
+        "El sistema público de salud de El Salvador ha comenzado a incorporar herramientas de inteligencia artificial (IA) en hospitales nacionales para analizar radiografías y pruebas de laboratorio, con el objetivo de agilizar diagnósticos y apoyar la toma de decisiones clínicas.",
+        "Según El Diario de Hoy (6 de octubre de 2025), el Ministerio de Salud ha puesto en marcha sistemas capaces de procesar imágenes médicas y resultados de laboratorio 'en segundos', con especial foco en enfermedades respiratorias, cardíacas y oncológicas.",
+        "<h2>Impacto en la atención diaria</h2>",
+        "La adopción de IA se traduce en: priorización más rápida de casos urgentes, detección temprana de anomalías en estudios de tórax y cardiología, y clasificación automatizada de resultados de laboratorio para alertar de valores críticos.",
+        "Esta integración en servicios de salud pública convierte a la IA en una herramienta aplicada al día a día con potencial para reducir errores médicos.",
+        "<h2>Estrategia nacional de IA</h2>",
+        "La introducción de IA en hospitales se enmarca en una adopción más amplia de estas tecnologías en el país. Otros despliegues incluyen pruebas de IA en los centros de monitoreo de ANDA desde marzo de 2025 para mejorar la eficiencia del servicio.",
+        "Diario El Salvador ha reseñado iniciativas de formación como la conversión de Kodigo en una academia regional de inteligencia artificial, que busca formar el talento necesario para sostener estos avances tecnológicos."
+      ],
+      "citas": [
+        "La IA se integra como herramienta de apoyo para fortalecer la labor médica y basar las decisiones clínicas en evidencia procesada de forma automatizada."
+      ],
+      "puntos_clave": [
+        "IA analiza radiografías y pruebas de laboratorio en segundos.",
+        "Foco en enfermedades respiratorias, cardíacas y oncológicas.",
+        "Detección temprana de anomalías y clasificación automatizada de resultados.",
+        "Parte de estrategia nacional de adopción de IA en servicios públicos."
+      ]
+    },
+    {
+      "id": "turismo-digital-sv",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/turismo-digital-sv.html",
+      "categoria": "Economía",
+      "titulo": "El turismo salvadoreño crece un 45% impulsado por campañas digitales y conectividad",
+      "resumen": null,
+      "autor": "Patricia Hernández",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://www.mercadosyfinanzas.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-01-04-at-5.17.19-PM-1.jpeg",
+      "imagen_alt": "Turismo digital en El Salvador",
+      "imagen_caption": "El Tunco, uno de los destinos más promocionados digitalmente. | Archivo",
+      "subtitulo": "Inversión en marketing digital transforma el sector",
+      "contenido_completo": [
+        "El sector turístico de El Salvador registró un crecimiento del 45% en llegadas internacionales durante 2025, impulsado por agresivas campañas de marketing digital, mejora en infraestructura de conectividad y una estrategia de posicionamiento de marca país en redes sociales.",
+        "<h2>Redes sociales y contenido viral</h2>",
+        "La campaña 'El Salvador Impresionante' alcanzó más de 500 millones de impresiones en plataformas como Instagram, TikTok y YouTube. Influencers internacionales y creadores de contenido fueron invitados a recorrer destinos como Suchitoto, Ruta de las Flores, El Tunco y Alegría, generando contenido orgánico que multiplicó el alcance de la inversión publicitaria tradicional.",
+        "Según el Ministerio de Turismo, cada dólar invertido en marketing digital generó un retorno promedio de 12 dólares en ingresos turísticos, convirtiendo a la estrategia digital en la más rentable de la historia del sector.",
+        "<h2>Conectividad aérea y facilitación de visados</h2>",
+        "El aumento de frecuencias aéreas desde ciudades clave de Estados Unidos, México y Centroamérica, combinado con la simplificación del proceso de visados electrónicos, facilitó la llegada de turistas. La implementación de sistemas digitales de check-in migratorio redujo los tiempos de espera en aeropuertos en un 60%.",
+        "Hoteles y operadores turísticos reportan niveles de ocupación récord, especialmente en fines de semana largos y temporadas altas, con proyecciones de cerrar el año con más de 2.5 millones de visitantes internacionales."
+      ],
+      "citas": [
+        "El Salvador está en el mapa turístico mundial gracias a una estrategia digital inteligente y contenido auténtico."
+      ],
+      "puntos_clave": [
+        "Crecimiento del 45% en llegadas internacionales en 2025.",
+        "Campaña digital alcanzó 500 millones de impresiones.",
+        "Retorno de 12 dólares por cada dólar invertido en marketing.",
+        "Proyección de 2.5 millones de visitantes internacionales."
+      ]
+    },
+    {
+      "id": "bitcoin-remesas",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/bitcoin-remesas.html",
+      "categoria": "Tecnología",
+      "titulo": "Bitcoin y remesas: El Salvador se consolida como laboratorio de pagos digitales transfronterizos",
+      "resumen": null,
+      "autor": "Mario Sánchez",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP4z1Y_h00E0Q0eKpmRm1g5geyvegQFVg0Ng&s",
+      "imagen_alt": "Bitcoin y remesas en El Salvador",
+      "imagen_caption": "Cajero Bitcoin en San Salvador. | Archivo",
+      "subtitulo": "Reducción de costos y mayor inclusión financiera",
+      "contenido_completo": [
+        "El uso de Bitcoin y otras criptomonedas para el envío de remesas familiares a El Salvador creció un 35% durante 2025, según datos de plataformas especializadas. La reducción de comisiones, la velocidad de transferencia y la creciente familiaridad con tecnologías digitales están transformando un sector clave para la economía nacional.",
+        "<h2>Menores costos, mayor velocidad</h2>",
+        "Mientras las remesas tradicionales pueden tardar hasta 48 horas y cobrar comisiones de entre 5% y 10%, las transferencias en criptomonedas se completan en minutos con costos inferiores al 2%. Esta diferencia se traduce en ahorros significativos para las familias salvadoreñas que dependen de estos ingresos.",
+        "Plataformas locales e internacionales han desarrollado aplicaciones que permiten convertir Bitcoin a dólares de forma instantánea, facilitando su uso cotidiano en comercios, supermercados y servicios básicos.",
+        "<h2>Inclusión financiera y educación digital</h2>",
+        "El fenómeno ha impulsado programas de educación financiera digital en comunidades rurales, donde el acceso a servicios bancarios tradicionales es limitado. Organizaciones no gubernamentales y empresas tecnológicas ofrecen talleres gratuitos sobre el uso seguro de billeteras digitales y criptomonedas.",
+        "A pesar del crecimiento, analistas advierten que la volatilidad de Bitcoin sigue siendo un riesgo para usuarios sin experiencia, y recomiendan diversificar los métodos de recepción de remesas y mantener educación continua sobre gestión de activos digitales."
+      ],
+      "citas": [
+        "El Salvador es el laboratorio mundial de pagos digitales transfronterizos. Lo que aprendamos aquí impactará a toda la región."
+      ],
+      "puntos_clave": [
+        "Crecimiento del 35% en remesas vía criptomonedas en 2025.",
+        "Comisiones menores al 2% vs 5-10% en métodos tradicionales.",
+        "Transferencias en minutos en lugar de 48 horas.",
+        "Programas de educación digital en comunidades rurales."
+      ]
+    },
+    {
+      "id": "ia-pronosticos-deportes-entretenimiento",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-pronosticos-deportes-entretenimiento.html",
+      "categoria": "Actualidad",
+      "titulo": "La inteligencia artificial se consolida en el pronóstico deportivo y la industria del entretenimiento",
+      "resumen": "Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la integración de personajes y contenidos en modelos generativos.",
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/Q3RHgV2H/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "IA en deportes y entretenimiento",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Del fútbol salvadoreño a Hollywood: la IA redefine predicciones y contenidos",
+      "contenido_completo": [
+        "Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la integración de personajes y contenidos en modelos generativos.",
+        "<h2>La IA entra a las canchas: pronósticos para el Apertura 2025</h2>",
+        "Modelos de lenguaje como ChatGPT y Gemini han comenzado a utilizarse para pronosticar al posible campeón del torneo Apertura 2025 de fútbol en El Salvador. Estos sistemas articulan sus respuestas a partir de variables como el rendimiento histórico de los clubes, resultados recientes, estadísticas de goles y desempeño en fases finales.",
+        "Este uso evidencia la incorporación de algoritmos de IA en predicciones deportivas, abriendo el debate sobre su papel en casas de apuestas, análisis de clubes y coberturas periodísticas. Expertos señalan que los resultados de la IA dependen de la calidad y actualización de los datos, y que factores imprevistos como lesiones o decisiones arbitrales siguen siendo difíciles de modelar.",
+        "<h2>Entretenimiento y derechos de autor: grandes inversiones en IA generativa</h2>",
+        "En paralelo, la IA generativa está redefiniendo el negocio del entretenimiento. Una de las principales compañías globales de contenidos anunció una inversión de alrededor de 1,000 millones de dólares en una empresa líder de inteligencia artificial. Además, firmó un acuerdo para que los modelos de IA puedan utilizar personajes y propiedades intelectuales de su amplio catálogo.",
+        "El convenio permite a sistemas como chatbots y generadores de contenido incorporar de forma autorizada el universo de personajes de la firma, creando nuevas experiencias interactivas para los usuarios. Especialistas advierten sobre los retos de este tipo de acuerdos, como la delimitación de usos, la protección frente a manipulación de contenidos y la remuneración adecuada a los titulares de derechos."
+      ],
+      "citas": [
+        "La IA no solo predice resultados deportivos: está transformando la forma en que consumimos y creamos contenido de entretenimiento."
+      ],
+      "puntos_clave": [
+        "ChatGPT y Gemini usados para pronosticar campeón del Apertura 2025 en El Salvador.",
+        "Inversión de US$1,000 millones en IA generativa para entretenimiento.",
+        "Acuerdos permiten uso autorizado de personajes en chatbots y generadores de contenido.",
+        "Debate sobre derechos de autor, usos y remuneración en la industria."
+      ]
+    },
+    {
+      "id": "ia-logistica-global-camiones-autonomos",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-logistica-global-camiones-autonomos.html",
+      "categoria": "Actualidad",
+      "titulo": "La inteligencia artificial redefine la logística global: de los camiones autónomos a la 'última milla' inteligente",
+      "resumen": "Soluciones basadas en IA empiezan a transformar la cadena de suministro en varios continentes: optimizan rutas, reducen costes, automatizan almacenes y reconfiguran el mercado laboral logístico.",
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/N6t5wLVH/4v8o1-Je-Vix-XJfbg-U0k.png",
+      "imagen_alt": "IA en logística global",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Optimización de rutas, automatización y camiones sin conductor",
+      "contenido_completo": [
+        "Soluciones basadas en IA empiezan a transformar la cadena de suministro en varios continentes: optimizan rutas, reducen costes, automatizan almacenes y reconfiguran el mercado laboral logístico.",
+        "<h2>Optimización inteligente en América Latina y África</h2>",
+        "La inteligencia artificial (IA) es la columna vertebral de la nueva logística global, con sistemas capaces de planificar rutas, gestionar inventarios y coordinar flotas. En Colombia, la logística inteligente aplica algoritmos de optimización para calcular rutas en tiempo real, reduciendo tiempos, combustible y mejorando plazos.",
+        "En África, la plataforma logística Leta utiliza IA para abaratar el transporte mediante la asignación de cargas y la consolidación de envíos, buscando disminuir los kilómetros recorridos en vacío.",
+        "<h2>Automatización en el comercio minorista</h2>",
+        "La automatización llega al comercio minorista: una gran cadena de supermercados ha incorporado una IA propia que decide qué productos se envían, en qué cantidades y a qué tiendas, ajustando el inventario y la reposición.",
+        "<h2>Camiones autónomos: la próxima frontera</h2>",
+        "El transporte por carretera está en revolución: una de las principales firmas de camiones autónomos prevé tener cientos de vehículos sin conductor operando a finales de 2026. Estos camiones, guiados por sistemas de visión por computador, buscan operar de forma continua y reducir accidentes.",
+        "<h2>Impacto laboral y regulación</h2>",
+        "El impacto laboral es significativo: un estudio estima que la IA ya podría sustituir en torno al 11% de las tareas de 151 millones de trabajadores en Estados Unidos, afectando funciones administrativas, coordinación operativa y gestión de almacenes.",
+        "Los grandes laboratorios de IA (como Anthropic y Google DeepMind) avanzan en capacidades para orquestar múltiples sistemas logísticos, subrayando que la adopción masiva de IA en operaciones críticas debe ir acompañada de estándares robustos de seguridad y gobernanza."
+      ],
+      "citas": [
+        "La logística del futuro no necesita conductores: necesita datos, algoritmos y supervisión humana estratégica."
+      ],
+      "puntos_clave": [
+        "Colombia y África adoptan IA para optimizar rutas y consolidar envíos.",
+        "Supermercados automatizan decisiones de inventario y reposición con IA.",
+        "Camiones autónomos operarán a finales de 2026 en flotas comerciales.",
+        "11% de tareas de 151 millones de trabajadores en EE.UU. podrían ser sustituidas por IA."
+      ]
+    },
+    {
+      "id": "ia-sanidad-hospitales-oms",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-sanidad-hospitales-oms.html",
+      "categoria": "Actualidad",
+      "titulo": "La inteligencia artificial irrumpe en la sanidad: de los hospitales españoles a las recomendaciones de la OMS",
+      "resumen": "Hospitales, empresas y organismos internacionales aceleran el despliegue de herramientas de IA para diagnóstico, revisión de evidencia científica y apoyo al paciente, mientras la OMS reclama cautela y supervisión estricta ante riesgos de sesgos y errores clínicos.",
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "Madrid",
+      "imagen": "https://i.ibb.co/XkrdNb2x/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "IA en sanidad",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Diagnóstico automatizado y advertencias de la OMS",
+      "contenido_completo": [
+        "Hospitales, empresas y organismos internacionales aceleran el despliegue de herramientas de IA para diagnóstico, revisión de evidencia científica y apoyo al paciente, mientras la OMS reclama cautela y supervisión estricta ante riesgos de sesgos y errores clínicos.",
+        "<h2>Los hospitales españoles aceleran la adopción de IA clínica</h2>",
+        "Hospitales españoles están probando sistemas de IA para resumir estudios científicos en minutos, facilitando la toma de decisiones clínicas y reduciendo el tiempo de revisión de literatura médica. La IA actúa como apoyo, pero las decisiones diagnósticas y terapéuticas siguen recayendo en los facultativos.",
+        "<h2>Modelos capaces de diagnosticar a partir de imágenes y lenguaje</h2>",
+        "La IA se utiliza para reforzar el diagnóstico. Destaca un modelo en prueba que infiere posibles enfermedades a partir del análisis de la lengua del paciente. Esto se suma a la lectura automatizada de imágenes médicas (radiografías, resonancias) para detectar patrones de patologías.",
+        "A pesar de que la IA obtiene resultados sobresalientes en exámenes teóricos, su fiabilidad disminuye en casos clínicos reales debido a la complejidad del factor humano, lo que obliga a extremar la prudencia.",
+        "<h2>Aplicaciones en contextos críticos y salud personal</h2>",
+        "La IA también se ensaya en: tratamiento de infecciones en soldados heridos con terapias individualizadas guiadas por algoritmos. Además, empresas de salud han reforzado asistentes virtuales que integran datos biométricos para ofrecer recomendaciones personalizadas.",
+        "<h2>La OMS exige cautela ante riesgos y sesgos</h2>",
+        "La Organización Mundial de la Salud (OMS) ha emitido advertencias sobre el uso de sistemas de IA generativa en la atención médica, alertando de:",
+        "<ul><li>Posibles sesgos derivados de datos de entrenamiento no representativos.</li><li>Errores de razonamiento clínico.</li><li>Falta de transparencia en los algoritmos.</li></ul>",
+        "La OMS reclama marcos regulatorios robustos, evaluación independiente y trazabilidad de las decisiones algorítmicas, centrando el debate en cómo incorporar la IA sin comprometer la seguridad, la ética y la equidad sanitaria."
+      ],
+      "citas": [
+        "La IA puede acelerar diagnósticos, pero nunca debe sustituir el criterio médico ni la relación humana con el paciente."
+      ],
+      "puntos_clave": [
+        "Hospitales españoles usan IA para resumir estudios científicos en minutos.",
+        "Modelos de IA diagnostican a partir de análisis de lengua e imágenes médicas.",
+        "OMS advierte de sesgos, errores clínicos y falta de transparencia.",
+        "Reclamo de marcos regulatorios robustos y evaluación independiente."
+      ]
+    },
+    {
+      "id": "ia-salvador-salud-educacion-vigilancia",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-salvador-salud-educacion-vigilancia.html",
+      "categoria": "Actualidad",
+      "titulo": "El Salvador acelera la adopción de inteligencia artificial en salud y educación en medio de dudas sobre supervisión y derechos digitales",
+      "resumen": "El Gobierno salvadoreño impulsa sistemas de inteligencia artificial en la atención médica y en el modelo educativo a partir de 2026, mientras el país debate los riesgos de la tecnología en un entorno marcado por denuncias de espionaje digital y reducción de la cooperación internacional a la sociedad civil.",
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/bMvjXnn0/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "IA en El Salvador",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "DoctorSV y modelo educativo 2026 bajo escrutinio",
+      "contenido_completo": [
+        "El Gobierno salvadoreño impulsa sistemas de inteligencia artificial en la atención médica y en el modelo educativo a partir de 2026, mientras el país debate los riesgos de la tecnología en un entorno marcado por denuncias de espionaje digital y reducción de la cooperación internacional a la sociedad civil.",
+        "<h2>DoctorSV: IA para consultas médicas y salud mental</h2>",
+        "El Gobierno ha lanzado DoctorSV, una plataforma de atención médica con IA para orientación sanitaria básica, que incluye un módulo de salud mental para contención emocional y derivación. Esto busca reducir tiempos de espera y ampliar la cobertura. Sin embargo, especialistas plantean interrogantes sobre la gestión de datos sensibles y la supervisión profesional de los algoritmos.",
+        "<h2>IA en el nuevo modelo educativo a partir de 2026</h2>",
+        "El Ministerio de Educación implementará IA en el nuevo modelo educativo que se desplegará en 2026. Se utilizará para personalizar contenidos, monitorear el desempeño estudiantil y apoyar la labor docente. Los expertos advierten sobre la necesidad de formación específica del profesorado y garantías de transparencia algorítmica.",
+        "<h2>Contexto: vigilancia digital y debilitamiento de la sociedad civil</h2>",
+        "La expansión de la IA se produce en un contexto de preocupaciones por el presunto uso de software avanzado de espionaje (Pegasus) contra periodistas y sociedad civil. Adicionalmente, se reporta el congelamiento de parte de la cooperación internacional dirigida a organizaciones civiles, limitando los recursos para monitorear críticamente las nuevas tecnologías estatales."
+      ],
+      "citas": [
+        "La IA puede ser herramienta de progreso o de control. Todo depende de quién la diseña, quién la supervisa y quién puede auditarla."
+      ],
+      "puntos_clave": [
+        "DoctorSV ofrece orientación médica y salud mental con IA.",
+        "Modelo educativo 2026 integrará IA para personalización y monitoreo.",
+        "Denuncias de uso de Pegasus contra periodistas y sociedad civil.",
+        "Congelamiento de cooperación internacional limita auditoría independiente."
+      ]
+    },
+    {
+      "id": "economia-salvador-fiscal-presion-social",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/economia-salvador-fiscal-presion-social.html",
+      "categoria": "Economía",
+      "titulo": "Economía salvadoreña enfrenta presión social y metas fiscales exigentes en medio de incertidumbre",
+      "resumen": "Mientras la percepción ciudadana apunta a un deterioro del nivel de vida y preocupación por el sistema de salud, el Gobierno apuesta a una nueva Ley de Sostenibilidad Fiscal que exige crecimiento económico del 3 % anual y una expansión de la deuda limitada al 2 % para cumplir con sus metas.",
+      "autor": "Redacción El Mundo",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/xKBhSz5Z/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "Economía salvadoreña",
+      "imagen_caption": "Ilustración IA | El Mundo",
+      "subtitulo": "Ley de Sostenibilidad Fiscal vs. percepción de deterioro",
+      "contenido_completo": [
+        "Mientras la percepción ciudadana apunta a un deterioro del nivel de vida y preocupación por el sistema de salud, el Gobierno apuesta a una nueva Ley de Sostenibilidad Fiscal que exige crecimiento económico del 3 % anual y una expansión de la deuda limitada al 2 % para cumplir con sus metas. La calidad del aire y otros factores ambientales se suman como nuevos desafíos económicos.",
+        "<h2>Percepción de Deterioro y Presión Social</h2>",
+        "Amplios sectores de la población consideran que la economía \"está mal\" y la situación de la salud pública \"no pinta bien\", debido al aumento del costo de la vida y la presión sobre la red hospitalaria.",
+        "<h2>Ley de Sostenibilidad Fiscal</h2>",
+        "El país adoptó una Ley de Sostenibilidad Fiscal que establece metas estrictas:",
+        "<ul><li>La economía debe crecer alrededor de un 3 % anual.</li><li>La deuda pública debe incrementarse en torno al 2 % anual.</li></ul>",
+        "<h2>Retos Económicos Adicionales</h2>",
+        "La calidad del aire y otros factores ambientales emergen como retos económicos, con posibles efectos en la salud, costos sanitarios y la actividad productiva. La política económica debe equilibrar la estabilidad macroeconómica con la protección social."
+      ],
+      "citas": [
+        "El equilibrio fiscal no se logra solo con leyes: se necesita crecimiento real, empleo digno y servicios públicos de calidad."
+      ],
+      "puntos_clave": [
+        "Percepción ciudadana de deterioro económico y de salud pública.",
+        "Ley de Sostenibilidad Fiscal exige 3% de crecimiento anual.",
+        "Deuda pública limitada a incremento del 2% anual.",
+        "Calidad del aire y factores ambientales como nuevos retos económicos."
+      ]
+    }
+  ],
+  "articulos_opinion": [
+    {
+      "id": "opinion-ia-china",
+      "autor": "Editorial El Mundo",
+      "titulo": "El liderazgo asiático en IA no es casualidad",
+      "categoria": "Opinión",
+      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=ED",
+      "contenido_completo": [
+        "Mientras Occidente debate regulaciones, China construye. Más de 5,000 empresas de IA y 40,000 fábricas inteligentes no surgen de la noche a la mañana: son el resultado de una estrategia industrial coordinada, inversión sostenida y visión de largo plazo.",
+        "América Latina debe aprender de este modelo: la IA no se regula primero y se desarrolla después. Se impulsa, se adopta y se regula simultáneamente, o simplemente se importa eternamente."
+      ]
+    },
+    {
+      "id": "opinion-ecommerce-ia",
+      "autor": "Carlos Mendoza",
+      "titulo": "La IA ya no predice: decide por nosotros",
+      "categoria": "Opinión",
+      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=CM",
+      "contenido_completo": [
+        "US$14,200 millones en un solo día no son fruto del azar ni de descuentos generosos. Son el resultado de algoritmos que conocen nuestros gustos mejor que nosotros mismos, que predicen lo que compraremos antes de saberlo.",
+        "La pregunta ya no es si la IA cambiará el comercio: es si estamos preparados para un mundo donde nuestras decisiones de compra sean, en realidad, sugerencias automatizadas que aceptamos sin cuestionar."
+      ]
+    },
+    {
+      "id": "opinion-salud-sv",
+      "autor": "Dra. Sofía Ramírez",
+      "titulo": "La IA en salud pública: una apuesta necesaria",
+      "categoria": "Opinión",
+      "imagen_autor": "https://via.placeholder.com/50x50/cccccc/ffffff?text=SR",
+      "contenido_completo": [
+        "Que El Salvador integre IA en hospitales públicos no es un lujo tecnológico: es una necesidad urgente. Cuando los diagnósticos se aceleran de horas a segundos, vidas se salvan. Cuando errores médicos disminuyen, el sistema gana credibilidad.",
+        "El reto ahora es escalar: más hospitales, más especialidades, más capacitación. La tecnología está lista. La pregunta es si la voluntad política y el presupuesto lo estarán también."
+      ]
+    }
+  ]
+}
