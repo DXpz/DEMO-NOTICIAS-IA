@@ -8,7 +8,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="version" content="2.0-IA-NOTICIAS">
-    <title>EL MUNDO - Diario Online Líder</title>
+    <title>RED Noticias - Tu fuente confiable de información</title>
     <!-- Importamos fuentes elegantes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,10 +84,6 @@
             /* Para volver al home */
         }
 
-        .logo {
-            max-width: 300px;
-            height: auto;
-        }
 
         .date-line {
             font-size: 13px;
@@ -100,35 +96,21 @@
             padding-right: 20px;
         }
 
-        /* NAVEGACIÓN */
-        .main-nav {
-            position: sticky;
-            top: 0;
-            background: white;
-            z-index: 100;
-            border-bottom: 1px solid var(--border-color);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        /* LOGO TEXTO */
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
         }
 
-        .nav-list {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            overflow-x: auto;
+        .logo-red {
+            color: #e4002b;
         }
 
-        .nav-item {
-            padding: 15px 20px;
-            font-weight: 700;
-            font-size: 14px;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-
-        .nav-item:hover {
-            color: var(--brand-red);
-            border-bottom: 3px solid var(--brand-red);
-            margin-bottom: -1px;
+        .logo-noticias {
+            color: #000000;
         }
 
 
@@ -376,7 +358,7 @@
     <!-- BARRA SUPERIOR -->
     <div class="top-bar">
         <div class="container">
-            <span>Edición España | <a href="#">Cambiar</a></span>
+            <span>Edición El Salvador | <a href="#">Cambiar</a></span>
             <div>
                 <a href="#" style="margin-right: 15px;">Iniciar Sesión</a>
                 <a href="#" style="font-weight: bold;">Suscríbete</a>
@@ -388,28 +370,16 @@
     <header class="header-main">
         <div class="container">
             <a href="index.html">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
-                    alt="El Mundo" class="logo">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
             </a>
             <div class="date-line">
-                Miércoles, 11 de Diciembre de 2025 &bull; Actualizado a las 10:30
+                Miércoles, 17 de Diciembre de 2025 &bull; Actualizado a las 10:30
             </div>
         </div>
     </header>
 
-    <!-- NAVEGACIÓN -->
-    <nav class="main-nav">
-        <div class="container">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="index.html">Portada</a></li>
-                <li class="nav-item"><a href="#">España</a></li>
-                <li class="nav-item"><a href="#">Opinión</a></li>
-                <li class="nav-item"><a href="#">Economía</a></li>
-                <li class="nav-item"><a href="#">Internacional</a></li>
-                <li class="nav-item"><a href="#">Deportes</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container">
@@ -428,40 +398,33 @@
                 <section class="main-col">
                     <article class="article hero-article">
                         <span class="article-kicker">Actualidad</span>
-                        <a href="noticias/ia-pronosticos-deportes-entretenimiento.html">
-                            <img src="https://i.ibb.co/Q3RHgV2H/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png"
-                                alt="IA en deportes y entretenimiento" class="article-img">
+                        <a href="noticias/ia-telecomunicaciones-redes-call-centers.html">
+                            <img src="https://i.ibb.co/Txjvf77g/Xyy7Q.png"
+                                alt="IA en telecomunicaciones" class="article-img">
                         </a>
-                        <h1 class="article-title"><a href="noticias/ia-pronosticos-deportes-entretenimiento.html">La
-                                inteligencia artificial se consolida en el pronóstico deportivo y la industria del
-                                entretenimiento</a></h1>
+                        <h1 class="article-title"><a href="noticias/ia-telecomunicaciones-redes-call-centers.html">La
+                                inteligencia artificial redefine el sector de las telecomunicaciones: de las redes críticas a los call centers</a></h1>
                         <p class="article-summary">
-                            Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol
-                            salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la
-                            integración de personajes y contenidos en modelos generativos.
+                            Operadores, organismos internacionales y grandes tecnológicas aceleran la integración de la IA en infraestructuras, servicios al cliente y gobernanza ética, en un cambio que promete eficiencia y personalización, pero también plantea desafíos laborales y regulatorios.
                         </p>
                         <div class="article-author">
-                            Por <strong>Redacción El Mundo</strong> | San Salvador
+                            Por <strong>Redacción RED Noticias</strong> | San Salvador
                         </div>
                     </article>
 
                     <article class="article" style="margin-top: 30px;">
-                        <a href="noticias/ia-logistica-global-camiones-autonomos.html">
-                            <img src="https://i.ibb.co/N6t5wLVH/4v8o1-Je-Vix-XJfbg-U0k.png" alt="IA en logística"
+                        <a href="noticias/ia-gps-navegacion-seguridad.html">
+                            <img src="https://i.ibb.co/rGRdvTHg/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png" alt="IA y GPS"
                                 class="article-img">
                         </a>
                         <span class="article-kicker">Actualidad</span>
                         <h2 class="article-title" style="font-size: 28px;"><a
-                                href="noticias/ia-logistica-global-camiones-autonomos.html">La inteligencia artificial
-                                redefine la logística global: de los camiones autónomos a la 'última milla'
-                                inteligente</a></h2>
+                                href="noticias/ia-gps-navegacion-seguridad.html">La inteligencia artificial transforma el uso del GPS: de la navegación conversacional a la seguridad estratégica</a></h2>
                         <p class="article-summary" style="font-size: 16px;">
-                            Soluciones basadas en IA empiezan a transformar la cadena de suministro en varios
-                            continentes: optimizan rutas, reducen costes, automatizan almacenes y reconfiguran el
-                            mercado laboral logístico.
+                            La integración de modelos avanzados de IA en aplicaciones de mapas, logística y sistemas de seguimiento está redefiniendo el papel del GPS, desde la navegación cotidiana hasta la protección de infraestructuras críticas.
                         </p>
                         <div class="article-author">
-                            Por <strong>Redacción El Mundo</strong> | San Salvador
+                            Por <strong>Redacción RED Noticias</strong> | San Salvador
                         </div>
                     </article>
                 </section>
@@ -471,46 +434,39 @@
                     <div class="sidebar-title">Más Noticias de IA</div>
 
                     <article class="article list-article">
-                        <a href="noticias/ia-sanidad-hospitales-oms.html">
-                            <img src="https://i.ibb.co/XkrdNb2x/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png"
-                                alt="IA en sanidad" class="article-img">
+                        <a href="noticias/ia-microchips-hardware-propio.html">
+                            <img src="https://i.ibb.co/ZppK73wb/P7l-Kw-Q.png"
+                                alt="Microchips de IA" class="article-img">
                         </a>
                         <span class="article-kicker">Actualidad</span>
-                        <h3 class="article-title"><a href="noticias/ia-sanidad-hospitales-oms.html">La inteligencia
-                                artificial irrumpe en la sanidad: de los hospitales españoles a las recomendaciones de
-                                la OMS</a></h3>
+                        <h3 class="article-title"><a href="noticias/ia-microchips-hardware-propio.html">La carrera por los microchips de IA se acelera: gigantes tecnológicos apuestan por hardware propio</a></h3>
                         <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Hospitales aceleran el despliegue de IA para diagnóstico mientras la OMS reclama cautela
-                            ante riesgos de sesgos y errores clínicos.
+                            Fabricantes de coches eléctricos, grandes plataformas digitales y laboratorios de IA avanzan en el diseño de chips específicos, reconfigurando la cadena de suministro tecnológica.
                         </p>
                     </article>
 
                     <article class="article list-article">
-                        <a href="noticias/ia-salvador-salud-educacion-vigilancia.html">
-                            <img src="https://i.ibb.co/bMvjXnn0/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png"
-                                alt="IA en El Salvador" class="article-img">
+                        <a href="noticias/ia-ram-precios-electronica.html">
+                            <img src="https://i.ibb.co/qYb5Tp23/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png"
+                                alt="Precios de RAM por IA" class="article-img">
                         </a>
                         <span class="article-kicker">Actualidad</span>
-                        <h3 class="article-title"><a href="noticias/ia-salvador-salud-educacion-vigilancia.html">El
-                                Salvador acelera la adopción de inteligencia artificial en salud y educación</a></h3>
+                        <h3 class="article-title"><a href="noticias/ia-ram-precios-electronica.html">El auge de la inteligencia artificial dispara los precios de la memoria RAM y amenaza a la electrónica de consumo</a></h3>
                         <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            DoctorSV y modelo educativo 2026 bajo escrutinio en medio de dudas sobre supervisión y
-                            derechos digitales.
+                            La demanda de centros de datos para IA tensiona la oferta global de DRAM. Fabricantes redirigen producción mientras los precios podrían duplicarse hacia 2026.
                         </p>
                     </article>
 
                     <article class="article list-article">
-                        <a href="noticias/economia-salvador-fiscal-presion-social.html">
-                            <img src="https://i.ibb.co/xKBhSz5Z/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png"
-                                alt="Economía salvadoreña" class="article-img">
+                        <a href="noticias/ia-burbuja-inversion-fatiga.html">
+                            <img src="https://i.ibb.co/nssCHq4P/png-skoid-0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png"
+                                alt="Burbuja de IA" class="article-img">
                         </a>
-                        <span class="article-kicker">Economía</span>
+                        <span class="article-kicker">Actualidad</span>
                         <h3 class="article-title"><a
-                                href="noticias/economia-salvador-fiscal-presion-social.html">Economía salvadoreña
-                                enfrenta presión social y metas fiscales exigentes</a></h3>
+                                href="noticias/ia-burbuja-inversion-fatiga.html">La burbuja de la inteligencia artificial: entre la euforia inversora y las primeras señales de fatiga</a></h3>
                         <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Ley de Sostenibilidad Fiscal exige crecimiento del 3% anual mientras aumenta la percepción
-                            de deterioro económico.
+                            Grandes tecnológicas, gobiernos y reguladores advierten de una posible burbuja y de la necesidad de enfocarse en usos reales, seguridad y sostenibilidad.
                         </p>
                     </article>
                 </section>
@@ -555,17 +511,18 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
-                        alt="Logo Footer" width="150" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
-                    <p style="font-size: 13px; color: #999;">El diario líder en información general en español.</p>
+                    <div class="logo-text" style="font-size: 36px;">
+                        <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                    </div>
+                    <p style="font-size: 13px; color: #999; margin-top: 10px;">Tu fuente confiable de noticias e información.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Secciones</h4>
+                    <h4>Información</h4>
                     <ul>
-                        <li><a href="index.html">Portada</a></li>
-                        <li><a href="#">España</a></li>
-                        <li><a href="#">Economía</a></li>
-                        <li><a href="#">Internacional</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
                     </ul>
                 </div>
                 <!-- ... -->

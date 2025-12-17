@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Economía salvadoreña enfrenta presión social y metas fiscales exigentes en medio de incertidumbre - EL MUNDO
-    </title>
+    <title>La inteligencia artificial redefine el sector de las telecomunicaciones: de las redes críticas a los call centers - RED Noticias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --brand-red: #ce1126;
@@ -75,9 +71,20 @@
             border-bottom: 4px solid var(--brand-red);
         }
 
-        .logo {
-            max-width: 300px;
-            height: auto;
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
         }
 
         .date-line {
@@ -91,36 +98,6 @@
             padding-right: 20px;
         }
 
-        /* NAVEGACIÓN */
-        .main-nav {
-            position: sticky;
-            top: 0;
-            background: white;
-            z-index: 100;
-            border-bottom: 1px solid var(--border-color);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-
-        .nav-list {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            overflow-x: auto;
-        }
-
-        .nav-item {
-            padding: 15px 20px;
-            font-weight: 700;
-            font-size: 14px;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-
-        .nav-item:hover {
-            color: var(--brand-red);
-            border-bottom: 3px solid var(--brand-red);
-            margin-bottom: -1px;
-        }
 
         /* ARTÍCULO */
         .article-layout {
@@ -197,7 +174,7 @@
         .article-body p {
             margin-bottom: 25px;
         }
-
+        
         .article-body h2 {
             font-family: var(--sans-font);
             font-size: 24px;
@@ -233,7 +210,6 @@
             color: #666;
             cursor: pointer;
         }
-
         .btn-back:hover {
             color: var(--brand-red);
             text-decoration: underline;
@@ -259,37 +235,24 @@
 
         .ad-label {
             position: absolute;
-            top: 0;
-            left: 50%;
+            top: 0; left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            background: var(--brand-red);
-            color: white;
-            font-size: 10px;
-            padding: 2px 8px;
-            text-transform: uppercase;
-            font-weight: bold;
+            background: var(--brand-red); color: white;
+            font-size: 10px; padding: 2px 8px;
+            text-transform: uppercase; font-weight: bold;
         }
 
         .ad-box h3 {
-            font-family: var(--sans-font);
-            font-weight: 900;
-            color: var(--brand-red);
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-family: var(--sans-font); font-weight: 900;
+            color: var(--brand-red); font-size: 24px; margin-bottom: 10px;
             text-transform: uppercase;
         }
 
         .btn-subscribe {
-            display: inline-block;
-            background-color: var(--brand-red);
-            color: white;
-            padding: 12px 25px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 13px;
-            transition: background 0.3s;
+            display: inline-block; background-color: var(--brand-red); color: white;
+            padding: 12px 25px; font-weight: 700; text-transform: uppercase;
+            font-size: 13px; transition: background 0.3s;
         }
-
         .btn-subscribe:hover {
             background-color: #a30e1e;
         }
@@ -357,7 +320,6 @@
             .article-layout {
                 grid-template-columns: 1fr;
             }
-
             .article-sidebar {
                 display: none;
             }
@@ -367,7 +329,6 @@
             .full-headline {
                 font-size: 32px;
             }
-
             .article-sidebar {
                 display: block;
                 margin-top: 40px;
@@ -375,13 +336,12 @@
         }
     </style>
 </head>
-
 <body>
 
     <!-- BARRA SUPERIOR -->
     <div class="top-bar">
         <div class="container">
-            <span>Edición España | <a href="#">Cambiar</a></span>
+            <span>Edición El Salvador | <a href="#">Cambiar</a></span>
             <div>
                 <a href="#" style="margin-right: 15px;">Iniciar Sesión</a>
                 <a href="#" style="font-weight: bold;">Suscríbete</a>
@@ -393,93 +353,54 @@
     <header class="header-main">
         <div class="container">
             <a href="../index.html">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
-                    alt="El Mundo" class="logo">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
             </a>
             <div class="date-line">
-                Martes, 10 de Diciembre de 2025 • Actualizado a las 18:30
+                Miércoles, 17 de Diciembre de 2025 • Actualizado a las 09:00
             </div>
         </div>
     </header>
 
-    <!-- NAVEGACIÓN -->
-    <nav class="main-nav">
-        <div class="container">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="../index.html">Portada</a></li>
-                <li class="nav-item"><a href="#">España</a></li>
-                <li class="nav-item"><a href="#">Opinión</a></li>
-                <li class="nav-item"><a href="#">Economía</a></li>
-                <li class="nav-item"><a href="#">Internacional</a></li>
-                <li class="nav-item"><a href="#">Deportes</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- CONTENIDO ARTÍCULO -->
     <main class="container">
         <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-
+        
         <div class="article-layout">
             <!-- CONTENIDO PRINCIPAL -->
             <div class="article-content">
                 <header class="full-article-header">
-                    <span class="breadcrumbs">Economía</span>
-                    <h1 class="full-headline">Economía salvadoreña enfrenta presión social y metas fiscales exigentes en
-                        medio de incertidumbre</h1>
-                    <p class="full-lead">Mientras la percepción ciudadana apunta a un deterioro del nivel de vida y
-                        preocupación por el sistema de salud, el Gobierno apuesta a una nueva Ley de Sostenibilidad
-                        Fiscal que exige crecimiento económico del 3 % anual y una expansión de la deuda limitada al 2 %
-                        para cumplir con sus metas.</p>
+                    <span class="breadcrumbs">Actualidad</span>
+                    <h1 class="full-headline">La inteligencia artificial redefine el sector de las telecomunicaciones: de las redes críticas a los call centers</h1>
+                    <p class="full-lead">Operadores, organismos internacionales y grandes tecnológicas aceleran la integración de la IA en infraestructuras, servicios al cliente y gobernanza ética, en un cambio que promete eficiencia y personalización, pero también plantea desafíos laborales y regulatorios.</p>
                     <div class="full-meta">
-                        <span>Por <strong>Redacción El Mundo</strong> | San Salvador</span>
-                        <span>Martes, 10 de Diciembre de 2025 • Actualizado a las 18:30</span>
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Miércoles, 17 de Diciembre de 2025 • Actualizado a las 09:00</span>
                     </div>
                 </header>
 
                 <div class="full-image-container">
-                    <img src="https://i.ibb.co/xKBhSz5Z/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png"
-                        alt="Economía salvadoreña">
-                    <div class="full-image-caption">Ilustración IA | El Mundo</div>
+                    <img src="https://i.ibb.co/Txjvf77g/Xyy7Q.png" alt="IA en telecomunicaciones">
+                    <div class="full-image-caption">Ilustración IA</div>
                 </div>
 
                 <div class="article-body">
-                    <p>Mientras la percepción ciudadana apunta a un deterioro del nivel de vida y preocupación por el
-                        sistema de salud, el Gobierno apuesta a una nueva Ley de Sostenibilidad Fiscal que exige
-                        crecimiento económico del 3 % anual y una expansión de la deuda limitada al 2 % para cumplir con
-                        sus metas. La calidad del aire y otros factores ambientales se suman como nuevos desafíos
-                        económicos.</p>
-                    <p>
-                    <h2>Percepción de Deterioro y Presión Social</h2>
-                    </p>
-                    <p>Amplios sectores de la población consideran que la economía "está mal" y la situación de la salud
-                        pública "no pinta bien", debido al aumento del costo de la vida y la presión sobre la red
-                        hospitalaria.</p>
-                    <p>
-                    <h2>Ley de Sostenibilidad Fiscal</h2>
-                    </p>
-                    <p>El país adoptó una Ley de Sostenibilidad Fiscal que establece metas estrictas:</p>
-                    <p>
-                    <ul>
-                        <li>La economía debe crecer alrededor de un 3 % anual.</li>
-                        <li>La deuda pública debe incrementarse en torno al 2 % anual.</li>
-                    </ul>
-                    </p>
-                    <p>
-                    <h2>Retos Económicos Adicionales</h2>
-                    </p>
-                    <p>La calidad del aire y otros factores ambientales emergen como retos económicos, con posibles
-                        efectos en la salud, costos sanitarios y la actividad productiva. La política económica debe
-                        equilibrar la estabilidad macroeconómica con la protección social.</p>
-                    <blockquote class="article-quote">"El equilibrio fiscal no se logra solo con leyes: se necesita
-                        crecimiento real, empleo digno y servicios públicos de calidad."</blockquote>
-                    <h2>Puntos clave</h2>
-                    <ul>
-                        <li>Percepción ciudadana de deterioro económico y de salud pública.</li>
-                        <li>Ley de Sostenibilidad Fiscal exige 3% de crecimiento anual.</li>
-                        <li>Deuda pública limitada a incremento del 2% anual.</li>
-                        <li>Calidad del aire y factores ambientales como nuevos retos económicos.</li>
-                    </ul>
+                    <p>Operadores, organismos internacionales y grandes tecnológicas aceleran la integración de la IA en infraestructuras, servicios al cliente y gobernanza ética, en un cambio que promete eficiencia y personalización, pero también plantea desafíos laborales y regulatorios.</p>
+<p><h2>Infraestructuras preparadas para la IA y la automatización</h2></p>
+<p>La IA impulsa redes más resilientes y seguras. Alianzas tecnológicas orientan a operadores hacia infraestructuras de conectividad de nueva generación (fibra óptica, redes de campus y automatización OT) para soportar aplicaciones de IA en tiempo real en logística e industria. En el sector minorista, estas redes facilitan pagos digitales, inventarios inteligentes y análisis de datos.</p>
+<p><h2>La atención al cliente, en plena transformación</h2></p>
+<p>Según Infobae, el uso de callbots aumenta la eficiencia en la atención telefónica entre un 500 % y un 1.000 %, automatizando consultas repetitivas. Esto genera una sustitución progresiva de teleoperadores en funciones básicas y aumenta la demanda de perfiles especializados. Además, operadores europeos trabajan en integrar asistentes de IA directamente en dispositivos móviles.</p>
+<p><h2>Ética, gobernanza y el papel de los reguladores</h2></p>
+<p>La UNESCO ha sumado a grandes compañías de telecomunicaciones para implementar la Recomendación sobre la Ética de la IA, promoviendo transparencia y protección de datos. En paralelo, se advierte de un reajuste profundo del empleo en el sector tecnológico. También se destacan aplicaciones inclusivas, como el uso de modelos de voz avanzada para personas con discapacidad del habla.</p>
+<blockquote class="article-quote">"La IA transforma las telecomunicaciones desde la base: redes más inteligentes, atención automatizada y nuevos dilemas éticos."</blockquote>
+<h2>Puntos clave</h2>
+<ul>
+<li>Callbots aumentan eficiencia en atención telefónica entre 500% y 1,000%.</li>
+<li>Infraestructuras de fibra óptica y automatización OT para soportar IA en tiempo real.</li>
+<li>UNESCO y operadores implementan recomendaciones sobre ética de la IA.</li>
+<li>Reajuste del empleo: automatización de funciones básicas, demanda de perfiles especializados.</li>
+</ul>
 
                 </div>
             </div>
@@ -507,17 +428,18 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
-                        alt="Logo Footer" width="150" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
-                    <p style="font-size: 13px; color: #999;">El diario líder en información general en español.</p>
+                    <div class="logo-text" style="font-size: 36px;">
+                        <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                    </div>
+                    <p style="font-size: 13px; color: #999; margin-top: 10px;">Tu fuente confiable de noticias e información.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Secciones</h4>
+                    <h4>Información</h4>
                     <ul>
-                        <li><a href="../index.html">Portada</a></li>
-                        <li><a href="#">España</a></li>
-                        <li><a href="#">Economía</a></li>
-                        <li><a href="#">Internacional</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -539,13 +461,11 @@
                     </ul>
                 </div>
             </div>
-            <div
-                style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 12px; color: #666;">
-                &copy; 2025 Unidad Editorial Información General, S.L.U. Todos los derechos reservados.
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 12px; color: #666;">
+                &copy; 2025 Unidad Editorial Información General, S.L.U.
             </div>
         </div>
     </footer>
 
 </body>
-
 </html>

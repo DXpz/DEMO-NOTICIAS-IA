@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La inteligencia artificial redefine la log
-
-        ística global: de los camiones autónomos a la 'última milla' inteligente - EL MUNDO</title>
+    <title>La burbuja de la inteligencia artificial: entre la euforia inversora y las primeras señales de fatiga - RED Noticias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --brand-red: #ce1126;
@@ -76,9 +71,20 @@
             border-bottom: 4px solid var(--brand-red);
         }
 
-        .logo {
-            max-width: 300px;
-            height: auto;
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
         }
 
         .date-line {
@@ -92,36 +98,6 @@
             padding-right: 20px;
         }
 
-        /* NAVEGACIÓN */
-        .main-nav {
-            position: sticky;
-            top: 0;
-            background: white;
-            z-index: 100;
-            border-bottom: 1px solid var(--border-color);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-        }
-
-        .nav-list {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            overflow-x: auto;
-        }
-
-        .nav-item {
-            padding: 15px 20px;
-            font-weight: 700;
-            font-size: 14px;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-
-        .nav-item:hover {
-            color: var(--brand-red);
-            border-bottom: 3px solid var(--brand-red);
-            margin-bottom: -1px;
-        }
 
         /* ARTÍCULO */
         .article-layout {
@@ -198,7 +174,7 @@
         .article-body p {
             margin-bottom: 25px;
         }
-
+        
         .article-body h2 {
             font-family: var(--sans-font);
             font-size: 24px;
@@ -234,7 +210,6 @@
             color: #666;
             cursor: pointer;
         }
-
         .btn-back:hover {
             color: var(--brand-red);
             text-decoration: underline;
@@ -260,37 +235,24 @@
 
         .ad-label {
             position: absolute;
-            top: 0;
-            left: 50%;
+            top: 0; left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            background: var(--brand-red);
-            color: white;
-            font-size: 10px;
-            padding: 2px 8px;
-            text-transform: uppercase;
-            font-weight: bold;
+            background: var(--brand-red); color: white;
+            font-size: 10px; padding: 2px 8px;
+            text-transform: uppercase; font-weight: bold;
         }
 
         .ad-box h3 {
-            font-family: var(--sans-font);
-            font-weight: 900;
-            color: var(--brand-red);
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-family: var(--sans-font); font-weight: 900;
+            color: var(--brand-red); font-size: 24px; margin-bottom: 10px;
             text-transform: uppercase;
         }
 
         .btn-subscribe {
-            display: inline-block;
-            background-color: var(--brand-red);
-            color: white;
-            padding: 12px 25px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 13px;
-            transition: background 0.3s;
+            display: inline-block; background-color: var(--brand-red); color: white;
+            padding: 12px 25px; font-weight: 700; text-transform: uppercase;
+            font-size: 13px; transition: background 0.3s;
         }
-
         .btn-subscribe:hover {
             background-color: #a30e1e;
         }
@@ -358,7 +320,6 @@
             .article-layout {
                 grid-template-columns: 1fr;
             }
-
             .article-sidebar {
                 display: none;
             }
@@ -368,7 +329,6 @@
             .full-headline {
                 font-size: 32px;
             }
-
             .article-sidebar {
                 display: block;
                 margin-top: 40px;
@@ -376,13 +336,12 @@
         }
     </style>
 </head>
-
 <body>
 
     <!-- BARRA SUPERIOR -->
     <div class="top-bar">
         <div class="container">
-            <span>Edición España | <a href="#">Cambiar</a></span>
+            <span>Edición El Salvador | <a href="#">Cambiar</a></span>
             <div>
                 <a href="#" style="margin-right: 15px;">Iniciar Sesión</a>
                 <a href="#" style="font-weight: bold;">Suscríbete</a>
@@ -394,99 +353,55 @@
     <header class="header-main">
         <div class="container">
             <a href="../index.html">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
-                    alt="El Mundo" class="logo">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
             </a>
             <div class="date-line">
-                Martes, 10 de Diciembre de 2025 • Actualizado a las 18:30
+                Miércoles, 17 de Diciembre de 2025 • Actualizado a las 09:00
             </div>
         </div>
     </header>
 
-    <!-- NAVEGACIÓN -->
-    <nav class="main-nav">
-        <div class="container">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="../index.html">Portada</a></li>
-                <li class="nav-item"><a href="#">España</a></li>
-                <li class="nav-item"><a href="#">Opinión</a></li>
-                <li class="nav-item"><a href="#">Economía</a></li>
-                <li class="nav-item"><a href="#">Internacional</a></li>
-                <li class="nav-item"><a href="#">Deportes</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- CONTENIDO ARTÍCULO -->
     <main class="container">
         <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-
+        
         <div class="article-layout">
             <!-- CONTENIDO PRINCIPAL -->
             <div class="article-content">
                 <header class="full-article-header">
                     <span class="breadcrumbs">Actualidad</span>
-                    <h1 class="full-headline">La inteligencia artificial redefine la logística global: de los camiones
-                        autónomos a la 'última milla' inteligente</h1>
-                    <p class="full-lead">Soluciones basadas en IA empiezan a transformar la cadena de suministro en
-                        varios continentes: optimizan rutas, reducen costes, automatizan almacenes y reconfiguran el
-                        mercado laboral logístico.</p>
+                    <h1 class="full-headline">La burbuja de la inteligencia artificial: entre la euforia inversora y las primeras señales de fatiga</h1>
+                    <p class="full-lead">La expansión acelerada de la inteligencia artificial dispara inversiones y alianzas en múltiples sectores, mientras grandes tecnológicas, gobiernos y reguladores advierten de una posible burbuja y de la necesidad de enfocarse en usos reales, seguridad y sostenibilidad.</p>
                     <div class="full-meta">
-                        <span>Por <strong>Redacción El Mundo</strong> | San Salvador</span>
-                        <span>Martes, 10 de Diciembre de 2025 • Actualizado a las 18:30</span>
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Miércoles, 17 de Diciembre de 2025 • Actualizado a las 09:00</span>
                     </div>
                 </header>
 
                 <div class="full-image-container">
-                    <img src="https://i.ibb.co/N6t5wLVH/4v8o1-Je-Vix-XJfbg-U0k.png" alt="IA en logística global">
-                    <div class="full-image-caption">Ilustración IA | El Mundo</div>
+                    <img src="https://i.ibb.co/nssCHq4P/png-skoid-0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png" alt="Burbuja de IA">
+                    <div class="full-image-caption">Ilustración IA</div>
                 </div>
 
                 <div class="article-body">
-                    <p>Soluciones basadas en IA empiezan a transformar la cadena de suministro en varios continentes:
-                        optimizan rutas, reducen costes, automatizan almacenes y reconfiguran el mercado laboral
-                        logístico.</p>
-                    <p>
-                    <h2>Optimización inteligente en América Latina y África</h2>
-                    </p>
-                    <p>La inteligencia artificial (IA) es la columna vertebral de la nueva logística global, con
-                        sistemas capaces de planificar rutas, gestionar inventarios y coordinar flotas. En Colombia, la
-                        logística inteligente aplica algoritmos de optimización para calcular rutas en tiempo real,
-                        reduciendo tiempos, combustible y mejorando plazos.</p>
-                    <p>En África, la plataforma logística Leta utiliza IA para abaratar el transporte mediante la
-                        asignación de cargas y la consolidación de envíos, buscando disminuir los kilómetros recorridos
-                        en vacío.</p>
-                    <p>
-                    <h2>Automatización en el comercio minorista</h2>
-                    </p>
-                    <p>La automatización llega al comercio minorista: una gran cadena de supermercados ha incorporado
-                        una IA propia que decide qué productos se envían, en qué cantidades y a qué tiendas, ajustando
-                        el inventario y la reposición.</p>
-                    <p>
-                    <h2>Camiones autónomos: la próxima frontera</h2>
-                    </p>
-                    <p>El transporte por carretera está en revolución: una de las principales firmas de camiones
-                        autónomos prevé tener cientos de vehículos sin conductor operando a finales de 2026. Estos
-                        camiones, guiados por sistemas de visión por computador, buscan operar de forma continua y
-                        reducir accidentes.</p>
-                    <p>
-                    <h2>Impacto laboral y regulación</h2>
-                    </p>
-                    <p>El impacto laboral es significativo: un estudio estima que la IA ya podría sustituir en torno al
-                        11% de las tareas de 151 millones de trabajadores en Estados Unidos, afectando funciones
-                        administrativas, coordinación operativa y gestión de almacenes.</p>
-                    <p>Los grandes laboratorios de IA (como Anthropic y Google DeepMind) avanzan en capacidades para
-                        orquestar múltiples sistemas logísticos, subrayando que la adopción masiva de IA en operaciones
-                        críticas debe ir acompañada de estándares robustos de seguridad y gobernanza.</p>
-                    <blockquote class="article-quote">"La logística del futuro no necesita conductores: necesita datos,
-                        algoritmos y supervisión humana estratégica."</blockquote>
-                    <h2>Puntos clave</h2>
-                    <ul>
-                        <li>Colombia y África adoptan IA para optimizar rutas y consolidar envíos.</li>
-                        <li>Supermercados automatizan decisiones de inventario y reposición con IA.</li>
-                        <li>Camiones autónomos operarán a finales de 2026 en flotas comerciales.</li>
-                        <li>11% de tareas de 151 millones de trabajadores en EE.UU. podrían ser sustituidas por IA.</li>
-                    </ul>
+                    <p>La expansión acelerada de la inteligencia artificial dispara inversiones y alianzas en múltiples sectores, mientras grandes tecnológicas, gobiernos y reguladores advierten de una posible burbuja y de la necesidad de enfocarse en usos reales, seguridad y sostenibilidad.</p>
+<p><h2>Advertencias de la industria y expansión sectorial</h2></p>
+<p>Directivos de grandes tecnológicas y analistas de medios como Xataka y The Verge advierten sobre una posible sobrerreacción del mercado y valoraciones desalineadas con la realidad. A pesar de esto, la IA se expande en la banca para automatizar procesos y en el entretenimiento, donde empresas como Disney diversifican sus socios para generar contenidos.</p>
+<p><h2>Fragilidad de las startups y límites materiales</h2></p>
+<p>Fondos de capital riesgo señalan que muchas startups de IA carecen de "poder de permanencia" al no poseer ventajas competitivas claras. Además, surge un cuello de botella físico: la capacidad energética global necesaria para sostener centros de datos de alto consumo, lo que pone en duda las proyecciones de crecimiento ilimitado.</p>
+<p><h2>Gobernanza y el papel del Estado</h2></p>
+<p>La UNESCO alerta sobre riesgos para la libertad de expresión debido a la opacidad de los algoritmos de recomendación. En el plano político, la Casa Blanca ha sugerido que no habrá rescates públicos para empresas de IA si la burbuja estalla. El sector busca equilibrar esta incertidumbre con avances en seguridad, veracidad de modelos y aplicaciones en investigación científica y biológica.</p>
+<blockquote class="article-quote">"La IA puede ser la tecnología del siglo o la burbuja del año. Todo depende de si las promesas se convierten en aplicaciones reales."</blockquote>
+<h2>Puntos clave</h2>
+<ul>
+<li>Advertencias de sobrerreacción del mercado y valoraciones desalineadas.</li>
+<li>Startups de IA carecen de ventajas competitivas claras según fondos de capital riesgo.</li>
+<li>Cuello de botella energético pone en duda proyecciones de crecimiento ilimitado.</li>
+<li>Casa Blanca descarta rescates públicos si la burbuja estalla.</li>
+<li>UNESCO alerta sobre opacidad de algoritmos y riesgos para la libertad de expresión.</li>
+</ul>
 
                 </div>
             </div>
@@ -514,17 +429,18 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
-                        alt="Logo Footer" width="150" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
-                    <p style="font-size: 13px; color: #999;">El diario líder en información general en español.</p>
+                    <div class="logo-text" style="font-size: 36px;">
+                        <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                    </div>
+                    <p style="font-size: 13px; color: #999; margin-top: 10px;">Tu fuente confiable de noticias e información.</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Secciones</h4>
+                    <h4>Información</h4>
                     <ul>
-                        <li><a href="../index.html">Portada</a></li>
-                        <li><a href="#">España</a></li>
-                        <li><a href="#">Economía</a></li>
-                        <li><a href="#">Internacional</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -546,13 +462,11 @@
                     </ul>
                 </div>
             </div>
-            <div
-                style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 12px; color: #666;">
-                &copy; 2025 Unidad Editorial Información General, S.L.U. Todos los derechos reservados.
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 12px; color: #666;">
+                &copy; 2025 Unidad Editorial Información General, S.L.U.
             </div>
         </div>
     </footer>
 
 </body>
-
 </html>

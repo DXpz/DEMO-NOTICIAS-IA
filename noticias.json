@@ -1,181 +1,175 @@
 {
   "config": {
-    "titulo_sitio": "EL MUNDO - Diario Online Líder",
+    "titulo_sitio": "RED Noticias - Tu fuente confiable de información",
     "edicion": "Edición El Salvador",
-    "fecha_actualizacion": "Lunes, 16 de Diciembre de 2025 • Actualizado a las 13:25",
-    "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/El_Mundo_logo.svg/1200px-El_Mundo_logo.svg.png"
+    "fecha_actualizacion": "Miércoles, 17 de Diciembre de 2025 • Actualizado a las 09:00",
+    "logo_url": ""
   },
   "noticia_principal": {
-    "id": "ia-pronosticos-deportes-entretenimiento",
-    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-pronosticos-deportes-entretenimiento.html",
+    "id": "ia-telecomunicaciones-redes-call-centers",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-telecomunicaciones-redes-call-centers.html",
     "categoria": "Actualidad",
-    "titulo": "La inteligencia artificial se consolida en el pronóstico deportivo y la industria del entretenimiento",
-    "resumen": "Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la integración de personajes y contenidos en modelos generativos.",
-    "autor": "Redacción El Mundo",
+    "titulo": "La inteligencia artificial redefine el sector de las telecomunicaciones: de las redes críticas a los call centers",
+    "resumen": "Operadores, organismos internacionales y grandes tecnológicas aceleran la integración de la IA en infraestructuras, servicios al cliente y gobernanza ética, en un cambio que promete eficiencia y personalización, pero también plantea desafíos laborales y regulatorios.",
+    "autor": "Redacción RED Noticias",
     "coautor": null,
     "ciudad": "San Salvador",
-    "imagen": "https://i.ibb.co/Q3RHgV2H/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-    "imagen_alt": "IA en deportes y entretenimiento",
-    "imagen_caption": "Ilustración IA | El Mundo",
-    "subtitulo": "Del fútbol salvadoreño a Hollywood: la IA redefine predicciones y contenidos",
+    "imagen": "https://i.ibb.co/Txjvf77g/Xyy7Q.png",
+    "imagen_alt": "IA en telecomunicaciones",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "De las infraestructuras de conectividad a la transformación del servicio al cliente",
     "contenido_completo": [
-      "Herramientas de IA como ChatGPT y Gemini ya se usan para anticipar resultados del fútbol salvadoreño, mientras un millonario acuerdo en el sector del entretenimiento impulsa la integración de personajes y contenidos en modelos generativos.",
-      "<h2>La IA entra a las canchas: pronósticos para el Apertura 2025</h2>",
-      "Modelos de lenguaje como ChatGPT y Gemini han comenzado a utilizarse para pronosticar al posible campeón del torneo Apertura 2025 de fútbol en El Salvador. Estos sistemas articulan sus respuestas a partir de variables como el rendimiento histórico de los clubes, resultados recientes, estadísticas de goles y desempeño en fases finales.",
-      "Este uso evidencia la incorporación de algoritmos de IA en predicciones deportivas, abriendo el debate sobre su papel en casas de apuestas, análisis de clubes y coberturas periodísticas. Expertos señalan que los resultados de la IA dependen de la calidad y actualización de los datos, y que factores imprevistos como lesiones o decisiones arbitrales siguen siendo difíciles de modelar.",
-      "<h2>Entretenimiento y derechos de autor: grandes inversiones en IA generativa</h2>",
-      "En paralelo, la IA generativa está redefiniendo el negocio del entretenimiento. Una de las principales compañías globales de contenidos anunció una inversión de alrededor de 1,000 millones de dólares en una empresa líder de inteligencia artificial. Además, firmó un acuerdo para que los modelos de IA puedan utilizar personajes y propiedades intelectuales de su amplio catálogo.",
-      "El convenio permite a sistemas como chatbots y generadores de contenido incorporar de forma autorizada el universo de personajes de la firma, creando nuevas experiencias interactivas para los usuarios. Especialistas advierten sobre los retos de este tipo de acuerdos, como la delimitación de usos, la protección frente a manipulación de contenidos y la remuneración adecuada a los titulares de derechos."
+      "Operadores, organismos internacionales y grandes tecnológicas aceleran la integración de la IA en infraestructuras, servicios al cliente y gobernanza ética, en un cambio que promete eficiencia y personalización, pero también plantea desafíos laborales y regulatorios.",
+      "<h2>Infraestructuras preparadas para la IA y la automatización</h2>",
+      "La IA impulsa redes más resilientes y seguras. Alianzas tecnológicas orientan a operadores hacia infraestructuras de conectividad de nueva generación (fibra óptica, redes de campus y automatización OT) para soportar aplicaciones de IA en tiempo real en logística e industria. En el sector minorista, estas redes facilitan pagos digitales, inventarios inteligentes y análisis de datos.",
+      "<h2>La atención al cliente, en plena transformación</h2>",
+      "Según Infobae, el uso de callbots aumenta la eficiencia en la atención telefónica entre un 500 % y un 1.000 %, automatizando consultas repetitivas. Esto genera una sustitución progresiva de teleoperadores en funciones básicas y aumenta la demanda de perfiles especializados. Además, operadores europeos trabajan en integrar asistentes de IA directamente en dispositivos móviles.",
+      "<h2>Ética, gobernanza y el papel de los reguladores</h2>",
+      "La UNESCO ha sumado a grandes compañías de telecomunicaciones para implementar la Recomendación sobre la Ética de la IA, promoviendo transparencia y protección de datos. En paralelo, se advierte de un reajuste profundo del empleo en el sector tecnológico. También se destacan aplicaciones inclusivas, como el uso de modelos de voz avanzada para personas con discapacidad del habla."
     ],
     "citas": [
-      "La IA no solo predice resultados deportivos: está transformando la forma en que consumimos y creamos contenido de entretenimiento."
+      "La IA transforma las telecomunicaciones desde la base: redes más inteligentes, atención automatizada y nuevos dilemas éticos."
     ],
     "puntos_clave": [
-      "ChatGPT y Gemini usados para pronosticar campeón del Apertura 2025 en El Salvador.",
-      "Inversión de US$1,000 millones en IA generativa para entretenimiento.",
-      "Acuerdos permiten uso autorizado de personajes en chatbots y generadores de contenido.",
-      "Debate sobre derechos de autor, usos y remuneración en la industria."
+      "Callbots aumentan eficiencia en atención telefónica entre 500% y 1,000%.",
+      "Infraestructuras de fibra óptica y automatización OT para soportar IA en tiempo real.",
+      "UNESCO y operadores implementan recomendaciones sobre ética de la IA.",
+      "Reajuste del empleo: automatización de funciones básicas, demanda de perfiles especializados."
     ]
   },
   "noticias_secundarias": [
     {
-      "id": "ia-logistica-global-camiones-autonomos",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-logistica-global-camiones-autonomos.html",
+      "id": "ia-gps-navegacion-seguridad",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-gps-navegacion-seguridad.html",
       "categoria": "Actualidad",
-      "titulo": "La inteligencia artificial redefine la logística global: de los camiones autónomos a la 'última milla' inteligente",
-      "resumen": "Soluciones basadas en IA empiezan a transformar la cadena de suministro en varios continentes: optimizan rutas, reducen costes, automatizan almacenes y reconfiguran el mercado laboral logístico.",
-      "autor": "Redacción El Mundo",
+      "titulo": "La inteligencia artificial transforma el uso del GPS: de la navegación conversacional a la seguridad estratégica",
+      "resumen": "La integración de modelos avanzados de IA en aplicaciones de mapas, logística y sistemas de seguimiento está redefiniendo el papel del GPS, desde la navegación cotidiana hasta la protección de infraestructuras críticas, mientras crecen las alertas sobre privacidad, desinformación y vulnerabilidades geoestratégicas.",
+      "autor": "Redacción RED Noticias",
       "coautor": null,
       "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/N6t5wLVH/4v8o1-Je-Vix-XJfbg-U0k.png",
-      "imagen_alt": "IA en logística global",
-      "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "Optimización de rutas, automatización y camiones sin conductor",
+      "imagen": "https://i.ibb.co/rGRdvTHg/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "IA y GPS",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "Navegación conversacional, logística inteligente y nuevos riesgos geoestratégicos",
       "contenido_completo": [
-        "Soluciones basadas en IA empiezan a transformar la cadena de suministro en varios continentes: optimizan rutas, reducen costes, automatizan almacenes y reconfiguran el mercado laboral logístico.",
-        "<h2>Optimización inteligente en América Latina y África</h2>",
-        "La inteligencia artificial (IA) es la columna vertebral de la nueva logística global, con sistemas capaces de planificar rutas, gestionar inventarios y coordinar flotas. En Colombia, la logística inteligente aplica algoritmos de optimización para calcular rutas en tiempo real, reduciendo tiempos, combustible y mejorando plazos.",
-        "En África, la plataforma logística Leta utiliza IA para abaratar el transporte mediante la asignación de cargas y la consolidación de envíos, buscando disminuir los kilómetros recorridos en vacío.",
-        "<h2>Automatización en el comercio minorista</h2>",
-        "La automatización llega al comercio minorista: una gran cadena de supermercados ha incorporado una IA propia que decide qué productos se envían, en qué cantidades y a qué tiendas, ajustando el inventario y la reposición.",
-        "<h2>Camiones autónomos: la próxima frontera</h2>",
-        "El transporte por carretera está en revolución: una de las principales firmas de camiones autónomos prevé tener cientos de vehículos sin conductor operando a finales de 2026. Estos camiones, guiados por sistemas de visión por computador, buscan operar de forma continua y reducir accidentes.",
-        "<h2>Impacto laboral y regulación</h2>",
-        "El impacto laboral es significativo: un estudio estima que la IA ya podría sustituir en torno al 11% de las tareas de 151 millones de trabajadores en Estados Unidos, afectando funciones administrativas, coordinación operativa y gestión de almacenes.",
-        "Los grandes laboratorios de IA (como Anthropic y Google DeepMind) avanzan en capacidades para orquestar múltiples sistemas logísticos, subrayando que la adopción masiva de IA en operaciones críticas debe ir acompañada de estándares robustos de seguridad y gobernanza."
+        "La integración de modelos avanzados de IA en aplicaciones de mapas, logística y sistemas de seguimiento está redefiniendo el papel del GPS, desde la navegación cotidiana hasta la protección de infraestructuras críticas, mientras crecen las alertas sobre privacidad, desinformación y vulnerabilidades geoestratégicas.",
+        "<h2>Una nueva generación de GPS impulsada por IA</h2>",
+        "Los servicios de navegación están pasando de indicaciones estáticas a asistentes conversacionales. La IA generativa permite a los usuarios interactuar por voz, realizar consultas complejas sobre rutas seguras y reportar incidencias en carretera mediante lenguaje natural.",
+        "<h2>Logística, trazabilidad y nuevos mercados de rastreo</h2>",
+        "En el sector empresarial, la IA refuerza la resiliencia de las cadenas de suministro mediante algoritmos de predicción de demanda y optimización de flotas en tiempo real. Asimismo, la tecnología se expande al rastreo de mascotas, utilizando el procesamiento de datos para detectar patrones inusuales de movimiento.",
+        "<h2>Mapeo planetario, seguridad y libertades en juego</h2>",
+        "Sistemas avanzados como los de Google DeepMind permiten representaciones unificadas de la Tierra para planificación de infraestructuras. No obstante, la dependencia del GPS expone riesgos de sabotaje o spoofing (interferencia de señales). La UNESCO advierte sobre el impacto de la automatización de datos de localización en la privacidad y la libertad de expresión, instando a la creación de marcos regulatorios y estándares de seguridad."
       ],
       "citas": [
-        "La logística del futuro no necesita conductores: necesita datos, algoritmos y supervisión humana estratégica."
+        "El GPS deja de ser un simple sistema de coordenadas para convertirse en un ecosistema conversacional con riesgos geopolíticos."
       ],
       "puntos_clave": [
-        "Colombia y África adoptan IA para optimizar rutas y consolidar envíos.",
-        "Supermercados automatizan decisiones de inventario y reposición con IA.",
-        "Camiones autónomos operarán a finales de 2026 en flotas comerciales.",
-        "11% de tareas de 151 millones de trabajadores en EE.UU. podrían ser sustituidas por IA."
+        "Navegación conversacional con IA: consultas por voz y reportes en lenguaje natural.",
+        "IA en logística: predicción de demanda y optimización de flotas en tiempo real.",
+        "Rastreo de mascotas con detección de patrones inusuales de movimiento.",
+        "Riesgos de spoofing y sabotaje en infraestructuras críticas.",
+        "UNESCO reclama marcos regulatorios para proteger privacidad y libertad de expresión."
       ]
     },
     {
-      "id": "ia-sanidad-hospitales-oms",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-sanidad-hospitales-oms.html",
+      "id": "ia-microchips-hardware-propio",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-microchips-hardware-propio.html",
       "categoria": "Actualidad",
-      "titulo": "La inteligencia artificial irrumpe en la sanidad: de los hospitales españoles a las recomendaciones de la OMS",
-      "resumen": "Hospitales, empresas y organismos internacionales aceleran el despliegue de herramientas de IA para diagnóstico, revisión de evidencia científica y apoyo al paciente, mientras la OMS reclama cautela y supervisión estricta ante riesgos de sesgos y errores clínicos.",
-      "autor": "Redacción El Mundo",
+      "titulo": "La carrera por los microchips de IA se acelera: gigantes tecnológicos apuestan por hardware propio",
+      "resumen": "Fabricantes de coches eléctricos, grandes plataformas digitales y laboratorios de inteligencia artificial avanzan en el diseño de chips específicos para IA, reconfigurando la cadena de suministro tecnológica y la geopolítica del sector.",
+      "autor": "Redacción RED Noticias",
       "coautor": null,
-      "ciudad": "Madrid",
-      "imagen": "https://i.ibb.co/XkrdNb2x/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-      "imagen_alt": "IA en sanidad",
-      "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "Diagnóstico automatizado y advertencias de la OMS",
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/ZppK73wb/P7l-Kw-Q.png",
+      "imagen_alt": "Microchips de IA",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "De la automoción a los centros de datos: el chip como activo estratégico",
       "contenido_completo": [
-        "Hospitales, empresas y organismos internacionales aceleran el despliegue de herramientas de IA para diagnóstico, revisión de evidencia científica y apoyo al paciente, mientras la OMS reclama cautela y supervisión estricta ante riesgos de sesgos y errores clínicos.",
-        "<h2>Los hospitales españoles aceleran la adopción de IA clínica</h2>",
-        "Hospitales españoles están probando sistemas de IA para resumir estudios científicos en minutos, facilitando la toma de decisiones clínicas y reduciendo el tiempo de revisión de literatura médica. La IA actúa como apoyo, pero las decisiones diagnósticas y terapéuticas siguen recayendo en los facultativos.",
-        "<h2>Modelos capaces de diagnosticar a partir de imágenes y lenguaje</h2>",
-        "La IA se utiliza para reforzar el diagnóstico. Destaca un modelo en prueba que infiere posibles enfermedades a partir del análisis de la lengua del paciente. Esto se suma a la lectura automatizada de imágenes médicas (radiografías, resonancias) para detectar patrones de patologías.",
-        "A pesar de que la IA obtiene resultados sobresalientes en exámenes teóricos, su fiabilidad disminuye en casos clínicos reales debido a la complejidad del factor humano, lo que obliga a extremar la prudencia.",
-        "<h2>Aplicaciones en contextos críticos y salud personal</h2>",
-        "La IA también se ensaya en: tratamiento de infecciones en soldados heridos con terapias individualizadas guiadas por algoritmos. Además, empresas de salud han reforzado asistentes virtuales que integran datos biométricos para ofrecer recomendaciones personalizadas.",
-        "<h2>La OMS exige cautela ante riesgos y sesgos</h2>",
-        "La Organización Mundial de la Salud (OMS) ha emitido advertencias sobre el uso de sistemas de IA generativa en la atención médica, alertando de:",
-        "<ul><li>Posibles sesgos derivados de datos de entrenamiento no representativos.</li><li>Errores de razonamiento clínico.</li><li>Falta de transparencia en los algoritmos.</li></ul>",
-        "La OMS reclama marcos regulatorios robustos, evaluación independiente y trazabilidad de las decisiones algorítmicas, centrando el debate en cómo incorporar la IA sin comprometer la seguridad, la ética y la equidad sanitaria."
+        "Fabricantes de coches eléctricos, grandes plataformas digitales y laboratorios de inteligencia artificial avanzan en el diseño de chips específicos para IA, reconfigurando la cadena de suministro tecnológica y la geopolítica del sector.",
+        "<h2>Automoción: chips propios para la conducción autónoma</h2>",
+        "Un fabricante emergente de vehículos eléctricos ha anunciado un chip de alta capacidad optimizado para redes neuronales profundas. Este hardware permite procesar en milisegundos la información de sensores (cámaras y radares), buscando mejorar la seguridad, reducir el consumo energético y eliminar la dependencia de proveedores externos.",
+        "<h2>Plataformas digitales y laboratorios de IA: control del ciclo completo</h2>",
+        "Grandes empresas de internet desarrollan prototipos de chips para sus centros de datos con el fin de maximizar el rendimiento por vatio. Los laboratorios de IA, por su parte, crean hardware personalizado para reducir los costes de cómputo y optimizar tareas específicas como el razonamiento y la generación de contenido multimodal.",
+        "<h2>Fábricas inteligentes, geopolítica y regulación</h2>",
+        "La IA se integra en la propia fabricación de semiconductores para optimizar procesos y gestionar la cadena de suministro. Dado que estos chips son activos estratégicos, organismos internacionales ya forman a legisladores en gobernanza de hardware, abordando el control de exportaciones y el impacto de la capacidad de cómputo en el Estado de derecho."
       ],
       "citas": [
-        "La IA puede acelerar diagnósticos, pero nunca debe sustituir el criterio médico ni la relación humana con el paciente."
+        "Quien controla el chip controla la IA: el hardware propio se convierte en ventaja competitiva y activo geoestratégico."
       ],
       "puntos_clave": [
-        "Hospitales españoles usan IA para resumir estudios científicos en minutos.",
-        "Modelos de IA diagnostican a partir de análisis de lengua e imágenes médicas.",
-        "OMS advierte de sesgos, errores clínicos y falta de transparencia.",
-        "Reclamo de marcos regulatorios robustos y evaluación independiente."
+        "Fabricantes de coches eléctricos diseñan chips propios para conducción autónoma.",
+        "Plataformas digitales y laboratorios de IA desarrollan hardware personalizado.",
+        "Chips optimizados para maximizar rendimiento por vatio y reducir costes de cómputo.",
+        "IA integrada en fabricación de semiconductores para optimizar procesos.",
+        "Organismos internacionales forman a legisladores en gobernanza de hardware."
       ]
     }
   ],
   "noticias_lo_ultimo": [
     {
-      "id": "ia-salvador-salud-educacion-vigilancia",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-salvador-salud-educacion-vigilancia.html",
+      "id": "ia-ram-precios-electronica",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-ram-precios-electronica.html",
       "categoria": "Actualidad",
-      "titulo": "El Salvador acelera la adopción de inteligencia artificial en salud y educación en medio de dudas sobre supervisión y derechos digitales",
-      "resumen": "El Gobierno salvadoreño impulsa sistemas de inteligencia artificial en la atención médica y en el modelo educativo a partir de 2026, mientras el país debate los riesgos de la tecnología en un entorno marcado por denuncias de espionaje digital y reducción de la cooperación internacional a la sociedad civil.",
-      "autor": "Redacción El Mundo",
+      "titulo": "El auge de la inteligencia artificial dispara los precios de la memoria RAM y amenaza a la electrónica de consumo",
+      "resumen": "La demanda de centros de datos y servidores para IA está tensionando la oferta global de DRAM. Fabricantes como Micron redirigen producción hacia clientes de alto rendimiento, mientras analistas prevén que la memoria de servidor podría duplicar su precio hacia 2026, encareciendo móviles, consolas y PC.",
+      "autor": "Redacción RED Noticias",
       "coautor": null,
       "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/bMvjXnn0/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-      "imagen_alt": "IA en El Salvador",
-      "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "DoctorSV y modelo educativo 2026 bajo escrutinio",
+      "imagen": "https://i.ibb.co/qYb5Tp23/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "Precios de RAM por IA",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "Centros de datos absorben producción global de DRAM",
       "contenido_completo": [
-        "El Gobierno salvadoreño impulsa sistemas de inteligencia artificial en la atención médica y en el modelo educativo a partir de 2026, mientras el país debate los riesgos de la tecnología en un entorno marcado por denuncias de espionaje digital y reducción de la cooperación internacional a la sociedad civil.",
-        "<h2>DoctorSV: IA para consultas médicas y salud mental</h2>",
-        "El Gobierno ha lanzado DoctorSV, una plataforma de atención médica con IA para orientación sanitaria básica, que incluye un módulo de salud mental para contención emocional y derivación. Esto busca reducir tiempos de espera y ampliar la cobertura. Sin embargo, especialistas plantean interrogantes sobre la gestión de datos sensibles y la supervisión profesional de los algoritmos.",
-        "<h2>IA en el nuevo modelo educativo a partir de 2026</h2>",
-        "El Ministerio de Educación implementará IA en el nuevo modelo educativo que se desplegará en 2026. Se utilizará para personalizar contenidos, monitorear el desempeño estudiantil y apoyar la labor docente. Los expertos advierten sobre la necesidad de formación específica del profesorado y garantías de transparencia algorítmica.",
-        "<h2>Contexto: vigilancia digital y debilitamiento de la sociedad civil</h2>",
-        "La expansión de la IA se produce en un contexto de preocupaciones por el presunto uso de software avanzado de espionaje (Pegasus) contra periodistas y sociedad civil. Adicionalmente, se reporta el congelamiento de parte de la cooperación internacional dirigida a organizaciones civiles, limitando los recursos para monitorear críticamente las nuevas tecnologías estatales."
+        "La demanda de centros de datos y servidores para IA está tensionando la oferta global de DRAM. Fabricantes como Micron redirigen producción hacia clientes de alto rendimiento, mientras analistas prevén que la memoria de servidor podría duplicar su precio hacia 2026, encareciendo móviles, consolas y PC.",
+        "<h2>La IA convierte la memoria en un recurso estratégico</h2>",
+        "El despliegue de modelos de IA generativa está absorbiendo la producción global de DRAM. Según Network World, los precios de la memoria para servidores podrían duplicarse hacia 2026, afectando la disponibilidad para el mercado de consumo masivo.",
+        "<h2>Micron y el giro de la cadena de suministro</h2>",
+        "Fabricantes como Micron han confirmado subidas en DRAM y NAND debido al volumen de pedidos para centros de datos de IA. Esto ha provocado un cambio estratégico donde la producción antes destinada a electrónica de consumo se prioriza ahora para clientes corporativos de alto margen.",
+        "<h2>Impacto en electrónica de consumo y horizontes</h2>",
+        "Se reporta una escalada de precios en RAM para PC, superando en costo a componentes de consolas de nueva generación. Se advierte que, para 2026, los móviles de gama baja podrían retroceder a 4 GB de RAM para ahorrar costes. Se espera que la demanda de memoria para IA crezca a doble dígito anual, manteniendo los precios elevados en los próximos años."
       ],
       "citas": [
-        "La IA puede ser herramienta de progreso o de control. Todo depende de quién la diseña, quién la supervisa y quién puede auditarla."
+        "La IA no solo consume electricidad: también consume memoria. Y eso está encareciendo todo lo que llevamos en el bolsillo."
       ],
       "puntos_clave": [
-        "DoctorSV ofrece orientación médica y salud mental con IA.",
-        "Modelo educativo 2026 integrará IA para personalización y monitoreo.",
-        "Denuncias de uso de Pegasus contra periodistas y sociedad civil.",
-        "Congelamiento de cooperación internacional limita auditoría independiente."
+        "Precios de memoria para servidores podrían duplicarse hacia 2026.",
+        "Micron redirige producción de DRAM y NAND hacia clientes corporativos.",
+        "Escalada de precios en RAM para PC y consolas.",
+        "Móviles de gama baja podrían retroceder a 4 GB de RAM para 2026.",
+        "Demanda de memoria para IA con crecimiento de doble dígito anual."
       ]
     },
     {
-      "id": "economia-salvador-fiscal-presion-social",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/economia-salvador-fiscal-presion-social.html",
-      "categoria": "Economía",
-      "titulo": "Economía salvadoreña enfrenta presión social y metas fiscales exigentes en medio de incertidumbre",
-      "resumen": "Mientras la percepción ciudadana apunta a un deterioro del nivel de vida y preocupación por el sistema de salud, el Gobierno apuesta a una nueva Ley de Sostenibilidad Fiscal que exige crecimiento económico del 3 % anual y una expansión de la deuda limitada al 2 % para cumplir con sus metas.",
-      "autor": "Redacción El Mundo",
+      "id": "ia-burbuja-inversion-fatiga",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-burbuja-inversion-fatiga.html",
+      "categoria": "Actualidad",
+      "titulo": "La burbuja de la inteligencia artificial: entre la euforia inversora y las primeras señales de fatiga",
+      "resumen": "La expansión acelerada de la inteligencia artificial dispara inversiones y alianzas en múltiples sectores, mientras grandes tecnológicas, gobiernos y reguladores advierten de una posible burbuja y de la necesidad de enfocarse en usos reales, seguridad y sostenibilidad.",
+      "autor": "Redacción RED Noticias",
       "coautor": null,
       "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/xKBhSz5Z/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-      "imagen_alt": "Economía salvadoreña",
-      "imagen_caption": "Ilustración IA | El Mundo",
-      "subtitulo": "Ley de Sostenibilidad Fiscal vs. percepción de deterioro",
+      "imagen": "https://i.ibb.co/nssCHq4P/png-skoid-0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "Burbuja de IA",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "Advertencias de sobrerreacción y límites materiales",
       "contenido_completo": [
-        "Mientras la percepción ciudadana apunta a un deterioro del nivel de vida y preocupación por el sistema de salud, el Gobierno apuesta a una nueva Ley de Sostenibilidad Fiscal que exige crecimiento económico del 3 % anual y una expansión de la deuda limitada al 2 % para cumplir con sus metas. La calidad del aire y otros factores ambientales se suman como nuevos desafíos económicos.",
-        "<h2>Percepción de Deterioro y Presión Social</h2>",
-        "Amplios sectores de la población consideran que la economía \"está mal\" y la situación de la salud pública \"no pinta bien\", debido al aumento del costo de la vida y la presión sobre la red hospitalaria.",
-        "<h2>Ley de Sostenibilidad Fiscal</h2>",
-        "El país adoptó una Ley de Sostenibilidad Fiscal que establece metas estrictas:",
-        "<ul><li>La economía debe crecer alrededor de un 3 % anual.</li><li>La deuda pública debe incrementarse en torno al 2 % anual.</li></ul>",
-        "<h2>Retos Económicos Adicionales</h2>",
-        "La calidad del aire y otros factores ambientales emergen como retos económicos, con posibles efectos en la salud, costos sanitarios y la actividad productiva. La política económica debe equilibrar la estabilidad macroeconómica con la protección social."
+        "La expansión acelerada de la inteligencia artificial dispara inversiones y alianzas en múltiples sectores, mientras grandes tecnológicas, gobiernos y reguladores advierten de una posible burbuja y de la necesidad de enfocarse en usos reales, seguridad y sostenibilidad.",
+        "<h2>Advertencias de la industria y expansión sectorial</h2>",
+        "Directivos de grandes tecnológicas y analistas de medios como Xataka y The Verge advierten sobre una posible sobrerreacción del mercado y valoraciones desalineadas con la realidad. A pesar de esto, la IA se expande en la banca para automatizar procesos y en el entretenimiento, donde empresas como Disney diversifican sus socios para generar contenidos.",
+        "<h2>Fragilidad de las startups y límites materiales</h2>",
+        "Fondos de capital riesgo señalan que muchas startups de IA carecen de \"poder de permanencia\" al no poseer ventajas competitivas claras. Además, surge un cuello de botella físico: la capacidad energética global necesaria para sostener centros de datos de alto consumo, lo que pone en duda las proyecciones de crecimiento ilimitado.",
+        "<h2>Gobernanza y el papel del Estado</h2>",
+        "La UNESCO alerta sobre riesgos para la libertad de expresión debido a la opacidad de los algoritmos de recomendación. En el plano político, la Casa Blanca ha sugerido que no habrá rescates públicos para empresas de IA si la burbuja estalla. El sector busca equilibrar esta incertidumbre con avances en seguridad, veracidad de modelos y aplicaciones en investigación científica y biológica."
       ],
       "citas": [
-        "El equilibrio fiscal no se logra solo con leyes: se necesita crecimiento real, empleo digno y servicios públicos de calidad."
+        "La IA puede ser la tecnología del siglo o la burbuja del año. Todo depende de si las promesas se convierten en aplicaciones reales."
       ],
       "puntos_clave": [
-        "Percepción ciudadana de deterioro económico y de salud pública.",
-        "Ley de Sostenibilidad Fiscal exige 3% de crecimiento anual.",
-        "Deuda pública limitada a incremento del 2% anual.",
-        "Calidad del aire y factores ambientales como nuevos retos económicos."
+        "Advertencias de sobrerreacción del mercado y valoraciones desalineadas.",
+        "Startups de IA carecen de ventajas competitivas claras según fondos de capital riesgo.",
+        "Cuello de botella energético pone en duda proyecciones de crecimiento ilimitado.",
+        "Casa Blanca descarta rescates públicos si la burbuja estalla.",
+        "UNESCO alerta sobre opacidad de algoritmos y riesgos para la libertad de expresión."
       ]
     }
   ],
