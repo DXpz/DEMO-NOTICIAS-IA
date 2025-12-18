@@ -1,0 +1,147 @@
+{
+  "ia-ciberataques-hackers-automatizacion": {
+    "id": "ia-ciberataques-hackers-automatizacion",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-ciberataques-hackers-automatizacion.html",
+    "categoria": "Actualidad",
+    "titulo": "Oleada de ciberataques evidencia una nueva era para los hackers impulsada por la inteligencia artificial",
+    "resumen": "De intrusiones en cadenas de suministro globales a robos masivos de datos, la convergencia entre hackers y automatización avanzada plantea riesgos sistémicos sin precedentes.",
+    "autor": "Redacción RED Noticias",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/6cyQq1tD/png-skoid-8eb2c87c-0531-4dab-acb3-b5e2adddce6c-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+    "imagen_alt": "Ciberseguridad e IA",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Cadenas de suministro bajo presión y el auge del cibercrimen automatizado",
+    "contenido_completo": [
+      "De intrusiones en cadenas de suministro globales a robos masivos de datos personales, pasando por herramientas de IA creadas por ciberdelincuentes, los últimos casos muestran una convergencia creciente entre hackers, automatización avanzada y riesgos sistémicos.",
+      "<h2>Cadenas de suministro bajo presión</h2>",
+      "Recientes ataques contra fabricantes automotrices y multinacionales cerveceras han provocado paradas de producción y pérdidas estimadas en miles de millones. La dependencia de sistemas en la nube y tecnologías operativas conectadas convierte a los proveedores en objetivos prioritarios.",
+      "<h2>IA: La nueva herramienta del cibercrimen</h2>",
+      "Se han detectado herramientas de IA desarrolladas por delincuentes que, por menos de 200 euros, automatizan ataques complejos. En respuesta, grandes empresas de IA están invirtiendo en firmas de ciberseguridad para simular ataques y entrenar empleados frente a amenazas como la inyección de instrucciones.",
+      "<h2>Gobernanza y hacking cívico</h2>",
+      "Mientras en EE. UU. se debaten regulaciones, la UNESCO impulsa el Youth Hackathon 2025 para formar 'hackers cívicos' especializados en alfabetización mediática y lucha contra la desinformación."
+    ],
+    "citas": [
+      "La IA ha democratizado el ataque complejo: hoy, por una mínima inversión, un delincuente puede automatizar lo que antes requería un equipo de expertos."
+    ],
+    "puntos_clave": [
+      "Ataques a cadenas de suministro causan pérdidas millonarias en sectores automotriz y alimentario.",
+      "Herramientas de IA para delincuentes disponibles por menos de 200 euros.",
+      "Robo de datos sensibles afecta a instituciones educativas internacionales.",
+      "UNESCO promueve el hacking cívico para contrarrestar la desinformación profesional."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:09:54"
+  },
+  "china-ia-memorias-ram-soberania": {
+    "id": "china-ia-memorias-ram-soberania",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/china-ia-memorias-ram-soberania.html",
+    "categoria": "Actualidad",
+    "titulo": "China acelera el desarrollo de nuevas memorias RAM para romper la dependencia exterior",
+    "resumen": "En plena crisis global de suministros, el gigante asiático apuesta por memorias DRAM y HBM de diseño propio para blindar sus infraestructuras críticas y plataformas de IA.",
+    "autor": "Redacción RED Noticias",
+    "coautor": "Fuente: EL MUNDO",
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/Mk2ZkhT9/ME.png",
+    "imagen_alt": "Memorias RAM China",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Avances en HBM3 y la carrera por la autosuficiencia tecnológica",
+    "contenido_completo": [
+      "La presión de la IA y el giro de la industria han disparado la demanda masiva de memorias HBM para centros de datos, desplazando la producción de electrónica de consumo. China ha priorizado el desarrollo de HBM3 y HBM3E para competir en el segmento de alto rendimiento.",
+      "El gobierno chino ha restringido el uso de chips extranjeros en infraestructuras críticas por seguridad nacional, impulsando el mercado local. Aunque persiste una brecha con líderes tradicionales, el apoyo estatal está acelerando el camino hacia la soberanía tecnológica."
+    ],
+    "citas": [
+      "El control de la memoria es el nuevo frente de la soberanía digital."
+    ],
+    "puntos_clave": [
+      "Desarrollo prioritario de memorias HBM3 y HBM3E en China.",
+      "Restricciones al hardware extranjero en infraestructuras críticas.",
+      "Demanda de IA desplaza producción de consolas y móviles de gama media.",
+      "Inversión masiva para cerrar la brecha con fabricantes occidentales."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:09:54"
+  },
+  "ia-mineria-eficiencia-alertas-eticas": {
+    "id": "ia-mineria-eficiencia-alertas-eticas",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-mineria-eficiencia-alertas-eticas.html",
+    "categoria": "Actualidad",
+    "titulo": "La inteligencia artificial acelera la minería entre alertas éticas y ambientales",
+    "resumen": "Desde los Andes peruanos hasta el fondo marino, algoritmos y robots optimizan la extracción de minerales estratégicos, despertando dudas sobre el impacto en la biodiversidad.",
+    "autor": "Redacción RED Noticias",
+    "coautor": "Fuente: EL MUNDO",
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/1YqVhvGk/y-Y2ptt1i-QCsotqtw-Td-Xo1-TRvkejc-Bnwy6nw.png",
+    "imagen_alt": "IA en Minería",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Minería de datos y recursos frente al desafío de la sostenibilidad",
+    "contenido_completo": [
+      "En Perú, sistemas de IA ajustan el consumo eléctrico de maquinaria pesada. En la nueva frontera, robots autónomos exploran el fondo marino buscando minerales críticos. Sin embargo, la UNESCO advierte que el consumo eléctrico de la propia IA podría superar al de la minería de Bitcoin para finales de 2025.",
+      "El lanzamiento del Global AI Ethics and Governance Observatory busca que la minería de datos respete los derechos fundamentales y la transparencia en las comunidades afectadas por la automatización."
+    ],
+    "citas": [
+      "La paradoja de la IA: optimiza la extracción de recursos mientras consume energía a niveles históricos."
+    ],
+    "puntos_clave": [
+      "Sistemas preventivos de fallas en minería terrestre peruana.",
+      "Robótica autónoma en minería submarina genera controversia ambiental.",
+      "Consumo de IA superará al de la minería de Bitcoin en 2025.",
+      "UNESCO lanza observatorio global de ética y gobernanza."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:09:54"
+  },
+  "robotica-ia-almacenes-hogares": {
+    "id": "robotica-ia-almacenes-hogares",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/robotica-ia-almacenes-hogares.html",
+    "categoria": "Actualidad",
+    "titulo": "La nueva era de la robótica: la IA salta al almacén, la fábrica y el hogar",
+    "resumen": "Modelos avanzados permiten a los robots razonar y actuar con autonomía, superando los entornos controlados de los laboratorios.",
+    "autor": "Redacción RED Noticias",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/r2n7jYJL/emwsv-Ev-TYn-Ss-L2-KJj3noc-NNm-BKVh-YXi-XSg-V14.png",
+    "imagen_alt": "Robótica Avanzada",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Agentes físicos y la inversión de 650,000 millones de dólares",
+    "contenido_completo": [
+      "Avances de Google DeepMind crean 'agentes físicos' que aprenden de la experiencia. En logística, coordinan flotas robóticas en tiempo real. En el hogar, dispositivos evolucionan hacia brazos robóticos capaces de manipular objetos cotidianos.",
+      "La UNESCO promueve educación STEM para preparar a las nuevas generaciones ante un mercado que requiere una inversión anual de 650,000 millones de dólares."
+    ],
+    "citas": [
+      "Los robots ya no solo repiten movimientos; ahora perciben y deciden."
+    ],
+    "puntos_clave": [
+      "Robots que aprenden de la experiencia sin depender de la nube.",
+      "Despliegue de humanoides en la industria automotriz.",
+      "Inversión global estimada en 650,000 millones de dólares anuales.",
+      "Comportamientos imprevistos en interacciones entre sistemas de IA."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:09:54"
+  },
+  "ia-salud-biotecnologia-diagnosticos": {
+    "id": "ia-salud-biotecnologia-diagnosticos",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-salud-biotecnologia-diagnosticos.html",
+    "categoria": "Actualidad",
+    "titulo": "La inteligencia artificial redefine la salud: de los laboratorios a la vida diaria",
+    "resumen": "La IA personaliza diagnósticos y optimiza la cadena de suministro de fármacos críticos, aunque persisten retos en el factor humano.",
+    "autor": "Redacción RED Noticias",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/JRYL3080/9-ZWB6ww-Mg-Hp-ISaao-DWx6n-SJunx-F3f6-VD8-BNA.png",
+    "imagen_alt": "IA en Medicina",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Medicina de precisión y prevención mediante biomarcadores",
+    "contenido_completo": [
+      "La IA detecta patrones genómicos y optimiza protocolos de vacunas. En el día a día, asistentes de bienestar monitorean sueño y nutrición. No obstante, expertos advierten que la IA no debe sustituir al médico, ya que su rendimiento baja en contextos sociales complejos.",
+      "La logística inteligente evita rupturas de stock en medicamentos esenciales, asegurando que las terapias críticas lleguen a tiempo."
+    ],
+    "citas": [
+      "La IA es un colaborador excepcional, pero el diagnóstico final sigue requiriendo la empatía y el contexto humano."
+    ],
+    "puntos_clave": [
+      "Detección de patrones en datos genómicos para medicina de precisión.",
+      "Optimización de experimentos en laboratorios biotecnológicos.",
+      "Análisis de biomarcadores para anticipar enfermedades del envejecimiento.",
+      "Alertas sobre sesgos y limitaciones en la comunicación clínica real."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:09:54"
+  }
+}

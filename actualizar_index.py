@@ -1,4 +1,18 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Actualizador automático del index.html
+Lee noticias.json y genera el index.html con todas las noticias
+Autor: Trickzz.sh
+"""
+
+import json
+from datetime import datetime
+from pathlib import Path
+
+
+# Plantilla HTML del index.html
+PLANTILLA_INDEX = """<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -18,7 +32,7 @@
 
     <style>
         /* VARIABLES Y CONFIGURACIÓN BASE */
-        :root {
+        :root {{
             --brand-red: #ce1126;
             --brand-dark: #111111;
             --text-grey: #333333;
@@ -27,65 +41,65 @@
             --bg-color: #ffffff;
             --serif-font: 'Playfair Display', Georgia, serif;
             --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
+        }}
 
-        * {
+        * {{
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-        }
+        }}
 
-        body {
+        body {{
             font-family: var(--sans-font);
             background-color: var(--bg-color);
             color: var(--text-grey);
             line-height: 1.5;
-        }
+        }}
 
-        a {
+        a {{
             text-decoration: none;
             color: inherit;
             transition: color 0.2s;
             cursor: pointer;
-        }
+        }}
 
-        a:hover {
+        a:hover {{
             color: var(--brand-red);
-        }
+        }}
 
         /* LAYOUT GENERAL */
-        .container {
+        .container {{
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-        }
+        }}
 
         /* HEADER */
-        .top-bar {
+        .top-bar {{
             background-color: var(--light-grey);
             font-size: 12px;
             padding: 8px 0;
             border-bottom: 1px solid var(--border-color);
             text-transform: uppercase;
             letter-spacing: 0.5px;
-        }
+        }}
 
-        .top-bar .container {
+        .top-bar .container {{
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
+        }}
 
-        .header-main {
+        .header-main {{
             padding: 25px 0;
             text-align: center;
             border-bottom: 4px solid var(--brand-red);
             cursor: pointer;
             /* Para volver al home */
-        }
+        }}
 
 
-        .date-line {
+        .date-line {{
             font-size: 13px;
             color: #666;
             margin-top: 10px;
@@ -94,47 +108,47 @@
             display: inline-block;
             padding-left: 20px;
             padding-right: 20px;
-        }
+        }}
 
         /* LOGO TEXTO */
-        .logo-text {
+        .logo-text {{
             font-size: 72px;
             font-weight: 900;
             letter-spacing: -2px;
             line-height: 1;
             font-family: var(--sans-font);
-        }
+        }}
 
-        .logo-red {
+        .logo-red {{
             color: #e4002b;
-        }
+        }}
 
-        .logo-noticias {
+        .logo-noticias {{
             color: #000000;
-        }
+        }}
 
 
         /* GRID PRINCIPAL DE NOTICIAS (HOME) */
-        .news-grid {
+        .news-grid {{
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
             gap: 30px;
             margin-top: 30px;
             margin-bottom: 50px;
-        }
+        }}
 
         /* ESTILOS DE ARTÍCULOS (PREVIEW) */
-        .article {
+        .article {{
             margin-bottom: 30px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 20px;
-        }
+        }}
 
-        .article:last-child {
+        .article:last-child {{
             border-bottom: none;
-        }
+        }}
 
-        .article-kicker {
+        .article-kicker {{
             color: var(--brand-red);
             font-size: 11px;
             font-weight: 700;
@@ -142,38 +156,38 @@
             letter-spacing: 1px;
             margin-bottom: 8px;
             display: block;
-        }
+        }}
 
-        .article-title {
+        .article-title {{
             font-family: var(--serif-font);
             font-weight: 700;
             line-height: 1.1;
             color: var(--brand-dark);
             margin-bottom: 10px;
-        }
+        }}
 
-        .article-title:hover {
+        .article-title:hover {{
             color: var(--brand-red);
             cursor: pointer;
-        }
+        }}
 
-        .article-summary {
+        .article-summary {{
             font-size: 15px;
             color: #555;
             margin-bottom: 15px;
-        }
+        }}
 
-        .article-author {
+        .article-author {{
             font-size: 12px;
             color: #888;
             text-transform: uppercase;
-        }
+        }}
 
-        .article-author strong {
+        .article-author strong {{
             color: var(--brand-dark);
-        }
+        }}
 
-        .article-img {
+        .article-img {{
             width: 100%;
             height: auto;
             display: block;
@@ -181,50 +195,50 @@
             filter: brightness(0.95);
             transition: filter 0.3s;
             cursor: pointer;
-        }
+        }}
 
-        .article-img:hover {
+        .article-img:hover {{
             filter: brightness(1);
-        }
+        }}
 
-        .hero-article .article-title {
+        .hero-article .article-title {{
             font-size: 42px;
-        }
+        }}
 
-        .hero-article .article-summary {
+        .hero-article .article-summary {{
             font-size: 18px;
             line-height: 1.6;
-        }
+        }}
 
-        .list-article .article-title {
+        .list-article .article-title {{
             font-size: 20px;
-        }
+        }}
 
-        .list-article .article-img {
+        .list-article .article-img {{
             aspect-ratio: 16/9;
             object-fit: cover;
-        }
+        }}
 
         /* SIDEBAR Y ANUNCIO */
-        .sidebar-title {
+        .sidebar-title {{
             font-size: 14px;
             font-weight: 900;
             text-transform: uppercase;
             border-bottom: 2px solid var(--brand-dark);
             padding-bottom: 10px;
             margin-bottom: 20px;
-        }
+        }}
 
-        .ad-box {
+        .ad-box {{
             border: 2px solid var(--brand-red);
             background-color: #fdfdfd;
             padding: 25px;
             text-align: center;
             margin-bottom: 30px;
             position: relative;
-        }
+        }}
 
-        .ad-label {
+        .ad-label {{
             position: absolute;
             top: 0;
             left: 50%;
@@ -235,18 +249,18 @@
             padding: 2px 8px;
             text-transform: uppercase;
             font-weight: bold;
-        }
+        }}
 
-        .ad-box h3 {
+        .ad-box h3 {{
             font-family: var(--sans-font);
             font-weight: 900;
             color: var(--brand-red);
             font-size: 24px;
             margin-bottom: 10px;
             text-transform: uppercase;
-        }
+        }}
 
-        .btn-subscribe {
+        .btn-subscribe {{
             display: inline-block;
             background-color: var(--brand-red);
             color: white;
@@ -255,101 +269,101 @@
             text-transform: uppercase;
             font-size: 13px;
             transition: background 0.3s;
-        }
+        }}
 
-        .btn-subscribe:hover {
+        .btn-subscribe:hover {{
             background-color: #a30e1e;
-        }
+        }}
 
-        .opinion-item {
+        .opinion-item {{
             display: flex;
             align-items: center;
             margin-bottom: 20px;
             border-bottom: 1px dotted #ccc;
             padding-bottom: 15px;
-        }
+        }}
 
-        .opinion-img {
+        .opinion-img {{
             width: 50px;
             height: 50px;
             border-radius: 50%;
             margin-right: 15px;
             object-fit: cover;
-        }
+        }}
 
-        .opinion-content h4 {
+        .opinion-content h4 {{
             font-family: var(--serif-font);
             font-size: 16px;
             margin-bottom: 4px;
-        }
+        }}
 
-        .opinion-author {
+        .opinion-author {{
             font-size: 11px;
             text-transform: uppercase;
             color: var(--brand-red);
             font-weight: bold;
-        }
+        }}
 
         /* FOOTER */
-        footer {
+        footer {{
             background-color: var(--brand-dark);
             color: #fff;
             padding: 50px 0;
             margin-top: 50px;
-        }
+        }}
 
-        .footer-grid {
+        .footer-grid {{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             margin-bottom: 40px;
-        }
+        }}
 
-        .footer-col h4 {
+        .footer-col h4 {{
             color: #fff;
             text-transform: uppercase;
             margin-bottom: 20px;
             font-size: 14px;
             letter-spacing: 1px;
-        }
+        }}
 
-        .footer-col ul {
+        .footer-col ul {{
             list-style: none;
-        }
+        }}
 
-        .footer-col li {
+        .footer-col li {{
             margin-bottom: 10px;
-        }
+        }}
 
-        .footer-col a {
+        .footer-col a {{
             color: #999;
             font-size: 13px;
-        }
+        }}
 
-        .footer-col a:hover {
+        .footer-col a:hover {{
             color: #fff;
-        }
+        }}
 
-        @media (max-width: 1024px) {
-            .news-grid {
+        @media (max-width: 1024px) {{
+            .news-grid {{
                 grid-template-columns: 1fr;
-            }
+            }}
 
-            .sidebar-col {
+            .sidebar-col {{
                 display: none;
-            }
+            }}
 
             /* Simplificado para tablet */
-        }
+        }}
 
-        @media (max-width: 768px) {
-            .sidebar-col {
+        @media (max-width: 768px) {{
+            .sidebar-col {{
                 display: block;
                 margin-top: 40px;
-            }
+            }}
 
             /* Sidebar vuelve abajo en móvil */
-        }
+        }}
     </style>
 </head>
 
@@ -358,7 +372,7 @@
     <!-- BARRA SUPERIOR -->
     <div class="top-bar">
         <div class="container">
-            <span>Edición El Salvador | <a href="#">Cambiar</a></span>
+            <span>{edicion} | <a href="#">Cambiar</a></span>
             <div>
                 <a href="#" style="margin-right: 15px;">Iniciar Sesión</a>
                 <a href="#" style="font-weight: bold;">Suscríbete</a>
@@ -375,7 +389,7 @@
                 </div>
             </a>
             <div class="date-line">
-                Jueves, 18 de Diciembre de 2025 • Actualizado a las 09:00
+                {fecha_actualizacion}
             </div>
         </div>
     </header>
@@ -396,78 +410,18 @@
 
                 <!-- COLUMNA 1: PRINCIPAL -->
                 <section class="main-col">
-                    <article class="article hero-article">
-                        <span class="article-kicker">Actualidad</span>
-                        <a href="noticias/ia-ciberataques-hackers-automatizacion.html">
-                            <img src="https://i.ibb.co/6cyQq1tD/png-skoid-8eb2c87c-0531-4dab-acb3-b5e2adddce6c-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png"
-                                alt="Oleada de ciberataques evidencia una nueva era para los hackers impulsada por la inteligencia artificial" class="article-img">
-                        </a>
-                        <h1 class="article-title"><a href="noticias/ia-ciberataques-hackers-automatizacion.html">Oleada de ciberataques evidencia una nueva era para los hackers impulsada por la inteligencia artificial</a></h1>
-                        <p class="article-summary">
-                            De intrusiones en cadenas de suministro globales a robos masivos de datos, la convergencia entre hackers y automatización avanzada plantea riesgos sistémicos sin precedentes.
-                        </p>
-                        <div class="article-author">
-                            Por <strong>Redacción RED Noticias</strong> | San Salvador
-                        </div>
-                    </article>
+{noticia_principal}
 
-                    <article class="article" style="margin-top: 30px;">
-                        <a href="noticias/china-ia-memorias-ram-soberania.html">
-                            <img src="https://i.ibb.co/Mk2ZkhT9/ME.png" alt="China acelera el desarrollo de nuevas memorias RAM para romper la dependencia exterior"
-                                class="article-img">
-                        </a>
-                        <span class="article-kicker">Actualidad</span>
-                        <h2 class="article-title" style="font-size: 28px;"><a
-                                href="noticias/china-ia-memorias-ram-soberania.html">China acelera el desarrollo de nuevas memorias RAM para romper la dependencia exterior</a></h2>
-                        <p class="article-summary" style="font-size: 16px;">
-                            En plena crisis global de suministros, el gigante asiático apuesta por memorias DRAM y HBM de diseño propio para blindar sus infraestructuras críticas y plataformas de IA.
-                        </p>
-                        <div class="article-author">
-                            Por <strong>Redacción RED Noticias</strong> | San Salvador
-                        </div>
-                    </article>
+{noticias_secundarias_main}
                 </section>
 
                 <!-- COLUMNA 2: SECUNDARIAS -->
                 <section class="center-col">
                     <div class="sidebar-title">Más Noticias de IA</div>
 
-                    <article class="article list-article">
-                        <a href="noticias/ia-mineria-eficiencia-alertas-eticas.html">
-                            <img src="https://i.ibb.co/1YqVhvGk/y-Y2ptt1i-QCsotqtw-Td-Xo1-TRvkejc-Bnwy6nw.png"
-                                alt="La inteligencia artificial acelera la minería entre alertas éticas y ambientales" class="article-img">
-                        </a>
-                        <span class="article-kicker">Actualidad</span>
-                        <h3 class="article-title"><a href="noticias/ia-mineria-eficiencia-alertas-eticas.html">La inteligencia artificial acelera la minería entre alertas éticas y ambientales</a></h3>
-                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Desde los Andes peruanos hasta el fondo marino, algoritmos y robots optimizan la extracción de minerales estratégicos, despertando dudas sobre el impacto en la biodiversidad.
-                        </p>
-                    </article>
+{noticias_secundarias_center}
 
-
-                    <article class="article list-article">
-                        <a href="noticias/robotica-ia-almacenes-hogares.html">
-                            <img src="https://i.ibb.co/r2n7jYJL/emwsv-Ev-TYn-Ss-L2-KJj3noc-NNm-BKVh-YXi-XSg-V14.png"
-                                alt="La nueva era de la robótica: la IA salta al almacén, la fábrica y el hogar" class="article-img">
-                        </a>
-                        <span class="article-kicker">Actualidad</span>
-                        <h3 class="article-title"><a href="noticias/robotica-ia-almacenes-hogares.html">La nueva era de la robótica: la IA salta al almacén, la fábrica y el hogar</a></h3>
-                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Modelos avanzados permiten a los robots razonar y actuar con autonomía, superando los entornos controlados de los laboratorios.
-                        </p>
-                    </article>
-                    <article class="article list-article">
-                        <a href="noticias/ia-salud-biotecnologia-diagnosticos.html">
-                            <img src="https://i.ibb.co/JRYL3080/9-ZWB6ww-Mg-Hp-ISaao-DWx6n-SJunx-F3f6-VD8-BNA.png"
-                                alt="La inteligencia artificial redefine la salud: de los laboratorios a la vida diaria" class="article-img">
-                        </a>
-                        <span class="article-kicker">Actualidad</span>
-                        <h3 class="article-title"><a href="noticias/ia-salud-biotecnologia-diagnosticos.html">La inteligencia artificial redefine la salud: de los laboratorios a la vida diaria</a></h3>
-                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            La IA personaliza diagnósticos y optimiza la cadena de suministro de fármacos críticos, aunque persisten retos en el factor humano.
-                        </p>
-                    </article>
-
+{noticias_lo_ultimo}
                 </section>
 
                 <!-- COLUMNA 3: SIDEBAR -->
@@ -496,8 +450,8 @@
                     <div style="background: var(--brand-dark); color: white; padding: 20px; text-align: center;">
                         <h4
                             style="font-size: 16px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">
-                            5 Noticias</h4>
-                        <p style="font-size: 13px; color: #ccc;">Actualizado el 18/12/2025</p>
+                            {total_noticias} Noticias</h4>
+                        <p style="font-size: 13px; color: #ccc;">Actualizado el {fecha_corta}</p>
                     </div>
                 </section>
             </div>
@@ -536,4 +490,147 @@
 
 </body>
 
-</html>
+</html>"""
+
+
+def generar_articulo_principal(noticia):
+    """Genera el HTML para la noticia principal"""
+    return f"""                    <article class="article hero-article">
+                        <span class="article-kicker">{noticia.get('categoria', 'Actualidad')}</span>
+                        <a href="noticias/{noticia['id']}.html">
+                            <img src="{noticia['imagen']}"
+                                alt="{noticia['titulo']}" class="article-img">
+                        </a>
+                        <h1 class="article-title"><a href="noticias/{noticia['id']}.html">{noticia['titulo']}</a></h1>
+                        <p class="article-summary">
+                            {noticia['resumen']}
+                        </p>
+                        <div class="article-author">
+                            Por <strong>Redacción RED Noticias</strong> | San Salvador
+                        </div>
+                    </article>"""
+
+
+def generar_articulo_secundario_main(noticia):
+    """Genera el HTML para una noticia secundaria en la columna principal"""
+    return f"""                    <article class="article" style="margin-top: 30px;">
+                        <a href="noticias/{noticia['id']}.html">
+                            <img src="{noticia['imagen']}" alt="{noticia['titulo']}"
+                                class="article-img">
+                        </a>
+                        <span class="article-kicker">{noticia.get('categoria', 'Actualidad')}</span>
+                        <h2 class="article-title" style="font-size: 28px;"><a
+                                href="noticias/{noticia['id']}.html">{noticia['titulo']}</a></h2>
+                        <p class="article-summary" style="font-size: 16px;">
+                            {noticia['resumen']}
+                        </p>
+                        <div class="article-author">
+                            Por <strong>Redacción RED Noticias</strong> | San Salvador
+                        </div>
+                    </article>"""
+
+
+def generar_articulo_lista(noticia):
+    """Genera el HTML para una noticia en lista (columna central)"""
+    return f"""                    <article class="article list-article">
+                        <a href="noticias/{noticia['id']}.html">
+                            <img src="{noticia['imagen']}"
+                                alt="{noticia['titulo']}" class="article-img">
+                        </a>
+                        <span class="article-kicker">{noticia.get('categoria', 'Actualidad')}</span>
+                        <h3 class="article-title"><a href="noticias/{noticia['id']}.html">{noticia['titulo']}</a></h3>
+                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
+                            {noticia['resumen']}
+                        </p>
+                    </article>"""
+
+
+def main():
+    """Función principal que actualiza el index.html"""
+    print("🔄 Actualizador de Index.html - RED Noticias")
+    print("=" * 50)
+    
+    # Cargar JSON de noticias
+    try:
+        with open('noticias.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        print("✅ JSON de noticias cargado correctamente")
+    except Exception as e:
+        print(f"❌ Error al cargar noticias.json: {e}")
+        return
+    
+    config = data.get('config', {})
+    
+    # Preparar variables de la plantilla
+    edicion = config.get('edicion', 'Edición El Salvador')
+    fecha_actualizacion = config.get('fecha_actualizacion', datetime.now().strftime('%A, %d de %B de %Y'))
+    
+    # Extraer fecha corta para el sidebar
+    try:
+        # Intentar extraer una fecha corta del formato
+        fecha_corta = datetime.now().strftime('%d/%m/%Y')
+    except:
+        fecha_corta = '17/12/2025'
+    
+    # Generar HTML de las noticias
+    noticia_principal_html = ""
+    noticias_secundarias_main_html = ""
+    noticias_secundarias_center_html = ""
+    noticias_lo_ultimo_html = ""
+    
+    total_noticias = 0
+    
+    # Noticia principal
+    if 'noticia_principal' in data:
+        noticia_principal_html = generar_articulo_principal(data['noticia_principal'])
+        total_noticias += 1
+        print("✅ Noticia principal procesada")
+    
+    # Noticias secundarias (repartidas entre main y center)
+    if 'noticias_secundarias' in data:
+        secundarias = data['noticias_secundarias']
+        # Primera noticia secundaria va a main-col
+        if len(secundarias) > 0:
+            noticias_secundarias_main_html = generar_articulo_secundario_main(secundarias[0])
+            total_noticias += 1
+        
+        # El resto van a center-col
+        for noticia in secundarias[1:]:
+            noticias_secundarias_center_html += generar_articulo_lista(noticia) + "\n"
+            total_noticias += 1
+        
+        print(f"✅ {len(secundarias)} noticias secundarias procesadas")
+    
+    # Noticias de "lo último"
+    if 'noticias_lo_ultimo' in data:
+        for noticia in data['noticias_lo_ultimo']:
+            noticias_lo_ultimo_html += generar_articulo_lista(noticia) + "\n"
+            total_noticias += 1
+        print(f"✅ {len(data['noticias_lo_ultimo'])} noticias de 'Lo último' procesadas")
+    
+    # Generar HTML completo
+    html_final = PLANTILLA_INDEX.format(
+        edicion=edicion,
+        fecha_actualizacion=fecha_actualizacion,
+        noticia_principal=noticia_principal_html,
+        noticias_secundarias_main=noticias_secundarias_main_html,
+        noticias_secundarias_center=noticias_secundarias_center_html,
+        noticias_lo_ultimo=noticias_lo_ultimo_html,
+        total_noticias=total_noticias,
+        fecha_corta=fecha_corta
+    )
+    
+    # Guardar index.html
+    try:
+        with open('index.html', 'w', encoding='utf-8') as f:
+            f.write(html_final)
+        print("\n✅ index.html actualizado correctamente")
+        print(f"📊 Total de noticias: {total_noticias}")
+        print("💡 El archivo está listo para ser usado")
+    except Exception as e:
+        print(f"❌ Error al guardar index.html: {e}")
+
+
+if __name__ == "__main__":
+    main()
+

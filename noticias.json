@@ -2,174 +2,150 @@
   "config": {
     "titulo_sitio": "RED Noticias - Tu fuente confiable de información",
     "edicion": "Edición El Salvador",
-    "fecha_actualizacion": "Miércoles, 17 de Diciembre de 2025 • Actualizado a las 09:00",
+    "fecha_actualizacion": "Jueves, 18 de Diciembre de 2025 • Actualizado a las 09:00",
     "logo_url": ""
   },
   "noticia_principal": {
-    "id": "ia-telecomunicaciones-redes-call-centers",
-    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-telecomunicaciones-redes-call-centers.html",
+    "id": "ia-ciberataques-hackers-automatizacion",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-ciberataques-hackers-automatizacion.html",
     "categoria": "Actualidad",
-    "titulo": "La inteligencia artificial redefine el sector de las telecomunicaciones: de las redes críticas a los call centers",
-    "resumen": "Operadores, organismos internacionales y grandes tecnológicas aceleran la integración de la IA en infraestructuras, servicios al cliente y gobernanza ética, en un cambio que promete eficiencia y personalización, pero también plantea desafíos laborales y regulatorios.",
+    "titulo": "Oleada de ciberataques evidencia una nueva era para los hackers impulsada por la inteligencia artificial",
+    "resumen": "De intrusiones en cadenas de suministro globales a robos masivos de datos, la convergencia entre hackers y automatización avanzada plantea riesgos sistémicos sin precedentes.",
     "autor": "Redacción RED Noticias",
     "coautor": null,
     "ciudad": "San Salvador",
-    "imagen": "https://i.ibb.co/Txjvf77g/Xyy7Q.png",
-    "imagen_alt": "IA en telecomunicaciones",
+    "imagen": "https://i.ibb.co/6cyQq1tD/png-skoid-8eb2c87c-0531-4dab-acb3-b5e2adddce6c-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+    "imagen_alt": "Ciberseguridad e IA",
     "imagen_caption": "Ilustración IA",
-    "subtitulo": "De las infraestructuras de conectividad a la transformación del servicio al cliente",
+    "subtitulo": "Cadenas de suministro bajo presión y el auge del cibercrimen automatizado",
     "contenido_completo": [
-      "Operadores, organismos internacionales y grandes tecnológicas aceleran la integración de la IA en infraestructuras, servicios al cliente y gobernanza ética, en un cambio que promete eficiencia y personalización, pero también plantea desafíos laborales y regulatorios.",
-      "<h2>Infraestructuras preparadas para la IA y la automatización</h2>",
-      "La IA impulsa redes más resilientes y seguras. Alianzas tecnológicas orientan a operadores hacia infraestructuras de conectividad de nueva generación (fibra óptica, redes de campus y automatización OT) para soportar aplicaciones de IA en tiempo real en logística e industria. En el sector minorista, estas redes facilitan pagos digitales, inventarios inteligentes y análisis de datos.",
-      "<h2>La atención al cliente, en plena transformación</h2>",
-      "Según Infobae, el uso de callbots aumenta la eficiencia en la atención telefónica entre un 500 % y un 1.000 %, automatizando consultas repetitivas. Esto genera una sustitución progresiva de teleoperadores en funciones básicas y aumenta la demanda de perfiles especializados. Además, operadores europeos trabajan en integrar asistentes de IA directamente en dispositivos móviles.",
-      "<h2>Ética, gobernanza y el papel de los reguladores</h2>",
-      "La UNESCO ha sumado a grandes compañías de telecomunicaciones para implementar la Recomendación sobre la Ética de la IA, promoviendo transparencia y protección de datos. En paralelo, se advierte de un reajuste profundo del empleo en el sector tecnológico. También se destacan aplicaciones inclusivas, como el uso de modelos de voz avanzada para personas con discapacidad del habla."
+      "De intrusiones en cadenas de suministro globales a robos masivos de datos personales, pasando por herramientas de IA creadas por ciberdelincuentes, los últimos casos muestran una convergencia creciente entre hackers, automatización avanzada y riesgos sistémicos.",
+      "<h2>Cadenas de suministro bajo presión</h2>",
+      "Recientes ataques contra fabricantes automotrices y multinacionales cerveceras han provocado paradas de producción y pérdidas estimadas en miles de millones. La dependencia de sistemas en la nube y tecnologías operativas conectadas convierte a los proveedores en objetivos prioritarios.",
+      "<h2>IA: La nueva herramienta del cibercrimen</h2>",
+      "Se han detectado herramientas de IA desarrolladas por delincuentes que, por menos de 200 euros, automatizan ataques complejos. En respuesta, grandes empresas de IA están invirtiendo en firmas de ciberseguridad para simular ataques y entrenar empleados frente a amenazas como la inyección de instrucciones.",
+      "<h2>Gobernanza y hacking cívico</h2>",
+      "Mientras en EE. UU. se debaten regulaciones, la UNESCO impulsa el Youth Hackathon 2025 para formar 'hackers cívicos' especializados en alfabetización mediática y lucha contra la desinformación."
     ],
     "citas": [
-      "La IA transforma las telecomunicaciones desde la base: redes más inteligentes, atención automatizada y nuevos dilemas éticos."
+      "La IA ha democratizado el ataque complejo: hoy, por una mínima inversión, un delincuente puede automatizar lo que antes requería un equipo de expertos."
     ],
     "puntos_clave": [
-      "Callbots aumentan eficiencia en atención telefónica entre 500% y 1,000%.",
-      "Infraestructuras de fibra óptica y automatización OT para soportar IA en tiempo real.",
-      "UNESCO y operadores implementan recomendaciones sobre ética de la IA.",
-      "Reajuste del empleo: automatización de funciones básicas, demanda de perfiles especializados."
+      "Ataques a cadenas de suministro causan pérdidas millonarias en sectores automotriz y alimentario.",
+      "Herramientas de IA para delincuentes disponibles por menos de 200 euros.",
+      "Robo de datos sensibles afecta a instituciones educativas internacionales.",
+      "UNESCO promueve el hacking cívico para contrarrestar la desinformación profesional."
     ]
   },
   "noticias_secundarias": [
     {
-      "id": "ia-gps-navegacion-seguridad",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-gps-navegacion-seguridad.html",
+      "id": "china-ia-memorias-ram-soberania",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/china-ia-memorias-ram-soberania.html",
       "categoria": "Actualidad",
-      "titulo": "La inteligencia artificial transforma el uso del GPS: de la navegación conversacional a la seguridad estratégica",
-      "resumen": "La integración de modelos avanzados de IA en aplicaciones de mapas, logística y sistemas de seguimiento está redefiniendo el papel del GPS, desde la navegación cotidiana hasta la protección de infraestructuras críticas, mientras crecen las alertas sobre privacidad, desinformación y vulnerabilidades geoestratégicas.",
+      "titulo": "China acelera el desarrollo de nuevas memorias RAM para romper la dependencia exterior",
+      "resumen": "En plena crisis global de suministros, el gigante asiático apuesta por memorias DRAM y HBM de diseño propio para blindar sus infraestructuras críticas y plataformas de IA.",
       "autor": "Redacción RED Noticias",
-      "coautor": null,
+      "coautor": "Fuente: EL MUNDO",
       "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/rGRdvTHg/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-      "imagen_alt": "IA y GPS",
+      "imagen": "https://i.ibb.co/Mk2ZkhT9/ME.png",
+      "imagen_alt": "Memorias RAM China",
       "imagen_caption": "Ilustración IA",
-      "subtitulo": "Navegación conversacional, logística inteligente y nuevos riesgos geoestratégicos",
+      "subtitulo": "Avances en HBM3 y la carrera por la autosuficiencia tecnológica",
       "contenido_completo": [
-        "La integración de modelos avanzados de IA en aplicaciones de mapas, logística y sistemas de seguimiento está redefiniendo el papel del GPS, desde la navegación cotidiana hasta la protección de infraestructuras críticas, mientras crecen las alertas sobre privacidad, desinformación y vulnerabilidades geoestratégicas.",
-        "<h2>Una nueva generación de GPS impulsada por IA</h2>",
-        "Los servicios de navegación están pasando de indicaciones estáticas a asistentes conversacionales. La IA generativa permite a los usuarios interactuar por voz, realizar consultas complejas sobre rutas seguras y reportar incidencias en carretera mediante lenguaje natural.",
-        "<h2>Logística, trazabilidad y nuevos mercados de rastreo</h2>",
-        "En el sector empresarial, la IA refuerza la resiliencia de las cadenas de suministro mediante algoritmos de predicción de demanda y optimización de flotas en tiempo real. Asimismo, la tecnología se expande al rastreo de mascotas, utilizando el procesamiento de datos para detectar patrones inusuales de movimiento.",
-        "<h2>Mapeo planetario, seguridad y libertades en juego</h2>",
-        "Sistemas avanzados como los de Google DeepMind permiten representaciones unificadas de la Tierra para planificación de infraestructuras. No obstante, la dependencia del GPS expone riesgos de sabotaje o spoofing (interferencia de señales). La UNESCO advierte sobre el impacto de la automatización de datos de localización en la privacidad y la libertad de expresión, instando a la creación de marcos regulatorios y estándares de seguridad."
+        "La presión de la IA y el giro de la industria han disparado la demanda masiva de memorias HBM para centros de datos, desplazando la producción de electrónica de consumo. China ha priorizado el desarrollo de HBM3 y HBM3E para competir en el segmento de alto rendimiento.",
+        "El gobierno chino ha restringido el uso de chips extranjeros en infraestructuras críticas por seguridad nacional, impulsando el mercado local. Aunque persiste una brecha con líderes tradicionales, el apoyo estatal está acelerando el camino hacia la soberanía tecnológica."
       ],
       "citas": [
-        "El GPS deja de ser un simple sistema de coordenadas para convertirse en un ecosistema conversacional con riesgos geopolíticos."
+        "El control de la memoria es el nuevo frente de la soberanía digital."
       ],
       "puntos_clave": [
-        "Navegación conversacional con IA: consultas por voz y reportes en lenguaje natural.",
-        "IA en logística: predicción de demanda y optimización de flotas en tiempo real.",
-        "Rastreo de mascotas con detección de patrones inusuales de movimiento.",
-        "Riesgos de spoofing y sabotaje en infraestructuras críticas.",
-        "UNESCO reclama marcos regulatorios para proteger privacidad y libertad de expresión."
+        "Desarrollo prioritario de memorias HBM3 y HBM3E en China.",
+        "Restricciones al hardware extranjero en infraestructuras críticas.",
+        "Demanda de IA desplaza producción de consolas y móviles de gama media.",
+        "Inversión masiva para cerrar la brecha con fabricantes occidentales."
       ]
     },
     {
-      "id": "ia-microchips-hardware-propio",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-microchips-hardware-propio.html",
+      "id": "ia-mineria-eficiencia-alertas-eticas",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-mineria-eficiencia-alertas-eticas.html",
       "categoria": "Actualidad",
-      "titulo": "La carrera por los microchips de IA se acelera: gigantes tecnológicos apuestan por hardware propio",
-      "resumen": "Fabricantes de coches eléctricos, grandes plataformas digitales y laboratorios de inteligencia artificial avanzan en el diseño de chips específicos para IA, reconfigurando la cadena de suministro tecnológica y la geopolítica del sector.",
+      "titulo": "La inteligencia artificial acelera la minería entre alertas éticas y ambientales",
+      "resumen": "Desde los Andes peruanos hasta el fondo marino, algoritmos y robots optimizan la extracción de minerales estratégicos, despertando dudas sobre el impacto en la biodiversidad.",
       "autor": "Redacción RED Noticias",
-      "coautor": null,
+      "coautor": "Fuente: EL MUNDO",
       "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/ZppK73wb/P7l-Kw-Q.png",
-      "imagen_alt": "Microchips de IA",
+      "imagen": "https://i.ibb.co/1YqVhvGk/y-Y2ptt1i-QCsotqtw-Td-Xo1-TRvkejc-Bnwy6nw.png",
+      "imagen_alt": "IA en Minería",
       "imagen_caption": "Ilustración IA",
-      "subtitulo": "De la automoción a los centros de datos: el chip como activo estratégico",
+      "subtitulo": "Minería de datos y recursos frente al desafío de la sostenibilidad",
       "contenido_completo": [
-        "Fabricantes de coches eléctricos, grandes plataformas digitales y laboratorios de inteligencia artificial avanzan en el diseño de chips específicos para IA, reconfigurando la cadena de suministro tecnológica y la geopolítica del sector.",
-        "<h2>Automoción: chips propios para la conducción autónoma</h2>",
-        "Un fabricante emergente de vehículos eléctricos ha anunciado un chip de alta capacidad optimizado para redes neuronales profundas. Este hardware permite procesar en milisegundos la información de sensores (cámaras y radares), buscando mejorar la seguridad, reducir el consumo energético y eliminar la dependencia de proveedores externos.",
-        "<h2>Plataformas digitales y laboratorios de IA: control del ciclo completo</h2>",
-        "Grandes empresas de internet desarrollan prototipos de chips para sus centros de datos con el fin de maximizar el rendimiento por vatio. Los laboratorios de IA, por su parte, crean hardware personalizado para reducir los costes de cómputo y optimizar tareas específicas como el razonamiento y la generación de contenido multimodal.",
-        "<h2>Fábricas inteligentes, geopolítica y regulación</h2>",
-        "La IA se integra en la propia fabricación de semiconductores para optimizar procesos y gestionar la cadena de suministro. Dado que estos chips son activos estratégicos, organismos internacionales ya forman a legisladores en gobernanza de hardware, abordando el control de exportaciones y el impacto de la capacidad de cómputo en el Estado de derecho."
+        "En Perú, sistemas de IA ajustan el consumo eléctrico de maquinaria pesada. En la nueva frontera, robots autónomos exploran el fondo marino buscando minerales críticos. Sin embargo, la UNESCO advierte que el consumo eléctrico de la propia IA podría superar al de la minería de Bitcoin para finales de 2025.",
+        "El lanzamiento del Global AI Ethics and Governance Observatory busca que la minería de datos respete los derechos fundamentales y la transparencia en las comunidades afectadas por la automatización."
       ],
       "citas": [
-        "Quien controla el chip controla la IA: el hardware propio se convierte en ventaja competitiva y activo geoestratégico."
+        "La paradoja de la IA: optimiza la extracción de recursos mientras consume energía a niveles históricos."
       ],
       "puntos_clave": [
-        "Fabricantes de coches eléctricos diseñan chips propios para conducción autónoma.",
-        "Plataformas digitales y laboratorios de IA desarrollan hardware personalizado.",
-        "Chips optimizados para maximizar rendimiento por vatio y reducir costes de cómputo.",
-        "IA integrada en fabricación de semiconductores para optimizar procesos.",
-        "Organismos internacionales forman a legisladores en gobernanza de hardware."
+        "Sistemas preventivos de fallas en minería terrestre peruana.",
+        "Robótica autónoma en minería submarina genera controversia ambiental.",
+        "Consumo de IA superará al de la minería de Bitcoin en 2025.",
+        "UNESCO lanza observatorio global de ética y gobernanza."
       ]
     }
   ],
   "noticias_lo_ultimo": [
     {
-      "id": "ia-ram-precios-electronica",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-ram-precios-electronica.html",
+      "id": "robotica-ia-almacenes-hogares",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/robotica-ia-almacenes-hogares.html",
       "categoria": "Actualidad",
-      "titulo": "El auge de la inteligencia artificial dispara los precios de la memoria RAM y amenaza a la electrónica de consumo",
-      "resumen": "La demanda de centros de datos y servidores para IA está tensionando la oferta global de DRAM. Fabricantes como Micron redirigen producción hacia clientes de alto rendimiento, mientras analistas prevén que la memoria de servidor podría duplicar su precio hacia 2026, encareciendo móviles, consolas y PC.",
+      "titulo": "La nueva era de la robótica: la IA salta al almacén, la fábrica y el hogar",
+      "resumen": "Modelos avanzados permiten a los robots razonar y actuar con autonomía, superando los entornos controlados de los laboratorios.",
       "autor": "Redacción RED Noticias",
       "coautor": null,
       "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/qYb5Tp23/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-      "imagen_alt": "Precios de RAM por IA",
+      "imagen": "https://i.ibb.co/r2n7jYJL/emwsv-Ev-TYn-Ss-L2-KJj3noc-NNm-BKVh-YXi-XSg-V14.png",
+      "imagen_alt": "Robótica Avanzada",
       "imagen_caption": "Ilustración IA",
-      "subtitulo": "Centros de datos absorben producción global de DRAM",
+      "subtitulo": "Agentes físicos y la inversión de 650,000 millones de dólares",
       "contenido_completo": [
-        "La demanda de centros de datos y servidores para IA está tensionando la oferta global de DRAM. Fabricantes como Micron redirigen producción hacia clientes de alto rendimiento, mientras analistas prevén que la memoria de servidor podría duplicar su precio hacia 2026, encareciendo móviles, consolas y PC.",
-        "<h2>La IA convierte la memoria en un recurso estratégico</h2>",
-        "El despliegue de modelos de IA generativa está absorbiendo la producción global de DRAM. Según Network World, los precios de la memoria para servidores podrían duplicarse hacia 2026, afectando la disponibilidad para el mercado de consumo masivo.",
-        "<h2>Micron y el giro de la cadena de suministro</h2>",
-        "Fabricantes como Micron han confirmado subidas en DRAM y NAND debido al volumen de pedidos para centros de datos de IA. Esto ha provocado un cambio estratégico donde la producción antes destinada a electrónica de consumo se prioriza ahora para clientes corporativos de alto margen.",
-        "<h2>Impacto en electrónica de consumo y horizontes</h2>",
-        "Se reporta una escalada de precios en RAM para PC, superando en costo a componentes de consolas de nueva generación. Se advierte que, para 2026, los móviles de gama baja podrían retroceder a 4 GB de RAM para ahorrar costes. Se espera que la demanda de memoria para IA crezca a doble dígito anual, manteniendo los precios elevados en los próximos años."
+        "Avances de Google DeepMind crean 'agentes físicos' que aprenden de la experiencia. En logística, coordinan flotas robóticas en tiempo real. En el hogar, dispositivos evolucionan hacia brazos robóticos capaces de manipular objetos cotidianos.",
+        "La UNESCO promueve educación STEM para preparar a las nuevas generaciones ante un mercado que requiere una inversión anual de 650,000 millones de dólares."
       ],
       "citas": [
-        "La IA no solo consume electricidad: también consume memoria. Y eso está encareciendo todo lo que llevamos en el bolsillo."
+        "Los robots ya no solo repiten movimientos; ahora perciben y deciden."
       ],
       "puntos_clave": [
-        "Precios de memoria para servidores podrían duplicarse hacia 2026.",
-        "Micron redirige producción de DRAM y NAND hacia clientes corporativos.",
-        "Escalada de precios en RAM para PC y consolas.",
-        "Móviles de gama baja podrían retroceder a 4 GB de RAM para 2026.",
-        "Demanda de memoria para IA con crecimiento de doble dígito anual."
+        "Robots que aprenden de la experiencia sin depender de la nube.",
+        "Despliegue de humanoides en la industria automotriz.",
+        "Inversión global estimada en 650,000 millones de dólares anuales.",
+        "Comportamientos imprevistos en interacciones entre sistemas de IA."
       ]
     },
     {
-      "id": "ia-burbuja-inversion-fatiga",
-      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-burbuja-inversion-fatiga.html",
+      "id": "ia-salud-biotecnologia-diagnosticos",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ia-salud-biotecnologia-diagnosticos.html",
       "categoria": "Actualidad",
-      "titulo": "La burbuja de la inteligencia artificial: entre la euforia inversora y las primeras señales de fatiga",
-      "resumen": "La expansión acelerada de la inteligencia artificial dispara inversiones y alianzas en múltiples sectores, mientras grandes tecnológicas, gobiernos y reguladores advierten de una posible burbuja y de la necesidad de enfocarse en usos reales, seguridad y sostenibilidad.",
+      "titulo": "La inteligencia artificial redefine la salud: de los laboratorios a la vida diaria",
+      "resumen": "La IA personaliza diagnósticos y optimiza la cadena de suministro de fármacos críticos, aunque persisten retos en el factor humano.",
       "autor": "Redacción RED Noticias",
       "coautor": null,
       "ciudad": "San Salvador",
-      "imagen": "https://i.ibb.co/nssCHq4P/png-skoid-0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
-      "imagen_alt": "Burbuja de IA",
+      "imagen": "https://i.ibb.co/JRYL3080/9-ZWB6ww-Mg-Hp-ISaao-DWx6n-SJunx-F3f6-VD8-BNA.png",
+      "imagen_alt": "IA en Medicina",
       "imagen_caption": "Ilustración IA",
-      "subtitulo": "Advertencias de sobrerreacción y límites materiales",
+      "subtitulo": "Medicina de precisión y prevención mediante biomarcadores",
       "contenido_completo": [
-        "La expansión acelerada de la inteligencia artificial dispara inversiones y alianzas en múltiples sectores, mientras grandes tecnológicas, gobiernos y reguladores advierten de una posible burbuja y de la necesidad de enfocarse en usos reales, seguridad y sostenibilidad.",
-        "<h2>Advertencias de la industria y expansión sectorial</h2>",
-        "Directivos de grandes tecnológicas y analistas de medios como Xataka y The Verge advierten sobre una posible sobrerreacción del mercado y valoraciones desalineadas con la realidad. A pesar de esto, la IA se expande en la banca para automatizar procesos y en el entretenimiento, donde empresas como Disney diversifican sus socios para generar contenidos.",
-        "<h2>Fragilidad de las startups y límites materiales</h2>",
-        "Fondos de capital riesgo señalan que muchas startups de IA carecen de \"poder de permanencia\" al no poseer ventajas competitivas claras. Además, surge un cuello de botella físico: la capacidad energética global necesaria para sostener centros de datos de alto consumo, lo que pone en duda las proyecciones de crecimiento ilimitado.",
-        "<h2>Gobernanza y el papel del Estado</h2>",
-        "La UNESCO alerta sobre riesgos para la libertad de expresión debido a la opacidad de los algoritmos de recomendación. En el plano político, la Casa Blanca ha sugerido que no habrá rescates públicos para empresas de IA si la burbuja estalla. El sector busca equilibrar esta incertidumbre con avances en seguridad, veracidad de modelos y aplicaciones en investigación científica y biológica."
+        "La IA detecta patrones genómicos y optimiza protocolos de vacunas. En el día a día, asistentes de bienestar monitorean sueño y nutrición. No obstante, expertos advierten que la IA no debe sustituir al médico, ya que su rendimiento baja en contextos sociales complejos.",
+        "La logística inteligente evita rupturas de stock en medicamentos esenciales, asegurando que las terapias críticas lleguen a tiempo."
       ],
       "citas": [
-        "La IA puede ser la tecnología del siglo o la burbuja del año. Todo depende de si las promesas se convierten en aplicaciones reales."
+        "La IA es un colaborador excepcional, pero el diagnóstico final sigue requiriendo la empatía y el contexto humano."
       ],
       "puntos_clave": [
-        "Advertencias de sobrerreacción del mercado y valoraciones desalineadas.",
-        "Startups de IA carecen de ventajas competitivas claras según fondos de capital riesgo.",
-        "Cuello de botella energético pone en duda proyecciones de crecimiento ilimitado.",
-        "Casa Blanca descarta rescates públicos si la burbuja estalla.",
-        "UNESCO alerta sobre opacidad de algoritmos y riesgos para la libertad de expresión."
+        "Detección de patrones en datos genómicos para medicina de precisión.",
+        "Optimización de experimentos en laboratorios biotecnológicos.",
+        "Análisis de biomarcadores para anticipar enfermedades del envejecimiento.",
+        "Alertas sobre sesgos y limitaciones en la comunicación clínica real."
       ]
     }
   ],

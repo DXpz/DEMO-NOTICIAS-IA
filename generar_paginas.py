@@ -3,12 +3,15 @@
 """
 Generador de páginas HTML individuales para cada noticia
 Lee noticias.json y crea un archivo HTML por cada noticia
+Incluye funcionalidad de archivo de noticias antiguas
 Autor: Trickzz.sh
 """
 
 import json
 import os
+import shutil
 from pathlib import Path
+from datetime import datetime
 
 # Plantilla HTML para cada noticia
 PLANTILLA_NOTICIA = """<!DOCTYPE html>
@@ -542,6 +545,156 @@ def generar_pagina_noticia(noticia, config):
     return html
 
 
+def guardar_noticias_en_historial(noticias_actuales_json):
+    """
+    Guarda las noticias actuales en el historial completo
+    Este historial se usa luego para el archivo
+    """
+    archivo_historial = 'historial_completo.json'
+    historial = {}
+    
+    # Cargar historial existente
+    if Path(archivo_historial).exists():
+        try:
+            with open(archivo_historial, 'r', encoding='utf-8') as f:
+                historial = json.load(f)
+        except:
+            historial = {}
+    
+    # Recopilar todas las noticias actuales
+    todas_noticias = []
+    if 'noticia_principal' in noticias_actuales_json:
+        todas_noticias.append(noticias_actuales_json['noticia_principal'])
+    if 'noticias_secundarias' in noticias_actuales_json:
+        todas_noticias.extend(noticias_actuales_json['noticias_secundarias'])
+    if 'noticias_lo_ultimo' in noticias_actuales_json:
+        todas_noticias.extend(noticias_actuales_json['noticias_lo_ultimo'])
+    
+    # Agregar al historial (clave: id, valor: datos completos de la noticia)
+    for noticia in todas_noticias:
+        if 'id' in noticia:
+            # Agregar fecha de primera publicación si no existe
+            if noticia['id'] not in historial:
+                noticia_copia = noticia.copy()
+                noticia_copia['fecha_primera_publicacion'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                historial[noticia['id']] = noticia_copia
+    
+    # Guardar historial actualizado
+    with open(archivo_historial, 'w', encoding='utf-8') as f:
+        json.dump(historial, f, ensure_ascii=False, indent=2)
+
+
+def archivar_noticias_antiguas(noticias_actuales_json):
+    """
+    Archiva las noticias antiguas de noticias/ a noticias_ant/
+    y actualiza el JSON de noticias antiguas
+    """
+    print("\n📦 Archivando noticias antiguas...")
+    print("-" * 50)
+    
+    # Crear carpeta de archivo si no existe
+    Path('noticias_ant').mkdir(exist_ok=True)
+    
+    # Verificar si existe la carpeta de noticias actuales
+    if not Path('noticias').exists():
+        print("ℹ️  No hay noticias actuales para archivar")
+        return
+    
+    # Cargar historial completo
+    archivo_historial = 'historial_completo.json'
+    historial = {}
+    if Path(archivo_historial).exists():
+        try:
+            with open(archivo_historial, 'r', encoding='utf-8') as f:
+                historial = json.load(f)
+        except:
+            historial = {}
+    
+    # Cargar JSON de noticias antiguas si existe
+    archivo_json = 'noticias_antiguas.json'
+    noticias_antiguas = []
+    ids_ya_archivados = set()
+    
+    if Path(archivo_json).exists():
+        try:
+            with open(archivo_json, 'r', encoding='utf-8') as f:
+                data_antiguas = json.load(f)
+                noticias_antiguas = data_antiguas.get('noticias', [])
+                # Obtener IDs ya archivados para no duplicar
+                ids_ya_archivados = {n['id'] for n in noticias_antiguas if 'id' in n}
+            print(f"✅ Cargadas {len(noticias_antiguas)} noticias antiguas existentes")
+        except Exception as e:
+            print(f"⚠️  Error al cargar {archivo_json}: {e}")
+            noticias_antiguas = []
+    
+    # Obtener lista de archivos HTML en noticias/
+    archivos_html = list(Path('noticias').glob('*.html'))
+    
+    if not archivos_html:
+        print("ℹ️  No hay archivos HTML para archivar")
+        return
+    
+    # Recopilar IDs de noticias actuales para no archivarlas
+    ids_actuales = set()
+    if 'noticia_principal' in noticias_actuales_json:
+        ids_actuales.add(noticias_actuales_json['noticia_principal']['id'])
+    if 'noticias_secundarias' in noticias_actuales_json:
+        for noticia in noticias_actuales_json['noticias_secundarias']:
+            ids_actuales.add(noticia['id'])
+    if 'noticias_lo_ultimo' in noticias_actuales_json:
+        for noticia in noticias_actuales_json['noticias_lo_ultimo']:
+            ids_actuales.add(noticia['id'])
+    
+    # Mover archivos HTML antiguos y guardar sus datos
+    archivados = 0
+    for archivo in archivos_html:
+        # Obtener el ID del archivo (nombre sin extensión)
+        id_noticia = archivo.stem
+        
+        # Si este ID NO está en las noticias actuales, archivar
+        if id_noticia not in ids_actuales:
+            # Buscar datos en el historial
+            if id_noticia in historial and id_noticia not in ids_ya_archivados:
+                noticia_datos = historial[id_noticia].copy()
+                noticia_datos['fecha_archivo'] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                noticias_antiguas.append(noticia_datos)
+                print(f"📦 Archivado con datos: {archivo.name}")
+            else:
+                # Si no está en historial, guardar solo info básica
+                if id_noticia not in ids_ya_archivados:
+                    noticias_antiguas.append({
+                        'id': id_noticia,
+                        'fecha_archivo': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                        'nota': 'Archivado sin datos completos del historial'
+                    })
+                    print(f"📦 Archivado sin datos: {archivo.name}")
+                else:
+                    print(f"📦 Archivado (ya registrado): {archivo.name}")
+            
+            # Mover el archivo
+            destino = Path('noticias_ant') / archivo.name
+            shutil.move(str(archivo), str(destino))
+            archivados += 1
+    
+    if archivados > 0:
+        print(f"\n✅ {archivados} archivos movidos a noticias_ant/")
+        
+        # Guardar JSON actualizado
+        data_guardar = {
+            'ultima_actualizacion': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            'total_noticias': len(noticias_antiguas),
+            'noticias': noticias_antiguas,
+            'info': 'Este archivo contiene el historial de todas las noticias archivadas'
+        }
+        
+        with open(archivo_json, 'w', encoding='utf-8') as f:
+            json.dump(data_guardar, f, ensure_ascii=False, indent=2)
+        
+        print(f"✅ JSON actualizado: {archivo_json} ({len(noticias_antiguas)} noticias)")
+    else:
+        print("ℹ️  No hay noticias para archivar (todas son actuales)")
+
+
 def main():
     """Función principal que genera todas las páginas"""
     print("🚀 Generador de Páginas HTML - RED Noticias")
@@ -556,8 +709,15 @@ def main():
         print(f"❌ Error al cargar noticias.json: {e}")
         return
     
+    # GUARDAR NOTICIAS ACTUALES EN EL HISTORIAL
+    guardar_noticias_en_historial(data)
+    
+    # ARCHIVAR NOTICIAS ANTIGUAS ANTES DE GENERAR LAS NUEVAS
+    archivar_noticias_antiguas(data)
+    
     # Crear carpeta noticias si no existe
     Path('noticias').mkdir(exist_ok=True)
+    print("\n📝 Preparando generación de noticias nuevas...")
     print("✅ Carpeta 'noticias/' verificada")
     
     config = data['config']
