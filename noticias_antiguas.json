@@ -1,6 +1,6 @@
 {
-  "ultima_actualizacion": "2025-12-18 09:12:05",
-  "total_noticias": 3,
+  "ultima_actualizacion": "2025-12-18 09:41:19",
+  "total_noticias": 4,
   "noticias": [
     {
       "id": "robotica-ia-almacenes-hogares",
@@ -88,6 +88,35 @@
       ],
       "fecha_primera_publicacion": "2025-12-18 09:09:54",
       "fecha_archivo": "2025-12-18 09:12:05"
+    },
+    {
+      "id": "china-ia-memorias-ram-soberania",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/china-ia-memorias-ram-soberania.html",
+      "categoria": "Actualidad",
+      "titulo": "China acelera el desarrollo de nuevas memorias RAM para romper la dependencia exterior",
+      "resumen": "En plena crisis global de suministros, el gigante asiático apuesta por memorias DRAM y HBM de diseño propio para blindar sus infraestructuras críticas y plataformas de IA.",
+      "autor": "Redacción RED Noticias",
+      "coautor": "Fuente: EL MUNDO",
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/Mk2ZkhT9/ME.png",
+      "imagen_alt": "Memorias RAM China",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "Avances en HBM3 y la carrera por la autosuficiencia tecnológica",
+      "contenido_completo": [
+        "La presión de la IA y el giro de la industria han disparado la demanda masiva de memorias HBM para centros de datos, desplazando la producción de electrónica de consumo. China ha priorizado el desarrollo de HBM3 y HBM3E para competir en el segmento de alto rendimiento.",
+        "El gobierno chino ha restringido el uso de chips extranjeros en infraestructuras críticas por seguridad nacional, impulsando el mercado local. Aunque persiste una brecha con líderes tradicionales, el apoyo estatal está acelerando el camino hacia la soberanía tecnológica."
+      ],
+      "citas": [
+        "El control de la memoria es el nuevo frente de la soberanía digital."
+      ],
+      "puntos_clave": [
+        "Desarrollo prioritario de memorias HBM3 y HBM3E en China.",
+        "Restricciones al hardware extranjero en infraestructuras críticas.",
+        "Demanda de IA desplaza producción de consolas y móviles de gama media.",
+        "Inversión masiva para cerrar la brecha con fabricantes occidentales."
+      ],
+      "fecha_primera_publicacion": "2025-12-18 09:09:54",
+      "fecha_archivo": "2025-12-18 09:41:19"
     }
   ],
   "info": "Este archivo contiene el historial de todas las noticias archivadas"

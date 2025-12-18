@@ -143,5 +143,143 @@
       "Alertas sobre sesgos y limitaciones en la comunicación clínica real."
     ],
     "fecha_primera_publicacion": "2025-12-18 09:09:54"
+  },
+  "china-ia-memorias-ram-dependencia": {
+    "id": "china-ia-memorias-ram-dependencia",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/china-ia-memorias-ram-dependencia.html",
+    "categoria": "Actualidad",
+    "titulo": "China acelera el desarrollo de nuevas memorias RAM para romper la dependencia exterior en plena crisis global",
+    "resumen": "El empuje de la inteligencia artificial, las tensiones comerciales y las restricciones a fabricantes extranjeros han disparado la apuesta de China por memorias DRAM y HBM de diseño propio para reducir su brecha tecnológica.",
+    "autor": "Redacción RED Noticias",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/Mk2ZkhT9/ME.png",
+    "imagen_alt": "Memorias RAM China",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "La presión de la IA y el giro de la industria",
+    "contenido_completo": [
+      "El empuje de la inteligencia artificial, las tensiones comerciales y las restricciones a fabricantes extranjeros han disparado la apuesta de China por memorias DRAM y HBM de diseño propio para reducir su brecha tecnológica.",
+      "<h2>La presión de la IA y el giro de la industria</h2>",
+      "La demanda masiva de memorias HBM para centros de datos de IA está desplazando la producción antes destinada a electrónica de consumo. Este cambio de prioridades amenaza con estancar las prestaciones de móviles y consolas de gama media, mientras los proveedores tradicionales se concentran en clientes corporativos de alto rendimiento.",
+      "<h2>Avances chinos y soberanía tecnológica</h2>",
+      "China ha priorizado el desarrollo de memorias HBM3 y HBM3E para competir en el segmento de chips de alto rendimiento. En paralelo, el gobierno ha restringido el uso de chips extranjeros en infraestructuras críticas por razones de seguridad nacional, impulsando el mercado para los fabricantes locales de DRAM y memoria flash.",
+      "<h2>Impacto global y cadena de suministro</h2>",
+      "Las tensiones comerciales y la posibilidad de aranceles occidentales actúan como catalizadores para que China invierta masivamente en investigación y capacidad fabril propia. Aunque aún existe una brecha con los líderes tradicionales, el apoyo estatal y la necesidad de abastecer sus plataformas de IA están acelerando su camino hacia la autosuficiencia tecnológica."
+    ],
+    "citas": [
+      "El control de la memoria es el nuevo frente de la soberanía digital en la era de la IA."
+    ],
+    "puntos_clave": [
+      "Desarrollo prioritario de memorias HBM3 y HBM3E en China.",
+      "Restricciones al hardware extranjero en infraestructuras críticas.",
+      "Demanda de IA desplaza producción de electrónica de consumo.",
+      "Inversión masiva china para cerrar la brecha tecnológica.",
+      "Tensiones comerciales aceleran la autosuficiencia tecnológica."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:41:19"
+  },
+  "ia-mineria-transformacion-etica-ambiental": {
+    "id": "ia-mineria-transformacion-etica-ambiental",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-mineria-transformacion-etica-ambiental.html",
+    "categoria": "Actualidad",
+    "titulo": "La inteligencia artificial acelera la transformación de la minería mientras crecen las alertas éticas y ambientales",
+    "resumen": "De la minería peruana a los fondos marinos, la industria adopta algoritmos y robots inteligentes para optimizar energía, seguridad y productividad. En paralelo, organismos internacionales advierten sobre los riesgos éticos y el elevado consumo de recursos.",
+    "autor": "Redacción RED Noticias",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/1YqVhvGk/y-Y2ptt1i-QCsotqtw-Td-Xo1-TRvkejc-Bnwy6nw.png",
+    "imagen_alt": "IA en Minería",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Entre la eficiencia operativa y el desafío de la sostenibilidad",
+    "contenido_completo": [
+      "De la minería peruana a los fondos marinos, la industria adopta algoritmos y robots inteligentes para optimizar energía, seguridad y productividad. En paralelo, organismos internacionales advierten sobre los riesgos éticos y el elevado consumo de recursos.",
+      "<h2>IA en minería terrestre y submarina</h2>",
+      "En Perú, se están desplegando sistemas de IA para ajustar el consumo eléctrico de maquinaria y anticipar fallas críticas, aunque el sector enfrenta una brecha de talento especializado. En la nueva frontera minera, robots autónomos operan en el fondo del mar buscando minerales estratégicos, una práctica que genera controversia por su impacto en la biodiversidad marina.",
+      "<h2>Ética, gobernanza y derechos humanos</h2>",
+      "La UNESCO ha lanzado el Global AI Ethics and Governance Observatory para promover la transparencia y la rendición de cuentas en el uso de algoritmos. Estas recomendaciones buscan proteger a las comunidades afectadas por la automatización y asegurar que la \"minería de datos\" respete los derechos fundamentales.",
+      "<h2>El costo energético de la inteligencia artificial</h2>",
+      "Existe una contradicción ambiental: mientras la IA mejora la eficiencia minera, su propia infraestructura es intensiva en recursos. Se estima que para finales de 2025, el consumo eléctrico de la IA podría superar al de la minería de Bitcoin, planteando un desafío crítico para la sostenibilidad global y la gestión de recursos hídricos y energéticos."
+    ],
+    "citas": [
+      "La paradoja de la IA: optimiza la extracción de recursos mientras consume energía a niveles históricos sin precedentes."
+    ],
+    "puntos_clave": [
+      "Sistemas de IA en Perú ajustan consumo eléctrico y anticipan fallas.",
+      "Robots autónomos en minería submarina generan debate ambiental.",
+      "UNESCO lanza observatorio global de ética y gobernanza de IA.",
+      "Consumo eléctrico de IA superará al de Bitcoin en 2025.",
+      "Brecha de talento especializado en el sector minero."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:41:19"
+  },
+  "robotica-ia-laboratorio-industria-hogar": {
+    "id": "robotica-ia-laboratorio-industria-hogar",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/robotica-ia-laboratorio-industria-hogar.html",
+    "categoria": "Actualidad",
+    "titulo": "La nueva era de la robótica: la inteligencia artificial salta del laboratorio al almacén, la fábrica y el hogar",
+    "resumen": "Modelos avanzados de IA permiten a los robots percibir, razonar y actuar con mayor autonomía en logística, industria, educación y entornos domésticos, mientras crece la inversión necesaria y el debate sobre empleo y regulación.",
+    "autor": "Redacción RED Noticias",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/r2n7jYJL/emwsv-Ev-TYn-Ss-L2-KJj3noc-NNm-BKVh-YXi-XSg-V14.png",
+    "imagen_alt": "Robótica Avanzada",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Agentes físicos, autonomía y el desafío de los 650,000 millones de dólares",
+    "contenido_completo": [
+      "Modelos avanzados de IA permiten a los robots percibir, razonar y actuar con mayor autonomía en logística, industria, educación y entornos domésticos, mientras crece la inversión necesaria y el debate sobre empleo y regulación.",
+      "<h2>Modelos de IA: \"Ojos\" y \"cerebro\" para robots</h2>",
+      "Avances de firmas como Google DeepMind están creando \"agentes físicos\" que integran visión, lenguaje y acción. Esto permite que los robots aprendan de la experiencia y se adapten a situaciones imprevistas sin depender de la nube, superando las limitaciones de los entornos controlados.",
+      "<h2>Logística y robots humanoides</h2>",
+      "La IA se integra en la gestión de almacenes para coordinar flotas robóticas y optimizar inventarios en tiempo real. En la industria automotriz, el uso de robots humanoides para tareas físicamente exigentes reabre el debate sobre el impacto en el empleo y la necesidad de marcos regulatorios que protejan a los trabajadores.",
+      "<h2>Ámbito doméstico y educativo</h2>",
+      "La UNESCO promueve la educación STEM para que las nuevas generaciones comprendan la automatización. En los hogares, los dispositivos evolucionan hacia sistemas con brazos robóticos capaces de ordenar y manipular objetos, un mercado en rápida innovación que está presionando a los actores tradicionales del sector.",
+      "<h2>Inversión y riesgos emergentes</h2>",
+      "Se estima que el desarrollo de esta tecnología requiere unos 650,000 millones de dólares anuales a nivel global. El crecimiento de la autonomía robótica plantea desafíos de seguridad y gobernanza, evidenciados por casos donde la interacción entre sistemas de IA ha generado comportamientos imprevistos que requieren supervisión constante."
+    ],
+    "citas": [
+      "Los robots ya no solo repiten movimientos programados; ahora perciben, razonan y deciden en tiempo real."
+    ],
+    "puntos_clave": [
+      "Agentes físicos de Google DeepMind aprenden sin depender de la nube.",
+      "Robots humanoides en industria automotriz generan debate laboral.",
+      "UNESCO promueve educación STEM para preparar nueva generación.",
+      "Inversión global estimada en 650,000 millones de dólares anuales.",
+      "Comportamientos imprevistos en interacción entre sistemas de IA."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:41:19"
+  },
+  "ia-salud-laboratorios-vida-diaria": {
+    "id": "ia-salud-laboratorios-vida-diaria",
+    "url": "https://demo-noticias-ia.vercel.app/noticias/ia-salud-laboratorios-vida-diaria.html",
+    "categoria": "Actualidad",
+    "titulo": "La inteligencia artificial redefine la salud: de los laboratorios a la vida diaria",
+    "resumen": "La IA acelera la investigación biológica, personaliza diagnósticos y tratamientos, transforma la logística de fármacos y se instala en el bienestar cotidiano, mientras crecen las alertas sobre sesgos y la necesidad de regulación ética.",
+    "autor": "Redacción RED Noticias",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "https://i.ibb.co/JRYL3080/9-ZWB6ww-Mg-Hp-ISaao-DWx6n-SJunx-F3f6-VD8-BNA.png",
+    "imagen_alt": "IA en Medicina",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Medicina de precisión, prevención y el desafío del factor humano",
+    "contenido_completo": [
+      "La IA acelera la investigación biológica, personaliza diagnósticos y tratamientos, transforma la logística de fármacos y se instala en el bienestar cotidiano, mientras crecen las alertas sobre sesgos y la necesidad de regulación ética.",
+      "<h2>Medicina de precisión y logística</h2>",
+      "El Inclusive Policy Lab de la UNESCO destaca que la IA impulsa la medicina de precisión al detectar patrones en datos genómicos e imágenes médicas. Además, en el sector biotecnológico, la orquestación inteligente de la cadena de suministro está optimizando la entrega de terapias críticas, evitando rupturas de stock de medicamentos esenciales.",
+      "<h2>Investigación en laboratorios y prevención</h2>",
+      "Nuevos modelos de IA están optimizando experimentos en el wet lab, sugiriendo protocolos más eficientes para el desarrollo de vacunas. En materia de prevención, el análisis masivo de biomarcadores permite anticipar riesgos asociados al envejecimiento y diseñar intervenciones personalizadas antes de que aparezcan enfermedades crónicas.",
+      "<h2>Salud digital y el factor humano</h2>",
+      "La IA se ha integrado en asistentes de bienestar que monitorean el sueño y la nutrición, mejorando la accesibilidad mediante tecnologías de voz. Sin embargo, expertos advierten que el rendimiento de la IA disminuye en situaciones clínicas reales donde la comunicación y el contexto social son clave. Se recalca que la IA no debe sustituir al profesional, sino actuar como un colaborador bajo una gobernanza transparente y segura."
+    ],
+    "citas": [
+      "La IA es un colaborador excepcional en el diagnóstico, pero el contexto humano y la empatía siguen siendo insustituibles."
+    ],
+    "puntos_clave": [
+      "Detección de patrones genómicos para medicina de precisión.",
+      "Optimización de la cadena de suministro de medicamentos críticos.",
+      "Análisis de biomarcadores para prevención de enfermedades crónicas.",
+      "Asistentes de bienestar integrados con tecnologías de voz.",
+      "Alertas sobre limitaciones de IA en comunicación clínica real."
+    ],
+    "fecha_primera_publicacion": "2025-12-18 09:41:19"
   }
 }
