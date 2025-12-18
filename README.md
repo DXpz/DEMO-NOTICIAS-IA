@@ -300,5 +300,3 @@ git push origin main
 
 ---
 
-**¡Disfruta de tu sistema automatizado de noticias! 🎉**
-
