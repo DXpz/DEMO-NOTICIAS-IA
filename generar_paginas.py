@@ -66,21 +66,6 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         /* HEADER */
-        .top-bar {{
-            background-color: var(--light-grey);
-            font-size: 12px;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border-color);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }}
-
-        .top-bar .container {{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }}
-
         .header-main {{
             padding: 25px 0;
             text-align: center;
@@ -139,7 +124,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         .full-headline {{
-            font-family: var(--serif-font);
+            font-family: var(--sans-font);
             font-size: 46px;
             line-height: 1.1;
             color: var(--brand-dark);
@@ -181,7 +166,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         .article-body {{
-            font-family: var(--serif-font);
+            font-family: var(--sans-font);
             font-size: 19px;
             line-height: 1.8;
             color: #222;
@@ -240,38 +225,6 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
             margin-bottom: 20px;
         }}
 
-        .ad-box {{
-            border: 2px solid var(--brand-red);
-            background-color: #fdfdfd;
-            padding: 25px;
-            text-align: center;
-            margin-bottom: 30px;
-            position: relative;
-        }}
-
-        .ad-label {{
-            position: absolute;
-            top: 0; left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            background: var(--brand-red); color: white;
-            font-size: 10px; padding: 2px 8px;
-            text-transform: uppercase; font-weight: bold;
-        }}
-
-        .ad-box h3 {{
-            font-family: var(--sans-font); font-weight: 900;
-            color: var(--brand-red); font-size: 24px; margin-bottom: 10px;
-            text-transform: uppercase;
-        }}
-
-        .btn-subscribe {{
-            display: inline-block; background-color: var(--brand-red); color: white;
-            padding: 12px 25px; font-weight: 700; text-transform: uppercase;
-            font-size: 13px; transition: background 0.3s;
-        }}
-        .btn-subscribe:hover {{
-            background-color: #a30e1e;
-        }}
 
         .related-item {{
             margin-bottom: 20px;
@@ -287,7 +240,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         .related-item h4 {{
-            font-family: var(--serif-font);
+            font-family: var(--sans-font);
             font-size: 16px;
             margin-top: 5px;
         }}
@@ -354,17 +307,6 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
 </head>
 <body>
 
-    <!-- BARRA SUPERIOR -->
-    <div class="top-bar">
-        <div class="container">
-            <span>Edición El Salvador | <a href="#">Cambiar</a></span>
-            <div>
-                <a href="#" style="margin-right: 15px;">Iniciar Sesión</a>
-                <a href="#" style="font-weight: bold;">Suscríbete</a>
-            </div>
-        </div>
-    </div>
-
     <!-- HEADER LOGO -->
     <header class="header-main">
         <div class="container">
@@ -405,13 +347,6 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
 
             <!-- SIDEBAR -->
             <aside class="article-sidebar">
-                <div class="ad-box">
-                    <span class="ad-label">Para ti</span>
-                    <h3>No te pierdas nada</h3>
-                    <p>La mejor información, sin límites.</p>
-                    <a href="#" class="btn-subscribe">Suscribirme</a>
-                </div>
-
                 <div class="sidebar-title">Noticias Relacionadas</div>
                 <div class="related-item">
                     <div class="related-category">Contexto</div>
@@ -459,8 +394,8 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
                     </ul>
                 </div>
             </div>
-            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 12px; color: #666;">
-                &copy; 2025 Unidad Editorial Información General, S.L.U.
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; color: #999;">
+                2025 RED Noticias
             </div>
         </div>
     </footer>

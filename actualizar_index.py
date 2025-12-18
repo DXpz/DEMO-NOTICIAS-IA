@@ -75,21 +75,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         /* HEADER */
-        .top-bar {{
-            background-color: var(--light-grey);
-            font-size: 12px;
-            padding: 8px 0;
-            border-bottom: 1px solid var(--border-color);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }}
-
-        .top-bar .container {{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }}
-
         .header-main {{
             padding: 25px 0;
             text-align: center;
@@ -131,10 +116,13 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         /* GRID PRINCIPAL DE NOTICIAS (HOME) */
         .news-grid {{
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 30px;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
             margin-top: 30px;
             margin-bottom: 50px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
         }}
 
         /* ESTILOS DE ARTÍCULOS (PREVIEW) */
@@ -159,7 +147,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .article-title {{
-            font-family: var(--serif-font);
+            font-family: var(--sans-font);
             font-weight: 700;
             line-height: 1.1;
             color: var(--brand-dark);
@@ -229,51 +217,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             margin-bottom: 20px;
         }}
 
-        .ad-box {{
-            border: 2px solid var(--brand-red);
-            background-color: #fdfdfd;
-            padding: 25px;
-            text-align: center;
-            margin-bottom: 30px;
-            position: relative;
-        }}
-
-        .ad-label {{
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
-            background: var(--brand-red);
-            color: white;
-            font-size: 10px;
-            padding: 2px 8px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }}
-
-        .ad-box h3 {{
-            font-family: var(--sans-font);
-            font-weight: 900;
-            color: var(--brand-red);
-            font-size: 24px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }}
-
-        .btn-subscribe {{
-            display: inline-block;
-            background-color: var(--brand-red);
-            color: white;
-            padding: 12px 25px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 13px;
-            transition: background 0.3s;
-        }}
-
-        .btn-subscribe:hover {{
-            background-color: #a30e1e;
-        }}
 
         .opinion-item {{
             display: flex;
@@ -292,7 +235,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .opinion-content h4 {{
-            font-family: var(--serif-font);
+            font-family: var(--sans-font);
             font-size: 16px;
             margin-bottom: 4px;
         }}
@@ -369,17 +312,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
 
 <body>
 
-    <!-- BARRA SUPERIOR -->
-    <div class="top-bar">
-        <div class="container">
-            <span>{edicion} | <a href="#">Cambiar</a></span>
-            <div>
-                <a href="#" style="margin-right: 15px;">Iniciar Sesión</a>
-                <a href="#" style="font-weight: bold;">Suscríbete</a>
-            </div>
-        </div>
-    </div>
-
     <!-- HEADER LOGO -->
     <header class="header-main">
         <div class="container">
@@ -400,11 +332,9 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
 
         <!-- ======================= NUEVAS NOTICIAS DE IA ======================= -->
         <div id="home-view">
-            <h2
-                style="font-family: var(--serif-font); font-size: 36px; margin: 30px 0 10px 0; color: var(--brand-dark); border-bottom: 3px solid var(--brand-red); padding-bottom: 15px;">
-                Especial: Inteligencia Artificial</h2>
-            <p style="font-size: 16px; color: #666; margin-bottom: 40px;">Las últimas noticias sobre el impacto de la IA
-                en deportes, logística, sanidad, educación y economía</p>
+            <h2 style="font-family: var(--sans-font); font-size: 28px; margin: 30px 0 30px 0; color: var(--text-grey); font-weight: 400;">
+                Las últimas noticias sobre el impacto de la IA en deportes, logística, sanidad, educación y economía
+            </h2>
 
             <div class="news-grid">
 
@@ -424,36 +354,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
 {noticias_lo_ultimo}
                 </section>
 
-                <!-- COLUMNA 3: SIDEBAR -->
-                <section class="sidebar-col">
-                    <!-- ANUNCIO -->
-                    <div class="ad-box">
-                        <span class="ad-label">Para ti</span>
-                        <h3>No te pierdas nada</h3>
-                        <p>La mejor información sobre IA, sin límites.</p>
-                        <div style="font-size: 30px; font-weight: bold; margin-bottom: 10px; color: #111;">1€ <span
-                                style="font-size: 14px; font-weight: normal;">/mes</span></div>
-                        <a href="#" class="btn-subscribe">Suscribirme Ahora</a>
-                    </div>
-
-                    <!-- INFO ESPECIAL -->
-                    <div class="sidebar-title">Sobre este Especial</div>
-                    <div
-                        style="background: #f9f9f9; padding: 20px; border-left: 3px solid var(--brand-red); margin-bottom: 20px;">
-                        <p style="font-size: 14px; line-height: 1.6; color: #555;">
-                            Este especial reúne las últimas noticias sobre cómo la inteligencia artificial está
-                            transformando sectores clave: desde el deporte y el entretenimiento, hasta la logística, la
-                            sanidad y la economía.
-                        </p>
-                    </div>
-
-                    <div style="background: var(--brand-dark); color: white; padding: 20px; text-align: center;">
-                        <h4
-                            style="font-size: 16px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px;">
-                            {total_noticias} Noticias</h4>
-                        <p style="font-size: 13px; color: #ccc;">Actualizado el {fecha_corta}</p>
-                    </div>
-                </section>
             </div>
         </div>
 
@@ -481,8 +381,8 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
                 <!-- ... -->
             </div>
             <div
-                style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 12px; color: #666;">
-                &copy; 2025 Unidad Editorial Información General, S.L.U.
+                style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; color: #999;">
+                2025 RED Noticias
             </div>
         </div>
     </footer>
