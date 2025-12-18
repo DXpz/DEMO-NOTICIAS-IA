@@ -3,6 +3,7 @@
 """
 Generador de páginas HTML individuales para cada noticia
 Lee noticias.json y crea un archivo HTML por cada noticia
+Autor: Trickzz.sh
 """
 
 import json
