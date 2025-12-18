@@ -288,7 +288,6 @@ git push origin main
 ## 📞 Soporte
 
 **Autor**: Trickzz.sh  
-**Email**: antoniohector413@gmail.com  
 **Repositorio**: https://github.com/DXpz/DEMO-NOTICIAS-IA.git
 
 ---
