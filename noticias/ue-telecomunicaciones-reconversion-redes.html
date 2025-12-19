@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La UE acelera la reconversión de sus redes de telecomunicaciones entre el apagado del 3G, la presión sobre Huawei y el auge del satélite - RED Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-red);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-red);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--brand-dark);
+            color: #fff;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
+            </a>
+            <div class="date-line">
+                Jueves, 19 de Diciembre de 2025
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Telecomunicaciones</span>
+                    <h1 class="full-headline">La UE acelera la reconversión de sus redes de telecomunicaciones entre el apagado del 3G, la presión sobre Huawei y el auge del satélite</h1>
+                    <p class="full-lead">Bruselas estudia una ley para retirar equipos chinos de las redes, España inicia el apagón del 2G y 3G y la conectividad satelital se consolida como alternativa, mientras el sector refuerza la digitalización de sus cadenas de suministro y afronta recortes laborales.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Jueves, 19 de Diciembre de 2025</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/B5CfGxRv/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png" alt="Telecomunicaciones UE">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p>El ecosistema de telecomunicaciones atraviesa una transformación simultánea en varios frentes: regulación, tecnología de acceso, modelo industrial y gobernanza digital. En la Unión Europea, las autoridades comunitarias consideran una legislación para forzar la retirada progresiva de equipos de determinados fabricantes chinos de las redes de telecomunicaciones del bloque, especialmente en infraestructuras 5G consideradas críticas, según adelantó la prensa especializada tecnológica.</p>
+<p>El debate gira en torno a la seguridad de la cadena de suministro y a la reducción de dependencias estratégicas, en un contexto de creciente tensión geopolítica. La nueva normativa afectaría tanto a nuevos despliegues como a equipos ya instalados, con implicaciones financieras para los operadores y posibles retrasos en la modernización de redes.</p>
+<p><h2>España inicia el apagado del 2G y 3G y acelera el 4G/5G</h2></p>
+<p>En paralelo, España ha puesto en marcha su plan para desmantelar las redes 2G y 3G a lo largo de los próximos años. El objetivo es liberar espectro radioeléctrico para reforzar las capacidades de 4G y 5G, y reducir costes de operación y mantenimiento asociados a tecnologías obsoletas. El proceso plantea interrogantes sobre la continuidad de servicio para usuarios con terminales antiguos, dispositivos M2M e infraestructuras que todavía dependen de estas bandas, por lo que los operadores ultiman planes de migración y sustitución gradual.</p>
+<p><h2>Satélites y nuevos modelos de conectividad global</h2></p>
+<p>Mientras las redes móviles terrestres se reconfiguran, la conectividad satelital irrumpe como un pilar adicional. Plataformas de órbita baja amplían su base de clientes y aseguran nuevo espectro para servicios de banda ancha, incluida la conectividad a bordo de aeronaves. Paralelamente, acuerdos comerciales recientes entre operadores móviles y compañías satelitales apuestan por soluciones de comunicación directa con el móvil (direct-to-device), que buscan cubrir zonas rurales, marítimas o de difícil acceso sin necesidad de torres tradicionales.</p>
+<p><h2>Digitalización, sostenibilidad y empleo en el sector telco</h2></p>
+<p>En el ámbito industrial, la digitalización de la cadena de suministro se consolida como prioridad. Informes sectoriales destacan el uso de inteligencia artificial, análisis avanzado de datos y plataformas en la nube para hacer más resilientes las operaciones de telecomunicaciones, mejorar la gestión de inventarios y anticipar disrupciones logísticas. Al mismo tiempo, se extienden las estrategias de compras digitales y sostenibles en los operadores, orientadas a reducir emisiones, trazar el impacto ambiental de proveedores y optimizar costes energéticos.</p>
+<p>Esta reconversión tecnológica se acompaña de profundos ajustes laborales. Grandes grupos de telecomunicaciones europeos han cuantificado ya importantes recortes de plantilla como parte de sus planes de ahorro hasta 2030, con el argumento de ganar eficiencia y financiar las inversiones necesarias en 5G, fibra óptica e infraestructuras de próxima generación.</p>
+<p><h2>Ética de la IA y gobernanza de Internet</h2></p>
+<p>En el plano institucional, la discusión se extiende a la dimensión ética y cultural de la conectividad. Operadores de referencia se han incorporado a consejos empresariales internacionales para promover el uso responsable de la inteligencia artificial en servicios de telecomunicaciones, en línea con principios de transparencia, no discriminación y protección de datos. Asimismo, organismos multilaterales y entidades de gobernanza de Internet han reforzado su compromiso con un Internet multilingüe, que garantice la diversidad lingüística y la inclusión digital, especialmente en comunidades infrarepresentadas.</p>
+<p>La suma de estas tendencias dibuja un escenario en el que la infraestructura de telecomunicaciones europea se vuelve más segura, digitalizada y diversa, pero también más exigente en inversión, regulación y gestión social de la transición.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-text" style="font-size: 36px;">
+                        <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                    </div>
+                    <p style="font-size: 13px; color: #999; margin-top: 10px;">Tu fuente confiable de noticias e información.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Guía TV</a></li>
+                        <li><a href="#">Tráfico</a></li>
+                        <li><a href="#">El Tiempo</a></li>
+                        <li><a href="#">Traductor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Corporativo</h4>
+                    <ul>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Publicidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; color: #999;">
+                2025 RED Noticias
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
