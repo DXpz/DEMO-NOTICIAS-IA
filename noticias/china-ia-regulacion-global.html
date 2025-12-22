@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>China acelera su agenda global de inteligencia artificial con un centro regulador en Shanghái y un nuevo foro internacional - RED Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-red);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-red);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--brand-dark);
+            color: #fff;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
+            </a>
+            <div class="date-line">
+                Lunes, 22 de Diciembre de 2025
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">China y la IA</span>
+                    <h1 class="full-headline">China acelera su agenda global de inteligencia artificial con un centro regulador en Shanghái y un nuevo foro internacional</h1>
+                    <p class="full-lead">Pekín combina una adopción masiva de la IA en su sociedad con una ofensiva diplomática para liderar la gobernanza mundial de la tecnología, entre elogios por su impulso innovador y críticas por el uso en vigilancia y el férreo control estatal.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Lunes, 22 de Diciembre de 2025</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/Z1tffMFT/ec.png" alt="China IA">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p>China ha intensificado en los últimos meses su ofensiva para situarse en el centro de la gobernanza mundial de la inteligencia artificial (IA). El país ha planteado la creación de una "organización global de cooperación" en IA y propone que su futuro centro regulador se ubique en Shanghái, según recogen diversos medios especializados y agencias internacionales.</p>
+<p>La iniciativa, impulsada desde la máxima cúpula política, aspira a establecer un marco multilateral para coordinar estándares, supervisar riesgos y promover el uso de la IA en ámbitos económicos, sociales y de seguridad. El plan se enmarca en la estrategia de Pekín de presentarse como actor imprescindible en el diseño de las reglas globales para las tecnologías emergentes.</p>
+<p><h2>Foro China–SCO y apoyo de organismos internacionales</h2></p>
+<p>En paralelo, China ha reforzado la cooperación regional a través del Foro China–Organización de Cooperación de Shanghái (SCO) sobre IA, previsto para 2025. La UNESCO ha anunciado su contribución a este foro con el objetivo declarado de promover una inteligencia artificial inclusiva y ética, alineada con sus recomendaciones globales sobre el uso responsable de estas tecnologías.</p>
+<p>La participación de organismos multilaterales añade legitimidad internacional a la apuesta china, que busca proyectarse no solo como potencia tecnológica, sino también como referente normativo. Sin embargo, analistas advierten de la tensión inherente entre los principios de apertura y transparencia que promueven estas organizaciones y el modelo de control político que caracteriza al ecosistema digital chino.</p>
+<p><h2>Adopción masiva y control interno</h2></p>
+<p>En el plano doméstico, China se ha convertido en uno de los mercados más avanzados en uso cotidiano de IA. Estimaciones recientes apuntan a que más de 600 millones de personas utilizan tecnologías basadas en IA a diario, desde asistentes virtuales hasta sistemas de recomendación, plataformas educativas y herramientas de productividad.</p>
+<p>Esta rápida adopción se ha visto acompañada por una regulación intensiva. Las autoridades han aprobado normas específicas para servicios de IA generativa, algoritmos de recomendación y moderación de contenidos, condicionando el desarrollo de modelos de lenguaje y su despliegue comercial. Expertos citados por medios tecnológicos señalan que este marco de supervisión estatal, aunque ofrece certidumbre regulatoria, también puede limitar la capacidad de innovación y la competencia abierta con empresas extranjeras.</p>
+<p><h2>Competencia con Occidente y tensiones tecnológicas</h2></p>
+<p>La construcción de un ecosistema propio de IA se ha acelerado también por las restricciones de acceso a tecnologías occidentales. Plataformas internacionales han anunciado planes para limitar el uso de sus servicios en China, lo que ha impulsado una migración temprana hacia soluciones locales y el desarrollo de modelos de lenguaje autóctonos.</p>
+<p>Mientras China exhibe fortaleza en la aplicación práctica de la IA y en su integración en la vida diaria, persisten críticas por el uso intensivo de estas tecnologías en vigilancia, control social y capacidades de espionaje. La combinación de ambición reguladora global, adopción interna masiva y supervisión gubernamental estricta sitúa al país en el centro del debate sobre cómo debe gobernarse la inteligencia artificial en las próximas décadas.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-text" style="font-size: 36px;">
+                        <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                    </div>
+                    <p style="font-size: 13px; color: #999; margin-top: 10px;">Tu fuente confiable de noticias e información.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Guía TV</a></li>
+                        <li><a href="#">Tráfico</a></li>
+                        <li><a href="#">El Tiempo</a></li>
+                        <li><a href="#">Traductor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Corporativo</h4>
+                    <ul>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Publicidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; color: #999;">
+                2025 RED Noticias
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

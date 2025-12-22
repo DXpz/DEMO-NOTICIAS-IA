@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nvidia refuerza su dominio en tarjetas gráficas con nueva generación RTX y expansión global para IA - RED Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-red);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-red);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--brand-dark);
+            color: #fff;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
+            </a>
+            <div class="date-line">
+                Lunes, 22 de Diciembre de 2025
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Tarjetas graficas Nvidia</span>
+                    <h1 class="full-headline">Nvidia refuerza su dominio en tarjetas gráficas con nueva generación RTX y expansión global para IA</h1>
+                    <p class="full-lead">La compañía consolida su liderazgo en GPUs con el lanzamiento de la serie GeForce RTX 50, acuerdos estratégicos en semiconductores, expansión a China y una valoración récord impulsada por la inteligencia artificial.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Lunes, 22 de Diciembre de 2025</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/7dCym9Wd/k-B8.png" alt="Nvidia RTX">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p>Nvidia ha dado un nuevo paso en la consolidación de su liderazgo en el mercado de tarjetas gráficas con el anuncio de su nueva gama GeForce RTX 50 Series, basada en la arquitectura Blackwell. Según información publicada en su propio canal corporativo, estas GPUs incorporan capacidades avanzadas de inteligencia artificial y renderizado neural, orientadas tanto a videojuegos como a creación de contenidos y aplicaciones de cómputo intensivo.</p>
+<p>La serie RTX 50 se posiciona como la evolución natural de la familia GeForce, con mejoras en rendimiento por vatio, nuevas funciones de aceleración por hardware para IA y optimización del trazado de rayos en tiempo real. El objetivo declarado de la compañía es que estas tarjetas gráficas no solo impulsen la experiencia de juego, sino que se conviertan en una herramienta estándar para flujos de trabajo basados en modelos de IA generativa.</p>
+<p><h2>Alianzas industriales y expansión de capacidad de cómputo</h2></p>
+<p>El refuerzo de la oferta de tarjetas gráficas se enmarca en una estrategia más amplia que incluye acuerdos industriales de gran escala. De acuerdo con Supply Chain Digital Magazine, Nvidia colabora con un gran fabricante asiático de electrónica en una planta de semiconductores altamente automatizada, impulsada por más de 50.000 GPUs de la firma. Esta infraestructura está diseñada para optimizar procesos de fabricación mediante IA y análisis de datos, extendiendo el uso de las tarjetas gráficas más allá del sector de consumo hacia la industria 4.0 y la gestión de cadenas de suministro.</p>
+<p>En paralelo, agencias internacionales han informado de un acuerdo entre Nvidia y un importante fabricante estadounidense de chips, que ha recibido luz verde de las autoridades antimonopolio de Estados Unidos. El pacto busca aumentar la capacidad de producción de semiconductores avanzados y diversificar las fuentes de fabricación de hardware crítico para IA y centros de datos.</p>
+<p><h2>Presencia en China y presión competitiva en la gama media</h2></p>
+<p>Fuentes citadas por Reuters señalan que Nvidia prepara el inicio de envíos de su chip H200 a China, con el objetivo de abastecer la demanda de aceleradores para IA en uno de los mayores mercados del mundo, en un contexto marcado por restricciones regulatorias y tensiones comerciales.</p>
+<p>Mientras tanto, en el segmento de consumo, medios especializados destacan el papel de modelos de gama media como las RTX 5060 y RTX 5060 Ti, que se están posicionando como opciones de relación calidad-precio especialmente competitivas por debajo de los 400 euros. Estas tarjetas, orientadas al jugador entusiasta, ofrecen acceso a tecnologías de IA y trazado de rayos que hasta hace poco se reservaban a gamas superiores.</p>
+<p><h2>Valor récord y cultura corporativa centrada en la IA</h2></p>
+<p>El peso estratégico de las tarjetas gráficas en el auge de la inteligencia artificial se refleja en la valoración bursátil de la compañía. Según un análisis publicado por medios internacionales, Nvidia ha alcanzado los 5 billones de dólares de capitalización, impulsada por la demanda de GPUs en centros de datos, servicios en la nube y aplicaciones de IA generativa.</p>
+<p>Este liderazgo tecnológico y financiero se acompaña de una cultura corporativa fuertemente orientada a la adopción interna de la IA. Información reciente apunta a que la dirección de la empresa ha instado a su plantilla a utilizar intensivamente herramientas de inteligencia artificial en todos los procesos, bajo el argumento de que estas tecnologías no solo mejoran la productividad, sino que también generan nuevas oportunidades de empleo y transformación profesional.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-text" style="font-size: 36px;">
+                        <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                    </div>
+                    <p style="font-size: 13px; color: #999; margin-top: 10px;">Tu fuente confiable de noticias e información.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Guía TV</a></li>
+                        <li><a href="#">Tráfico</a></li>
+                        <li><a href="#">El Tiempo</a></li>
+                        <li><a href="#">Traductor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Corporativo</h4>
+                    <ul>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Publicidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; color: #999;">
+                2025 RED Noticias
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
