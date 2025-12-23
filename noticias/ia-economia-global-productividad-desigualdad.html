@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La inteligencia artificial reconfigura la economía global entre ganancias de productividad y temores laborales - RED Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-red);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-red);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--brand-dark);
+            color: #fff;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: #999;
+            font-size: 13px;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
+            </a>
+            <div class="date-line">
+                Martes, 23 de Diciembre de 2025
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Impacto de la IA en la economía</span>
+                    <h1 class="full-headline">La inteligencia artificial reconfigura la economía global entre ganancias de productividad y temores laborales</h1>
+                    <p class="full-lead">La adopción acelerada de la IA impulsa inversiones récord, transforma cadenas de suministro y servicios públicos y abre una economía a dos velocidades, mientras crecen las alertas por despidos y desigualdades.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Martes, 23 de Diciembre de 2025</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/1Jh4MQD0/o4-Vpmc-LHr-Fdgo-SW1-JOZ7-OKJYXNM.png" alt="Economía Global IA">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p>La inteligencia artificial (IA) se ha consolidado como uno de los vectores centrales de la transformación económica global. Informes recientes señalan que las inversiones en tecnologías de IA y centros de datos alcanzan niveles récord, especialmente en Estados Unidos, impulsando un crecimiento intenso del sector tecnológico mientras otros segmentos de la economía muestran una evolución más lenta. Analistas hablan ya de una "economía a dos velocidades", con empresas altamente digitalizadas que capitalizan las nuevas herramientas y otra parte del tejido productivo que avanza con mayor dificultad. </p>
+<p>Este desequilibrio se refleja también en la estructura financiera de las grandes corporaciones tecnológicas. Según análisis especializados, el elevado gasto en infraestructuras de IA y en capacidades de cómputo está llevando a algunas compañías a recurrir de forma agresiva a endeudamiento y desinversiones en activos tradicionales. El auge de la IA se sostiene así sobre un esquema de financiación intenso que, para expertos, introduce nuevas vulnerabilidades macroeconómicas ligadas al coste del capital y a la presión sobre redes eléctricas e infraestructuras.</p>
+<p><h2>Productividad, cadenas de suministro y servicios públicos</h2></p>
+<p>Más allá de las cifras de inversión, el impacto de la IA se hace visible en sectores clave de la economía real. Un informe difundido por una consultora global especializada en cadenas de suministro apunta que el uso de sistemas de IA en logística, aprovisionamiento y planificación está permitiendo a las empresas reducir costes, aumentar la resiliencia ante disrupciones y optimizar inventarios. Estos avances se traducen en mejoras de productividad que pueden reforzar la competitividad industrial y contener presiones inflacionarias.</p>
+<p>En paralelo, organismos multilaterales destacan el potencial de la IA para transformar el sector público. La UNESCO, en colaboración con el G20, subraya que las aplicaciones de IA en servicios públicos, administración electrónica y análisis de datos pueden mejorar la eficiencia del gasto, acelerar trámites y favorecer una gobernanza basada en evidencia. Sin embargo, insiste en que estos beneficios sólo serán sostenibles si se articulan marcos de gobernanza ética, con enfoque en derechos humanos, inclusión y reducción de desigualdades.</p>
+<p><h2>Impacto laboral: entre los despidos y la mejora de la productividad</h2></p>
+<p>El mundo del trabajo se ha convertido en uno de los frentes más sensibles del despliegue de la IA. Un nuevo informe citado por medios especializados atribuye a la automatización mediante IA al menos 50.000 despidos en 2025 en Estados Unidos. Las cifras dan respaldo estadístico a un temor creciente entre trabajadores: que la adopción de algoritmos y sistemas generativos sustituya tareas humanas, especialmente en funciones administrativas, de atención al cliente y análisis de datos.</p>
+<p>Al mismo tiempo, empresas que han integrado la IA en sus procesos reportan incrementos significativos de productividad individual y organizacional. Directivos y especialistas señalan que los empleados que aprenden a utilizar estas herramientas logran completar tareas complejas en menos tiempo, mejorar la calidad de sus análisis y abrir nuevas líneas de negocio. Este doble efecto —riesgo de sustitución para algunos perfiles y aumento de capacidad para quienes incorporan la tecnología— está reconfigurando el mercado laboral y los salarios, con la posibilidad de ampliar brechas entre trabajadores altamente cualificados y aquellos con menos acceso a formación digital.</p>
+<p><h2>Desafío de política pública: crecimiento inclusivo y sostenible</h2></p>
+<p>La UNESCO ha dado la voz de alerta sobre la necesidad de acompañar el despliegue de la IA con políticas públicas robustas que eviten ampliar desigualdades. En documentos recientes, el organismo celebra que los países del G20 coloquen la IA en el centro de su agenda de economía digital, pero subraya que el objetivo debe ser un desarrollo inclusivo y sostenible. Esto implica, según sus recomendaciones, invertir en capacitación, proteger los derechos laborales, garantizar transparencia algorítmica y reforzar la protección de datos.</p>
+<p>Mientras los gobiernos avanzan en marcos regulatorios y estrategias nacionales de IA, el debate económico se desplaza desde si la IA generará crecimiento, hacia cómo se distribuyen sus beneficios y costes. La respuesta a esta cuestión será decisiva para determinar si la nueva ola tecnológica se traduce en un ciclo de prosperidad compartida o en una profundización de la "economía a dos velocidades" que ya empieza a dibujarse.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-text" style="font-size: 36px;">
+                        <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                    </div>
+                    <p style="font-size: 13px; color: #999; margin-top: 10px;">Tu fuente confiable de noticias e información.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Guía TV</a></li>
+                        <li><a href="#">Tráfico</a></li>
+                        <li><a href="#">El Tiempo</a></li>
+                        <li><a href="#">Traductor</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Corporativo</h4>
+                    <ul>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Publicidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; color: #999;">
+                2025 RED Noticias
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
