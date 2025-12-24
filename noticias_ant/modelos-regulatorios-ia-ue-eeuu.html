@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choque de modelos regulatorios para la IA: Bruselas detalla su mapa y Washington busca una sola voz - RED Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-red);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-red);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--brand-dark);
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            font-family: var(--sans-font);
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
+            </a>
+            <div class="date-line">
+                Martes, 23 de Diciembre de 2025
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Regulaciones para la inteligencia artificial</span>
+                    <h1 class="full-headline">Choque de modelos regulatorios para la IA: Bruselas detalla su mapa y Washington busca una sola voz</h1>
+                    <p class="full-lead">La Unión Europea avanza en la puesta en marcha de la AI Act con un complejo entramado de autoridades, mientras en Estados Unidos se impulsa un marco federal único para evitar normas divergentes por estado. En paralelo, la industria integra la IA en cadenas de suministro bajo crecientes exigencias de trazabilidad y cumplimiento.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Martes, 23 de Diciembre de 2025</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/CKD8Zm98/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png" alt="Regulación IA UE vs EEUU">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p>La regulación de la inteligencia artificial entra en una fase decisiva a ambos lados del Atlántico, con modelos de gobernanza profundamente distintos. Mientras la Unión Europea refuerza un enfoque basado en múltiples autoridades especializadas para desplegar la AI Act, en Estados Unidos gana fuerza la idea de un único marco federal que limite la capacidad de los estados para dictar sus propias normas sobre IA. Al mismo tiempo, sectores como el retail y la logística ya operan bajo ecosistemas tecnológicos donde la trazabilidad y el cumplimiento normativo son centrales.</p>
+<p><h2>Europa articula una red de supervisores para la AI Act</h2></p>
+<p>En la Unión Europea, la futura aplicación del Reglamento de Inteligencia Artificial (AI Act) se apoya en una arquitectura institucional compleja. De acuerdo con el análisis publicado por la UNESCO, la gobernanza no recae en un único organismo, sino en una combinación de autoridades nacionales competentes, organismos de evaluación de la conformidad, autoridades de protección de datos y una instancia coordinadora a nivel europeo encargada de armonizar criterios y supervisar la implementación. </p>
+<p>Este enfoque por capas persigue asegurar que los sistemas de IA de alto riesgo –por ejemplo, aquellos utilizados en infraestructuras críticas, empleo, salud o servicios públicos– cumplan requisitos estrictos de seguridad, transparencia y gestión de riesgos. La lógica es similar a la empleada en otras normativas comunitarias: normas comunes, supervisión principalmente nacional y un papel de coordinación en la esfera comunitaria para reducir discrepancias entre países.</p>
+<p><h2>Estados Unidos debate la centralización de las reglas</h2></p>
+<p>En contraste, el debate en Estados Unidos se ha centrado en la dispersión normativa. Informaciones publicadas por Infobae señalan que el expresidente Donald Trump ha planteado impulsar una regulación federal para la inteligencia artificial que limite la capacidad de los estados de aprobar marcos propios. La propuesta apunta a evitar un mosaico de normas que, según sus defensores, podría frenar inversiones y dificultar la expansión de empresas tecnológicas a escala nacional.</p>
+<p>El argumento central a favor de un único estándar federal es la previsibilidad regulatoria: compañías que desarrollan o integran IA preferirían trabajar con un solo conjunto de requisitos en lugar de enfrentar variaciones entre estados. Los detractores, en cambio, alertan de que una homogeneización a la baja podría reducir la protección de derechos y la capacidad de algunas jurisdicciones de imponer reglas más estrictas en ámbitos sensibles como la vigilancia, el reconocimiento facial o el uso de datos personales.</p>
+<p><h2>Bruselas busca equilibrio entre control y competitividad</h2></p>
+<p>Dentro de la propia Unión Europea también se libra una discusión sobre el equilibrio entre regulación y competitividad. Según informó Genbeta, la Comisión Europea ha reconocido el riesgo de concentrarse en exceso en la dimensión normativa y ha anunciado un plan de medidas para reforzar el desarrollo industrial de la IA en el continente, incluyendo incentivos, simplificación de trámites y apoyo a la innovación, con la intención declarada de posicionar a la UE como actor relevante frente a Estados Unidos y China.</p>
+<p>Este replanteamiento no supone renunciar a la AI Act, sino acompañarla de políticas que faciliten la adopción de tecnologías de IA conforme a las nuevas reglas. El reto reside en mantener estándares elevados de protección sin desplazar la inversión hacia otros mercados con marcos menos exigentes.</p>
+<p><h2>La industria de la cadena de suministro opera ya bajo exigencias crecientes</h2></p>
+<p>Mientras los legisladores definen sus modelos, distintas industrias avanzan en la integración práctica de la IA en entornos regulados. El sector de la cadena de suministro y el retail es un ejemplo significativo. Según destacó Supply Chain Digital Magazine, plataformas como el ecosistema Paramo de Inspectorio utilizan inteligencia artificial para gestionar calidad, cumplimiento normativo y trazabilidad en la producción global.</p>
+<p>Estas soluciones permiten a marcas y minoristas supervisar a distancia fábricas y proveedores, detectar incumplimientos y documentar el origen de los productos, respondiendo a demandas regulatorias en materia de seguridad de consumo, normas laborales y sostenibilidad. La evolución normativa en IA afectará directamente a este tipo de plataformas, que deberán demostrar no solo la fiabilidad de sus algoritmos, sino también su respeto a principios como la no discriminación, la explicabilidad y la protección de datos.</p>
+<p>La convergencia entre marcos legales ambiciosos y aplicaciones empresariales de gran escala sugiere que la próxima fase del debate ya no será solo quién regula la inteligencia artificial, sino cómo esas reglas condicionan la capacidad de innovar y de competir en mercados globales.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
