@@ -249,40 +249,17 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         footer {{
             background-color: var(--brand-dark);
             color: #fff;
-            padding: 50px 0;
+            padding: 20px 0;
             margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid #333;
         }}
 
-        .footer-grid {{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            margin-bottom: 40px;
-        }}
-
-        .footer-col h4 {{
-            color: #fff;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            font-size: 14px;
-            letter-spacing: 1px;
-        }}
-
-        .footer-col ul {{
-            list-style: none;
-        }}
-
-        .footer-col li {{
-            margin-bottom: 10px;
-        }}
-
-        .footer-col a {{
-            color: #999;
-            font-size: 13px;
-        }}
-
-        .footer-col a:hover {{
-            color: #fff;
+        .footer-logo {{
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            font-family: var(--sans-font);
         }}
 
         @media (max-width: 1024px) {{
@@ -359,47 +336,69 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="logo-text" style="font-size: 36px;">
-                        <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                    </div>
-                    <p style="font-size: 13px; color: #999; margin-top: 10px;">Tu fuente confiable de noticias e información.</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Información</h4>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="#">Acerca de</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Servicios</h4>
-                    <ul>
-                        <li><a href="#">Guía TV</a></li>
-                        <li><a href="#">Tráfico</a></li>
-                        <li><a href="#">El Tiempo</a></li>
-                        <li><a href="#">Traductor</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Corporativo</h4>
-                    <ul>
-                        <li><a href="#">Aviso Legal</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Publicidad</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div style="text-align: center; border-top: 1px solid #333; padding-top: 20px; font-size: 14px; color: #999;">
-                2025 RED Noticias
+            <div class="footer-logo">
+                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
             </div>
         </div>
     </footer>
 
+    </body>
+    </html>
+"""
+
+
+# Plantilla simple para páginas de redirección cuando una noticia
+# se ha movido a la carpeta de archivo `noticias_ant/`
+PLANTILLA_REDIRECCION = """<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RED Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/{archivo}">
+    <style>
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }}
+        .card {{
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
+            text-align: center;
+        }}
+        h1 {{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }}
+        p {{
+            font-size: 14px;
+            margin-bottom: 16px;
+        }}
+        a {{
+            color: #ce1126;
+            text-decoration: none;
+            font-weight: 600;
+        }}
+        a:hover {{
+            text-decoration: underline;
+        }}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/{archivo}">Ver noticia archivada</a></p>
+    </div>
 </body>
 </html>
 """
@@ -580,6 +579,10 @@ def archivar_noticias_antiguas(noticias_actuales_json):
         for noticia in noticias_actuales_json['noticias_lo_ultimo']:
             ids_actuales.add(noticia['id'])
     
+    # Construir conjunto de nombres ya archivados para evitar
+    # re-mover o tocar páginas que ya fueron enviadas a noticias_ant
+    nombres_ya_archivados = {p.name for p in Path('noticias_ant').glob('*.html')}
+
     # Mover archivos HTML antiguos y guardar sus datos
     archivados = 0
     for archivo in archivos_html:
@@ -588,6 +591,12 @@ def archivar_noticias_antiguas(noticias_actuales_json):
         
         # Si este ID NO está en las noticias actuales, archivar
         if id_noticia not in ids_actuales:
+            # Si ya existe una versión archivada con el mismo nombre,
+            # asumimos que ya fue procesado y se mantiene su redirección.
+            if archivo.name in nombres_ya_archivados:
+                print(f"ℹ️  {archivo.name} ya está archivado, se mantiene su redirección.")
+                continue
+
             # Buscar datos en el historial
             if id_noticia in historial and id_noticia not in ids_ya_archivados:
                 noticia_datos = historial[id_noticia].copy()
@@ -606,10 +615,21 @@ def archivar_noticias_antiguas(noticias_actuales_json):
                 else:
                     print(f"📦 Archivado (ya registrado): {archivo.name}")
             
-            # Mover el archivo
+            # Mover el archivo a noticias_ant
             destino = Path('noticias_ant') / archivo.name
             shutil.move(str(archivo), str(destino))
             archivados += 1
+
+            # Crear una página de redirección en la ruta original
+            # para que los enlaces antiguos (noticias/slug.html)
+            # sigan funcionando y apunten al archivo en noticias_ant/.
+            redireccion_path = Path('noticias') / archivo.name
+            try:
+                with open(redireccion_path, 'w', encoding='utf-8') as f:
+                    f.write(PLANTILLA_REDIRECCION.format(archivo=archivo.name))
+                print(f"🔁 Creada página de redirección: {redireccion_path}")
+            except Exception as e:
+                print(f"⚠️  No se pudo crear la página de redirección para {archivo.name}: {e}")
     
     if archivados > 0:
         print(f"\n✅ {archivados} archivos movidos a noticias_ant/")

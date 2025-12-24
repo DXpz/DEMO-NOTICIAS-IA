@@ -11,6 +11,7 @@ Autor: Trickzz.sh
 import subprocess
 import sys
 from pathlib import Path
+from datetime import datetime
 
 
 def ejecutar_script(script_name, descripcion):
@@ -75,14 +76,60 @@ def main():
     print("  ✅ Noticias antiguas archivadas")
     print("  ✅ Páginas HTML generadas")
     print("  ✅ Index.html actualizado")
-    print("\n💡 Próximos pasos sugeridos:")
+
+    # Intentar hacer push automático a GitHub
+    proyecto_dir = Path(__file__).resolve().parent
+    print("\n🚀 Enviando cambios a GitHub (push automático)...")
+    try:
+        # Asegurarse de que estamos en la carpeta del repo
+        if not (proyecto_dir / ".git").exists():
+            print("ℹ️  No se encontró un repositorio Git en esta carpeta. Omitiendo push automático.")
+        else:
+            # git add
+            subprocess.run(
+                ["git", "add", "-A"],
+                cwd=str(proyecto_dir),
+                check=True,
+            )
+
+            # git commit (solo si hay cambios)
+            resultado_status = subprocess.run(
+                ["git", "status", "--porcelain"],
+                cwd=str(proyecto_dir),
+                capture_output=True,
+                text=True,
+                check=True,
+            )
+
+            if resultado_status.stdout.strip():
+                mensaje = f"Actualización automática de noticias ({datetime.now().strftime('%Y-%m-%d %H:%M')})"
+                subprocess.run(
+                    ["git", "commit", "-m", mensaje],
+                    cwd=str(proyecto_dir),
+                    check=True,
+                )
+
+                # git push
+                subprocess.run(
+                    ["git", "push", "origin", "main"],
+                    cwd=str(proyecto_dir),
+                    check=True,
+                )
+                print("✅ Push a GitHub completado correctamente.")
+            else:
+                print("ℹ️  No hay cambios nuevos que enviar. Repositorio ya actualizado.")
+
+    except subprocess.CalledProcessError as e:
+        print(f"⚠️  Error al ejecutar comandos Git (código {e.returncode}).")
+        print("    Revisa el mensaje de error anterior y, si es necesario, haz el push manualmente.")
+    except Exception as e:
+        print(f"⚠️  Error inesperado durante el push automático: {e}")
+
+    print("\n💡 Recomendado:")
     print("  1. Revisar los cambios: abre index.html en tu navegador")
-    print("  2. Si todo está correcto, haz commit y push:")
-    print("     git add .")
-    print('     git commit -m "Actualización automática de noticias"')
-    print("     git push origin main")
+    print("  2. Verificar en GitHub que el push se haya aplicado correctamente")
     print("\n✨ ¡Listo para publicar!\n")
-    
+
     return True
 
 
