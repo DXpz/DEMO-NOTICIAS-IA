@@ -1,6 +1,6 @@
 {
-  "ultima_actualizacion": "2025-12-24 09:07:29",
-  "total_noticias": 25,
+  "ultima_actualizacion": "2025-12-24 09:56:16",
+  "total_noticias": 27,
   "noticias": [
     {
       "id": "robotica-ia-almacenes-hogares",
@@ -811,6 +811,70 @@
       "puntos_clave": [],
       "fecha_primera_publicacion": "2025-12-23 09:30:02",
       "fecha_archivo": "2025-12-24 09:07:29"
+    },
+    {
+      "id": "amd-nuevas-alianzas-chips-ia",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/amd-nuevas-alianzas-chips-ia.html",
+      "categoria": "AMD",
+      "titulo": "AMD refuerza su peso en la IA global con nuevas alianzas y chips especializados",
+      "resumen": "La compañía de semiconductores acelera su papel en inteligencia artificial y computación de alto rendimiento a través de acuerdos estratégicos con grandes tecnológicas, nuevos procesadores con núcleos de IA y un mayor protagonismo en centros de datos.",
+      "autor": "Redacción RED Noticias",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/x8FcdzrR/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "Chips AMD IA",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "Alianzas para diversificar el hardware de IA",
+      "contenido_completo": [
+        "Advanced Micro Devices (AMD) está consolidando su posición como uno de los actores centrales en la infraestructura mundial de inteligencia artificial (IA) y computación de alto rendimiento, apoyada en una combinación de nuevos diseños de chips y alianzas con gigantes tecnológicos que buscan reducir su dependencia de un único proveedor de GPU.",
+        "Entre los movimientos más significativos figura un acuerdo estratégico con OpenAI, mediante el cual la empresa de investigación en IA incorporará aceleradores de AMD a su infraestructura de cómputo. Este suministro de chips amplía el abanico de opciones de hardware para grandes modelos de IA generativa, en un mercado hasta ahora dominado por NVIDIA.",
+        "La lógica detrás de este acercamiento es doble: por un lado, evitar cuellos de botella en el acceso a GPU de alta gama; por otro, fomentar un ecosistema más competitivo que permita ajustar costes y tiempos de despliegue de nuevos servicios basados en IA. El pacto con OpenAI sitúa a AMD como alternativa real para centros de datos que priorizan cargas de trabajo de entrenamiento y razonamiento de modelos a gran escala.",
+        "<h2>Procesadores de escritorio con núcleos dedicados a IA</h2>",
+        "En paralelo al segmento de centros de datos, AMD avanza en el mercado de consumo con procesadores de escritorio que integran núcleos específicos para operaciones de IA. La familia Ryzen 8000G incorpora una unidad dedicada (similar a una NPU) capaz de ejecutar tareas de aprendizaje automático y aceleración de modelos locales directamente desde el PC, sin depender siempre de la nube.",
+        "Esta integración busca habilitar experiencias como mejora de video en tiempo real, asistentes inteligentes ejecutados en el dispositivo y herramientas creativas con funciones de IA generativa, al tiempo que se reducen la latencia y el consumo energético asociado al envío constante de datos a servidores remotos. El movimiento también presiona a otros fabricantes de CPU a incorporar capacidades de IA dedicadas en sus futuras generaciones de productos.",
+        "<h2>Cooperación con otros fabricantes y expansión en HPC</h2>",
+        "Las informaciones disponibles señalan además conversaciones entre AMD e Intel para la posible fabricación de algunos procesadores, así como una alianza con IBM enfocada en supercomputación y, en perspectiva, en cómputo cuántico. Estos acuerdos muestran que las fronteras tradicionales entre competidores y socios industriales se vuelven más difusas a medida que crece la demanda de potencia de cálculo.",
+        "En el ámbito de la computación de alto rendimiento (HPC), AMD promueve plataformas y racks optimizados para cargas de IA y simulación científica. Esta oferta se orienta tanto a centros de investigación como a grandes proveedores de servicios en la nube que requieren hardware escalable y eficiente para sostener el aumento del tráfico y de los modelos de próxima generación.",
+        "<h2>Reconfiguración del mapa de la IA</h2>",
+        "El conjunto de estos movimientos sugiere una reconfiguración gradual del mapa de la infraestructura de IA. AMD intenta capitalizar la necesidad de alternativas en GPU y aceleradores, mientras extiende sus capacidades desde el centro de datos hasta el ordenador personal. Si estas estrategias se consolidan, la próxima ola de aplicaciones de IA —desde asistentes generativos hasta sistemas científicos avanzados— podría apoyarse en un ecosistema de hardware más diverso, con AMD como uno de sus pilares principales."
+      ],
+      "citas": [],
+      "puntos_clave": [],
+      "fecha_primera_publicacion": "2025-12-24 09:07:29",
+      "fecha_archivo": "2025-12-24 09:56:16"
+    },
+    {
+      "id": "ciberataques-2025-ransomware-gobernanza",
+      "url": "https://demo-noticias-ia.vercel.app/noticias/ciberataques-2025-ransomware-gobernanza.html",
+      "categoria": "Ciberseguridad",
+      "titulo": "Ciberataques en 2025: del auge del ransomware a la gobernanza digital",
+      "resumen": "La primera mitad de 2025 confirma un salto en volumen y sofisticación de ataques: desde el malware móvil y el ransomware hasta la explotación de dominios aparcados y vulnerabilidades en sistemas de IA. En paralelo, organismos internacionales impulsan nuevas políticas de gobernanza y divulgación responsable para contener el riesgo.",
+      "autor": "Redacción RED Noticias",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "https://i.ibb.co/XZhy2573/png-skoid-0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2025-1.png",
+      "imagen_alt": "Ciberataques 2025",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "Ataques en sistemas de IA y expansión del ransomware",
+      "contenido_completo": [
+        "La ciberseguridad se ha consolidado en 2025 como un desafío estructural para empresas, gobiernos y organismos multilaterales. Diversos informes y anuncios institucionales apuntan a un aumento sostenido de ataques, una ampliación de las superficies de riesgo —incluidos los sistemas de inteligencia artificial— y un esfuerzo paralelo por reforzar la gobernanza y la gestión responsable de vulnerabilidades.",
+        "En el plano corporativo, datos recientes citados por medios especializados indican que la práctica totalidad de las empresas que utilizan inteligencia artificial han registrado al menos un intento de ataque contra estos sistemas. La cifra se sitúa en torno al 99 % de las organizaciones, lo que revela que los modelos de IA y sus infraestructuras asociadas se han convertido en un objetivo prioritario para los ciberdelincuentes. Los vectores van desde la manipulación de datos de entrenamiento hasta el abuso de APIs y entornos en la nube.",
+        "Al mismo tiempo, análisis sobre la primera mitad de 2025 describen un ecosistema de amenazas marcado por la explosión del malware móvil, la aparición de nuevos infostealers (programas diseñados para robar credenciales y datos sensibles) y una intensificación de las disputas entre grupos de ransomware, que compiten por víctimas y visibilidad. Estas dinámicas refuerzan la presión sobre los equipos de seguridad, obligados a combinar protección de dispositivos, vigilancia de credenciales y planes de respuesta ante incidentes de cifrado y extorsión.",
+        "<h2>Riesgos en la navegación cotidiana: dominios aparcados y errores tipográficos</h2>",
+        "La superficie de ataque no se limita a infraestructuras corporativas. Un análisis sobre dominios web conocidos como \"aparcados\" —direcciones registradas pero sin contenido legítimo activo— advierte que hasta un 30 % de ellos redirigen a software malicioso o a esquemas de fraude en línea. El riesgo se amplifica por un hábito frecuente de los usuarios: errores al escribir una URL, que pueden terminar en sitios controlados por actores maliciosos sin que el usuario perciba la diferencia.",
+        "Este fenómeno se suma a un contexto de amenazas crecientes de phishing y suplantación de identidad, donde el control de nombres de dominio, certificados y redirecciones se convierte en una pieza clave para reducir la exposición.",
+        "<h2>Gobernanza digital y multilingüismo para un Internet más seguro</h2>",
+        "Frente a este panorama, organismos internacionales avanzan en varias líneas de trabajo. La UNESCO y la Corporación de Internet para la Asignación de Nombres y Números (ICANN) han reforzado su cooperación para promover un Internet multilingüe y mejorar la aceptación universal de dominios y direcciones de correo en distintos sistemas de escritura. Además de favorecer la inclusión digital, esta agenda tiene implicaciones de seguridad: una mejor gestión de nombres de dominio y del sistema de nombres de dominio (DNS) contribuye a reducir vectores de abuso, errores de interpretación y usos fraudulentos.",
+        "La UNESCO también impulsa iniciativas para fortalecer la gobernanza de plataformas digitales en regiones como Centroamérica y el Caribe, con énfasis en transparencia, derechos humanos y mitigación de riesgos sistémicos. Estas acciones se inscriben en un esfuerzo más amplio por alinear regulaciones, estándares técnicos y prácticas de las empresas tecnológicas.",
+        "<h2>Divulgación responsable de vulnerabilidades y resiliencia institucional</h2>",
+        "En el ámbito institucional, la propia UNESCO ha publicado una política específica de divulgación de vulnerabilidades de seguridad. Este tipo de marcos fomenta que investigadores y expertos reporten fallos de manera coordinada, ofreciendo canales claros y plazos definidos para su corrección antes de que se hagan públicos. La adopción de esquemas de divulgación responsable se considera un componente crítico de la resiliencia en organismos internacionales, que gestionan infraestructuras sensibles y grandes volúmenes de información.",
+        "En paralelo, sectores como el farmacéutico trabajan en la integración de la gestión de riesgos —incluida la ciberseguridad— en sus cadenas de suministro, buscando garantizar la continuidad operativa ante incidentes físicos, climáticos o digitales. Esta convergencia entre seguridad lógica, logística y regulatoria apunta hacia un modelo de resiliencia integral.",
+        "El conjunto de estas tendencias sugiere que, en 2025, la ciberseguridad ha dejado de ser un asunto puramente técnico para convertirse en un eje de política pública, gobernanza digital y gestión estratégica de riesgos a escala global."
+      ],
+      "citas": [],
+      "puntos_clave": [],
+      "fecha_primera_publicacion": "2025-12-24 09:07:29",
+      "fecha_archivo": "2025-12-24 09:56:16"
     }
   ],
   "info": "Este archivo contiene el historial de todas las noticias archivadas"

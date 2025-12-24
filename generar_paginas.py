@@ -262,6 +262,10 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
             font-family: var(--sans-font);
         }}
 
+        .footer-logo .logo-noticias {{
+            color: #ffffff;
+        }}
+
         @media (max-width: 1024px) {{
             .article-layout {{
                 grid-template-columns: 1fr;
