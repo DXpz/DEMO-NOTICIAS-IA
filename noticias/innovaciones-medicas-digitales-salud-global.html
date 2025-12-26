@@ -2,352 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovaciones médicas y digitales reconfiguran la salud global - RED Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>RED Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/innovaciones-medicas-digitales-salud-global.html">
     <style>
-        :root {
-            --brand-red: #ce1126;
-            --brand-dark: #111111;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-red);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            border-bottom: 4px solid var(--brand-red);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: #e4002b;
-        }
-
-        .logo-noticias {
-            color: #000000;
-        }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
-            font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        .full-image-container {
-            margin-bottom: 30px;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
+            text-align: center;
         }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
+        h1 {
+            font-size: 20px;
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-red);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-red);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
+        a {
+            color: #ce1126;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-        }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: var(--brand-dark);
-            color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid #333;
-        }
-
-        .footer-logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
-        }
-
-        .footer-logo .logo-noticias {
-            color: #ffffff;
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
-            </a>
-            <div class="date-line">
-                Miércoles, 24 de Diciembre de 2025
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Salud y Medicina</span>
-                    <h1 class="full-headline">Innovaciones médicas y digitales reconfiguran la salud global</h1>
-                    <p class="full-lead">Los últimos avances van desde un Nobel centrado en regular el sistema inmune hasta startups que usan IA y mensajería para reorganizar la práctica médica. En paralelo, crece la preocupación por la vigilancia del bienestar y la protección de adolescentes y usuarios en entornos digitales.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
-                        <span>Miércoles, 24 de Diciembre de 2025</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/KjZ66Tyy/Ghi-FW6-Nrrj-HYg1-Rz-V45tjw.png" alt="Salud Digital Global">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p>La agenda mundial de salud atraviesa una fase de transformación simultánea en varios frentes: descubrimientos biológicos de alto impacto, irrupción de plataformas tecnológicas en la práctica clínica cotidiana y nuevas políticas para proteger el bienestar en entornos digitales. Aunque diversos en origen, estos desarrollos apuntan a un mismo eje: la necesidad de combinar innovación con salvaguardas éticas y de privacidad.</p>
-<p>El anuncio del nuevo Premio Nobel de Fisiología o Medicina reconoce investigaciones que esclarecen cómo el organismo evita atacarse a sí mismo. Estos trabajos sobre mecanismos de autorregulación del sistema inmunitario ayudan a entender por qué se desencadenan enfermedades autoinmunes y abren vías para terapias más específicas contra patologías crónicas, cánceres y complicaciones inflamatorias.</p>
-<p>La decisión de la Academia refuerza una tendencia de décadas: premiar la biología básica que, aunque no se traduzca de inmediato en fármacos, proporciona los planos moleculares sobre los que se construyen estrategias terapéuticas posteriores. A nivel global, este tipo de hallazgos influye en la orientación de la financiación pública y privada en investigación biomédica.</p>
-<p><h2>Startups de salud digital: del caos de mensajería a la IA para descubrir fármacos</h2></p>
-<p>En América Latina, una joven empresa de tecnología sanitaria ha captado una ronda semilla de 14 millones de dólares liderada por inversores del ecosistema tecnológico estadounidense para abordar un problema cotidiano: la desorganización de la comunicación médica a través de aplicaciones de mensajería, especialmente WhatsApp. Su plataforma busca centralizar consultas, agendas y seguimiento de pacientes, automatizando tareas administrativas que hoy sobrecargan a los profesionales.</p>
-<p>En el terreno de la biotecnología, una firma respaldada por OpenAI ha levantado 130 millones de dólares en una Serie B que la sitúa en una valoración de 1.300 millones. La compañía aplica modelos avanzados de inteligencia artificial al cribado y diseño de moléculas, con el objetivo de acelerar el descubrimiento de nuevos tratamientos. La magnitud de la financiación ilustra el creciente peso de la IA como motor de la investigación farmacéutica, con implicaciones para la velocidad y el coste del desarrollo de medicamentos. </p>
-<p><h2>Vigilancia del bienestar y dilemas de privacidad</h2></p>
-<p>Mientras tanto, el auge de dispositivos portátiles de salud, apps de seguimiento y pruebas de laboratorio a domicilio alimenta un modelo en el que el cuerpo se monitoriza de forma constante. Un análisis reciente advierte de que esta cultura de la optimización puede derivar en un entorno de vigilancia del bienestar, donde empresas y plataformas concentran datos fisiológicos extremadamente sensibles.</p>
-<p>El debate se desplaza así desde las ventajas de medir el sueño, la frecuencia cardiaca o biomarcadores en sangre hacia preguntas sobre quién controla esa información, cómo se utiliza con fines comerciales y qué riesgos plantea para la autonomía de los pacientes. La línea que separa la medicina preventiva de la intrusión en la vida privada es cada vez más difusa.</p>
-<p><h2>Seguridad digital para adolescentes y apoyo en salud mental</h2></p>
-<p>El impacto de la tecnología en la salud no se limita a la biología o la práctica clínica: también alcanza al bienestar emocional, especialmente de menores y jóvenes. OpenAI ha difundido recursos de alfabetización en inteligencia artificial dirigidos a adolescentes y a sus familias, con el objetivo de fomentar un uso informado de estas herramientas y propiciar conversaciones sobre seguridad en línea, gestión del tiempo de pantalla y salud mental.</p>
-<p>En paralelo, la organización ha presentado un plan específico de protección para adolescentes que detalla medidas de diseño, moderación y control parental orientadas a reducir la exposición a contenidos dañinos y a interacciones inadecuadas. Estas iniciativas se suman a esfuerzos del sector por incorporar salvaguardas desde la fase de diseño de los productos.</p>
-<p>Otra compañía del ámbito de la IA, Anthropic, ha descrito públicamente sus políticas para priorizar el bienestar de los usuarios, en particular en conversaciones que puedan tocar temas de salud mental o crisis personales. Entre las medidas anunciadas figuran guías internas para derivar a recursos de ayuda profesional cuando sea apropiado y protocolos de respuesta prudente ante solicitudes sensibles.</p>
-<p><h2>Un ecosistema sanitario más complejo y más interconectado</h2></p>
-<p>En conjunto, estos movimientos muestran un ecosistema de salud en el que se entrecruzan biomedicina de vanguardia, plataformas digitales, economía de datos y derechos de los usuarios. El reto para reguladores, sistemas sanitarios y empresas será aprovechar el potencial de la innovación —desde nuevas dianas inmunológicas hasta la aceleración de la I+D farmacéutica— sin perder de vista la privacidad, la equidad en el acceso ni la protección de colectivos vulnerables.</p>
-<p>La evolución regulatoria y los estándares internacionales que se adopten en los próximos años serán decisivos para determinar si esta nueva etapa de la salud digital y la IA se traduce en beneficios amplios y sostenibles, o si incrementa las brechas y riesgos ya existentes.</p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/innovaciones-medicas-digitales-salud-global.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>
