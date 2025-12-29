@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta redirige hasta un 30% del gasto del metaverso hacia productos con IA - RED Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-red);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-red);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--brand-dark);
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            font-family: var(--sans-font);
+        }
+
+        .footer-logo .logo-noticias {
+            color: #ffffff;
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
+            </a>
+            <div class="date-line">
+                Viernes, 26 de Diciembre de 2025
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Metaverse</span>
+                    <h1 class="full-headline">Meta redirige hasta un 30% del gasto del metaverso hacia productos con IA</h1>
+                    <p class="full-lead">Meta prepara un recorte de hasta un tercio del presupuesto de Reality Labs y Horizon Worlds tras acumular decenas de miles de millones en pérdidas. La compañía prioriza gafas inteligentes, wearables e infraestructura de IA generativa como nuevo eje de crecimiento.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Viernes, 26 de Diciembre de 2025</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/KxYN3ZvB/KRa-UPSNz-U.png" alt="Meta IA">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p>Meta estudia reducir entre un 25% y un 30% el presupuesto de su división de metaverso, Reality Labs, a partir de 2026, según adelantan medios tecnológicos y financieros estadounidenses. El ajuste afectaría tanto al desarrollo de Horizon Worlds como a otros proyectos de realidad virtual y aumentada, tras más de 70.000 millones de dólares en pérdidas acumuladas desde el giro corporativo hacia el metaverso iniciado en 2021.</p>
+<p>Los recortes se enmarcan en una reasignación de capital hacia productos considerados de monetización más inmediata: gafas inteligentes, dispositivos wearables y servicios basados en IA generativa. De acuerdo con las filtraciones citadas, la compañía mantendría el desarrollo de visores de realidad mixta, pero con equipos más reducidos y objetivos financieros más estrictos.</p>
+<p>En paralelo, Meta revisa su estructura de personal en la unidad de metaverso, con posibles ajustes en ingeniería y producto, mientras mantiene inversión en óptica, chips específicos y software de realidad mixta reutilizable en otros dispositivos. La prioridad pasa de construir un universo virtual masivo a integrar capacidades inmersivas en productos con mayor adopción potencial a corto plazo.</p>
+<p><h2>Giro estratégico: de mundos virtuales a infraestructura de IA</h2></p>
+<p>El cambio de foco coincide con la creciente presión interna y externa para acelerar la hoja de ruta en IA. Meta ha fichado a un nuevo responsable de inteligencia artificial con un paquete de compensación cercano a los 10 millones de dólares, movimiento que ha tensado algunas relaciones en la cúpula directiva pero refuerza el papel central de la IA en la empresa.</p>
+<p>El despliegue de modelos avanzados exige una infraestructura energética y computacional masiva. Meta explora convertirse en comercializadora eléctrica para asegurar suministro competitivo a sus centros de datos, una decisión que ilustra el peso que la IA tendrá en el balance de la compañía. Esta infraestructura no solo alimentará chatbots y asistentes, sino también algoritmos de representación 3D, avatares y sistemas de simulación que seguirán siendo componentes técnicos útiles para futuras experiencias inmersivas.</p>
+<p>En lugar de abandonar la realidad virtual, Meta integra su legado del metaverso en una estrategia más amplia: usar la IA para mejorar interacción, personalización y rendimiento en dispositivos físicos y servicios digitales. El resultado es un reequilibrio del portafolio, donde la apuesta a largo plazo por entornos persistentes se combina con productos de ciclo de ingresos más corto y medible.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
