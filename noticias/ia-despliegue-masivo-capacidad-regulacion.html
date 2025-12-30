@@ -2,345 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La IA entra en fase de despliegue masivo: más capacidad, más regulación y más empleo cualificado - RED Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>RED Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/ia-despliegue-masivo-capacidad-regulacion.html">
     <style>
-        :root {
-            --brand-red: #ce1126;
-            --brand-dark: #111111;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-red);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            border-bottom: 4px solid var(--brand-red);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: #e4002b;
-        }
-
-        .logo-noticias {
-            color: #000000;
-        }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
-            font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        .full-image-container {
-            margin-bottom: 30px;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
+            text-align: center;
         }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
+        h1 {
+            font-size: 20px;
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-red);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-red);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
+        a {
+            color: #ce1126;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-        }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: var(--brand-dark);
-            color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid #333;
-        }
-
-        .footer-logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
-        }
-
-        .footer-logo .logo-noticias {
-            color: #ffffff;
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
-            </a>
-            <div class="date-line">
-                Lunes, 29 de Diciembre de 2025
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">IA</span>
-                    <h1 class="full-headline">La IA entra en fase de despliegue masivo: más capacidad, más regulación y más empleo cualificado</h1>
-                    <p class="full-lead">Las grandes tecnológicas aceleran inversiones, productos y cambios de modelo de negocio en IA mientras crecen el escrutinio regulatorio y el impacto en el mercado laboral. La prioridad se desplaza hacia seguridad, transparencia y herramientas que asisten al usuario en vez de sustituirlo.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
-                        <span>Lunes, 29 de Diciembre de 2025</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/HTvSJdMH/x7r-Cy3-JDG3-Y6j6usw9-E2-TJb-Y.png" alt="IA Despliegue Masivo">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p>OpenAI, Google y nuevos actores están moviendo la inteligencia artificial generativa desde la fase experimental hacia servicios cotidianos. OpenAI refuerza la seguridad de ChatGPT Atlas frente a técnicas como la inyección de prompts, un tipo de manipulación de instrucciones que buscaba desviar el comportamiento del modelo. El objetivo es hacer el sistema más robusto para usos sensibles, especialmente en entornos empresariales y de navegación web asistida.</p>
-<p>Google, por su parte, integra capacidades de Gemini en Translate para ofrecer traducciones en tiempo real directamente en los auriculares, con voces más naturales y contexto mejor interpretado. En el ámbito de productividad personal, la startup Yoodli, fundada por ex empleados de Google, triplica su valoración hasta superar los 300 millones de dólares con un asistente de IA centrado en entrenar habilidades de comunicación, no en reemplazar al profesional.</p>
-<p>En programación, nuevos agentes basados en ChatGPT aspiran a cambiar la forma de desarrollar software, actuando como copilotos que automatizan tareas repetitivas y permiten a los equipos centrarse en arquitectura y diseño, elevando el nivel de especialización requerido.</p>
-<p><h2>Transparencia, regulación y ajuste del mercado de plataformas</h2></p>
-<p>La expansión de la IA viene acompañada de un giro hacia la transparencia. Google anuncia que su modo de IA para búsqueda enlazará a más fuentes, con el fin de hacer más verificables los resúmenes generados y dar mayor visibilidad a los editores. En paralelo, la Comisión Europea examina los resúmenes generados por productos de Google basados en IA para determinar si reutilizan contenido de medios de forma compatible con la normativa de competencia y de derechos de autor.</p>
-<p>El mercado de modelos también se reconfigura. Meta, tras años impulsando LLaMa como modelo abierto, revisa su estrategia para no quedar relegada en el segmento de consumo frente a modelos cerrados más orientados a producto. Informes del sector indican que el crecimiento de usuarios de ChatGPT se modera en un entorno donde Gemini y otros servicios integran IA directamente en buscadores, móviles y herramientas de trabajo.</p>
-<p><h2>Impacto económico: inversión récord y transformación del empleo</h2></p>
-<p>Las grandes tecnológicas están financiando la infraestructura que sostiene estos modelos con emisiones de deuda y grandes proyectos de centros de datos, lo que algunos analistas leen como una apuesta a largo plazo por la IA como capa básica de todos los servicios digitales. Este despliegue tiene ya reflejo visible en el mercado laboral: un informe citado por Genbeta estima unos 50.000 despidos en 2025 asociados directamente a la adopción de IA en EE.UU., sobre todo en tareas altamente estandarizables.</p>
-<p>Otro análisis, basado en 450 millones de puestos de trabajo, indica que el impacto inicial se concentra en roles "junior" y de entrada, que son los más expuestos a automatización parcial. Al mismo tiempo, crece la demanda de perfiles capaces de diseñar, supervisar y ajustar estos sistemas, reforzando una transición desde tareas repetitivas hacia funciones de mayor valor añadido. El reto para empresas y administraciones pasa por usar la IA como palanca de productividad y capacitación, complementando al trabajador humano en lugar de sustituirlo.</p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/ia-despliegue-masivo-capacidad-regulacion.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>
