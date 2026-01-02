@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasplantes de microbiota consolidan una nueva vía terapéutica en medicina - RED Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-red);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-red);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--brand-dark);
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            font-family: var(--sans-font);
+        }
+
+        .footer-logo .logo-noticias {
+            color: #ffffff;
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
+            </a>
+            <div class="date-line">
+                Viernes, 02 de Enero de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Medicina y Salud</span>
+                    <h1 class="full-headline">Trasplantes de microbiota consolidan una nueva vía terapéutica en medicina</h1>
+                    <p class="full-lead">Los trasplantes de microbiota intestinal pasan de la ciencia ficción a la práctica clínica para tratar infecciones graves y otras patologías. Su avance abre un campo de terapias personalizadas basadas en la modulación del ecosistema intestinal.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Viernes, 02 de Enero de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/p9knst3/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="Microbiota Salud">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p>Los trasplantes de microbiota fecal han dejado de ser un experimento marginal para convertirse en una herramienta terapéutica con resultados clínicos medibles. El procedimiento, que consiste en transferir microbiota intestinal de un donante sano a un paciente, se está utilizando ya en hospitales para tratar infecciones recurrentes, especialmente las causadas por Clostridioides difficile, donde los antibióticos fallan con frecuencia.</p>
+<p>Según la información recopilada, estos trasplantes muestran tasas de éxito muy superiores a los tratamientos convencionales en casos seleccionados, con una reducción significativa de recaídas y una mejora rápida de los síntomas digestivos. El mecanismo principal es la restauración de un ecosistema microbiano diverso que desplaza a bacterias patógenas y reequilibra la respuesta inflamatoria del intestino.</p>
+<p>Los protocolos actuales incluyen una selección estricta de donantes, análisis microbiológicos y virológicos, y preparación del material fecal en condiciones controladas. La administración puede realizarse mediante colonoscopia, cápsulas orales encapsuladas o sondas nasoenterales, según el caso clínico y la infraestructura disponible.</p>
+<p><h2>Nuevas indicaciones y retos de estandarización</h2></p>
+<p>Más allá de las infecciones por C. difficile, se están investigando aplicaciones en enfermedades inflamatorias intestinales, síndrome metabólico, obesidad y algunos trastornos neuropsiquiátricos vinculados al eje intestino-cerebro. Los resultados preliminares sugieren que, en subgrupos concretos de pacientes, la modulación dirigida de la microbiota podría complementar los fármacos convencionales y reducir efectos secundarios asociados a tratamientos prolongados.</p>
+<p>El principal desafío científico es la estandarización: definir qué composiciones microbianas son óptimas para cada indicación, cómo garantizar la reproducibilidad entre donantes y lotes, y qué variables del receptor (edad, dieta, medicación previa) influyen en la eficacia. Los reguladores sanitarios trabajan en clasificar estos productos entre trasplante, medicamento biológico o terapia avanzada, lo que condicionará su aprobación y seguimiento.</p>
+<p>En paralelo, surgen enfoques menos invasivos, como consorcios bacterianos diseñados en laboratorio o probióticos de nueva generación, que buscan replicar los beneficios del trasplante con formulaciones más controladas. Si las investigaciones en curso confirman su seguridad a largo plazo, los trasplantes de microbiota y sus derivados podrían consolidarse como una pieza estable del arsenal terapéutico en gastroenterología y enfermedades sistémicas relacionadas con el microbioma.</p>
+<p>Esta noticia fue elaborada por un agente de IA a partir de información pública verificada. Redacción original.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
