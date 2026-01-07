@@ -2,344 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robots domésticos con IA pasan del prototipo al asistente real en 2026 - RED Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>RED Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/robots-domesticos-ia-asistente-real-2026.html">
     <style>
-        :root {
-            --brand-red: #ce1126;
-            --brand-dark: #111111;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-red);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            border-bottom: 4px solid var(--brand-red);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: #e4002b;
-        }
-
-        .logo-noticias {
-            color: #000000;
-        }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
-            font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        .full-image-container {
-            margin-bottom: 30px;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
+            text-align: center;
         }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
+        h1 {
+            font-size: 20px;
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-red);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-red);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
+        a {
+            color: #ce1126;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-        }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: var(--brand-dark);
-            color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid #333;
-        }
-
-        .footer-logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
-        }
-
-        .footer-logo .logo-noticias {
-            color: #ffffff;
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
-            </a>
-            <div class="date-line">
-                Martes, 06 de Enero de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Robótica e IA</span>
-                    <h1 class="full-headline">Robots domésticos con IA pasan del prototipo al asistente real en 2026</h1>
-                    <p class="full-lead">El CES 2026 consolida una nueva generación de robots domésticos y de compañía impulsados por IA, diseñados para tareas físicas y apoyo emocional. Marcan el paso de la ‘IA en pantalla’ a la ‘IA física’ integrada en la vida diaria.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
-                        <span>Martes, 06 de Enero de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/93bvkHV1/EEep-Zm-H6-Vs-SXz-Qt3y-FLAf0n7w-M.png" alt="Robots Domésticos IA">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p>Los avances presentados en la previa y el arranque del CES 2026 señalan un giro claro: la inteligencia artificial deja de ser solo un software en el móvil o el ordenador y se integra en robots capaces de actuar en el mundo físico. Fabricantes como LG y varios desarrolladores de robots de compañía apuestan por dispositivos que combinan visión por computadora, modelos de lenguaje y control motor para asumir tareas del hogar y funciones de asistencia social.</p>
-<p>LG protagoniza uno de los ejemplos más visibles con CLOiD, un robot doméstico capaz de cargar la lavadora de forma autónoma, aunque todavía a un ritmo moderado. El sistema utiliza cámaras y sensores de profundidad para localizar la ropa, calcular trayectorias seguras y manipularpuertas y cajones. Sobre esa capa sensorial se ejecutan modelos de IA que reconocen objetos, planifican la secuencia de acciones y ajustan la fuerza de agarre.</p>
-<p>En paralelo, otros fabricantes llegan a CES con robots de compañía con IA orientados a interacción social, apoyo educativo y acompañamiento emocional. Estos dispositivos integran micrófonos de campo lejano, síntesis de voz, detección de emociones básicas en el lenguaje y, en algunos casos, expresión no verbal mediante pantallas o movimientos de cabeza. El objetivo no es reemplazar vínculos humanos, sino ofrecer apoyo estructurado en rutinas, recordatorios y aprendizaje personalizado.</p>
-<p><h2>De la ‘IA de moda’ a la ‘IA útil’ en robótica</h2></p>
-<p>La industria tecnológica sitúa 2026 como un punto de inflexión: la IA aplicada a robótica se orienta menos a demostraciones espectaculares y más a casos de uso concretos, repetibles y comercializables. Informes de análisis sectorial subrayan que la combinación de modelos de IA generativa con control clásico de robots permite que sistemas relativamente compactos ejecuten tareas que antes requerían costosa programación manual.</p>
-<p>El reto técnico principal ya no es solo entrenar modelos, sino integrarlos con hardware seguro y fiable: gestionar errores de percepción, limitar la fuerza en la interacción con personas, garantizar la privacidad de datos de voz y vídeo en el hogar y ofrecer ciclos de actualización de software que mejoren las capacidades sin comprometer la seguridad física.</p>
-<p>Los robots sociales y domésticos que llegan al mercado en 2026 funcionan como una primera generación de "IA física" orientada al gran público: aún lentos en algunas tareas, pero diseñados para aprender de la interacción, reducir la fricción en el día a día y abrir un espacio intermedio entre el altavoz inteligente y la automatización industrial.</p>
-<p>Esta noticia fue elaborada por un agente de IA a partir de información pública verificada. Redacción original.</p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/robots-domesticos-ia-asistente-real-2026.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>

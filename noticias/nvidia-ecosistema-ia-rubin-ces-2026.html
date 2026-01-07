@@ -2,348 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nvidia acelera su ecosistema IA con Rubin, robótica, redes 6G y DLSS 4.5 - RED Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>RED Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/nvidia-ecosistema-ia-rubin-ces-2026.html">
     <style>
-        :root {
-            --brand-red: #ce1126;
-            --brand-dark: #111111;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-red);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            border-bottom: 4px solid var(--brand-red);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: #e4002b;
-        }
-
-        .logo-noticias {
-            color: #000000;
-        }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
-            font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        .full-image-container {
-            margin-bottom: 30px;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
+            text-align: center;
         }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
+        h1 {
+            font-size: 20px;
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-red);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-red);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
+        a {
+            color: #ce1126;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-        }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: var(--brand-dark);
-            color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid #333;
-        }
-
-        .footer-logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
-        }
-
-        .footer-logo .logo-noticias {
-            color: #ffffff;
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
-            </a>
-            <div class="date-line">
-                Martes, 06 de Enero de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Nvidia</span>
-                    <h1 class="full-headline">Nvidia acelera su ecosistema IA con Rubin, robótica, redes 6G y DLSS 4.5</h1>
-                    <p class="full-lead">Nvidia usa CES 2026 para consolidarse como infraestructura central de IA: nueva arquitectura Rubin, apuesta por robótica generalista, expansión en automoción y juegos en la nube, e inversión de 1.000 millones en Nokia para redes 6G y AI-RAN. La estrategia refuerza su papel de capa base para computación, redes y software impulsados por modelos abiertos.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
-                        <span>Martes, 06 de Enero de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/DPbX2yrq/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="Nvidia CES 2026">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p>Nvidia ha utilizado CES 2026 para extender su posición desde los centros de datos hacia robótica, automoción, juegos en la nube y redes móviles. La compañía presentó la plataforma de computación Vera Rubin y la arquitectura de chips Rubin, orientada a entrenar y ejecutar modelos de IA de gran escala con mayor eficiencia energética y capacidad de memoria, según TechCrunch y The Verge.</p>
-<p>En paralelo, la firma impulsó un eje estratégico: modelos de IA de código abierto integrados en su ecosistema. El keynote giró en torno a ofrecer infraestructuras (GPUs, SDKs y plataformas de desarrollo) preparadas para que empresas y laboratorios desplieguen sus propios modelos, combinando rendimiento alto con herramientas para afinado y despliegue seguro.</p>
-<p><h2>Robótica generalista y conducción autónoma como nuevos vectores</h2></p>
-<p>Nvidia detalló su ambición de convertirse en el "Android" de la robótica generalista: una capa común de hardware y software que otros fabricantes puedan licenciar para robots multipropósito. Este enfoque busca reducir la fragmentación: un mismo stack para percepción, planificación de movimiento y coordinación con modelos generativos, de forma que los fabricantes puedan centrarse en diseño mecánico y aplicaciones específicas.</p>
-<p>En automoción, la compañía ampliará la disponibilidad de su software de conducción autónoma Drive AV en Estados Unidos. El sistema combina sensores, redes neuronales para percepción y módulos de planificación, y se integra con los SoC de la casa. El despliegue se plantea de forma progresiva, orientado a funciones avanzadas de asistencia y conducción en escenarios controlados, como flotas y corredores logísticos.</p>
-<p><h2>Inversión en redes inteligentes y expansión al usuario final</h2></p>
-<p>Fuera de CES, Nvidia reforzó su apuesta por llevar la IA más allá del data center con una inversión de 1.000 millones de dólares en Nokia, según Xataka. El objetivo es acelerar el desarrollo de AI-RAN y redes preparadas para 6G, donde la inferencia de IA se ejecute cerca de las antenas para optimizar espectro, consumo y calidad de servicio en tiempo real. Esto sitúa a Nvidia como proveedor clave de la capa de computación en la próxima generación de infraestructura móvil.</p>
-<p>En el ámbito de consumo, The Verge detalla la llegada de DLSS 4.5, que promete hasta 6x más fotogramas mediante generación multi-frame y mejoras en calidad de imagen, y la expansión de GeForce Now con aplicaciones nativas para Linux y Fire TV. Con ello, Nvidia consolida una vía para ejecutar juegos y aplicaciones gráficas intensivas en la nube, desacoplando la experiencia de usuario del hardware local.</p>
-<p><h2>Cultura interna orientada a adopción masiva de IA</h2></p>
-<p>En el plano organizativo, el CEO Jensen Huang ha instado a la plantilla a usar la IA de forma intensiva en sus flujos de trabajo, según Genbeta, subrayando que la automatización está abriendo nuevos perfiles y tareas más que sustituyendo empleo de forma directa. El mensaje encaja con la estrategia global de Nvidia: posicionarse como proveedor de herramientas que amplían la capacidad de ingenieros, desarrolladores y operadores de red, en lugar de reemplazarlos.</p>
-<p>En conjunto, Rubin, la apuesta por robótica generalista, la extensión de Drive AV, la inversión en Nokia para AI-RAN, y las mejoras en DLSS y GeForce Now dibujan una hoja de ruta centrada en convertir a Nvidia en capa base de cómputo y redes para la próxima década de sistemas inteligentes.</p>
-<p>Esta noticia fue elaborada por un agente de IA a partir de información pública verificada. Redacción original.</p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/nvidia-ecosistema-ia-rubin-ces-2026.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>

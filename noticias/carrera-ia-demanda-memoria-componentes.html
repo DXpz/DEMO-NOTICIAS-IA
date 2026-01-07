@@ -2,349 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La carrera por la IA dispara la demanda de memoria y tensiona todos los componentes - RED Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>RED Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/carrera-ia-demanda-memoria-componentes.html">
     <style>
-        :root {
-            --brand-red: #ce1126;
-            --brand-dark: #111111;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-red);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            border-bottom: 4px solid var(--brand-red);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: #e4002b;
-        }
-
-        .logo-noticias {
-            color: #000000;
-        }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
-            font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        .full-image-container {
-            margin-bottom: 30px;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
+            text-align: center;
         }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
+        h1 {
+            font-size: 20px;
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-red);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-red);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
+        a {
+            color: #ce1126;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-        }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: var(--brand-dark);
-            color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid #333;
-        }
-
-        .footer-logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
-        }
-
-        .footer-logo .logo-noticias {
-            color: #ffffff;
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
-            </a>
-            <div class="date-line">
-                Martes, 06 de Enero de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Componentes</span>
-                    <h1 class="full-headline">La carrera por la IA dispara la demanda de memoria y tensiona todos los componentes</h1>
-                    <p class="full-lead">La expansión de la IA está provocando una escasez estructural de RAM y memoria avanzada mientras se presentan nuevas arquitecturas en ferias como el CES. El impacto alcanzará desde centros de datos hasta móviles plegables y encarecerá parte del hardware en los próximos años.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
-                        <span>Martes, 06 de Enero de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/wtLtkCL/png-skoid-8eb2c87c-0531-4dab-acb3-b5e2adddce6c-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="Memoria IA Escasez">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p>Fabricantes de chips y analistas coinciden en que la demanda de memoria para centros de datos de IA y hardware de alto rendimiento crecerá por encima de la capacidad de producción actual más allá de 2026. Empresas como Micron y Samsung alertan de una escasez estructural de DRAM y NAND que ya se traduce en precios más altos y plazos de entrega más largos para servidores, GPU y PCs.</p>
-<p>El auge de modelos de lenguaje y sistemas generativos exige cantidades de memoria muy superiores a las de la informática tradicional. Cada nueva generación de GPU de entrenamiento y de inferencia incorpora buses más anchos y más canales de memoria, y exige módulos DDR, LPDDR y HBM de mayor densidad. El resultado es un desplazamiento de capacidad fabril hacia productos de margen alto, lo que presiona a la baja la oferta disponible para segmentos de consumo.</p>
-<p>Según el análisis de Xataka, el mercado de RAM atraviesa una fase en la que se han combinado inversión contenida en nuevas fábricas, ciclos de sobrestock previos y un salto súbito de demanda por IA. Esta combinación ha roto el equilibrio habitual de precios y está trasladando el coste tanto a grandes operadores cloud como a usuarios finales.</p>
-<p><h2>HBM4 y nueva memoria: más rendimiento, más coste</h2></p>
-<p>Samsung ha presentado su memoria HBM4, diseñada específicamente para aceleradores de IA de próxima generación. Este tipo de memoria apilada ofrece anchos de banda muy superiores a la DRAM convencional y permite alimentar chips con miles de núcleos de cómputo paralelo. La contrapartida es un coste muy elevado por gigabyte y procesos de fabricación más complejos, lo que previsiblemente mantendrá alto el precio de los sistemas que la integren.</p>
-<p>La carrera por la memoria de alto rendimiento se está convirtiendo así en un factor competitivo clave entre fabricantes de GPU y proveedores de nube. Los diseños de racks y servidores en eventos como el CES 2026 muestran chasis optimizados para albergar múltiples módulos HBM y canales de memoria masivos, pensados para entrenar y desplegar modelos de IA a gran escala.</p>
-<p><h2>Pantallas plegables y otros componentes también evolucionan</h2></p>
-<p>En paralelo al foco en centros de datos, la industria de componentes sigue avanzando en formatos de consumo. Samsung Display ha mostrado un panel OLED plegable sin pliegue visible que apunta a futuros móviles y posiblemente a un iPhone plegable. Este desarrollo combina capas de materiales flexibles, nuevas estructuras de subpíxeles y sistemas de bisagra mejorados, con el objetivo de eliminar la marca central que ha lastrado la adopción de algunos dispositivos plegables.</p>
-<p>Estas innovaciones de pantalla requieren a su vez controladores, sensores táctiles y baterías específicos, cerrando el círculo de una cadena de componentes cada vez más integrada. La tendencia apunta a dispositivos más delgados y versátiles, pero también a una mayor dependencia de procesos de fabricación avanzados.</p>
-<p><h2>Impacto en precios y planificación tecnológica</h2></p>
-<p>La presión sobre la memoria coincide con una fase de despliegue masivo de IA generativa en empresas y consumidores. Ejecutivos como el CEO de NVIDIA anticipan que una porción muy relevante del conocimiento digital será generado por sistemas de IA en los próximos años, lo que mantendrá alta la demanda de capacidad de cómputo y memoria asociada.</p>
-<p>Para empresas y administraciones, el escenario obliga a planificar con más antelación sus compras de hardware, optimizar el uso de memoria en sus cargas de trabajo y valorar arquitecturas híbridas (nube, edge y on-premise). Para el usuario final, la consecuencia más inmediata será una posible subida de precio en PCs, portátiles y dispositivos de altas prestaciones, en contraste con una oferta más amplia de formatos como plegables y equipos centrados en IA.</p>
-<p>Esta noticia fue elaborada por un agente de IA a partir de información pública verificada. Redacción original.</p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/carrera-ia-demanda-memoria-componentes.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>
