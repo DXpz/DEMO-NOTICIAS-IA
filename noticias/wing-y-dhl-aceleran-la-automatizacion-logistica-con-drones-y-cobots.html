@@ -2,346 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wing y DHL aceleran la automatización logística con drones y cobots - RED Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>RED Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/wing-y-dhl-aceleran-la-automatizacion-logistica-con-drones-y-cobots.html">
     <style>
-        :root {
-            --brand-red: #ce1126;
-            --brand-dark: #111111;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-red);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            border-bottom: 4px solid var(--brand-red);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: #e4002b;
-        }
-
-        .logo-noticias {
-            color: #000000;
-        }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
-            font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        .full-image-container {
-            margin-bottom: 30px;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
+            text-align: center;
         }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
+        h1 {
+            font-size: 20px;
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-red);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-red);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
+        a {
+            color: #ce1126;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-        }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: var(--brand-dark);
-            color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid #333;
-        }
-
-        .footer-logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
-        }
-
-        .footer-logo .logo-noticias {
-            color: #ffffff;
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
-            </a>
-            <div class="date-line">
-                Lunes, 12 de Enero de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Logística</span>
-                    <h1 class="full-headline">Wing y DHL aceleran la automatización logística con drones y cobots</h1>
-                    <p class="full-lead">Wing ampliará su red de reparto con drones a 150 tiendas más de Walmart mientras DHL despliega sus primeros cobots en Latinoamérica. Ambos movimientos refuerzan la automatización de la última milla y de los centros de distribución en la cadena de suministro global.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
-                        <span>Lunes, 12 de Enero de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/PGp8L3RP/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="Wing y DHL aceleran la automatización logística con drones y cobots">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p><h2>Drones en la última milla y robots colaborativos en almacenes</h2></p>
-<p><p>Wing, la compañía de entrega con drones de Alphabet, prepara una expansión significativa de su red en Estados Unidos al sumar <strong>150 tiendas adicionales de Walmart</strong> a su servicio de reparto aéreo. El objetivo es incrementar la cobertura de entregas rápidas de productos de consumo, integrando la operación con el ecosistema logístico existente del retailer. Este despliegue amplía la capacidad de Wing para realizar envíos de última milla en entornos urbanos y suburbanos con tiempos de entrega reducidos y rutas optimizadas.</p></p>
-<p><p>En paralelo, DHL Supply Chain anunció la introducción de sus <strong>primeros robots colaborativos (cobots) en Latinoamérica</strong>, enfocados en tareas dentro de centros de distribución y almacenes. Estos cobots están diseñados para trabajar físicamente cerca de operarios humanos en actividades como picking, clasificación y preparación de pedidos, con el fin de aumentar la productividad, reducir errores y mejorar la ergonomía en operaciones intensivas en mano de obra.</p></p>
-<p><p>Ambos movimientos apuntan a una misma dirección: <strong>mayor automatización en puntos críticos de la cadena de suministro</strong>, desde el almacén hasta la puerta del cliente. Las tecnologías empleadas combinan software avanzado de planificación, sistemas de navegación y sensores, junto con integración directa con plataformas de gestión de inventario y pedidos.</p></p>
-<p><h2>Contexto técnico y hubs emergentes en el comercio global</h2></p>
-<p><p>La expansión de Wing se apoya en sistemas de control de tráfico para drones, algoritmos de planificación de rutas y marcos regulatorios que permiten vuelos automatizados en áreas pobladas. El valor principal reside en la <strong>reducción de tiempos de entrega y descongestión del reparto terrestre</strong>, sin sustituir completamente a los vehículos tradicionales, sino incorporándose como un modo adicional en la logística multimodal.</p></p>
-<p><p>En el caso de DHL, la adopción de cobots en Latinoamérica forma parte de una tendencia global de <strong>automatización incremental</strong>: los robots colaborativos no reemplazan la operación humana, sino que asumen tareas repetitivas y físicamente demandantes. Esto permite reasignar al personal a labores de mayor valor añadido, como gestión de incidencias, supervisión de calidad y coordinación operativa, mientras los cobots mantienen un flujo constante de preparación de pedidos.</p></p>
-<p><p>En el plano de infraestructura, la región también vive una transformación logística. El desarrollo de <strong>Aracruz como hub emergente de comercio global en Brasil</strong> ilustra cómo nuevas terminales portuarias, servicios marítimos y conexiones terrestres amplían la capacidad de entrada y salida de mercancías en Sudamérica. La combinación de puertos más eficientes con automatización intralogística (cobots) y soluciones avanzadas de distribución (drones y rutas inteligentes) configura un ecosistema en el que velocidad, visibilidad de datos y resiliencia se vuelven factores centrales de competitividad.</p></p>
-<p><ul><li>TechCrunch - Wing to expand drone delivery to another 150 Walmart stores (https://techcrunch.com/2026/01/11/wing-to-expand-drone-delivery-to-another-150-walmart-stores/)</li><li>The Verge - Wing’s drone delivery is coming to 150 more Walmarts (https://www.theverge.com/tech/859724/wing-walmart-drone-delivery-expansion-2027)</li><li>Supply Chain Digital Magazine - DHL Supply Chain: Introducing First Cobots to Latin America (https://supplychaindigital.com/news/dhl-supply-chain-introducing-first-cobots-to-latin-america)</li><li>Supply Chain Digital Magazine - Aracruz: Brazil’s Emerging Hub for Global Trade (https://supplychaindigital.com/news/hapag-lloyd-aracruz-brazil-global-trade-hub)</li></ul></p>
-<p><p>Análisis generado con supervisión de IA basado en hechos verificados.</p></p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/wing-y-dhl-aceleran-la-automatizacion-logistica-con-drones-y-cobots.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>
