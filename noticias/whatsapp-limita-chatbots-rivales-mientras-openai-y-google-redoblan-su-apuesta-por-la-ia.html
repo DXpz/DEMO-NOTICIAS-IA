@@ -2,350 +2,51 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp limita chatbots rivales mientras OpenAI y Google redoblan su apuesta por la IA - RED Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>RED Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/whatsapp-limita-chatbots-rivales-mientras-openai-y-google-redoblan-su-apuesta-por-la-ia.html">
     <style>
-        :root {
-            --brand-red: #ce1126;
-            --brand-dark: #111111;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-red);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            border-bottom: 4px solid var(--brand-red);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: #e4002b;
-        }
-
-        .logo-noticias {
-            color: #000000;
-        }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
-            font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-
-        .full-image-container {
-            margin-bottom: 30px;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
+            text-align: center;
         }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
+        h1 {
+            font-size: 20px;
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-red);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-red);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
+        a {
+            color: #ce1126;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--brand-red);
-            font-weight: bold;
-        }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: var(--brand-dark);
-            color: #fff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid #333;
-        }
-
-        .footer-logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
-        }
-
-        .footer-logo .logo-noticias {
-            color: #ffffff;
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
-            </a>
-            <div class="date-line">
-                Jueves, 15 de enero de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Tech</span>
-                    <h1 class="full-headline">WhatsApp limita chatbots rivales mientras OpenAI y Google redoblan su apuesta por la IA</h1>
-                    <p class="full-lead">Meta ajusta la competencia en mensajería al restringir bots externos en algunos mercados, mientras OpenAI avanza hacia hardware propio y Google prepara una IA más personalizada. El talento y la regulación se convierten en el nuevo frente estratégico de la industria.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
-                        <span>Jueves, 15 de enero de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/YBwnK4zt/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p><h2>Plataformas en tensión por el control de los chatbots</h2></p>
-<p><p>WhatsApp ha comenzado a restringir el despliegue de chatbots de IA de terceros en su plataforma en algunos países europeos, tras la investigación de Italia, pero ha excluido a Brasil de estas limitaciones, según adelantó TechCrunch. El cambio afecta a modelos conversacionales que compiten con la oferta de Meta, y se interpreta como un intento de la compañía de modular la competencia y la exposición regulatoria en torno a servicios de IA integrados en apps de mensajería masiva.</p></p>
-<p><p>En paralelo, organizaciones de defensa de derechos digitales presionan a Apple y Google para que retiren de sus tiendas la app de X que integra Grok, el modelo de IA de la plataforma, al considerar que la política de moderación de contenidos no cumple los estándares de seguridad de las grandes plataformas móviles. Las cartas abiertas no tienen efectos inmediatos, pero intensifican el debate sobre qué obligaciones deben asumir los distribuidores de apps cuando incorporan modelos generativos en productos de consumo.</p></p>
-<p><h2>OpenAI, talento clave y salto al dispositivo físico</h2></p>
-<p><p>OpenAI sigue concentrando talento y ambición de producto. Dos cofundadores de Thinking Machines Lab, la startup de Mira Murati, se incorporan a la compañía, reforzando su capacidad de investigación avanzada en modelos de lenguaje y sistemas multimodales. La operación subraya una tendencia: los perfiles más especializados en IA tienden a confluir en pocos actores con escala de cómputo y datos.</p></p>
-<p><p>En el frente de producto, filtraciones apuntan a que OpenAI trabaja en su primer dispositivo físico, con funciones cercanas a las de unos auriculares inteligentes y centrado en acceso continuo a ChatGPT. El objetivo sería ofrecer interacción por voz y asistencia contextual sin depender del móvil como interfaz principal, en línea con la carrera por el “asistente ambiental” que otras tecnológicas exploran con wearables y altavoces.</p></p>
-<p><h2>Herramientas de IA: de la traducción personalizada al rendimiento gráfico</h2></p>
-<p><p>OpenAI ha lanzado también un traductor basado en ChatGPT que compite directamente con Google Translate, con especial énfasis en contexto y matices de lenguaje natural. Esta herramienta apunta a usos profesionales y de productividad, integrando traducción con capacidades de resumen y reescritura.</p></p>
-<p><p>Google, por su parte, prepara una nueva función de Gemini, denominada de forma preliminar como inteligencia personal, para adaptar respuestas al perfil del usuario. La idea es que el modelo ajuste recomendaciones y tono a partir de datos consignados por el propio usuario, lo que reabre el debate sobre privacidad y gobernanza de datos, pero también mejora la utilidad práctica de los asistentes.</p></p>
-<p><p>En el terreno del hardware gráfico, Nvidia distribuye una actualización de su aplicación que incorpora DLSS 4.5 y traslada más ajustes del clásico Panel de Control a una interfaz unificada. DLSS 4.5 mejora la reconstrucción de imagen mediante aprendizaje profundo, permitiendo mayores tasas de fotogramas manteniendo nitidez, con impacto directo en videojuegos y en aplicaciones de visualización intensiva.</p></p>
-<p><h2>IA omnipresente: de la cadena de suministro al hogar conectado</h2></p>
-<p><p>Fuera del software de consumo, BITZER y SAP desarrollan un piloto conjunto de IA para optimizar cadenas de suministro globales. El proyecto combina modelos de predicción de demanda con capacidades robóticas en almacenes, enmarcadas en el concepto de Embodied AI: algoritmos que no solo procesan datos, sino que actúan sobre el entorno físico mediante robots y sistemas automatizados.</p></p>
-<p><p>En el ecosistema de dispositivos, el CES 2026 ha consolidado otra tendencia: la integración sistemática de módulos de IA en prácticamente cualquier producto conectado, desde electrodomésticos hasta pequeños gadgets. Xataka destaca que esta capa inteligente se orienta a funciones concretas, como mantenimiento predictivo, ahorro energético o interfaces de voz, más que a experiencias espectaculares. La clave pasa a ser la calidad de los modelos, el consumo energético y la transparencia sobre qué datos se recogen y cómo se procesan.</p></p>
-<p><p>Mientras tanto, Meta recorta tres estudios de realidad virtual dentro de Reality Labs, ajustando su apuesta por el metaverso en favor de líneas más directamente rentables. El movimiento contrasta con la aceleración de inversiones en IA generativa, que hoy absorbe buena parte del capital y del talento en la industria.</p></p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/whatsapp-limita-chatbots-rivales-mientras-openai-y-google-redoblan-su-apuesta-por-la-ia.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotaxis y chips 5G reconfiguran la nueva movilidad autónoma - RED Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-red: #ce1126;
+            --brand-dark: #111111;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-red);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--brand-red);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: #e4002b;
+        }
+
+        .logo-noticias {
+            color: #000000;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-red);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-red);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-red);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: var(--brand-dark);
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid #333;
+        }
+
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            font-family: var(--sans-font);
+        }
+
+        .footer-logo .logo-noticias {
+            color: #ffffff;
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html">
+                <div class="logo-text">
+                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                </div>
+            </a>
+            <div class="date-line">
+                Jueves, 15 de enero de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Movilidad</span>
+                    <h1 class="full-headline">Robotaxis y chips 5G reconfiguran la nueva movilidad autónoma</h1>
+                    <p class="full-lead">Fabricantes, tecnológicas y navieras aceleran una movilidad más automatizada, conectada y eléctrica. Las decisiones sobre software, chips y regulación marcarán quién lidera el transporte en 2026.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Jueves, 15 de enero de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/VcCyXP3g/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p><h2>La nueva cadena de valor del vehículo autónomo</h2></p>
+<p><p>Los robotaxis se consolidan como eje de la movilidad urbana hacia 2026. Motional prepara el relanzamiento de su servicio de taxis autónomos con la inteligencia artificial como núcleo del sistema de percepción y decisión del vehículo, con el objetivo de operar sin conductor humano a mediados de la década, según adelantó la compañía a TechCrunch.</p></p>
+<p><p>En paralelo, Tesla reconfigura su modelo de negocio de software de conducción avanzada: dejará de vender el paquete Full Self-Driving (FSD) como compra única para pasar a un esquema sólo de suscripción, de acuerdo con The Verge. Este cambio traslada el peso del valor al software actualizable, facilita ingresos recurrentes y permite a los usuarios acceder a capacidades mejoradas sin sustituir el coche.</p></p>
+<p><p>La infraestructura electrónica también se reorganiza. Infobae reporta que Samsung se perfila como proveedor de chips 5G para los futuros robotaxis de Tesla, reforzando la dependencia de estos servicios de una conectividad de baja latencia para actualizaciones remotas, diagnóstico en tiempo real y coordinación con centros de control.</p></p>
+<p><h2>Eléctricos de alto rendimiento y ajustes regulatorios</h2></p>
+<p><p>En el segmento de vehículos eléctricos de alto rendimiento, BMW prepara una versión eléctrica del M3 que, según la compañía detalló a The Verge, usará una plataforma Neue Klasse y configuración de hasta cuatro motores. El fabricante promete un salto en aceleración y control de tracción gracias a la gestión digital e independiente de cada rueda, integrando software de alto rendimiento con tren motriz eléctrico.</p></p>
+<p><p>Mientras algunos actores avanzan, otros recalibran su despliegue de automatización. Mercedes ha decidido suspender temporalmente su sistema de conducción de Nivel 3 "eyes-off" Drive Pilot, informó The Verge. La decisión se enmarca en la adaptación a marcos regulatorios, requisitos de certificación y la necesidad de recopilar más datos de uso real antes de una implantación masiva, presentando la pausa como un ajuste de producto más que un retroceso tecnológico.</p></p>
+<p><h2>Movilidad más allá del coche: drones y logística global</h2></p>
+<p><p>La movilidad aérea ligera también experimenta saltos técnicos. Infobae relata cómo un dron desarrollado por un aficionado y su hijo alcanzó los 657 km/h y obtuvo un récord Guinness, demostrando que la optimización de aerodinámica, materiales compuestos y electrónica de control puede trasladarse a futuros sistemas de reparto rápido o inspección industrial.</p></p>
+<p><p>En el ámbito de la movilidad de mercancías, Maersk y DP World describen a Supply Chain Digital una década marcada por puertos más automatizados, planificación apoyada en analítica de datos y mejor integración multimodal. Maersk anticipa cadenas de suministro más resilientes gracias a sistemas predictivos de demanda y congestión, mientras DP World apuesta por puertos conectados que compartan información en tiempo real con navieras, ferrocarriles y carreteras para reducir tiempos de espera y emisiones.</p></p>
+<p><p>En conjunto, estas señales dibujan un ecosistema donde la inteligencia artificial, la conectividad 5G, los modelos de suscripción de software y la automatización logística configuran la próxima fase de la movilidad, tanto de personas como de mercancías.</p></p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
