@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La nueva economía de la IA reconfigura empleo, chips y logística global - RED Noticias</title>
+    <link rel="icon" type="image/svg+xml" href="../IMG/1.svg">
+    <title>La nueva economía de la IA reconfigura empleo, chips y logística global - ADOPTIA NOTICIAS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --brand-red: #ce1126;
+            --brand-purple: #4739ff;
+            --brand-cyan: #47aeb2;
+            --brand-green: #99ee5d;
             --brand-dark: #111111;
             --text-grey: #333333;
             --light-grey: #f4f4f4;
@@ -40,7 +43,7 @@
         }
 
         a:hover {
-            color: var(--brand-red);
+            color: var(--brand-purple);
         }
 
         .container {
@@ -53,7 +56,36 @@
         .header-main {
             padding: 25px 0;
             text-align: center;
-            border-bottom: 4px solid var(--brand-red);
+            position: relative;
+        }
+
+        .header-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+        }
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }
+
+        .logo-img {
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
         }
 
         .logo-text {
@@ -65,11 +97,20 @@
         }
 
         .logo-red {
-            color: #e4002b;
+            color: #4739ff;
         }
 
         .logo-noticias {
             color: #000000;
+        }
+
+        .collaboration-line {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
         }
 
         .date-line {
@@ -101,7 +142,7 @@
         .breadcrumbs {
             font-size: 12px;
             text-transform: uppercase;
-            color: var(--brand-red);
+            color: var(--brand-purple);
             font-weight: bold;
             margin-bottom: 15px;
             display: block;
@@ -179,7 +220,7 @@
         }
 
         .article-quote {
-            border-left: 4px solid var(--brand-red);
+            border-left: 4px solid var(--brand-purple);
             padding-left: 25px;
             font-style: italic;
             font-size: 24px;
@@ -196,7 +237,7 @@
             cursor: pointer;
         }
         .btn-back:hover {
-            color: var(--brand-red);
+            color: var(--brand-purple);
             text-decoration: underline;
         }
 
@@ -219,7 +260,7 @@
         .related-category {
             font-size: 11px;
             text-transform: uppercase;
-            color: var(--brand-red);
+            color: var(--brand-purple);
             font-weight: bold;
         }
 
@@ -231,8 +272,8 @@
 
         /* FOOTER */
         footer {
-            background-color: var(--brand-dark);
-            color: #fff;
+            background-color: #24272C;
+            color: #ffffff;
             padding: 20px 0;
             margin-top: 50px;
             text-align: center;
@@ -240,14 +281,21 @@
         }
 
         .footer-logo {
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
         }
 
-        .footer-logo .logo-noticias {
-            color: #ffffff;
+        .logo-img-footer {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
         }
 
         @media (max-width: 1024px) {
@@ -275,11 +323,12 @@
     <!-- HEADER LOGO -->
     <header class="header-main">
         <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/3.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
             </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
             <div class="date-line">
                 viernes, 16 de enero de 2026
             </div>
@@ -298,7 +347,7 @@
                     <h1 class="full-headline">La nueva economía de la IA reconfigura empleo, chips y logística global</h1>
                     <p class="full-lead">Inversores anticipan una ola de automatización desde 2026 mientras EE. UU. fuerza inversiones en chips y la logística se reorganiza. Los salarios se estancan, la memoria móvil se encarece y los grandes tecnológicos pagan por datos fiables.</p>
                     <div class="full-meta">
-                        <span>Por <strong>Redacción RED Noticias</strong> | San Salvador</span>
+                        <span>Por <strong>Redacción ADOPTIA NOTICIAS</strong> | San Salvador</span>
                         <span>viernes, 16 de enero de 2026</span>
                     </div>
                 </header>
@@ -339,7 +388,7 @@
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                <img src="../IMG/1.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
             </div>
         </div>
     </footer>

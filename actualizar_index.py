@@ -22,7 +22,8 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="version" content="2.0-IA-NOTICIAS">
-    <title>RED Noticias - Tu fuente confiable de información</title>
+    <link rel="icon" type="image/svg+xml" href="IMG/1.svg">
+    <title>ADOPTIA NOTICIAS - Tu fuente confiable de información</title>
     <!-- Importamos fuentes elegantes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,9 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <style>
         /* VARIABLES Y CONFIGURACIÓN BASE */
         :root {{
-            --brand-red: #ce1126;
+            --brand-purple: #4739ff;
+            --brand-cyan: #47aeb2;
+            --brand-green: #99ee5d;
             --brand-dark: #111111;
             --text-grey: #333333;
             --light-grey: #f4f4f4;
@@ -64,7 +67,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         a:hover {{
-            color: var(--brand-red);
+            color: var(--brand-purple);
         }}
 
         /* LAYOUT GENERAL */
@@ -78,11 +81,30 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         .header-main {{
             padding: 25px 0;
             text-align: center;
-            border-bottom: 4px solid var(--brand-red);
             cursor: pointer;
+            position: relative;
             /* Para volver al home */
         }}
 
+        .header-main::after {{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+        }}
+
+
+        .collaboration-line {{
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }}
 
         .date-line {{
             font-size: 13px;
@@ -95,7 +117,25 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             padding-right: 20px;
         }}
 
-        /* LOGO TEXTO */
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }}
+
+        .logo-img {{
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }}
+
         .logo-text {{
             font-size: 72px;
             font-weight: 900;
@@ -104,13 +144,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             font-family: var(--sans-font);
         }}
 
-        .logo-red {{
-            color: #e4002b;
-        }}
-
-        .logo-noticias {{
-            color: #000000;
-        }}
 
 
         /* GRID PRINCIPAL DE NOTICIAS (HOME) */
@@ -128,16 +161,29 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         /* ESTILOS DE ARTÍCULOS (PREVIEW) */
         .article {{
             margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
             padding-bottom: 20px;
+            position: relative;
         }}
 
-        .article:last-child {{
-            border-bottom: none;
+        .article::after {{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+        }}
+
+        .article:last-child::after {{
+            display: none;
         }}
 
         .article-kicker {{
-            color: var(--brand-red);
+            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-purple) 25%, var(--brand-cyan) 50%, var(--brand-green) 75%, var(--brand-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-size: 11px;
             font-weight: 700;
             text-transform: uppercase;
@@ -155,7 +201,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .article-title:hover {{
-            color: var(--brand-red);
+            color: var(--brand-purple);
             cursor: pointer;
         }}
 
@@ -243,14 +289,18 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         .opinion-author {{
             font-size: 11px;
             text-transform: uppercase;
-            color: var(--brand-red);
+            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             font-weight: bold;
+            display: inline-block;
         }}
 
         /* FOOTER */
         footer {{
-            background-color: var(--brand-dark);
-            color: #fff;
+            background-color: #24272C;
+            color: #ffffff;
             padding: 20px 0;
             margin-top: 50px;
             text-align: center;
@@ -258,14 +308,21 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .footer-logo {{
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
         }}
 
-        .footer-logo .logo-noticias {{
-            color: #ffffff;
+        .logo-img-footer {{
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
         }}
 
         @media (max-width: 1024px) {{
@@ -296,11 +353,12 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <!-- HEADER LOGO -->
     <header class="header-main">
         <div class="container">
-            <a href="index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
+            <a href="index.html" class="logo-container">
+                <img src="IMG/3.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
             </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
             <div class="date-line">
                 {fecha_actualizacion}
             </div>
@@ -344,7 +402,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                <img src="IMG/1.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
             </div>
         </div>
     </footer>
@@ -368,7 +426,7 @@ def generar_articulo_principal(noticia):
                             {noticia['resumen']}
                         </p>
                         <div class="article-author">
-                            Por <strong>Redacción RED Noticias</strong> | San Salvador
+                            Por <strong>Redacción ADOPTIA NOTICIAS</strong> | San Salvador
                         </div>
                     </article>"""
 
@@ -387,7 +445,7 @@ def generar_articulo_secundario_main(noticia):
                             {noticia['resumen']}
                         </p>
                         <div class="article-author">
-                            Por <strong>Redacción RED Noticias</strong> | San Salvador
+                            Por <strong>Redacción ADOPTIA NOTICIAS</strong> | San Salvador
                         </div>
                     </article>"""
 
@@ -409,7 +467,7 @@ def generar_articulo_lista(noticia):
 
 def main():
     """Función principal que actualiza el index.html"""
-    print("🔄 Actualizador de Index.html - RED Noticias")
+    print("🔄 Actualizador de Index.html - ADOPTIA NOTICIAS")
     print("=" * 50)
     
     # Cargar JSON de noticias

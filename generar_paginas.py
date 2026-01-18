@@ -19,14 +19,17 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{titulo} - RED Noticias</title>
+    <link rel="icon" type="image/svg+xml" href="../IMG/1.svg">
+    <title>{titulo} - ADOPTIA NOTICIAS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <style>
         :root {{
-            --brand-red: #ce1126;
+            --brand-purple: #4739ff;
+            --brand-cyan: #47aeb2;
+            --brand-green: #99ee5d;
             --brand-dark: #111111;
             --text-grey: #333333;
             --light-grey: #f4f4f4;
@@ -56,7 +59,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         a:hover {{
-            color: var(--brand-red);
+            color: var(--brand-purple);
         }}
 
         .container {{
@@ -69,7 +72,36 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         .header-main {{
             padding: 25px 0;
             text-align: center;
-            border-bottom: 4px solid var(--brand-red);
+            position: relative;
+        }}
+
+        .header-main::after {{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+        }}
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }}
+
+        .logo-img {{
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
         }}
 
         .logo-text {{
@@ -81,11 +113,20 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         .logo-red {{
-            color: #e4002b;
+            color: #4739ff;
         }}
 
         .logo-noticias {{
             color: #000000;
+        }}
+
+        .collaboration-line {{
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
         }}
 
         .date-line {{
@@ -117,7 +158,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         .breadcrumbs {{
             font-size: 12px;
             text-transform: uppercase;
-            color: var(--brand-red);
+            color: var(--brand-purple);
             font-weight: bold;
             margin-bottom: 15px;
             display: block;
@@ -195,7 +236,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         .article-quote {{
-            border-left: 4px solid var(--brand-red);
+            border-left: 4px solid var(--brand-purple);
             padding-left: 25px;
             font-style: italic;
             font-size: 24px;
@@ -212,7 +253,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
             cursor: pointer;
         }}
         .btn-back:hover {{
-            color: var(--brand-red);
+            color: var(--brand-purple);
             text-decoration: underline;
         }}
 
@@ -235,7 +276,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         .related-category {{
             font-size: 11px;
             text-transform: uppercase;
-            color: var(--brand-red);
+            color: var(--brand-purple);
             font-weight: bold;
         }}
 
@@ -247,8 +288,8 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
 
         /* FOOTER */
         footer {{
-            background-color: var(--brand-dark);
-            color: #fff;
+            background-color: #24272C;
+            color: #ffffff;
             padding: 20px 0;
             margin-top: 50px;
             text-align: center;
@@ -256,14 +297,21 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         .footer-logo {{
-            font-size: 24px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            font-family: var(--sans-font);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
         }}
 
-        .footer-logo .logo-noticias {{
-            color: #ffffff;
+        .logo-img-footer {{
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
         }}
 
         @media (max-width: 1024px) {{
@@ -291,11 +339,12 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <!-- HEADER LOGO -->
     <header class="header-main">
         <div class="container">
-            <a href="../index.html">
-                <div class="logo-text">
-                    <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
-                </div>
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/3.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
             </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
             <div class="date-line">
                 {fecha_actualizacion}
             </div>
@@ -341,7 +390,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <span class="logo-red">RED</span><span class="logo-noticias"> Noticias</span>
+                <img src="../IMG/1.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
             </div>
         </div>
     </footer>
@@ -357,7 +406,8 @@ PLANTILLA_REDIRECCION = """<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>RED Noticias - Archivo</title>
+    <link rel="icon" type="image/svg+xml" href="../IMG/1.svg">
+    <title>ADOPTIA NOTICIAS - Archivo</title>
     <meta http-equiv="refresh" content="0; url=../noticias_ant/{archivo}">
     <style>
         body {{
@@ -656,7 +706,7 @@ def archivar_noticias_antiguas(noticias_actuales_json):
 
 def main():
     """Función principal que genera todas las páginas"""
-    print("🚀 Generador de Páginas HTML - RED Noticias")
+    print("🚀 Generador de Páginas HTML - ADOPTIA NOTICIAS")
     print("=" * 50)
     
     # Cargar JSON
