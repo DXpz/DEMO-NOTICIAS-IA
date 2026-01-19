@@ -343,6 +343,25 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
                 margin-top: 40px;
             }}
 
+            /* Logo más pequeño en móvil */
+            .logo-container {{
+                height: 80px;
+            }}
+
+            .logo-img {{
+                width: 280px;
+                transform: scale(1.0);
+            }}
+
+            .footer-logo {{
+                height: 60px;
+            }}
+
+            .logo-img-footer {{
+                width: 200px;
+                transform: scale(1.0);
+            }}
+
             /* Sidebar vuelve abajo en móvil */
         }}
     </style>

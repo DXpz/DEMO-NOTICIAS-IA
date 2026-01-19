@@ -331,6 +331,25 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
                 display: block;
                 margin-top: 40px;
             }}
+
+            /* Logo más pequeño en móvil */
+            .logo-container {{
+                height: 80px;
+            }}
+
+            .logo-img {{
+                width: 280px;
+                transform: scale(1.0);
+            }}
+
+            .footer-logo {{
+                height: 60px;
+            }}
+
+            .logo-img-footer {{
+                width: 200px;
+                transform: scale(1.0);
+            }}
         }}
     </style>
 </head>
