@@ -43,7 +43,7 @@ def main():
     """Función principal que coordina la actualización completa"""
     print("🚀 ACTUALIZACIÓN COMPLETA DEL SITIO WEB")
     print("=" * 60)
-    print("RED Noticias - Sistema de actualización automática")
+    print("ADOPTIA NOTICIAS - Sistema de actualización automática")
     print("=" * 60)
     
     # Verificar que estamos en el directorio correcto
