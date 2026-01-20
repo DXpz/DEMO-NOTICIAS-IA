@@ -8,7 +8,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="version" content="2.0-IA-NOTICIAS">
-    <link rel="icon" type="image/svg+xml" href="IMG/1.svg">
+    <link rel="icon" type="image/svg+xml" href="IMG/6.svg">
     <title>ADOPTIA NOTICIAS - Tu fuente confiable de información</title>
     <!-- Importamos fuentes elegantes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +20,11 @@
     <style>
         /* VARIABLES Y CONFIGURACIÓN BASE */
         :root {
-            --brand-purple: #4739ff;
-            --brand-cyan: #47aeb2;
-            --brand-green: #99ee5d;
-            --brand-dark: #111111;
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-cafe: #6b3c00;
+            --brand-beige: #e4decf;
+            --brand-dark: #000000;
             --text-grey: #333333;
             --light-grey: #f4f4f4;
             --border-color: #e5e5e5;
@@ -53,7 +54,7 @@
         }
 
         a:hover {
-            color: var(--brand-purple);
+            color: var(--brand-naranja);
         }
 
         /* LAYOUT GENERAL */
@@ -79,7 +80,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
         }
 
 
@@ -158,7 +159,7 @@
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
         }
 
         .article:last-child::after {
@@ -166,7 +167,7 @@
         }
 
         .article-kicker {
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-purple) 25%, var(--brand-cyan) 50%, var(--brand-green) 75%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 25%, var(--brand-cafe) 50%, var(--brand-cafe) 75%, var(--brand-cafe) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -187,7 +188,7 @@
         }
 
         .article-title:hover {
-            color: var(--brand-purple);
+            color: var(--brand-naranja);
             cursor: pointer;
         }
 
@@ -275,7 +276,7 @@
         .opinion-author {
             font-size: 11px;
             text-transform: uppercase;
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-cafe) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -285,12 +286,12 @@
 
         /* FOOTER */
         footer {
-            background-color: #24272C;
+            background-color: #000000;
             color: #ffffff;
             padding: 20px 0;
             margin-top: 50px;
             text-align: center;
-            border-top: 1px solid #333;
+            border-top: 1px solid var(--brand-cafe);
         }
 
         .footer-logo {
@@ -359,13 +360,13 @@
     <header class="header-main">
         <div class="container">
             <a href="index.html" class="logo-container">
-                <img src="IMG/3.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+                <img src="IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
             </a>
             <div class="collaboration-line">
                 En colaboración con <strong>Diario El Mundo</strong>
             </div>
             <div class="date-line">
-                lunes, 19 de enero de 2026
+                martes, 20 de enero de 2026
             </div>
         </div>
     </header>
@@ -377,7 +378,7 @@
         <!-- ======================= NUEVAS NOTICIAS DE IA ======================= -->
         <div id="home-view">
             <h2 style="font-family: var(--sans-font); font-size: 28px; margin: 30px 0 30px 0; color: var(--text-grey); font-weight: 400;">
-                Las últimas noticias sobre el impacto de la IA en deportes, logística, sanidad, educación y economía
+                Las últimas noticias sobre el impacto de la IA 
             </h2>
 
             <div class="news-grid">
@@ -385,14 +386,14 @@
                 <!-- COLUMNA 1: PRINCIPAL -->
                 <section class="main-col">
                     <article class="article hero-article">
-                        <span class="article-kicker">Energía</span>
-                        <a href="noticias/ia-y-centros-de-datos-reordenan-la-demanda-electrica-global.html">
-                            <img src="https://i.ibb.co/G3pxBxv2/OXw-Yu8c4-Yi8-EYQHD-b-Czs4-3o-YEw-Rw-We-W5-VBOj-To-I.png"
-                                alt="IA y centros de datos reordenan la demanda eléctrica global" class="article-img">
+                        <span class="article-kicker">Enterprise</span>
+                        <a href="noticias/la-empresa-se-juega-2026-en-tres-frentes-ia-generativa-datos-y-costes-cloud.html">
+                            <img src="https://i.ibb.co/KzNq80Sx/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png"
+                                alt="La empresa se juega 2026 en tres frentes: IA generativa, datos y costes cloud" class="article-img">
                         </a>
-                        <h1 class="article-title"><a href="noticias/ia-y-centros-de-datos-reordenan-la-demanda-electrica-global.html">IA y centros de datos reordenan la demanda eléctrica global</a></h1>
+                        <h1 class="article-title"><a href="noticias/la-empresa-se-juega-2026-en-tres-frentes-ia-generativa-datos-y-costes-cloud.html">La empresa se juega 2026 en tres frentes: IA generativa, datos y costes cloud</a></h1>
                         <p class="article-summary">
-                            El auge de la inteligencia artificial dispara el consumo eléctrico y obliga a repensar redes, generación y almacenamiento. Gobiernos y tecnológicas responden con más renovables, nuevas plantas y ajustes regulatorios.
+                            Las grandes tecnológicas reordenan precios, alianzas y capacidades de IA para el mercado empresarial. La presión regulatoria y el auge de centros de datos de IA redefinen márgenes y arquitectura de TI.
                         </p>
                         <div class="article-author">
                             Por <strong>Redacción ADOPTIA NOTICIAS</strong> | San Salvador
@@ -400,15 +401,15 @@
                     </article>
 
                     <article class="article" style="margin-top: 30px;">
-                        <a href="noticias/robots-humanoides-e-ia-salen-del-laboratorio-y-entran-en-la-vida-diaria.html">
-                            <img src="https://i.ibb.co/vCCC3zk5/eji-I.png" alt="Robots humanoides e IA salen del laboratorio y entran en la vida diaria"
+                        <a href="noticias/una-onda-de-choque-en-torno-a-una-enana-blanca-redefine-su-muerte-estelar.html">
+                            <img src="https://i.ibb.co/3mGSQstf/lo.png" alt="Una onda de choque en torno a una enana blanca redefine su muerte estelar"
                                 class="article-img">
                         </a>
-                        <span class="article-kicker">Robótica e IA</span>
+                        <span class="article-kicker">Espacio</span>
                         <h2 class="article-title" style="font-size: 28px;"><a
-                                href="noticias/robots-humanoides-e-ia-salen-del-laboratorio-y-entran-en-la-vida-diaria.html">Robots humanoides e IA salen del laboratorio y entran en la vida diaria</a></h2>
+                                href="noticias/una-onda-de-choque-en-torno-a-una-enana-blanca-redefine-su-muerte-estelar.html">Una onda de choque en torno a una enana blanca redefine su muerte estelar</a></h2>
                         <p class="article-summary" style="font-size: 16px;">
-                            Gigantes tecnológicos y startups están integrando modelos avanzados de IA en robots, servicios personales y fábricas. El movimiento define plataformas, chips y usos reales que marcarán la próxima década de automatización.
+                            Astrónomos del ESO han detectado una onda de choque inesperada alrededor de una enana blanca, restos de una explosión estelar antigua. El hallazgo obliga a revisar cómo evolucionan y mueren estos sistemas, clave para medir la expansión del universo.
                         </p>
                         <div class="article-author">
                             Por <strong>Redacción ADOPTIA NOTICIAS</strong> | San Salvador
@@ -421,38 +422,38 @@
                     <div class="sidebar-title">Más Noticias de IA</div>
 
                     <article class="article list-article">
-                        <a href="noticias/threads-supera-a-x-en-uso-movil-diario-mientras-crece-la-pugna-por-el-tiempo-en-pantalla.html">
-                            <img src="https://i.ibb.co/xKFZrTQ9/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png"
-                                alt="Threads supera a X en uso móvil diario mientras crece la pugna por el tiempo en pantalla" class="article-img">
+                        <a href="noticias/la-nueva-generacion-de-chips-dispara-la-potencia-del-ordenador-personal.html">
+                            <img src="https://i.ibb.co/ZpnDBsQJ/Tqvqns-N4-Sj91-HHtzd-Yg.png"
+                                alt="La nueva generación de chips dispara la potencia del ordenador personal" class="article-img">
+                        </a>
+                        <span class="article-kicker">Ordenadores</span>
+                        <h3 class="article-title"><a href="noticias/la-nueva-generacion-de-chips-dispara-la-potencia-del-ordenador-personal.html">La nueva generación de chips dispara la potencia del ordenador personal</a></h3>
+                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
+                            Apple, Nvidia, AMD y varios fabricantes de portátiles aceleran la integración de chips especializados en IA y gráficos avanzados, mientras los centros de datos tensan la cadena de suministros de memoria. El PC evoluciona hacia equipos híbridos, más potentes en local y más dependientes de infraestructuras de cómputo masivo.
+                        </p>
+                    </article>
+
+
+                    <article class="article list-article">
+                        <a href="noticias/nvidia-acelera-su-salto-de-proveedor-de-chips-a-infraestructura-global-de-ia.html">
+                            <img src="https://i.ibb.co/qYm9P2bc/G3-Xd7wt-LENt-Olf58.png"
+                                alt="NVIDIA acelera su salto de proveedor de chips a infraestructura global de IA" class="article-img">
+                        </a>
+                        <span class="article-kicker">Nvidia</span>
+                        <h3 class="article-title"><a href="noticias/nvidia-acelera-su-salto-de-proveedor-de-chips-a-infraestructura-global-de-ia.html">NVIDIA acelera su salto de proveedor de chips a infraestructura global de IA</a></h3>
+                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
+                            NVIDIA consolida un ecosistema que va de los centros de datos a fábricas, videojuegos y cadenas de suministro mediante alianzas estratégicas, nuevas tecnologías gráficas y contratos en mercados críticos como China. El movimiento redefine su papel: de fabricante de GPU a proveedor de infraestructura integral para inteligencia artificial.
+                        </p>
+                    </article>
+                    <article class="article list-article">
+                        <a href="noticias/apple-adelanta-a-samsung-y-reorganiza-el-mapa-mundial-del-movil.html">
+                            <img src="https://i.ibb.co/1tVg16Zc/7fy-Opifb-I9-XIqr-KTs-Uf-TNax-TRZHB1kif3-BMr-U.png"
+                                alt="Apple adelanta a Samsung y reorganiza el mapa mundial del móvil" class="article-img">
                         </a>
                         <span class="article-kicker">Móviles</span>
-                        <h3 class="article-title"><a href="noticias/threads-supera-a-x-en-uso-movil-diario-mientras-crece-la-pugna-por-el-tiempo-en-pantalla.html">Threads supera a X en uso móvil diario mientras crece la pugna por el tiempo en pantalla</a></h3>
+                        <h3 class="article-title"><a href="noticias/apple-adelanta-a-samsung-y-reorganiza-el-mapa-mundial-del-movil.html">Apple adelanta a Samsung y reorganiza el mapa mundial del móvil</a></h3>
                         <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Nuevos datos sitúan a Threads por delante de X en usuarios móviles activos diarios, aunque la red de Meta sigue por detrás en volumen total. El cambio revela cómo los hábitos en smartphones están redefiniendo el mapa de las plataformas sociales.
-                        </p>
-                    </article>
-
-
-                    <article class="article list-article">
-                        <a href="noticias/apple-integra-gemini-de-google-para-acelerar-su-salto-en-ia-hasta-2028.html">
-                            <img src="https://i.ibb.co/S7PdwNdG/FHziep-SZhjo.png"
-                                alt="Apple integra Gemini de Google para acelerar su salto en IA hasta 2028" class="article-img">
-                        </a>
-                        <span class="article-kicker">Apple</span>
-                        <h3 class="article-title"><a href="noticias/apple-integra-gemini-de-google-para-acelerar-su-salto-en-ia-hasta-2028.html">Apple integra Gemini de Google para acelerar su salto en IA hasta 2028</a></h3>
-                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Apple prepara una nueva Siri y funciones avanzadas de Apple Intelligence apoyadas en Gemini de Google, según filtraciones y reportes. El giro marca un cambio estratégico en su mapa de productos y en la relación Apple-Google.
-                        </p>
-                    </article>
-                    <article class="article list-article">
-                        <a href="noticias/gemini-y-chatgpt-aceleran-la-carrera-por-un-asistente-ia-integrado.html">
-                            <img src="https://i.ibb.co/qL7QdZ7s/png-skoid-32836cae-d25f-4fe9-827b-1c8c59c442cc-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png"
-                                alt="Gemini y ChatGPT aceleran la carrera por un asistente IA integrado" class="article-img">
-                        </a>
-                        <span class="article-kicker">Tech</span>
-                        <h3 class="article-title"><a href="noticias/gemini-y-chatgpt-aceleran-la-carrera-por-un-asistente-ia-integrado.html">Gemini y ChatGPT aceleran la carrera por un asistente IA integrado</a></h3>
-                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Nuevas filtraciones y lanzamientos muestran a OpenAI y Google afinando modelos más rápidos y personalizados, integrados en correos, fotos y móviles. La competencia desplaza el foco del ‘chatbot’ genérico al asistente operativo que se incrusta en apps y sistemas.
+                            Apple se coloca como primer vendedor global de smartphones, mientras el resto del mercado se polariza entre gama alta agresiva (batería, diseño, cámara) y una consolidación de marcas. El nuevo equilibrio redefine precios, innovación y el futuro del ecosistema Android.
                         </p>
                     </article>
 
@@ -467,7 +468,7 @@
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <img src="IMG/1.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+                <img src="IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
             </div>
         </div>
     </footer>

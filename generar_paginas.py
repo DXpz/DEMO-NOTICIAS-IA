@@ -19,7 +19,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="../IMG/1.svg">
+    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
     <title>{titulo} - ADOPTIA NOTICIAS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,11 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     
     <style>
         :root {{
-            --brand-purple: #4739ff;
-            --brand-cyan: #47aeb2;
-            --brand-green: #99ee5d;
-            --brand-dark: #111111;
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-cafe: #6b3c00;
+            --brand-beige: #e4decf;
+            --brand-dark: #000000;
             --text-grey: #333333;
             --light-grey: #f4f4f4;
             --border-color: #e5e5e5;
@@ -59,7 +60,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         a:hover {{
-            color: var(--brand-purple);
+            color: var(--brand-naranja);
         }}
 
         .container {{
@@ -82,7 +83,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
         }}
 
         /* LOGO SVG - Adaptado y ampliado */
@@ -113,11 +114,11 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         .logo-red {{
-            color: #4739ff;
+            color: var(--brand-naranja);
         }}
 
         .logo-noticias {{
-            color: #000000;
+            color: var(--brand-negro);
         }}
 
         .collaboration-line {{
@@ -158,7 +159,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         .breadcrumbs {{
             font-size: 12px;
             text-transform: uppercase;
-            color: var(--brand-purple);
+            color: var(--brand-naranja);
             font-weight: bold;
             margin-bottom: 15px;
             display: block;
@@ -236,7 +237,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         }}
 
         .article-quote {{
-            border-left: 4px solid var(--brand-purple);
+            border-left: 4px solid var(--brand-naranja);
             padding-left: 25px;
             font-style: italic;
             font-size: 24px;
@@ -253,7 +254,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
             cursor: pointer;
         }}
         .btn-back:hover {{
-            color: var(--brand-purple);
+            color: var(--brand-naranja);
             text-decoration: underline;
         }}
 
@@ -276,7 +277,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         .related-category {{
             font-size: 11px;
             text-transform: uppercase;
-            color: var(--brand-purple);
+            color: var(--brand-naranja);
             font-weight: bold;
         }}
 
@@ -288,12 +289,12 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
 
         /* FOOTER */
         footer {{
-            background-color: #24272C;
+            background-color: #000000;
             color: #ffffff;
             padding: 20px 0;
             margin-top: 50px;
             text-align: center;
-            border-top: 1px solid #333;
+            border-top: 1px solid var(--brand-cafe);
         }}
 
         .footer-logo {{
@@ -359,7 +360,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <header class="header-main">
         <div class="container">
             <a href="../index.html" class="logo-container">
-                <img src="../IMG/3.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
             </a>
             <div class="collaboration-line">
                 En colaboración con <strong>Diario El Mundo</strong>
@@ -409,7 +410,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <img src="../IMG/1.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
             </div>
         </div>
     </footer>
@@ -425,7 +426,7 @@ PLANTILLA_REDIRECCION = """<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="../IMG/1.svg">
+    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
     <title>ADOPTIA NOTICIAS - Archivo</title>
     <meta http-equiv="refresh" content="0; url=../noticias_ant/{archivo}">
     <style>
@@ -456,7 +457,7 @@ PLANTILLA_REDIRECCION = """<!DOCTYPE html>
             margin-bottom: 16px;
         }}
         a {{
-            color: #ce1126;
+            color: var(--brand-naranja);
             text-decoration: none;
             font-weight: 600;
         }}

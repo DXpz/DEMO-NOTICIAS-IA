@@ -22,7 +22,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="version" content="2.0-IA-NOTICIAS">
-    <link rel="icon" type="image/svg+xml" href="IMG/1.svg">
+    <link rel="icon" type="image/svg+xml" href="IMG/6.svg">
     <title>ADOPTIA NOTICIAS - Tu fuente confiable de información</title>
     <!-- Importamos fuentes elegantes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,10 +34,11 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <style>
         /* VARIABLES Y CONFIGURACIÓN BASE */
         :root {{
-            --brand-purple: #4739ff;
-            --brand-cyan: #47aeb2;
-            --brand-green: #99ee5d;
-            --brand-dark: #111111;
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-cafe: #6b3c00;
+            --brand-beige: #e4decf;
+            --brand-dark: #000000;
             --text-grey: #333333;
             --light-grey: #f4f4f4;
             --border-color: #e5e5e5;
@@ -67,7 +68,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         a:hover {{
-            color: var(--brand-purple);
+            color: var(--brand-naranja);
         }}
 
         /* LAYOUT GENERAL */
@@ -93,7 +94,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
         }}
 
 
@@ -172,7 +173,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
         }}
 
         .article:last-child::after {{
@@ -180,7 +181,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .article-kicker {{
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-purple) 25%, var(--brand-cyan) 50%, var(--brand-green) 75%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 25%, var(--brand-cafe) 50%, var(--brand-cafe) 75%, var(--brand-cafe) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -201,7 +202,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .article-title:hover {{
-            color: var(--brand-purple);
+            color: var(--brand-naranja);
             cursor: pointer;
         }}
 
@@ -289,7 +290,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         .opinion-author {{
             font-size: 11px;
             text-transform: uppercase;
-            background: linear-gradient(to right, var(--brand-purple) 0%, var(--brand-cyan) 50%, var(--brand-green) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-cafe) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -299,12 +300,12 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
 
         /* FOOTER */
         footer {{
-            background-color: #24272C;
+            background-color: #000000;
             color: #ffffff;
             padding: 20px 0;
             margin-top: 50px;
             text-align: center;
-            border-top: 1px solid #333;
+            border-top: 1px solid var(--brand-cafe);
         }}
 
         .footer-logo {{
@@ -373,7 +374,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <header class="header-main">
         <div class="container">
             <a href="index.html" class="logo-container">
-                <img src="IMG/3.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+                <img src="IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
             </a>
             <div class="collaboration-line">
                 En colaboración con <strong>Diario El Mundo</strong>
@@ -391,7 +392,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         <!-- ======================= NUEVAS NOTICIAS DE IA ======================= -->
         <div id="home-view">
             <h2 style="font-family: var(--sans-font); font-size: 28px; margin: 30px 0 30px 0; color: var(--text-grey); font-weight: 400;">
-                Las últimas noticias sobre el impacto de la IA en deportes, logística, sanidad, educación y economía
+                Las últimas noticias sobre el impacto de la IA 
             </h2>
 
             <div class="news-grid">
@@ -421,7 +422,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <img src="IMG/1.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+                <img src="IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
             </div>
         </div>
     </footer>
