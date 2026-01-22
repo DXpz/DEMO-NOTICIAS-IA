@@ -2,416 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
-    <title>La IA reorganiza el tablero global de empresas, empleo y consumo - ADOPTIA NOTICIAS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>ADOPTIA NOTICIAS - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/la-ia-reorganiza-el-tablero-global-de-empresas-empleo-y-consumo.html">
     <style>
-        :root {
-            --brand-negro: #000000;
-            --brand-naranja: #f34b26;
-            --brand-cafe: #6b3c00;
-            --brand-beige: #e4decf;
-            --brand-dark: #000000;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-naranja);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .header-main::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
-        }
-
-        /* LOGO SVG - Adaptado y ampliado */
-        .logo-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 10px;
-            overflow: hidden;
-            height: 120px;
+            height: 100vh;
+            margin: 0;
         }
-
-        .logo-img {
-            width: 450px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: var(--brand-naranja);
-        }
-
-        .logo-noticias {
-            color: var(--brand-negro);
-        }
-
-        .collaboration-line {
-            font-size: 12px;
-            color: #555;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
             text-align: center;
-            margin-top: 8px;
-            margin-bottom: 5px;
-            font-style: italic;
         }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-naranja);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
+        h1 {
             font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .full-image-container {
-            margin-bottom: 30px;
-        }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-naranja);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-naranja);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
-        }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
+        a {
             color: var(--brand-naranja);
-            font-weight: bold;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid var(--brand-cafe);
-        }
-
-        .footer-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            height: 80px;
-            margin-bottom: 15px;
-        }
-
-        .logo-img-footer {
-            width: 300px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
-
-            /* Logo más pequeño en móvil */
-            .logo-container {
-                height: 80px;
-            }
-
-            .logo-img {
-                width: 280px;
-                transform: scale(1.0);
-            }
-
-            .footer-logo {
-                height: 60px;
-            }
-
-            .logo-img-footer {
-                width: 200px;
-                transform: scale(1.0);
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html" class="logo-container">
-                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
-            </a>
-            <div class="collaboration-line">
-                En colaboración con <strong>Diario El Mundo</strong>
-            </div>
-            <div class="date-line">
-                miércoles, 21 de enero de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Empresas y economía</span>
-                    <h1 class="full-headline">La IA reorganiza el tablero global de empresas, empleo y consumo</h1>
-                    <p class="full-lead">Gigantes tecnológicos, retailers y plataformas ajustan estrategia ante la expansión de la IA, el cambio de hábitos de consumo y la presión regulatoria. De la logística de FedEx al ocio en Netflix y la alimentación en Mercadona, el impacto ya es medible en ingresos, empleo y modelos de negocio.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción ADOPTIA  Noticias</strong> | San Salvador</span>
-                        <span>miércoles, 21 de enero de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/b5Y2R23z/png-skoid-8eb2c87c-0531-4dab-acb3-b5e2adddce6c-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p><h2>IA y plataformas digitales reconfiguran la economía global</h2></p>
-<p><p>Las grandes tecnológicas y de entretenimiento están adaptando su estructura y acuerdos para sostener crecimiento en un entorno marcado por la IA y la competencia digital. Según Hipertextual, <strong>Netflix y Warner Bros han modificado su acuerdo de compra</strong> para reforzar su posición frente a Paramount, ajustando valoración, financiación y condiciones regulatorias en un sector donde la escala de catálogo y la capacidad de producción son determinantes para la rentabilidad.</p></p>
-<p><p>En paralelo, datos recogidos por TechCrunch indican que <strong>las descargas de apps en India repuntaron hasta 25.500 millones en 2025</strong>, impulsadas por asistentes basados en IA y el auge del microdrama en vídeo corto. Este comportamiento consolida a India como uno de los mercados más dinámicos para economía de apps, con impacto directo en publicidad, pagos integrados y servicios en la nube.</p></p>
-<p><p>La regulación y la gobernanza de la IA también avanzan. The Verge detalla que <strong>ChatGPT incorpora predicción de edad para limitar contenidos a menores</strong>, un enfoque técnico de seguridad que puede convertirse en estándar para plataformas que operan con modelos generativos y grandes bases de usuarios. Al mismo tiempo, la Comisión Federal de Comercio (FTC) estadounidense ha decidido <strong>apelar su derrota en el caso antimonopolio contra Meta</strong>, lo que mantiene abierta la discusión sobre concentración de mercado en servicios digitales.</p></p>
-<p><h2>Consumo masivo, ciberseguridad y liderazgo en la era de la IA</h2></p>
-<p><p>En el ámbito del gran consumo, Xataka (Magnet) señala que <strong>Mercadona ya concentra el 51% de las ventas de platos preparados en España</strong>, apoyado en proveedores especializados y en un cambio sostenido de hábitos: menos cocina en casa, más producto listo para consumir, incluidas tortillas de patata industriales que están disparando el negocio de sus fabricantes. Esta transformación reordena márgenes, logística de frío y diseño de tiendas físicas.</p></p>
-<p><p>La otra cara de la digitalización se observa en la seguridad. Xataka informa de un <strong>supuesto hackeo a PcComponentes que afectaría hasta a 16 millones de clientes</strong>, lo que eleva la exposición a campañas de phishing y refuerza la necesidad de invertir en protección de datos, autenticación avanzada y auditoría de infraestructuras.</p></p>
-<p><p>En el plano laboral y de gestión, Infobae destaca que, aunque <strong>la IA ya automatiza tareas y redefine procesos</strong>, el liderazgo estratégico sigue en manos humanas, con foco en adaptación organizativa y ética de uso. Jensen Huang, CEO de NVIDIA, defiende que la IA está generando <strong>una nueva ola de empleos especializados</strong>, desde ingenieros de modelos hasta perfiles híbridos que combinan negocio y datos.</p></p>
-<p><h2>Logística, chips y el papel de la IA como palanca productiva</h2></p>
-<p><p>En las cadenas de suministro, Supply Chain Digital Magazine describe la estrategia del CEO de FedEx, Raj Subramaniam, basada en <strong>IA y automatización para optimizar rutas, capacidad de almacenes y tiempos de entrega</strong>. El objetivo es reducir costes operativos, mejorar la precisión de la demanda y ganar resiliencia frente a interrupciones.</p></p>
-<p><p>La misma publicación analiza el papel de Intel como posible <strong>“válvula de alivio” en la oferta de chips para IA</strong>, en un mercado hasta ahora dominado por TSMC. Aumentar la diversidad geográfica de fabricación de semiconductores busca mitigar cuellos de botella y riesgos geopolíticos, un factor crítico para cualquier empresa que dependa de hardware avanzado para entrenar y desplegar modelos de IA.</p></p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/la-ia-reorganiza-el-tablero-global-de-empresas-empleo-y-consumo.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>
