@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
+    <title>Gadgets 2026: pantallas inteligentes, IA integrada y robots en la trastienda - ADOPTIA NOTICIAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-cafe: #6b3c00;
+            --brand-beige: #e4decf;
+            --brand-dark: #000000;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-naranja);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
+        }
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }
+
+        .logo-img {
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: var(--brand-naranja);
+        }
+
+        .logo-noticias {
+            color: var(--brand-negro);
+        }
+
+        .collaboration-line {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-naranja);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-naranja);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid var(--brand-cafe);
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-footer {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+
+            /* Logo más pequeño en móvil */
+            .logo-container {
+                height: 80px;
+            }
+
+            .logo-img {
+                width: 280px;
+                transform: scale(1.0);
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+
+            .logo-img-footer {
+                width: 200px;
+                transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+            </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
+            <div class="date-line">
+                Miércoles, 28 de Enero de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Gadgets</span>
+                    <h1 class="full-headline">Gadgets 2026: pantallas inteligentes, IA integrada y robots en la trastienda</h1>
+                    <p class="full-lead">El ecosistema de gadgets en 2026 se organiza en torno a tres ejes: móviles y pantallas más inteligentes, asistentes de IA que se integran en todos los dispositivos y robótica aplicada a logística y reciclaje. Estas líneas marcan cómo se diseñarán, usarán y reciclarán los productos de consumo en la próxima década.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción ADOPTIA  Noticias</strong> | San Salvador</span>
+                        <span>Miércoles, 28 de Enero de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/9H4J96BY/png-skoid-c6569cb0-0faa-463d-9694-97df3dc1dfb1-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="Gadgets 2026: pantallas inteligentes, IA integrada y robots en la trastienda">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p><h2>Dispositivos personales: del plegable extremo a las Apple Glasses</h2></p>
+<p>2026 consolida una gama de gadgets que empujan el hardware de consumo hacia formatos más flexibles y especializados. Filtraciones y reportes apuntan a que Apple trabaja en <strong>hasta 22 lanzamientos</strong>, que incluyen <strong>AirTag 2.0</strong>, nuevas generaciones de iPhone, iPad y Mac, así como las esperadas <strong>Apple Glasses</strong>, que llevarían la realidad aumentada a un formato más ligero y cotidiano que Vision Pro. En el segmento Android, Samsung se prepara para comercializar el <strong>Samsung Trifold</strong>, un dispositivo plegable de tres paneles cuyo precio se situaría cerca de los <strong>3.000 dólares</strong>, orientado a usuarios que necesitan un híbrido entre teléfono, tablet y pequeño portátil.</p>
+<p>En paralelo, ferias como <strong>CES 2026</strong> siguen actuando como laboratorio de ideas. Allí se presentan desde gadgets experimentales hasta productos de nicho que exploran nuevas interfaces, sensores inusuales o formatos de pantalla y conectividad. Aunque muchos de estos equipos no llegarán al mercado masivo, funcionan como banco de pruebas para tecnologías que podrían integrarse después en móviles, wearables y dispositivos de hogar conectado.</p>
+<p><h2>Televisores, asistentes de IA y ecosistema gaming</h2></p>
+<p>En el salón, la televisión se convierte en un dispositivo cada vez más autónomo e inteligente. Google está integrando <strong>Gemini</strong> en modelos como la <strong>TCL X11 de 2026</strong> para realizar <strong>calibración automática de imagen</strong>, ajustando parámetros en función del contenido y el entorno, sin necesidad de intervención experta. Medios especializados también recomiendan <strong>desactivar funciones de posprocesado</strong> como el efecto \"soap opera\" para recuperar la intención original del director y maximizar la calidad percibida.</p>
+<p>La convergencia entre plataformas se acelera: Windows 11 avanza en una función que permitirá <strong>reanudar apps de Android en PC</strong>, difuminando la frontera entre móvil y ordenador. Google Search incorpora la posibilidad de lanzar <strong>preguntas de seguimiento</strong> a sus resúmenes generados por IA, orientando las búsquedas hacia diálogos más contextuales y precisos. En gaming, informes sobre 2026 señalan cinco grandes tendencias con <strong>PlayStation, Xbox y Nintendo</strong> en el centro: más juego en la nube, mayor uso de IA para personalizar experiencias, y hardware que reparte el peso entre consolas, portátiles y accesorios especializados.</p>
+<p><h2>Robots y cadena de suministro: la tecnología que no se ve</h2></p>
+<p>Fuera del escaparate de consumo, la robótica y la IA se consolidan en la trastienda de la industria. Análisis de consultoras como Gartner indican que los <strong>robots humanoides</strong> aún no se integrarán de forma masiva en las cadenas de suministro globales a corto plazo, principalmente por <strong>costes, madurez técnica y mantenimiento</strong>. En su lugar, ganan terreno soluciones específicas como los robots móviles y brazos automatizados.</p>
+<p>Empresas como <strong>Boston Dynamics</strong> ya despliegan robots de alta movilidad para automatizar tareas de almacén, inventario y manipulación de cargas, mientras compañías de electrónica exploran modelos de circularidad. Apple, por ejemplo, emplea robots como <strong>Daisy y Taz</strong> para <strong>desensamblar iPhones y recuperar materiales</strong>, mejorando el rendimiento del reciclaje frente a procesos manuales. En paralelo, proyectos a largo plazo, como el plan de <strong>OpenAI para reconfigurar su cadena de suministro de IA durante la próxima década</strong>, apuntan a una infraestructura más cercana, eficiente y controlada para centros de datos y hardware especializado. Estos desarrollos marcan un cambio estructural: los gadgets de consumo no solo se definen por lo que el usuario ve, sino por la red de automatización y reutilización que los soporta.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
