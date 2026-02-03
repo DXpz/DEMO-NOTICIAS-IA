@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
+    <title>La nueva oleada de IA y chips redefine el futuro del PC y del software - ADOPTIA NOTICIAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-cafe: #6b3c00;
+            --brand-beige: #e4decf;
+            --brand-dark: #000000;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-naranja);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
+        }
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }
+
+        .logo-img {
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: var(--brand-naranja);
+        }
+
+        .logo-noticias {
+            color: var(--brand-negro);
+        }
+
+        .collaboration-line {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-naranja);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-naranja);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid var(--brand-cafe);
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-footer {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+
+            /* Logo más pequeño en móvil */
+            .logo-container {
+                height: 80px;
+            }
+
+            .logo-img {
+                width: 280px;
+                transform: scale(1.0);
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+
+            .logo-img-footer {
+                width: 200px;
+                transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+            </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
+            <div class="date-line">
+                martes, 03 de febrero de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Ordenadores</span>
+                    <h1 class="full-headline">La nueva oleada de IA y chips redefine el futuro del PC y del software</h1>
+                    <p class="full-lead">Modelos de IA como Codex se integran en el escritorio, mientras Nvidia acelera diseño de chips y la demanda dispara la presión sobre memoria DRAM. En paralelo, Google, Adobe y China mueven ficha en sistemas operativos, software creativo y fabricación de semiconductores.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción ADOPTIA  Noticias</strong> | San Salvador</span>
+                        <span>martes, 03 de febrero de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/hRFKQ9XB/I5jh-W3-Bqf1m3-Heu-Ym-JL3sjy-HU.png" alt="">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p><h2>La IA salta del navegador al escritorio y al código</h2></p>
+<p>OpenAI ha llevado sus capacidades de programación asistida al entorno de sobremesa. <strong>Codex</strong>, su modelo especializado en generación de código, se integra ahora en ChatGPT con acceso gratuito para parte de los usuarios y estrena aplicación nativa para <strong>macOS</strong>, lo que acerca asistentes de desarrollo avanzados directamente al escritorio sin depender del navegador. Este movimiento consolida a los modelos de lenguaje como herramientas de productividad para programadores y usuarios técnicos, automatizando tareas de escritura, refactorización y explicación de código.</p>
+<p>En paralelo, proliferan agentes de IA que se ejecutan localmente en ordenadores personales. El caso de <strong>ClawdBot/OpenClaw</strong> ha reabierto el debate sobre seguridad: sus cambios de nombre sucesivos y prácticas cuestionadas de gestión de datos evidencian la necesidad de revisar permisos, orígenes del software y políticas de privacidad antes de instalar agentes autónomos en PCs. El riesgo no está en la tecnología en sí, sino en implementaciones sin controles adecuados.</p>
+<p><h2>Nvidia impulsa el diseño de chips y afronta un nuevo mapa industrial</h2></p>
+<p><strong>Nvidia</strong> colaborará con <strong>Siemens</strong> para acelerar herramientas EDA (Electronic Design Automation) utilizando sus GPUs. Esto permite simular y validar diseños de chips de forma mucho más rápida, reduciendo tiempos de desarrollo de nuevos procesadores y componentes para ordenadores. La computación acelerada se convierte así en pieza clave del ciclo de innovación de hardware.</p>
+<p>Al mismo tiempo, el equilibrio de poder en semiconductores se desplaza. En solo cuatro años, <strong>China ha pasado de ser marginal a contar con tres fabricantes en el top 20 mundial</strong>, según Xataka. Esta expansión refuerza su autonomía tecnológica y añade competencia en segmentos críticos para PCs, centros de datos y dispositivos móviles.</p>
+<p>La relación entre Nvidia y <strong>OpenAI</strong>, valorada en decenas de miles de millones de dólares en hardware y servicios, atraviesa una fase de reconfiguración. Más que una ruptura súbita, se trata de un ajuste estratégico en un mercado donde los grandes modelos de IA buscan diversificar proveedores de cómputo y diseñar sus propias infraestructuras.</p>
+<p><h2>Presión sobre memoria, software histórico en retirada y guerra de sistemas</h2></p>
+<p>El crecimiento de aplicaciones de IA en PCs y smartphones incrementa la demanda de <strong>memoria DRAM</strong>. Informes citados por Infobae advierten de una posible escasez para ordenadores y móviles, impulsada por cargas de trabajo de IA más pesadas y por dispositivos que integran modelos locales. El reto para la industria es ajustar la capacidad productiva sin provocar subidas de precios prolongadas.</p>
+<p>En el frente del software, <strong>Adobe Animate</strong> cesará su actividad el próximo mes, marcando el fin de una herramienta clave de animación para escritorio. La transición empuja a los creadores hacia alternativas más modernas dentro y fuera del ecosistema Adobe.</p>
+<p>Google, por su parte, prepara el desembarco de una versión de <strong>Android para PC</strong>, un movimiento que The Verge anticipa como complejo y potencialmente polémico. La convergencia entre sistemas móviles y de escritorio reabre la competencia con Windows y ChromeOS, y plantea un escenario donde aplicaciones Android podrían ejecutarse de forma nativa en ordenadores portátiles y de sobremesa.</p>
+<p>Por último, Nvidia explora el uso de su infraestructura de IA para <strong>mitigar riesgos climáticos en cadenas de suministro</strong>, integrando modelos de predicción meteorológica avanzada en la planificación logística. Este enfoque ilustra cómo la misma base tecnológica que impulsa el PC y los centros de datos se aplica ya a problemas industriales y ambientales de gran escala.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>

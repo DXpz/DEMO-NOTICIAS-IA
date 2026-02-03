@@ -2,415 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
-    <title>Gigantes tecnológicos reordenan inversiones y empleo en plena ola de IA - ADOPTIA NOTICIAS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>ADOPTIA NOTICIAS - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/gigantes-tecnologicos-reordenan-inversiones-y-empleo-en-plena-ola-de-ia.html">
     <style>
-        :root {
-            --brand-negro: #000000;
-            --brand-naranja: #f34b26;
-            --brand-cafe: #6b3c00;
-            --brand-beige: #e4decf;
-            --brand-dark: #000000;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-naranja);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .header-main::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
-        }
-
-        /* LOGO SVG - Adaptado y ampliado */
-        .logo-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 10px;
-            overflow: hidden;
-            height: 120px;
+            height: 100vh;
+            margin: 0;
         }
-
-        .logo-img {
-            width: 450px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: var(--brand-naranja);
-        }
-
-        .logo-noticias {
-            color: var(--brand-negro);
-        }
-
-        .collaboration-line {
-            font-size: 12px;
-            color: #555;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
             text-align: center;
-            margin-top: 8px;
-            margin-bottom: 5px;
-            font-style: italic;
         }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-naranja);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
+        h1 {
             font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .full-image-container {
-            margin-bottom: 30px;
-        }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-naranja);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-naranja);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
-        }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
+        a {
             color: var(--brand-naranja);
-            font-weight: bold;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid var(--brand-cafe);
-        }
-
-        .footer-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            height: 80px;
-            margin-bottom: 15px;
-        }
-
-        .logo-img-footer {
-            width: 300px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
-
-            /* Logo más pequeño en móvil */
-            .logo-container {
-                height: 80px;
-            }
-
-            .logo-img {
-                width: 280px;
-                transform: scale(1.0);
-            }
-
-            .footer-logo {
-                height: 60px;
-            }
-
-            .logo-img-footer {
-                width: 200px;
-                transform: scale(1.0);
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html" class="logo-container">
-                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
-            </a>
-            <div class="collaboration-line">
-                En colaboración con <strong>Diario El Mundo</strong>
-            </div>
-            <div class="date-line">
-                Lunes, 02 de Febrero de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Empresas y economía</span>
-                    <h1 class="full-headline">Gigantes tecnológicos reordenan inversiones y empleo en plena ola de IA</h1>
-                    <p class="full-lead">Amazon recorta 16.000 puestos mientras Microsoft, Nvidia y Amazon negocian hasta USD 60.000 millones para impulsar OpenAI y Apple marca un trimestre récord con el iPhone. La economía corporativa gira hacia la IA y la energía como ejes de competitividad.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción ADOPTIA  Noticias</strong> | San Salvador</span>
-                        <span>Lunes, 02 de Febrero de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/W4QK0tvp/png-skoid-b2c0e1c0-cf97-4e19-8986-8073905d5723-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p><h2>Despidos en Amazon y giro hacia la automatización</h2></p>
-<p><p>Amazon prepara una nueva ronda de recortes que afectará a <strong>unos 16.000 empleados</strong>, según avanzó Hipertextual, en una ofensiva para rebajar costes operativos y acelerar la adopción de sistemas de automatización e inteligencia artificial en varias líneas de negocio. Los ajustes se suman a las oleadas previas de despidos en el sector tecnológico, que recomponen sus estructuras de personal hacia perfiles de mayor valor añadido en datos, nube y modelos de lenguaje.</p></p>
-<p><p>El movimiento se produce mientras el grupo refuerza sus capacidades de computación en la nube y servicios de IA para empresas, donde la presión competitiva es alta y los márgenes dependen de aprovechar mejor la infraestructura existente. La compañía busca así trasladar parte del trabajo rutinario a sistemas automatizados, mantener su escala global y contener costes laborales en un contexto de desaceleración del consumo y encarecimiento de la financiación.</p></p>
-<p><h2>Capital masivo hacia OpenAI y contestación de Nvidia</h2></p>
-<p><p>En paralelo, Microsoft, Nvidia y la propia Amazon negocian invertir <strong>hasta USD 60.000 millones en OpenAI</strong>, según Infobae, con el objetivo de asegurar acceso preferente a modelos avanzados y capacidad de cómputo optimizada. La operación consolidaría a OpenAI como proveedor central de infraestructura algorítmica y permitiría a los tres grupos integrar capacidades generativas de forma más profunda en nube, productividad y comercio electrónico.</p></p>
-<p><p>Desde el otro lado, TechCrunch recoge que el consejero delegado de Nvidia ha rechazado que se haya estancado un supuesto plan de inversión de <strong>USD 100.000 millones</strong> en OpenAI. El directivo defiende que las relaciones comerciales siguen activas y que la demanda de chips específicos para entrenamiento e inferencia continúa tensionando la cadena de suministro. El mensaje pretende calmar dudas del mercado sobre el ritmo de monetización de la IA de propósito general.</p></p>
-<p><h2>Apple refuerza ingresos y la energía gana peso estratégico</h2></p>
-<p><p>The Verge detalla que Apple acaba de cerrar un <strong>trimestre récord de ventas de iPhone</strong>, impulsado por la rotación de dispositivos y por el ecosistema de servicios digitales asociados. La compañía utiliza la mejora de caja para sostener recompras y dividendos, mientras avanza en la integración de funciones basadas en IA en sus sistemas operativos como vía de diferenciación sin depender de terceros.</p></p>
-<p><p>Fuera del núcleo tecnológico, Xataka informa de que Amancio Ortega amplía su presencia en el sector energético y pasa a controlar también activos en Portugal, reforzando una cartera orientada a ingresos estables y a la transición energética. Este reposicionamiento hacia infraestructuras críticas convive con la preocupación europea por su suministro de gas, que está reabriendo el debate sobre nuevas perforaciones para reducir la dependencia de Estados Unidos.</p></p>
-<p><p>En conjunto, los movimientos muestran un patrón claro: las grandes corporaciones concentran capital en plataformas de IA y activos energéticos, ajustan plantillas tradicionales y buscan anclar su posición en las capas estructurales de la economía digital y física.</p></p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/gigantes-tecnologicos-reordenan-inversiones-y-empleo-en-plena-ola-de-ia.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>
