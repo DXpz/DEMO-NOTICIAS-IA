@@ -2,415 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
-    <title>OpenAI refuerza su apuesta por agentes y código con fichajes y GPT-5.3 - ADOPTIA NOTICIAS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>ADOPTIA NOTICIAS - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/openai-refuerza-su-apuesta-por-agentes-y-codigo-con-fichajes-y-gpt-5-3.html">
     <style>
-        :root {
-            --brand-negro: #000000;
-            --brand-naranja: #f34b26;
-            --brand-cafe: #6b3c00;
-            --brand-beige: #e4decf;
-            --brand-dark: #000000;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-naranja);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .header-main::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
-        }
-
-        /* LOGO SVG - Adaptado y ampliado */
-        .logo-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 10px;
-            overflow: hidden;
-            height: 120px;
+            height: 100vh;
+            margin: 0;
         }
-
-        .logo-img {
-            width: 450px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: var(--brand-naranja);
-        }
-
-        .logo-noticias {
-            color: var(--brand-negro);
-        }
-
-        .collaboration-line {
-            font-size: 12px;
-            color: #555;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
             text-align: center;
-            margin-top: 8px;
-            margin-bottom: 5px;
-            font-style: italic;
         }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-naranja);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
+        h1 {
             font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .full-image-container {
-            margin-bottom: 30px;
-        }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-naranja);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-naranja);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
-        }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
+        a {
             color: var(--brand-naranja);
-            font-weight: bold;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid var(--brand-cafe);
-        }
-
-        .footer-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            height: 80px;
-            margin-bottom: 15px;
-        }
-
-        .logo-img-footer {
-            width: 300px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
-
-            /* Logo más pequeño en móvil */
-            .logo-container {
-                height: 80px;
-            }
-
-            .logo-img {
-                width: 280px;
-                transform: scale(1.0);
-            }
-
-            .footer-logo {
-                height: 60px;
-            }
-
-            .logo-img-footer {
-                width: 200px;
-                transform: scale(1.0);
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html" class="logo-container">
-                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
-            </a>
-            <div class="collaboration-line">
-                En colaboración con <strong>Diario El Mundo</strong>
-            </div>
-            <div class="date-line">
-                Lunes, 16 de febrero de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Tech</span>
-                    <h1 class="full-headline">OpenAI refuerza su apuesta por agentes y código con fichajes y GPT-5.3</h1>
-                    <p class="full-lead">OpenAI incorpora al fundador de OpenClaw y lanza GPT-5.3 Codex Spark, un modelo orientado a programar en milisegundos. El movimiento acelera la carrera por agentes de IA prácticos y herramientas de desarrollo automatizado.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción ADOPTIA  Noticias</strong> | San Salvador</span>
-                        <span>Lunes, 16 de febrero de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/TD3FhSbD/8-Sg-Gqmyxg-QIPMXEHlu-L2-Sn-Sy-BWIc-Lotge-Y-X95y-A.png" alt="">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p><h2>OpenAI compra talento de OpenClaw y acelera su hoja de ruta</h2></p>
-<p>OpenAI ha fichado a Peter Steinberger, fundador de OpenClaw (también conocido como Clawbot en algunas coberturas), un agente de IA que destacaba por su autonomía para ejecutar tareas complejas y su enfoque multiplataforma. El movimiento integra en la compañía a uno de los equipos que más presión ejercía sobre las grandes tecnológicas en el terreno de los agentes inteligentes.</p>
-<p>OpenClaw se había posicionado como \"agente total\" capaz de orquestar aplicaciones, automatizar flujos de trabajo y ejecutarse en móviles mediante herramientas como QuickClaw, que simplifican su instalación en dispositivos personales. Su compra o integración de talento por parte de una Big Tech —en este caso, OpenAI— reduce la fragmentación del ecosistema, pero también concentra capacidades avanzadas de orquestación de tareas en una misma plataforma.</p>
-<p>Para los usuarios finales, la relevancia está en que estas capacidades de agente no se quedarán como proyectos paralelos, sino que previsiblemente se integrarán en ChatGPT y otros productos de OpenAI. Esto puede traducirse en asistentes más capaces de actuar: desde gestionar correos y documentos hasta ejecutar código o coordinar servicios en la nube, con menos fricción entre la instrucción en lenguaje natural y la acción concreta.</p>
-<p><h2>GPT-5.3 Codex Spark impulsa la programación automatizada</h2></p>
-<p>En paralelo, OpenAI ha presentado GPT-5.3 Codex Spark, una iteración de su línea de modelos especializados en programación. Según la cobertura disponible, el modelo está optimizado para generar y refactorizar código \"en una fracción de segundo\", con mejoras de latencia y respuesta interactiva frente a versiones anteriores de Codex. El foco no es solo escribir código, sino asistir en todo el ciclo: diseñar funciones, detectar errores, proponer pruebas y adaptar soluciones a distintos lenguajes.</p>
-<p>Este tipo de modelos desplaza el papel de la IA desde el mero autocompletado hacia un entorno de desarrollo cooperativo, donde el programador define objetivos y restricciones, y el sistema propone implementaciones rápidas que luego se validan y ajustan. Los riesgos señalados por expertos —desde la posible introducción de errores hasta la dependencia excesiva de sugerencias automáticas— se consideran retos de ingeniería y gobernanza de producto: controles de calidad del código generado, trazabilidad de cambios y buenas prácticas de revisión humana.</p>
-<p><h2>Agentes, móviles y adopción masiva marcan la agenda</h2></p>
-<p>La integración del talento de OpenClaw se produce en un contexto en el que los agentes de IA empiezan a salir del laboratorio para instalarse en el móvil del usuario medio, gracias a soluciones como QuickClaw que permiten desplegarlos con unos pocos clics. Esto acerca los agentes a escenarios cotidianos: automatizar tareas en el smartphone, coordinar aplicaciones y personalizar flujos según el contexto local del dispositivo.</p>
-<p>Al mismo tiempo, la adopción de ChatGPT y herramientas afines en mercados como India, donde se reportan decenas de millones de usuarios semanales, muestra que la demanda de asistentes conversacionales y capacidades de automatización está creciendo de forma estructural. El refuerzo de OpenAI en agentes y en modelos de código apunta a una convergencia clara: asistentes capaces de entender lenguaje natural, generar soluciones técnicas al instante y ejecutarlas sobre el ecosistema de aplicaciones del usuario, con la revisión humana como capa final de seguridad y control.</p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/openai-refuerza-su-apuesta-por-agentes-y-codigo-con-fichajes-y-gpt-5-3.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>

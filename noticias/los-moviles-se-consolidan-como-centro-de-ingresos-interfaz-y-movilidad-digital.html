@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
+    <title>Los móviles se consolidan como centro de ingresos, interfaz y movilidad digital - ADOPTIA NOTICIAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-cafe: #6b3c00;
+            --brand-beige: #e4decf;
+            --brand-dark: #000000;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-naranja);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
+        }
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }
+
+        .logo-img {
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: var(--brand-naranja);
+        }
+
+        .logo-noticias {
+            color: var(--brand-negro);
+        }
+
+        .collaboration-line {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-naranja);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-naranja);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid var(--brand-cafe);
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-footer {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+
+            /* Logo más pequeño en móvil */
+            .logo-container {
+                height: 80px;
+            }
+
+            .logo-img {
+                width: 280px;
+                transform: scale(1.0);
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+
+            .logo-img-footer {
+                width: 200px;
+                transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+            </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
+            <div class="date-line">
+                Martes, 17 de Febrero de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Móviles</span>
+                    <h1 class="full-headline">Los móviles se consolidan como centro de ingresos, interfaz y movilidad digital</h1>
+                    <p class="full-lead">Los lanzamientos de gama alta, el auge de las apps con IA y la expansión de asistentes en coches refuerzan al móvil como eje de uso y facturación. Los plegables avanzan como sustituto ocasional del portátil y el vehículo conectado amplía el perímetro del ecosistema móvil.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción ADOPTIA  Noticias</strong> | San Salvador</span>
+                        <span>Martes, 17 de Febrero de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/chVJ6p7Y/ZAEh-YVXGAw-Om-Nuagoc-K9yc-A8qo.png" alt="Los móviles se consolidan como centro de ingresos, interfaz y movilidad digital">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p><h2>El smartphone de 2026: más ingresos por apps y nuevo ciclo de gama alta</h2></p>
+<p>El ecosistema móvil llega a 2026 con un cambio claro en el origen de sus ingresos. Según Infobae, en 2025 las <strong>apps de uso general superaron por primera vez a los videojuegos móviles en facturación global</strong>, impulsadas por la adopción masiva de servicios basados en inteligencia artificial: desde asistentes personales y edición de contenido hasta herramientas de productividad y automatización ligera en el dispositivo.</p>
+<p>En paralelo, el mercado de hardware entra en un nuevo ciclo con la <strong>presentación del Samsung Galaxy S26 el 25 de febrero</strong>, según adelanta TechCrunch. El evento apunta a una generación de smartphones centrados en procesadores más eficientes, cámaras mejoradas y funciones de IA embebida para fotografía, traducción en tiempo real y optimización energética, elementos que refuerzan el móvil como dispositivo principal de acceso a servicios digitales.</p>
+<p><h2>Plegables como sustituto parcial del portátil</h2></p>
+<p>The Verge analiza la madurez de los teléfonos plegables como la familia Galaxy Z Fold, que se consolidan como <strong>alternativa viable al portátil en viajes y trabajo móvil</strong>. Combinados con teclados compactos y pantallas flexibles de gran formato, estos dispositivos permiten tareas antes reservadas al laptop: redacción prolongada, edición básica de documentos y gestión intensiva de correo y mensajería empresarial.</p>
+<p>El informe subraya que la experiencia aún depende de la optimización del software multitarea y de la compatibilidad de aplicaciones de productividad con interfaces plegables, pero el avance de cada generación reduce la brecha funcional con un ordenador ultraligero.</p>
+<p><h2>El coche conectado amplía el territorio móvil</h2></p>
+<p>En el entorno del vehículo conectado, Xataka detalla cómo <strong>Tesla integra el modelo de IA Grok en su sistema de infoentretenimiento en Europa</strong>, en un contexto de escrutinio regulatorio por el uso responsable de estas tecnologías. El objetivo técnico es convertir la pantalla central del coche en una extensión del entorno móvil del usuario: consultas conversacionales, acceso a información contextual y gestión de contenidos sin depender tanto del teléfono físico.</p>
+<p>Este despliegue se suma a la presencia de asistentes de grandes plataformas como Siri o Gemini en otros fabricantes, configurando al <strong>coche como nodo periférico del ecosistema móvil</strong>. Los retos se centran ahora en privacidad de datos, control de contenidos y diseño de interfaces seguras para la conducción, más que en la viabilidad técnica de los modelos.</p>
+<p><h2>Movilidad y descarbonización: más allá del smartphone</h2></p>
+<p>La lógica de movilidad también se extiende a la infraestructura pesada. Supply Chain Digital describe el plan de <strong>Fortescue para transformar su red ferroviaria industrial hacia operaciones libres de combustibles fósiles</strong>, mediante locomotoras eléctricas y soluciones de almacenamiento energético. Aunque no es un desarrollo de telefonía, ilustra la convergencia entre digitalización, gestión de datos en tiempo real y movilidad sostenible en grandes redes logísticas.</p>
+<p>En conjunto, estos movimientos consolidan al móvil —y a sus extensiones en pantallas plegables y vehículos— como interfaz dominante de servicios con IA y como palanca de nuevos modelos de negocio, con la regulación y la ética de datos como principales ejes de tensión para el próximo ciclo.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
