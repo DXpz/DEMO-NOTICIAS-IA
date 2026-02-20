@@ -43,7 +43,7 @@ def main():
     """Función principal que coordina la actualización completa"""
     print("🚀 ACTUALIZACIÓN COMPLETA DEL SITIO WEB")
     print("=" * 60)
-    print("ADOPTIA NOTICIAS - Sistema de actualización automática")
+    print("RED - Sistema de actualización automática")
     print("=" * 60)
     
     # Verificar que estamos en el directorio correcto
@@ -111,7 +111,7 @@ def main():
 
                 # git push
                 subprocess.run(
-                    ["git", "push", "origin", "main"],
+                    ["git", "push", "origin", "RED"],
                     cwd=str(proyecto_dir),
                     check=True,
                 )
