@@ -1,0 +1,73 @@
+{
+  "config": {
+    "titulo_sitio": "RED - Tu fuente confiable de información",
+    "edicion": "Edición Global",
+    "fecha_actualizacion": "viernes, 20 de febrero de 2026",
+    "logo_url": ""
+  },
+  "noticia_principal": {
+    "id": "titulo-de-la-noticia-principal",
+    "url": "",
+    "categoria": "Categoría",
+    "titulo": "Título de la noticia principal",
+    "resumen": "Resumen breve de la noticia principal.",
+    "autor": "Redacción RED",
+    "coautor": null,
+    "ciudad": "San Salvador",
+    "imagen": "",
+    "imagen_alt": "Descripción de la imagen",
+    "imagen_caption": "Ilustración IA",
+    "subtitulo": "Subtítulo de la noticia",
+    "contenido_completo": [
+      "<h2>Subtítulo de la noticia</h2>",
+      "Primer párrafo del contenido completo de la noticia."
+    ],
+    "citas": [],
+    "puntos_clave": []
+  },
+  "noticias_secundarias": [
+    {
+      "id": "titulo-de-noticia-secundaria-1",
+      "url": "",
+      "categoria": "Categoría",
+      "titulo": "Título de noticia secundaria 1",
+      "resumen": "Resumen breve de la noticia secundaria 1.",
+      "autor": "Redacción RED",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "",
+      "imagen_alt": "Descripción de la imagen",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "Subtítulo",
+      "contenido_completo": [
+        "<h2>Subtítulo</h2>",
+        "Contenido completo de la noticia secundaria 1."
+      ],
+      "citas": [],
+      "puntos_clave": []
+    }
+  ],
+  "noticias_lo_ultimo": [
+    {
+      "id": "titulo-de-noticia-lo-ultimo-1",
+      "url": "",
+      "categoria": "Categoría",
+      "titulo": "Título de noticia Lo Último 1",
+      "resumen": "Resumen breve de la noticia Lo Último 1.",
+      "autor": "Redacción RED",
+      "coautor": null,
+      "ciudad": "San Salvador",
+      "imagen": "",
+      "imagen_alt": "Descripción de la imagen",
+      "imagen_caption": "Ilustración IA",
+      "subtitulo": "Subtítulo",
+      "contenido_completo": [
+        "<h2>Subtítulo</h2>",
+        "Contenido completo de la noticia Lo Último 1."
+      ],
+      "citas": [],
+      "puntos_clave": []
+    }
+  ],
+  "articulos_opinion": []
+}
