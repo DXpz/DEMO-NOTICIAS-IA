@@ -387,10 +387,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
 
         <!-- ======================= NUEVAS NOTICIAS DE IA ======================= -->
         <div id="home-view">
-            <h2 style="font-family: var(--sans-font); font-size: 28px; margin: 30px 0 30px 0; color: var(--text-grey); font-weight: 400;">
-                Las últimas noticias sobre el impacto de la IA 
-            </h2>
-
             <div class="news-grid">
 
                 <!-- COLUMNA 1: PRINCIPAL -->
