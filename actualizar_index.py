@@ -398,7 +398,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
 
                 <!-- COLUMNA 2: SECUNDARIAS -->
                 <section class="center-col">
-                    <div class="sidebar-title">Más Noticias de IA</div>
+                    <div class="sidebar-title">Más Noticias de RED</div>
 
 {noticias_secundarias_center}
 
@@ -479,7 +479,7 @@ def generar_articulo_lista(noticia):
 
 def main():
     """Función principal que actualiza el index.html"""
-    print("🔄 Actualizador de Index.html - ADOPTIA NOTICIAS")
+    print("🔄 Actualizador de Index.html - RED NOTICIAS")
     print("=" * 50)
     
     # Cargar JSON de noticias
