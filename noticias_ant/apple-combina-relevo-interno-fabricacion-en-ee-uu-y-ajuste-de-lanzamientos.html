@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
+    <title>Apple combina relevo interno, fabricación en EE.UU. y ajuste de lanzamientos - ADOPTIA NOTICIAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-cafe: #6b3c00;
+            --brand-beige: #e4decf;
+            --brand-dark: #000000;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-naranja);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
+        }
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }
+
+        .logo-img {
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: var(--brand-naranja);
+        }
+
+        .logo-noticias {
+            color: var(--brand-negro);
+        }
+
+        .collaboration-line {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-naranja);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-naranja);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid var(--brand-cafe);
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-footer {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+
+            /* Logo más pequeño en móvil */
+            .logo-container {
+                height: 80px;
+            }
+
+            .logo-img {
+                width: 280px;
+                transform: scale(1.0);
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+
+            .logo-img-footer {
+                width: 200px;
+                transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+            </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
+            <div class="date-line">
+                martes, 24 de febrero de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Apple</span>
+                    <h1 class="full-headline">Apple combina relevo interno, fabricación en EE.UU. y ajuste de lanzamientos</h1>
+                    <p class="full-lead">Apple acelera su plan de sucesión, reordena el calendario de anuncios y mueve parte de la producción del Mac mini a Texas mientras ajusta la adopción de iOS 26, la hoja de ruta de Siri y sus políticas frente a nuevas leyes en EE.UU.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción ADOPTIA  Noticias</strong> | San Salvador</span>
+                        <span>martes, 24 de febrero de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/KxJxj2mp/png-skoid-0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="Apple combina relevo interno, fabricación en EE.UU. y ajuste de lanzamientos">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p><h2>Relevo en la cúpula y nuevo calendario de producto</h2></p>
+<p><p>Apple ha intensificado sus <strong>planes internos de sucesión</strong> ante un posible relevo de Tim Cook, abriendo la puerta a una transición planificada tras más de una década de continuidad en la dirección, según adelantó Infobae. La compañía no ha confirmado plazos, pero fuentes citadas señalan que busca garantizar estabilidad en su hoja de ruta de hardware, servicios y estrategia financiera.</p></p>
+<p><p>En paralelo, Apple evalúa <strong>modificar su forma de anunciar nuevos productos</strong>, según TechCrunch. La empresa estaría explorando formatos menos dependientes de grandes keynotes puntuales y más apoyados en lanzamientos escalonados y comunicaciones específicas por línea de producto. El objetivo sería ganar flexibilidad ante ciclos de desarrollo más complejos (como los ligados a software y funciones basadas en IA) y ajustar mejor los tiempos a la regulación y a la logística de fabricación.</p></p>
+<p><p>En el catálogo, esta etapa de transición coincide con una presión creciente en la gama de entrada. Xataka destaca que el <strong>iPhone 16e</strong>, un modelo más asequible, ya se sitúa por debajo de los 560 euros en algunos canales, mientras el mercado espera un nuevo iPhone \"barato\". Este movimiento apunta a una estrategia más agresiva en precio para sostener cuota en la gama media.</p></p>
+<p><h2>Producción en Texas, iOS 26 y ajustes en Siri</h2></p>
+<p><p>En manufactura, Apple comenzará a <strong>fabricar algunos Mac mini en Estados Unidos</strong>, concretamente en Texas, de acuerdo con The Verge. La medida no supone una deslocalización masiva desde Asia, pero sí refuerza la presencia industrial de la firma en territorio estadounidense, diversifica la cadena de suministro y responde a incentivos políticos y regulatorios locales.</p></p>
+<p><p>En software, Apple ha revelado los datos de <strong>adopción de iOS 26</strong> en iPhone, que según Hipertextual no marcan ni un récord histórico ni un fracaso. La penetración indica una base de usuarios considerable actualizada a la última versión, pero también un volumen relevante que permanece en versiones anteriores, lo que obliga a mantener compatibilidad y soporte extendido.</p></p>
+<p><p>Al mismo tiempo, la compañía <strong>retrasará de nuevo funciones avanzadas de Siri</strong> inicialmente previstas para iOS 26.4, según Infobae. El aplazamiento se vincula a la necesidad de afinar comportamiento y calidad de respuesta del asistente, en un contexto en el que los sistemas de IA se desarrollan con ciclos iterativos y pruebas controladas, más que como módulos cerrados. La estrategia pasa por introducir capacidades de forma gradual para asegurar estabilidad y alineamiento con los estándares de privacidad del ecosistema Apple.</p></p>
+<p><h2>Regulación, privacidad y nuevos accesorios</h2></p>
+<p><p>En el terreno regulatorio, Apple se adapta a una <strong>nueva ley de Texas</strong> que obliga a verificar la edad de los nuevos usuarios de iPhone, informa Infobae. El cambio implica procesos adicionales en el alta de cuentas y en la configuración inicial de dispositivos, y refuerza la segmentación de contenidos y funciones según rangos de edad. Este tipo de ajustes normativos seguirá influyendo en el diseño de la experiencia de usuario, especialmente en mercados con exigencias estrictas para menores.</p></p>
+<p><p>En accesorios, The Verge detalla que la <strong>segunda generación de AirTag</strong> ya está a la venta con ofertas tempranas en algunos distribuidores. La renovación mejora las capacidades de localización mediante Bluetooth y la integración con la red de búsqueda de Apple, apuntalando la estrategia de la compañía en el segmento de rastreadores personales y gestión de objetos, un área donde el valor añadido reside en la precisión técnica y en la integración con el ecosistema iOS y macOS.</p></p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
