@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
+    <title>Robots, aeropuertos y empleos: así se consolida la nueva ola de IA - ADOPTIA NOTICIAS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-cafe: #6b3c00;
+            --brand-beige: #e4decf;
+            --brand-dark: #000000;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-naranja);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
+        }
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }
+
+        .logo-img {
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: var(--brand-naranja);
+        }
+
+        .logo-noticias {
+            color: var(--brand-negro);
+        }
+
+        .collaboration-line {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-naranja);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-naranja);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid var(--brand-cafe);
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-footer {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+
+            /* Logo más pequeño en móvil */
+            .logo-container {
+                height: 80px;
+            }
+
+            .logo-img {
+                width: 280px;
+                transform: scale(1.0);
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+
+            .logo-img-footer {
+                width: 200px;
+                transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+            </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
+            <div class="date-line">
+                jueves, 26 de febrero de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Robótica e IA</span>
+                    <h1 class="full-headline">Robots, aeropuertos y empleos: así se consolida la nueva ola de IA</h1>
+                    <p class="full-lead">Grandes fabricantes, aeropuertos y gobiernos aceleran la adopción de inteligencia artificial y robótica. El foco pasa de la experimentación al despliegue masivo, con retos claros en seguridad, desinformación y empleo.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción ADOPTIA  Noticias</strong> | San Salvador</span>
+                        <span>jueves, 26 de febrero de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://i.ibb.co/Xrnf2YqV/LT5l-ZEKTm4tkobc-Iyuknb-LJtarsq8d-ZPi328.png" alt="Robots, aeropuertos y empleos: así se consolida la nueva ola de IA">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p><h2>La IA sale del laboratorio: fábricas, aeropuertos y robotaxis</h2></p>
+<p><p>Toyota ha formalizado la incorporación de <strong>siete robots humanoides de Agility</strong> en una planta de Canadá, un paso más en el uso de robótica avanzada para automatizar tareas físicas en entornos industriales complejos. En paralelo, el sector de los <strong>vehículos autónomos (robotaxis)</strong> sigue buscando la fórmula de la rentabilidad: análisis recientes cifran en torno a <strong>16.000 millones de dólares</strong> la inversión necesaria para construir un negocio sostenible, lo que refleja altos costos de desarrollo, despliegue y regulación.</p></p>
+<p><p>En el ámbito del software robótico, Google ha decidido integrar más estrechamente el proyecto conocido como el \"Android de la robótica\" dentro de su estructura, con el objetivo de impulsar la llamada <strong>IA física</strong>: sistemas que combinan modelos avanzados de percepción y planificación con brazos robóticos y plataformas móviles. El movimiento refuerza la apuesta por herramientas modulares que permitan programar robots con la misma facilidad con que hoy se desarrollan apps móviles.</p></p>
+<p><h2>Seguridad y desinformación: la otra cara de la automatización</h2></p>
+<p><p>Mientras la industria avanza, la infraestructura digital revela sus puntos débiles. En México, investigaciones periodísticas han documentado el uso de <strong>modelos generativos</strong> para producir campañas de desinformación durante operativos de seguridad, así como el empleo de herramientas de IA para asistir en el robo de <strong>miles de datos del SAT y del INE</strong>. Se trata de usos indebidos de tecnología accesible, que obligan a reforzar protocolos de ciberseguridad, detección de contenido sintético y trazabilidad de accesos.</p></p>
+<p><p>Otros casos, como el de una aspiradora conectada que permitió acceder a <strong>7.000 dispositivos en 24 países</strong> al intentar vincularla con un control de PS5, muestran que los <strong>dispositivos domésticos inteligentes</strong> son ya parte de la superficie de ataque global. Gobiernos y reguladores empiezan a reaccionar: propuestas como otorgar al árbitro electoral mexicano (INE) la capacidad de retirar contenidos identificados como \"fake news\" encajan en una tendencia mundial hacia mayor supervisión del flujo informativo, con el desafío de equilibrar <strong>integridad cívica</strong> y derechos fundamentales.</p></p>
+<p><h2>Trabajo, creatividad y cadenas de suministro ante la IA</h2></p>
+<p><p>En el mercado laboral, varios reportes coinciden en que la IA transformará funciones antes que eliminarlas de forma abrupta. Expertos bien remunerados ya entrenan modelos para tareas de <strong>redacción, programación, análisis jurídico o financiero</strong>, reconfigurando sus propios oficios hacia roles de supervisión y diseño de sistemas. Informes estiman cambios sustanciales en muchos empleos en un horizonte de <strong>tres años</strong>, especialmente en tareas repetitivas o de entrada, pero también abren espacio a puestos centrados en control de calidad, integración y gobernanza de datos.</p></p>
+<p><p>En logística, el aeropuerto de Heathrow utiliza IA para optimizar flujos de pasajeros y carga, mejorar la <strong>planificación operativa</strong> y reducir retrasos, como parte de una transformación digital más amplia. Consultoras como Gartner insisten en que los puestos de entrada no desaparecen automáticamente, sino que se transforman hacia la supervisión de sistemas automatizados y la interacción humana de mayor valor añadido. Al mismo tiempo, herramientas como <strong>Lyria 3 de Google para Gemini</strong>, un modelo que genera música con letra personalizada ya disponible en México, ilustran cómo la IA no solo automatiza, sino que también amplía capacidades creativas y abre mercados nuevos en contenidos a medida.</p></p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>
