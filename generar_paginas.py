@@ -20,7 +20,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
-    <title>{titulo} - ADOPTIA NOTICIAS</title>
+    <title>{titulo} - IAKimi Noticias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -360,7 +360,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <header class="header-main">
         <div class="container">
             <a href="../index.html" class="logo-container">
-                <img src="../IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+                <img src="../IMG/6.svg" alt="IAKimi Noticias" class="logo-img">
             </a>
             <div class="collaboration-line">
                 En colaboración con <strong>Diario El Mundo</strong>
@@ -410,7 +410,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <img src="../IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+                <img src="../IMG/81.svg" alt="IAKimi Noticias" class="logo-img-footer">
             </div>
         </div>
     </footer>
@@ -427,7 +427,7 @@ PLANTILLA_REDIRECCION = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
-    <title>ADOPTIA NOTICIAS - Archivo</title>
+    <title>IAKimi Noticias - Archivo</title>
     <meta http-equiv="refresh" content="0; url=../noticias_ant/{archivo}">
     <style>
         body {{
@@ -726,7 +726,7 @@ def archivar_noticias_antiguas(noticias_actuales_json):
 
 def main():
     """Función principal que genera todas las páginas"""
-    print("🚀 Generador de Páginas HTML - ADOPTIA NOTICIAS")
+    print("🚀 Generador de Páginas HTML - IAKimi Noticias")
     print("=" * 50)
     
     # Cargar JSON
