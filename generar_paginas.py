@@ -19,7 +19,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
+    <link rel="icon" type="image/png" href="../IMG/Logo IAKimi - Sin Fondo.png">
     <title>{titulo} - IAKimi Noticias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -360,7 +360,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <header class="header-main">
         <div class="container">
             <a href="../index.html" class="logo-container">
-                <img src="../IMG/6.svg" alt="IAKimi Noticias" class="logo-img">
+                <img src="../IMG/Logo IAKimi - Positivo.png" alt="IAKimi Noticias" class="logo-img">
             </a>
             <div class="collaboration-line">
                 En colaboración con <strong>Diario El Mundo</strong>
@@ -410,7 +410,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <img src="../IMG/81.svg" alt="IAKimi Noticias" class="logo-img-footer">
+                <img src="../IMG/Logo IAKimi - Negativo.png" alt="IAKimi Noticias" class="logo-img-footer">
             </div>
         </div>
     </footer>
@@ -426,7 +426,7 @@ PLANTILLA_REDIRECCION = """<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/svg+xml" href="../IMG/6.svg">
+    <link rel="icon" type="image/png" href="../IMG/Logo IAKimi - Sin Fondo.png">
     <title>IAKimi Noticias - Archivo</title>
     <meta http-equiv="refresh" content="0; url=../noticias_ant/{archivo}">
     <style>

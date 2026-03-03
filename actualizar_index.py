@@ -22,8 +22,8 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="version" content="2.0-IA-NOTICIAS">
-    <link rel="icon" type="image/svg+xml" href="IMG/6.svg">
-    <title>ADOPTIA NOTICIAS - Tu fuente confiable de información</title>
+    <link rel="icon" type="image/png" href="IMG/Logo IAKimi - Sin Fondo.png">
+    <title>IAKimi Noticias - Tu fuente confiable de información</title>
     <!-- Importamos fuentes elegantes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -374,7 +374,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <header class="header-main">
         <div class="container">
             <a href="index.html" class="logo-container">
-                <img src="IMG/6.svg" alt="ADOPTIA NOTICIAS" class="logo-img">
+                <img src="IMG/Logo IAKimi - Positivo.png" alt="IAKimi Noticias" class="logo-img">
             </a>
             <div class="collaboration-line">
                 En colaboración con <strong>Diario El Mundo</strong>
@@ -422,7 +422,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <img src="IMG/81.svg" alt="ADOPTIA NOTICIAS" class="logo-img-footer">
+                <img src="IMG/Logo IAKimi - Negativo.png" alt="IAKimi Noticias" class="logo-img-footer">
             </div>
         </div>
     </footer>
@@ -446,7 +446,7 @@ def generar_articulo_principal(noticia):
                             {noticia['resumen']}
                         </p>
                         <div class="article-author">
-                            Por <strong>Redacción ADOPTIA NOTICIAS</strong> | San Salvador
+                            Por <strong>Redacción IAKimi Noticias</strong> | San Salvador
                         </div>
                     </article>"""
 
@@ -465,7 +465,7 @@ def generar_articulo_secundario_main(noticia):
                             {noticia['resumen']}
                         </p>
                         <div class="article-author">
-                            Por <strong>Redacción ADOPTIA NOTICIAS</strong> | San Salvador
+                            Por <strong>Redacción IAKimi Noticias</strong> | San Salvador
                         </div>
                     </article>"""
 
@@ -487,7 +487,7 @@ def generar_articulo_lista(noticia):
 
 def main():
     """Función principal que actualiza el index.html"""
-    print("🔄 Actualizador de Index.html - ADOPTIA NOTICIAS")
+    print("🔄 Actualizador de Index.html - IAKimi Noticias")
     print("=" * 50)
     
     # Cargar JSON de noticias
