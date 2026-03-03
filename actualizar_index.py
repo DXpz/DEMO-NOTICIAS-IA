@@ -36,8 +36,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         :root {{
             --brand-negro: #000000;
             --brand-naranja: #f34b26;
-            --brand-cafe: #6b3c00;
-            --brand-beige: #e4decf;
             --brand-dark: #000000;
             --text-grey: #333333;
             --light-grey: #f4f4f4;
@@ -94,7 +92,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
         }}
 
 
@@ -173,7 +171,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             left: 0;
             right: 0;
             height: 2px;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
         }}
 
         .article:last-child::after {{
@@ -181,7 +179,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .article-kicker {{
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 25%, var(--brand-cafe) 50%, var(--brand-cafe) 75%, var(--brand-cafe) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 60%, var(--brand-negro) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -290,7 +288,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         .opinion-author {{
             font-size: 11px;
             text-transform: uppercase;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-cafe) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-negro) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -305,7 +303,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             padding: 20px 0;
             margin-top: 50px;
             text-align: center;
-            border-top: 1px solid var(--brand-cafe);
+            border-top: 1px solid var(--brand-negro);
         }}
 
         .footer-logo {{

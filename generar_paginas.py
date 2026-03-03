@@ -29,8 +29,6 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
         :root {{
             --brand-negro: #000000;
             --brand-naranja: #f34b26;
-            --brand-cafe: #6b3c00;
-            --brand-beige: #e4decf;
             --brand-dark: #000000;
             --text-grey: #333333;
             --light-grey: #f4f4f4;
@@ -83,7 +81,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-cafe) 50%, var(--brand-beige) 100%);
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
         }}
 
         /* LOGO SVG - Adaptado y ampliado */
@@ -294,7 +292,7 @@ PLANTILLA_NOTICIA = """<!DOCTYPE html>
             padding: 20px 0;
             margin-top: 50px;
             text-align: center;
-            border-top: 1px solid var(--brand-cafe);
+            border-top: 1px solid var(--brand-negro);
         }}
 
         .footer-logo {{
