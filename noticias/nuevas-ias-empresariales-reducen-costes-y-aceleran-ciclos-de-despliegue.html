@@ -2,413 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../IMG/Logo IAKimi - Sin Fondo.png">
-    <title>Nuevas IAs empresariales reducen costes y aceleran ciclos de despliegue - IAKimi Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>IAKimi Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/nuevas-ias-empresariales-reducen-costes-y-aceleran-ciclos-de-despliegue.html">
     <style>
-        :root {
-            --brand-negro: #000000;
-            --brand-naranja: #f34b26;
-            --brand-dark: #000000;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-naranja);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .header-main::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
-        }
-
-        /* LOGO SVG - Adaptado y ampliado */
-        .logo-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 10px;
-            overflow: hidden;
-            height: 120px;
+            height: 100vh;
+            margin: 0;
         }
-
-        .logo-img {
-            width: 450px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: var(--brand-naranja);
-        }
-
-        .logo-noticias {
-            color: var(--brand-negro);
-        }
-
-        .collaboration-line {
-            font-size: 12px;
-            color: #555;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
             text-align: center;
-            margin-top: 8px;
-            margin-bottom: 5px;
-            font-style: italic;
         }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-naranja);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
+        h1 {
             font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .full-image-container {
-            margin-bottom: 30px;
-        }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-naranja);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-naranja);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
-        }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
+        a {
             color: var(--brand-naranja);
-            font-weight: bold;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid var(--brand-negro);
-        }
-
-        .footer-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            height: 80px;
-            margin-bottom: 15px;
-        }
-
-        .logo-img-footer {
-            width: 300px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
-
-            /* Logo más pequeño en móvil */
-            .logo-container {
-                height: 80px;
-            }
-
-            .logo-img {
-                width: 280px;
-                transform: scale(1.0);
-            }
-
-            .footer-logo {
-                height: 60px;
-            }
-
-            .logo-img-footer {
-                width: 200px;
-                transform: scale(1.0);
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html" class="logo-container">
-                <img src="../IMG/Logo IAKimi - Positivo.png" alt="IAKimi Noticias" class="logo-img">
-            </a>
-            <div class="collaboration-line">
-                En colaboración con <strong>Diario El Mundo</strong>
-            </div>
-            <div class="date-line">
-                miércoles, 04 de marzo de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Enterprise</span>
-                    <h1 class="full-headline">Nuevas IAs empresariales reducen costes y aceleran ciclos de despliegue</h1>
-                    <p class="full-lead">Actualizaciones de OpenAI y Google abaratan y agilizan el uso corporativo de modelos generativos, mientras Stripe monetiza el consumo de IA y Chrome acelera su ciclo de versiones con impacto directo en TI empresarial.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción IAKimi Noticias</strong> | San Salvador</span>
-                        <span>miércoles, 04 de marzo de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/hxt7vjN0/png-skoid-38e27a3b-6174-4d3e-90ac-d7d9ad49543f-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="Nuevas IAs empresariales reducen costes y aceleran ciclos de despliegue">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p><h2>Modelos más ligeros y útiles para entornos corporativos</h2></p>
-<p>OpenAI y Google afinan sus modelos de IA generativa para encajar mejor en arquitecturas empresariales. OpenAI actualiza ChatGPT con un modelo más directo y operativo, orientado a respuestas accionables y menor fricción en usos productivos, lo que facilita su integración en flujos de trabajo y asistentes internos. Google, por su parte, lanza <strong>Gemini 3.1 Flash-Lite</strong>, una variante optimizada para <strong>baja latencia y menor coste por consulta</strong>, pensada para despliegues masivos en productos y servicios usando su ecosistema, incluida <strong>Vertex AI</strong>, donde se priorizan tiempos de respuesta y eficiencia económica.</p>
-<p>Estas iteraciones buscan resolver dos frenos habituales en grandes organizaciones: la percepción de "verborrea" poco operativa de los modelos generalistas y el coste de inferencia a escala. La combinación de respuestas más enfocadas y modelos ligeros habilita casos de uso de alto volumen, como atención al cliente automatizada, soporte técnico interno, análisis de documentos y copilotos para tareas repetitivas.</p>
-<p><h2>Finanzas de la IA: del coste operativo al centro de ingresos</h2></p>
-<p>Stripe incorpora herramientas específicas para que empresas que revenden capacidades de IA conviertan el consumo de modelos en una línea de negocio trazable. Su propuesta permite <strong>repercutir y marcar margen sobre el coste de tokens</strong> u operaciones de IA, con facturación automatizada, controles de uso y reporting granular. Esto facilita que startups y corporaciones lancen APIs o productos basados en modelos de terceros sin perder visibilidad financiera sobre el consumo.</p>
-<p>En paralelo, se observa cómo los acuerdos institucionales de gran escala, como el uso de ChatGPT por organismos gubernamentales, generan <strong>picos de descargas y desinstalaciones</strong> en el entorno de consumo, un dato relevante para departamentos de riesgo, compliance y TI que gestionan la adopción y las políticas de uso de herramientas de IA en empresas.</p>
-<p><h2>Infraestructura, ciclos de actualización y contexto geopolítico</h2></p>
-<p>Google acelera el ciclo de lanzamientos de Chrome, pasando de una cadencia de cuatro semanas a dos. Para administradores de TI y responsables de plataformas en grandes organizaciones, este cambio implica <strong>más actualizaciones de seguridad y funcionalidades en menos tiempo</strong>, pero también demanda procesos de validación y despliegue más ágiles, sobre todo en entornos con extensiones críticas y aplicaciones web embebidas.</p>
-<p>En el plano de eventos y visión de ecosistema, Microsoft prepara la vuelta de su conferencia Build a San Francisco, un espacio clave para anuncios de nuevas APIs, servicios cloud y herramientas de desarrollo orientadas a clientes enterprise. El Mobile World Congress 2026, mientras tanto, consolida la convergencia entre <strong>robótica humanoide, IA aplicada y dispositivos móviles avanzados</strong>, configurando la próxima ola de automatización en logística, retail y servicios.</p>
-<p>Finalmente, la tensión entre Estados Unidos e Irán introduce ajustes en las cadenas de suministro globales. Para las áreas de operaciones y planificación, esto se traduce en <strong>reconfiguración de rutas, proveedores y buffers de inventario</strong>, reforzando la necesidad de combinar análisis de datos, escenarios de riesgo y herramientas de IA para simular y anticipar disrupciones.</p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <img src="../IMG/Logo IAKimi - Negativo.png" alt="IAKimi Noticias" class="logo-img-footer">
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/nuevas-ias-empresariales-reducen-costes-y-aceleran-ciclos-de-despliegue.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>
