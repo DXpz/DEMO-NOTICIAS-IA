@@ -2,416 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../IMG/Logo IAKimi - Sin Fondo.png">
-    <title>La nueva ola Tech integra IA generativa, hardware avanzado y cambios de reglas - IAKimi Noticias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <title>IAKimi Noticias - Archivo</title>
+    <meta http-equiv="refresh" content="0; url=../noticias_ant/la-nueva-ola-tech-integra-ia-generativa-hardware-avanzado-y-cambios-de-reglas.html">
     <style>
-        :root {
-            --brand-negro: #000000;
-            --brand-naranja: #f34b26;
-            --brand-dark: #000000;
-            --text-grey: #333333;
-            --light-grey: #f4f4f4;
-            --border-color: #e5e5e5;
-            --bg-color: #ffffff;
-            --serif-font: 'Playfair Display', Georgia, serif;
-            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: var(--sans-font);
-            background-color: var(--bg-color);
-            color: var(--text-grey);
-            line-height: 1.5;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.2s;
-        }
-
-        a:hover {
-            color: var(--brand-naranja);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* HEADER */
-        .header-main {
-            padding: 25px 0;
-            text-align: center;
-            position: relative;
-        }
-
-        .header-main::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
-        }
-
-        /* LOGO SVG - Adaptado y ampliado */
-        .logo-container {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 10px;
-            overflow: hidden;
-            height: 120px;
+            height: 100vh;
+            margin: 0;
         }
-
-        .logo-img {
-            width: 450px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        .logo-text {
-            font-size: 72px;
-            font-weight: 900;
-            letter-spacing: -2px;
-            line-height: 1;
-            font-family: var(--sans-font);
-        }
-
-        .logo-red {
-            color: var(--brand-naranja);
-        }
-
-        .logo-noticias {
-            color: var(--brand-negro);
-        }
-
-        .collaboration-line {
-            font-size: 12px;
-            color: #555;
+        .card {
+            background: #fff;
+            padding: 24px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            max-width: 480px;
             text-align: center;
-            margin-top: 8px;
-            margin-bottom: 5px;
-            font-style: italic;
         }
-
-        .date-line {
-            font-size: 13px;
-            color: #666;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid var(--border-color);
-            display: inline-block;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-
-        /* ARTÍCULO */
-        .article-layout {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .full-article-header {
-            margin-bottom: 30px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-
-        .breadcrumbs {
-            font-size: 12px;
-            text-transform: uppercase;
-            color: var(--brand-naranja);
-            font-weight: bold;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .full-headline {
-            font-family: var(--sans-font);
-            font-size: 46px;
-            line-height: 1.1;
-            color: var(--brand-dark);
-            margin-bottom: 20px;
-        }
-
-        .full-lead {
-            font-family: var(--sans-font);
+        h1 {
             font-size: 20px;
-            line-height: 1.5;
-            color: #444;
-            margin-bottom: 20px;
-        }
-
-        .full-meta {
-            font-size: 13px;
-            color: #666;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .full-image-container {
-            margin-bottom: 30px;
-        }
-
-        .full-image-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        .full-image-caption {
-            font-size: 13px;
-            color: #777;
-            background: #f9f9f9;
-            padding: 8px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .article-body {
-            font-family: var(--sans-font);
-            font-size: 19px;
-            line-height: 1.8;
-            color: #222;
-        }
-
-        .article-body p {
-            margin-bottom: 25px;
-        }
-        
-        .article-body h2 {
-            font-family: var(--sans-font);
-            font-size: 24px;
-            font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--brand-dark);
-        }
-
-        .article-body ul {
-            margin-left: 30px;
-            margin-bottom: 25px;
-        }
-
-        .article-body li {
             margin-bottom: 10px;
         }
-
-        .article-quote {
-            border-left: 4px solid var(--brand-naranja);
-            padding-left: 25px;
-            font-style: italic;
-            font-size: 24px;
-            color: #444;
-            margin: 40px 0;
-        }
-
-        .btn-back {
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #666;
-            cursor: pointer;
-        }
-        .btn-back:hover {
-            color: var(--brand-naranja);
-            text-decoration: underline;
-        }
-
-        .sidebar-title {
+        p {
             font-size: 14px;
-            font-weight: 900;
-            text-transform: uppercase;
-            border-bottom: 2px solid var(--brand-dark);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
-
-
-        .related-item {
-            margin-bottom: 20px;
-            border-bottom: 1px dotted #ccc;
-            padding-bottom: 15px;
-        }
-
-        .related-category {
-            font-size: 11px;
-            text-transform: uppercase;
+        a {
             color: var(--brand-naranja);
-            font-weight: bold;
+            text-decoration: none;
+            font-weight: 600;
         }
-
-        .related-item h4 {
-            font-family: var(--sans-font);
-            font-size: 16px;
-            margin-top: 5px;
-        }
-
-        /* FOOTER */
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 20px 0;
-            margin-top: 50px;
-            text-align: center;
-            border-top: 1px solid var(--brand-negro);
-        }
-
-        .footer-logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            height: 80px;
-            margin-bottom: 15px;
-        }
-
-        .logo-img-footer {
-            width: 300px;
-            height: auto;
-            object-fit: cover;
-            object-position: center center;
-            display: block;
-            transform: scale(1.15);
-        }
-
-        @media (max-width: 1024px) {
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-            .article-sidebar {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .full-headline {
-                font-size: 32px;
-            }
-            .article-sidebar {
-                display: block;
-                margin-top: 40px;
-            }
-
-            /* Logo más pequeño en móvil */
-            .logo-container {
-                height: 80px;
-            }
-
-            .logo-img {
-                width: 280px;
-                transform: scale(1.0);
-            }
-
-            .footer-logo {
-                height: 60px;
-            }
-
-            .logo-img-footer {
-                width: 200px;
-                transform: scale(1.0);
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
-    <!-- HEADER LOGO -->
-    <header class="header-main">
-        <div class="container">
-            <a href="../index.html" class="logo-container">
-                <img src="../IMG/Logo IAKimi - Positivo.png" alt="IAKimi Noticias" class="logo-img">
-            </a>
-            <div class="collaboration-line">
-                En colaboración con <strong>Diario El Mundo</strong>
-            </div>
-            <div class="date-line">
-                jueves, 05 de marzo de 2026
-            </div>
-        </div>
-    </header>
-
-    <!-- CONTENIDO ARTÍCULO -->
-    <main class="container">
-        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
-        
-        <div class="article-layout">
-            <!-- CONTENIDO PRINCIPAL -->
-            <div class="article-content">
-                <header class="full-article-header">
-                    <span class="breadcrumbs">Tech</span>
-                    <h1 class="full-headline">La nueva ola Tech integra IA generativa, hardware avanzado y cambios de reglas</h1>
-                    <p class="full-lead">Actualizaciones en modelos de IA, teléfonos y portátiles redefinen cómo trabajamos y consumimos servicios digitales, mientras Google modifica el negocio de apps en Android. La inversión masiva en infraestructura y la llegada de herramientas como NotebookLM y Gemini marcan la próxima fase de productividad asistida por IA.</p>
-                    <div class="full-meta">
-                        <span>Por <strong>Redacción IAKimi Noticias</strong> | San Salvador</span>
-                        <span>jueves, 05 de marzo de 2026</span>
-                    </div>
-                </header>
-
-                <div class="full-image-container">
-                    <img src="https://i.ibb.co/21gCb2kq/png-skoid-0e2a3d55-e963-40c9-9c89-2a1aa28cb3ac-sktid-a48cca56-e6da-484e-a814-9c849652bcb3-skt-2026-0.png" alt="La nueva ola Tech integra IA generativa, hardware avanzado y cambios de reglas">
-                    <div class="full-image-caption">Ilustración IA</div>
-                </div>
-
-                <div class="article-body">
-                    <p><h2>Modelos de IA más rápidos y productivos</h2></p>
-<p>GPT-5.3 Instant, el nuevo modelo que impulsa ChatGPT, apunta a reducir la latencia y manejar consultas más largas, con mejoras en velocidad de respuesta y capacidad de razonamiento sobre documentos extensos. El objetivo es sostener usos cotidianos de alto volumen, desde asistentes personales hasta flujos de trabajo corporativos que requieren respuestas casi en tiempo real.</p>
-<p>En paralelo, Google amplía el alcance de Gemini en sus dispositivos Pixel. La última actualización permite al asistente ejecutar tareas completas en apps de terceros, como hacer pedidos de comestibles, gestionar reservas o automatizar acciones repetitivas. NotebookLM, otra herramienta de Google, ya puede transformar investigaciones y notas en resúmenes en vídeo con formato "cinemático", lo que convierte conjuntos de documentos en piezas audiovisuales estructuradas para formación, briefing ejecutivo o divulgación interna.</p>
-<p><h2>Hardware móvil y portátil con IA integrada</h2></p>
-<p>El calendario de lanzamiento del Pixel 10a se confirma como parte de la estrategia de Google de escalar la experiencia Gemini a gamas más amplias de hardware, llevando funciones de asistente avanzado a dispositivos de precio contenido. HONOR, por su parte, presenta en el MWC 2026 su concepto de "Robot Phone", un smartphone que integra capacidades de interacción más ricas y gestos robóticos para asistencia contextual, pensado para acompañar al usuario en tareas cotidianas y escenarios de movilidad.</p>
-<p>En el segmento de portátiles, el MacBook Neo concentra la presión competitiva sobre el ecosistema Windows. Su combinación de eficiencia energética, potencia de cómputo y aceleradores dedicados a IA obliga a los fabricantes de PCs tradicionales a acelerar su hoja de ruta de chips y optimización de software, especialmente en tareas de inferencia local de modelos generativos y asistentes de productividad integrados.</p>
-<p><h2>Infraestructura, regulación y nuevas reglas económicas</h2></p>
-<p>Las grandes tecnológicas incrementan de forma intensa su inversión en centros de datos, chips especializados y redes para sostener la explosión de uso de modelos de IA. Los costos se cuentan en miles de millones de dólares, canalizados a GPU de nueva generación, sistemas de refrigeración eficientes y redes de alta capacidad. Este despliegue se interpreta menos como una burbuja y más como una fase de construcción de infraestructura crítica para la próxima década de servicios digitales.</p>
-<p>En paralelo, Google adelanta cambios profundos en la economía de las apps: el fin de la comisión estándar del 30 % en la tienda de Android abre espacio para nuevos modelos de negocio en aplicaciones y servicios basados en IA, que dependen de márgenes más ajustados y monetización por suscripción o uso. Estas modificaciones podrían reequilibrar el poder de negociación entre desarrolladores y plataformas.</p>
-<p>Las preocupaciones sobre la concentración de poder en pocas empresas de IA se discuten ya en clave regulatoria. Voces como la de Sam Altman, de OpenAI, plantean el riesgo de que compañías tecnológicas adquieran más influencia que los gobiernos, mientras los reguladores exploran marcos que aseguren transparencia, gobernanza de modelos y alineación con el interés público.</p>
-<p><h2>Reacción del usuario y aplicaciones sostenibles</h2></p>
-<p>El uso masivo de servicios de IA no está exento de fricciones. Tras conocerse acuerdos de uso de ChatGPT en entornos del Departamento de Defensa de EE. UU., algunos datos de analítica móvil muestran un aumento relevante en desinstalaciones de la aplicación, reflejando la sensibilidad de parte de los usuarios al destino de sus datos y a los contextos de despliegue de estos sistemas. Estos movimientos refuerzan la importancia de políticas claras de privacidad, controles de uso y comunicación transparente.</p>
-<p>Al mismo tiempo, la IA se consolida como herramienta para objetivos de sostenibilidad. En cadenas de suministro, los modelos permiten mejorar la previsión de demanda, optimizar rutas logísticas, reducir desperdicios y gestionar mejor inventarios, con impacto directo en emisiones y costos. La combinación de análisis predictivo, gestión avanzada de datos y automatización ligera abre una vía práctica para que empresas conviertan sus objetivos climáticos en decisiones operativas medibles.</p>
-
-                </div>
-            </div>
-
-            <!-- SIDEBAR -->
-            <aside class="article-sidebar">
-                <div class="sidebar-title">Noticias Relacionadas</div>
-                <div class="related-item">
-                    <div class="related-category">Contexto</div>
-                    <h4><a href="../index.html">Volver a la portada</a></h4>
-                </div>
-            </aside>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <div class="footer-logo">
-                <img src="../IMG/Logo IAKimi - Negativo.png" alt="IAKimi Noticias" class="logo-img-footer">
-            </div>
-        </div>
-    </footer>
-
-    </body>
-    </html>
+    <div class="card">
+        <h1>Esta noticia ha sido archivada</h1>
+        <p>Estás siendo redirigido a la versión archivada de este artículo.</p>
+        <p>Si la redirección no ocurre automáticamente, haz clic en el siguiente enlace:</p>
+        <p><a href="../noticias_ant/la-nueva-ola-tech-integra-ia-generativa-hardware-avanzado-y-cambios-de-reglas.html">Ver noticia archivada</a></p>
+    </div>
+</body>
+</html>
