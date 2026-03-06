@@ -372,7 +372,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <header class="header-main">
         <div class="container">
             <a href="index.html" class="logo-container">
-                <img src="IMG/Logo IAKimi - Positivo.png" alt="IAKimi Noticias" class="logo-img">
+                <img src="IMG/Logo IAKimi - Sin Fondo.png" alt="IAKimi Noticias" class="logo-img">
             </a>
             <div class="collaboration-line">
                 En colaboración con <strong>Diario El Mundo</strong>
