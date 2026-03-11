@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../IMG/Logo IAKimi - Sin Fondo.png">
+    <title>Plataformas digitales y robots reordenan la logística global en 2026 - IAKimi Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-dark: #000000;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-naranja);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
+        }
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }
+
+        .logo-img {
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: var(--brand-naranja);
+        }
+
+        .logo-noticias {
+            color: var(--brand-negro);
+        }
+
+        .collaboration-line {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-naranja);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-naranja);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid var(--brand-negro);
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-footer {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+
+            /* Logo más pequeño en móvil */
+            .logo-container {
+                height: 80px;
+            }
+
+            .logo-img {
+                width: 280px;
+                transform: scale(1.0);
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+
+            .logo-img-footer {
+                width: 200px;
+                transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/Logo IAKimi - Sin Fondo.png" alt="IAKimi Noticias" class="logo-img">
+            </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
+            <div class="date-line">
+                miércoles, 11 de marzo de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Logística</span>
+                    <h1 class="full-headline">Plataformas digitales y robots reordenan la logística global en 2026</h1>
+                    <p class="full-lead">Nuevos mercados de almacenaje, robots de cocina y trenes monitorizados en tiempo real muestran cómo IA, automatización y datos están reescribiendo la cadena de suministro. Las decisiones de infraestructura y regulación determinarán quién captura la eficiencia del nuevo mapa logístico.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción IAKimi Noticias</strong> | San Salvador</span>
+                        <span>miércoles, 11 de marzo de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1773237743/IMAGENES/wyeuham1iu5nptonivx2.png" alt="">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p><h2>Robots y automatización entran en la cadena de valor</h2></p>
+<p>Nuevos desarrollos en robótica y plataformas digitales están extendiendo la automatización desde el almacén hasta la cocina y los servicios. El robot chef de Nosh Robotics, con un coste aproximado de <strong>1.500 dólares</strong>, automatiza la preparación de comidas domésticas sin supervisión constante, un modelo extrapolable a cocinas industriales y colectivas: ciclo de trabajo preprogramado, sensores de cocción y reposición estandarizada de ingredientes. Este tipo de soluciones reduce tiempos de preparación, facilita la planificación de compras y permite medir consumos con precisión casi en tiempo real.</p>
+<p>En paralelo, el Mobile World Congress 2026 ha mostrado robots humanoides y sistemas de IA aplicados a tareas repetitivas y de manipulación en entornos complejos, desde retail hasta servicios públicos. La combinación de robótica, visión por computador y modelos de lenguaje permite diseñar flujos de trabajo altamente estructurados, con seguimiento digital de cada tarea y trazabilidad completa de la operación.</p>
+<p><h2>Logística digital: visibilidad, almacenes a demanda y regulación</h2></p>
+<p>En el ámbito puramente logístico, nuevos marketplaces como <strong>WareMatch</strong> buscan conectar en una sola plataforma la oferta de almacenes 3PL con la demanda de espacio y servicios. Estas soluciones digitalizan la búsqueda de capacidad, la tarificación y la contratación, y se apoyan en analítica avanzada e IA para ajustar inventarios, prever picos de demanda y optimizar la ocupación. Al mismo tiempo, plataformas de carga digital prometen <strong>más visibilidad de extremo a extremo</strong> en el transporte de mercancías, integrando seguimiento, documentación y datos de sostenibilidad en un único entorno.</p>
+<p>En el frente regulatorio, el litigio de Anthropic con el Gobierno de EE. UU. sobre el modelo Claude ilustra una tensión clave: cómo aplicar controles a sistemas de IA sin bloquear su uso en operaciones públicas y privadas, incluida la logística. La cuestión no es solo legal; afecta a qué modelos podrán alimentar sistemas de planificación de rutas, asignación dinámica de recursos o análisis de riesgo en cadenas de suministro.</p>
+<p><h2>Infraestructura física y datos en tiempo real como ventaja competitiva</h2></p>
+<p>La reorganización de la infraestructura también avanza. Portugal ha priorizado la conexión de alta velocidad con Galicia frente al enlace con Madrid, una decisión que reconfigurará flujos de mercancías y pasajeros en el eje ibérico atlántico. Esta elección impacta en tiempos de tránsito, coste por kilómetro y localización óptima de hubs logísticos en la frontera hispano-lusa.</p>
+<p>En el tramo operativo, la posibilidad de localizar <strong>cualquier tren de Renfe en tiempo real</strong> y conocer sus retrasos, gracias a datos abiertos y herramientas de monitorización, marca un cambio de paradigma: los sistemas de transporte se convierten en nodos de datos continuos. Para el usuario final, significa mejor información; para operadores y cargadores, supone ajustar conexiones, ventanas de carga y planificación de última milla con precisión de minutos, reduciendo inventarios de seguridad y tiempos muertos.</p>
+<p>En conjunto, estos desarrollos apuntan a una cadena de suministro más conectada, donde la combinación de IA regulada, robótica especializada, plataformas digitales y datos en vivo redefinirá costes, tiempos y diseño de redes logísticas en los próximos años.</p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../IMG/Logo IAKimi - Negativo.png" alt="IAKimi Noticias" class="logo-img-footer">
+            </div>
+        </div>
+    </footer>
+
+    </body>
+    </html>

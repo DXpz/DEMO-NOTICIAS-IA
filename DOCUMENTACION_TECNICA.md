@@ -1,14 +1,16 @@
 # Documentación Técnica: DEMO-NOTICIAS-IA
 
-**Versión:** 2.0  
-**Última actualización:** 6 de marzo de 2026  
+**Versión:** 3.0  
+**Última actualización:** 10 de marzo de 2026  
 **Repositorio:** https://github.com/DXpz/DEMO-NOTICIAS-IA.git
 
 ---
 
 ## 1. Resumen Ejecutivo
 
-DEMO-NOTICIAS-IA es un **sitio web estático de noticias** generado a partir de un archivo JSON. El sistema automatiza la creación de páginas HTML, el archivo de noticias antiguas y la actualización de la portada. No existe backend ni base de datos: todo se gestiona mediante scripts Python que leen `noticias.json` y generan HTML estático desplegable en Vercel.
+DEMO-NOTICIAS-IA es un **sitio web estático de noticias** generado a partir de un archivo JSON. El sistema automatiza la creación de páginas HTML, el archivo de noticias antiguas y la actualización de la portada. No existe base de datos: todo se gestiona mediante scripts Python que leen `noticias.json` y generan HTML estático servido por Nginx en un servidor privado.
+
+A partir de la versión 3.0, el sitio ha sido migrado de Vercel a un servidor privado dedicado (Debian 12 sobre Proxmox) y cuenta con una **API FastAPI** que recibe el JSON de noticias desde Make y regenera el sitio automáticamente.
 
 ---
 
@@ -23,8 +25,9 @@ DEMO-NOTICIAS-IA es un **sitio web estático de noticias** generado a partir de 
 | **Redirecciones para enlaces antiguos** | Al archivar una noticia, se crea en `noticias/` una página que redirige a `noticias_ant/{id}.html`, manteniendo los enlaces funcionales. |
 | **Portada dinámica** | `index.html` se regenera con la noticia principal, secundarias y "Lo último" según `noticias.json`. |
 | **Push automático a Git** | `actualizar_todo.py` hace `git add`, `commit` y `push` si hay cambios. |
-| **Despliegue en Vercel** | El sitio estático se despliega automáticamente al hacer push a `main`. |
-| **Sin dependencias externas** | Solo Python stdlib; no hay `pip install`. |
+| **API FastAPI** | `api.py` expone `POST /api/actualizar` que recibe el JSON de Make, lo guarda y ejecuta los scripts. |
+| **Despliegue en servidor privado** | Nginx sirve el HTML estático directamente desde `/home/iakimi/noticias-ia`. |
+| **Dependencias de API** | `api.py` requiere FastAPI y Uvicorn (instalados en `venv/`). Los scripts de generación siguen sin dependencias. |
 | **Citas y puntos clave** | Soporte para bloques de cita (`blockquote`) y listas de puntos clave en cada artículo. |
 | **Imágenes con caption** | Cada noticia puede tener imagen, `alt` y caption. |
 | **Configuración centralizada** | Título del sitio, edición y fecha en `noticias.json` → `config`. |
@@ -105,29 +108,34 @@ Ejecuta: python3 actualizar_todo.py
 
 ```
 DEMO-NOTICIAS-IA/
-├── index.html                 # Portada del sitio (generada automáticamente)
-├── noticias.json              # Fuente de datos principal (editable manualmente)
-├── historial_completo.json    # Historial de todas las noticias publicadas (objeto id → datos)
-├── noticias_antiguas.json     # Noticias archivadas con datos completos (array)
-├── vercel.json                # Configuración de despliegue Vercel
-├── README_SCRIPTS.md          # Documentación de uso de scripts
-├── DOCUMENTACION_TECNICA.md   # Este documento
+├── index.html                    # Portada del sitio (generada automáticamente)
+├── noticias.json                 # Fuente de datos principal
+├── historial_completo.json       # Historial de todas las noticias publicadas
+├── noticias_antiguas.json        # Noticias archivadas con datos completos
+├── vercel.json                   # Configuración legacy Vercel (ya no se usa)
+├── api.py                        # API FastAPI — recibe JSON de Make y regenera el sitio
+├── README_SCRIPTS.md             # Documentación de uso de scripts
+├── DOCUMENTACION_TECNICA.md      # Este documento
+├── DOCUMENTACION_SERVIDOR.md     # Documentación de infraestructura del servidor
 │
-├── generar_paginas.py         # Script 1: genera páginas HTML + archivo de antiguas
-├── actualizar_index.py       # Script 2: regenera index.html
-├── actualizar_todo.py         # Script maestro (recomendado)
+├── generar_paginas.py            # Script 1: genera páginas HTML + archivo de antiguas
+├── actualizar_index.py           # Script 2: regenera index.html
+├── actualizar_todo.py            # Script maestro (uso manual)
 │
-├── noticias/                  # Páginas HTML de noticias actuales
-│   ├── {id}.html              # Una por noticia (ej: google-reduce-comisiones-...)
-│   └── ...                    # + páginas de redirección para archivadas
+├── noticias/                     # Páginas HTML de noticias actuales
+│   ├── {id}.html                 # Una por noticia
+│   └── ...                       # + páginas de redirección para archivadas
 │
-├── noticias_ant/              # Noticias archivadas (HTML movidos aquí)
+├── noticias_ant/                 # Noticias archivadas (HTML movidos aquí)
 │   └── {id}.html
 │
-└── IMG/                       # Assets estáticos
-    ├── Logo IAKimi - Sin Fondo.png
-    ├── Logo IAKimi - Negativo.png
-    └── Logo IAKimi - Positivo.png
+├── IMG/                          # Assets estáticos
+│   ├── Logo IAKimi - Sin Fondo.png
+│   ├── Logo IAKimi - Negativo.png
+│   └── Logo IAKimi - Positivo.png
+│
+└── venv/                         # Entorno virtual Python (solo en servidor)
+    └── ...
 ```
 
 ---
@@ -136,15 +144,18 @@ DEMO-NOTICIAS-IA/
 
 | Categoría | Tecnología |
 |-----------|------------|
-| **Lenguaje** | Python 3 (solo stdlib) |
+| **Lenguaje** | Python 3 |
 | **Frontend** | HTML5 + CSS3 (sin JavaScript) |
 | **Datos** | JSON |
-| **Hosting** | Vercel (sitio estático) |
+| **API** | FastAPI + Uvicorn |
+| **Servidor web** | Nginx 1.22 |
+| **Hosting** | Servidor privado Debian 12 (Proxmox) |
+| **Automatización** | Make (envía JSON vía POST) |
 | **Control de versiones** | Git |
 
 ### Dependencias Python
 
-**Ninguna.** Solo módulos estándar:
+**Scripts de generación** — solo módulos estándar:
 
 - `json` — lectura/escritura de JSON
 - `os`, `shutil`, `pathlib` — manipulación de archivos y rutas
@@ -152,7 +163,10 @@ DEMO-NOTICIAS-IA/
 - `subprocess` — ejecución de scripts hijos
 - `sys` — argumentos y salida
 
-No existe `package.json`, `requirements.txt` ni `Pipfile`.
+**API (`api.py`)** — requiere entorno virtual (`venv/`):
+
+- `fastapi` — framework API REST
+- `uvicorn` — servidor ASGI
 
 ---
 
@@ -344,7 +358,7 @@ Se añade `fecha_primera_publicacion` al guardar por primera vez.
                              │
                              ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│ 4. Vercel despliega el sitio estático                            │
+│ 4. Nginx sirve el HTML actualizado directamente desde el servidor │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -456,9 +470,12 @@ El `id` es un slug (ej. `google-reduce-comisiones-en-android-y-reordena-el-negoc
 
 ### 13.3 Despliegue
 
-- Hosting: Vercel
-- URL de ejemplo: `https://demo-noticias-ia.vercel.app`
-- Push a `main` dispara el despliegue automático
+- Hosting: Servidor privado Debian 12 sobre Proxmox
+- IP privada: `172.17.3.43` (red interna)
+- IP pública: `200.35.189.154` (requiere NAT en Proxmox para acceso externo)
+- Nginx sirve los archivos estáticos desde `/home/iakimi/noticias-ia`
+- FastAPI corre en `127.0.0.1:8000` gestionado por systemd (`noticias-api.service`)
+- Ver `DOCUMENTACION_SERVIDOR.md` para detalles completos de infraestructura
 
 ---
 
@@ -505,11 +522,11 @@ python3 -m json.tool noticias.json
 
 ---
 
-## 17. Posible adaptación con servidor dedicado
+## 17. Migración a servidor dedicado (implementada en v3.0)
 
-### 17.1 Idea general
+### 17.1 Estado actual
 
-Actualmente, `noticias.json` se edita de forma manual en el repositorio y luego se ejecuta `actualizar_todo.py`. Una posible evolución es **eliminar por completo la intervención humana** en esta fase y delegar la actualización en un **servidor dedicado** que reciba el JSON y actualice el sitio automáticamente.
+A partir del 10 de marzo de 2026, el sistema ha sido completamente migrado a un servidor privado dedicado. Lo que antes era una propuesta teórica está ahora en producción. `noticias.json` ya no se edita manualmente: Make envía el JSON automáticamente a la API FastAPI que regenera el sitio.
 
 ### 17.2 Flujo propuesto con servidor dedicado
 
