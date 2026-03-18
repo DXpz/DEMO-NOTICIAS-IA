@@ -1,7 +1,7 @@
 # Documentación de Servidor — IAKimi Noticias
 
-**Versión:** 1.0  
-**Fecha:** 10 de marzo de 2026  
+**Versión:** 2.0  
+**Fecha:** 11 de marzo de 2026  
 **Servidor:** `srv-noticias`
 
 ---
@@ -42,7 +42,7 @@
 | RAM | 2 GB |
 | Almacenamiento | 40 GB SSD |
 | IP Privada | `172.17.3.43` |
-| IP Pública | `200.35.189.154` |
+| IP Pública | `200.35.189.130` |
 | Usuario SSH | `iakimi` |
 
 ---
@@ -157,6 +157,12 @@ journalctl -u noticias-api -f          # Ver logs en tiempo real
 
 ## 7. API FastAPI
 
+### URL base
+
+```
+https://noticias.iakimi.com
+```
+
 ### Endpoints disponibles
 
 #### `GET /health`
@@ -182,14 +188,14 @@ Recibe el JSON de noticias, lo guarda y regenera el sitio web completo.
 | `X-API-Key` | Clave secreta almacenada en `.api_key` |
 | `Content-Type` | `application/json` |
 
-**Body:** JSON con la lista de noticias (mismo formato que `noticias.json`)
+**Body:** JSON con la estructura completa de noticias (mismo formato que `noticias.json`)
 
 **Respuesta exitosa:**
 ```json
 {
   "status": "ok",
   "mensaje": "Sitio actualizado correctamente",
-  "timestamp": "2026-03-10T13:25:40.906092"
+  "timestamp": "2026-03-11T13:25:40.906092"
 }
 ```
 
@@ -198,7 +204,7 @@ Recibe el JSON de noticias, lo guarda y regenera el sitio web completo.
 {
   "status": "parcial",
   "mensaje": "noticias.json guardado pero hubo errores en los scripts",
-  "errores": ["Error en generar_paginas.py: ..."]
+  "errores": ["Error en actualizar_todo.py: ..."]
 }
 ```
 
@@ -211,14 +217,60 @@ Recibe el JSON de noticias, lo guarda y regenera el sitio web completo.
 
 ---
 
+#### `GET /api/noticias`
+Devuelve el contenido actual de `noticias.json`. Requiere autenticación.
+
+**Headers requeridos:**
+
+| Header | Valor |
+|---|---|
+| `X-API-Key` | Clave secreta almacenada en `.api_key` |
+
+**Respuesta:** JSON completo con la estructura actual de `noticias.json`.
+
+**Uso en Make:**
+- Method: `GET`
+- URL: `https://noticias.iakimi.com/api/noticias`
+- Header: `X-API-Key: tu_clave`
+
+---
+
+### Webhooks de notificación
+
+Al completar `/api/actualizar` la API llama automáticamente a dos webhooks de Make:
+
+| Webhook | Cuándo | Payload |
+|---|---|---|
+| `smnd3366zz9hv9t0s5lf93x18rwut2q8` | Inmediatamente al terminar | `{"success": true/false, "mensaje": "...", "timestamp": "..."}` |
+| `fu7d7r70mrhqvcxdqo79yfhuyeqas7jn` | 5 minutos después (solo si éxito) | `{"status": "ok", "timestamp": "..."}` |
+
+El segundo webhook se ejecuta en segundo plano — la API responde a Make sin esperar los 5 minutos.
+
+---
+
+### URL de noticias individuales
+
+```
+https://noticias.iakimi.com/noticias/{id}.html
+```
+
+Ejemplo:
+```
+https://noticias.iakimi.com/noticias/nvidia-consolida-su-dominio.html
+```
+
+En Make: `https://noticias.iakimi.com/noticias/{{id}}.html`
+
+---
+
 ### Prueba manual desde terminal
 
 ```bash
 # Verificar estado
-curl -s http://172.17.3.43/health
+curl -s https://noticias.iakimi.com/health
 
 # Enviar noticias y regenerar sitio
-curl -s -X POST http://172.17.3.43/api/actualizar \
+curl -s -X POST https://noticias.iakimi.com/api/actualizar \
   -H "X-API-Key: TU_API_KEY" \
   -H "Content-Type: application/json" \
   -d @/ruta/local/noticias.json
@@ -235,7 +287,7 @@ Para enviar el JSON de noticias automáticamente desde Make:
 
 | Campo | Valor |
 |---|---|
-| URL | `http://172.17.3.43/api/actualizar` |
+| URL | `https://noticias.iakimi.com/api/actualizar` |
 | Method | `POST` |
 | Headers | `X-API-Key: tu_clave_secreta` |
 | Body type | `Raw` |
@@ -296,19 +348,21 @@ sudo rsync -avz \
 
 ---
 
-## 12. Acceso externo (pendiente)
+## 12. Acceso externo
 
-Actualmente el sitio es accesible solo desde la red interna (`172.17.x.x`).  
-Para acceder desde internet usando la IP pública `200.35.189.154`, el administrador de Proxmox debe configurar una regla NAT que redirija:
+El sitio es accesible públicamente desde internet.
 
-- Puerto `80` → `172.17.3.43:80` (web)
-- Puerto `443` → `172.17.3.43:443` (HTTPS, si se configura SSL)
+- **Dominio:** `noticias.iakimi.com`
+- **IP pública:** `200.35.189.130`
+- **HTTP:** redirige automáticamente a HTTPS
+- **HTTPS:** certificado SSL de Let's Encrypt gestionado por Certbot
 
-### SSL con Certbot (una vez habilitado el acceso externo y con dominio)
+### Renovación automática del certificado SSL
+
+Certbot renueva el certificado automáticamente cada 90 días. Para verificar:
 
 ```bash
-sudo apt install certbot python3-certbot-nginx -y
-sudo certbot --nginx -d tu-dominio.com
+sudo certbot renew --dry-run
 ```
 
 ---

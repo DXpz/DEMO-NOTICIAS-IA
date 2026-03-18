@@ -9,6 +9,8 @@ import json
 import subprocess
 import logging
 import urllib.request
+import threading
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -35,27 +37,47 @@ if not API_KEY_FILE.exists():
 
 API_KEY = API_KEY_FILE.read_text().strip()
 
-MAKE_WEBHOOK = "https://hook.eu2.make.com/smnd3366zz9hv9t0s5lf93x18rwut2q8"
+MAKE_WEBHOOK_NOTIFICACION = "https://hook.eu2.make.com/smnd3366zz9hv9t0s5lf93x18rwut2q8"
+MAKE_WEBHOOK_CONFIRMACION = "https://hook.eu2.make.com/fu7d7r70mrhqvcxdqo79yfhuyeqas7jn"
 
 
-def notificar_make(exito: bool, mensaje: str, timestamp: str):
-    """Envía notificación al webhook de Make al finalizar la actualización."""
-    payload = json.dumps({
-        "success": exito,
-        "mensaje": mensaje,
-        "timestamp": timestamp,
-    }).encode("utf-8")
+def llamar_webhook(url: str, payload: dict, nombre: str):
+    """Envía un POST JSON a un webhook de Make."""
+    data = json.dumps(payload).encode("utf-8")
     try:
         req = urllib.request.Request(
-            MAKE_WEBHOOK,
-            data=payload,
+            url,
+            data=data,
             headers={"Content-Type": "application/json"},
             method="POST",
         )
         with urllib.request.urlopen(req, timeout=10) as resp:
-            logging.info(f"Webhook Make notificado — status {resp.status}")
+            logging.info(f"Webhook [{nombre}] notificado — status {resp.status}")
     except Exception as e:
-        logging.warning(f"No se pudo notificar al webhook de Make: {e}")
+        logging.warning(f"No se pudo notificar al webhook [{nombre}]: {e}")
+
+
+def notificar_make(exito: bool, mensaje: str, timestamp: str):
+    """Notifica ambos webhooks de Make al finalizar la actualización."""
+    payload_notificacion = {
+        "success": exito,
+        "mensaje": mensaje,
+        "timestamp": timestamp,
+    }
+    llamar_webhook(MAKE_WEBHOOK_NOTIFICACION, payload_notificacion, "notificacion")
+
+    if exito:
+        def enviar_confirmacion_diferida():
+            logging.info("Esperando 5 minutos antes de enviar confirmación final...")
+            time.sleep(300)
+            payload_confirmacion = {
+                "status": "ok",
+                "timestamp": datetime.now().isoformat(),
+            }
+            llamar_webhook(MAKE_WEBHOOK_CONFIRMACION, payload_confirmacion, "confirmacion")
+
+        hilo = threading.Thread(target=enviar_confirmacion_diferida, daemon=True)
+        hilo.start()
 
 
 # ── App ────────────────────────────────────────────────────────────────────────
@@ -83,6 +105,18 @@ def verificar_api_key(key: str = Security(api_key_header)):
 def health():
     """Comprueba que la API está activa."""
     return {"status": "ok", "timestamp": datetime.now().isoformat()}
+
+
+@app.get("/api/noticias")
+def obtener_noticias(key: str = Security(verificar_api_key)):
+    """Devuelve el contenido actual de noticias.json."""
+    if not NOTICIAS_JSON.exists():
+        raise HTTPException(status_code=404, detail="noticias.json no encontrado")
+    try:
+        datos = json.loads(NOTICIAS_JSON.read_text(encoding="utf-8"))
+        return datos
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error al leer noticias.json: {e}")
 
 
 @app.post("/api/actualizar")

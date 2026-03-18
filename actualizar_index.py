@@ -85,6 +85,10 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             /* Para volver al home */
         }}
 
+        .header-main .container {{
+            position: relative;
+        }}
+
         .header-main::after {{
             content: '';
             position: absolute;
@@ -93,6 +97,158 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             right: 0;
             height: 4px;
             background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
+        }}
+
+        /* NEWSLETTER (solo index) */
+        .header-top-right {{
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-top: 6px;
+        }}
+
+        .newsletter-btn {{
+            display: inline-flex;
+            align-items: center;
+            border: 2px solid var(--brand-naranja);
+            color: var(--brand-negro);
+            background: transparent;
+            border-radius: 999px;
+            padding: 10px 14px;
+            font-weight: 800;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            font-size: 11px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }}
+
+        .newsletter-btn:hover {{
+            background: var(--brand-naranja);
+            color: #fff;
+        }}
+
+        .newsletter-overlay {{
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 9999;
+        }}
+
+        .newsletter-overlay:target {{
+            display: flex;
+        }}
+
+        .newsletter-modal {{
+            width: 100%;
+            max-width: 520px;
+            background: #fff;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 18px 55px rgba(0, 0, 0, 0.25);
+        }}
+
+        .newsletter-modal-header {{
+            padding: 18px 18px 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+        }}
+
+        .newsletter-modal-title {{
+            font-family: var(--sans-font);
+            font-size: 18px;
+            font-weight: 900;
+            letter-spacing: 0.2px;
+            color: var(--brand-dark);
+        }}
+
+        .newsletter-modal-subtitle {{
+            margin-top: 4px;
+            font-size: 13px;
+            color: #555;
+        }}
+
+        .newsletter-close {{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+            font-weight: 900;
+        }}
+
+        .newsletter-close:hover {{
+            border-color: var(--brand-naranja);
+        }}
+
+        .newsletter-modal-body {{
+            padding: 18px;
+        }}
+
+        .newsletter-field {{
+            display: grid;
+            gap: 8px;
+            margin-bottom: 14px;
+        }}
+
+        .newsletter-label {{
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: #444;
+        }}
+
+        .newsletter-input {{
+            width: 100%;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: 14px;
+            outline: none;
+        }}
+
+        .newsletter-input:focus {{
+            border-color: var(--brand-naranja);
+            box-shadow: 0 0 0 4px rgba(243, 75, 38, 0.12);
+        }}
+
+        .newsletter-submit {{
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 14px;
+            background: var(--brand-naranja);
+            color: #fff;
+            font-weight: 900;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }}
+
+        .newsletter-submit:hover {{
+            filter: brightness(0.95);
+        }}
+
+        .newsletter-note {{
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+            line-height: 1.5;
         }}
 
 
@@ -371,6 +527,9 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <!-- HEADER LOGO -->
     <header class="header-main">
         <div class="container">
+            <div class="header-top-right">
+                <a class="newsletter-btn" href="#newsletter-modal">Suscribirse</a>
+            </div>
             <a href="index.html" class="logo-container">
                 <img src="IMG/Logo IAKimi - Sin Fondo.png" alt="IAKimi Noticias" class="logo-img">
             </a>
@@ -382,6 +541,32 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             </div>
         </div>
     </header>
+
+    <!-- NEWSLETTER MODAL (solo index) -->
+    <div id="newsletter-modal" class="newsletter-overlay">
+        <div class="newsletter-modal" role="dialog" aria-modal="true" aria-label="Suscripción al newsletter">
+            <div class="newsletter-modal-header">
+                <div>
+                    <div class="newsletter-modal-title">Suscribirse al newsletter</div>
+                    <div class="newsletter-modal-subtitle">Recibe las noticias más importantes en tu correo.</div>
+                </div>
+                <a class="newsletter-close" href="#" aria-label="Cerrar">✕</a>
+            </div>
+            <div class="newsletter-modal-body">
+                <form method="POST" action="https://hook.eu2.make.com/94kgxoco8dvofwgecpctch39nb8nibdc">
+                    <input type="hidden" name="accion" value="suscripcion">
+                    <div class="newsletter-field">
+                        <label class="newsletter-label" for="newsletter-correo">Correo</label>
+                        <input class="newsletter-input" id="newsletter-correo" name="correo" type="email" placeholder="tu@correo.com" required>
+                    </div>
+                    <button class="newsletter-submit" type="submit">Enviar</button>
+                    <div class="newsletter-note">
+                        Al enviar, tu correo se envía al webhook con las variables <code>correo</code> y <code>accion=suscripcion</code>.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <!-- CONTENIDO PRINCIPAL -->
