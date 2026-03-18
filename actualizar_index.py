@@ -126,9 +126,9 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             -webkit-backdrop-filter: blur(4px);
             backdrop-filter: blur(4px);
             display: none;
-            align-items: flex-start;
+            align-items: center;
             justify-content: center;
-            padding: 12px 20px 20px 20px;
+            padding: 20px;
             z-index: 9999;
         }}
 
@@ -153,11 +153,12 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             box-shadow: 0 18px 55px rgba(0, 0, 0, 0.25);
             transform: translateY(-8px);
             opacity: 0;
+            position: relative;
         }}
 
         .newsletter-icon {{
-            width: 78px;
-            height: 78px;
+            width: 90px;
+            height: 90px;
             border-radius: 999px;
             background: #f3f3f3;
             display: grid;
@@ -166,8 +167,8 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .newsletter-icon svg {{
-            width: 30px;
-            height: 30px;
+            width: 34px;
+            height: 34px;
             color: #111;
         }}
 
@@ -188,7 +189,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         .newsletter-modal-header {{
             padding: 14px 18px 10px 18px;
             border-bottom: 0;
-            position: relative;
             text-align: center;
         }}
 
@@ -209,22 +209,22 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
 
         .newsletter-close {{
             position: absolute;
-            top: 12px;
-            right: 12px;
+            top: 8px;
+            right: 8px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 36px;
-            height: 36px;
-            border-radius: 10px;
-            border: 1px solid var(--border-color);
-            background: #fff;
+            width: 34px;
+            height: 34px;
+            border: none;
+            background: transparent;
             font-weight: 900;
+            color: #222;
             cursor: pointer;
         }}
 
         .newsletter-close:hover {{
-            border-color: var(--brand-naranja);
+            color: var(--brand-naranja);
         }}
 
         .newsletter-modal-body {{
@@ -257,7 +257,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             border: none;
             border-radius: 12px;
             padding: 13px 14px;
-            background: linear-gradient(180deg, #111 0%, #000 100%);
+            background: var(--brand-naranja);
             color: #fff;
             font-weight: 900;
             letter-spacing: 0.2px;
