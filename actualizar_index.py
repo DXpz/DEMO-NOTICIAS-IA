@@ -136,14 +136,20 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             inset: 0;
             background: rgba(0, 0, 0, 0.55);
             display: none;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-            padding: 20px;
+            padding: 12px 20px 20px 20px;
             z-index: 9999;
         }}
 
         .newsletter-overlay:target {{
             display: flex;
+        }}
+
+        @media (max-width: 768px) {{
+            .newsletter-overlay {{
+                padding-top: 8px;
+            }}
         }}
 
         .newsletter-modal {{
@@ -548,7 +554,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             <div class="newsletter-modal-header">
                 <div>
                     <div class="newsletter-modal-title">Suscribirse al newsletter</div>
-                    <div class="newsletter-modal-subtitle">Recibe las noticias más importantes en tu correo.</div>
+                    <div class="newsletter-modal-subtitle">Es gratis. Recíbelo cada mañana y date de baja cuando quieras.</div>
                 </div>
                 <a class="newsletter-close" href="#" aria-label="Cerrar">✕</a>
             </div>
@@ -561,7 +567,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
                     </div>
                     <button class="newsletter-submit" type="submit">Enviar</button>
                     <div class="newsletter-note">
-                        Al enviar, tu correo se envía al webhook con las variables <code>correo</code> y <code>accion=suscripcion</code>.
+                        Enviaremos el newsletter diariamente por la mañana. Es totalmente gratis y puedes desuscribirte en cualquier momento.
                     </div>
                 </form>
             </div>
