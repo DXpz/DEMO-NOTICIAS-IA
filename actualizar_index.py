@@ -99,42 +99,32 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
         }}
 
-        /* NEWSLETTER (solo index) */
-        .header-top-right {{
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding-top: 6px;
-        }}
-
-        .newsletter-btn {{
-            display: inline-flex;
-            align-items: center;
-            border: 2px solid var(--brand-naranja);
-            color: var(--brand-negro);
-            background: transparent;
-            border-radius: 999px;
-            padding: 10px 14px;
-            font-weight: 800;
-            letter-spacing: 0.4px;
+        /* NEWSLETTER CTA + MODAL */
+        .newsletter-cta {{
+            display: inline-block;
+            margin-top: 12px;
+            font-weight: 900;
+            letter-spacing: 0.6px;
             text-transform: uppercase;
-            font-size: 11px;
+            font-size: 12px;
+            color: var(--brand-naranja);
+            text-decoration: none;
+            border-bottom: 2px solid rgba(243, 75, 38, 0.35);
+            padding-bottom: 2px;
             transition: all 0.2s ease;
-            cursor: pointer;
         }}
 
-        .newsletter-btn:hover {{
-            background: var(--brand-naranja);
-            color: #fff;
+        .newsletter-cta:hover {{
+            border-bottom-color: var(--brand-naranja);
+            filter: brightness(0.95);
         }}
 
         .newsletter-overlay {{
             position: fixed;
             inset: 0;
             background: rgba(0, 0, 0, 0.55);
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
             display: none;
             align-items: flex-start;
             justify-content: center;
@@ -142,8 +132,9 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             z-index: 9999;
         }}
 
-        .newsletter-overlay:target {{
+        body.newsletter-open .newsletter-overlay {{
             display: flex;
+            animation: newsletterFadeIn 220ms ease-out;
         }}
 
         @media (max-width: 768px) {{
@@ -156,36 +147,70 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             width: 100%;
             max-width: 520px;
             background: #fff;
-            border-radius: 14px;
+            border-radius: 18px;
             overflow: hidden;
             border: 1px solid var(--border-color);
             box-shadow: 0 18px 55px rgba(0, 0, 0, 0.25);
+            transform: translateY(-8px);
+            opacity: 0;
+        }}
+
+        .newsletter-icon {{
+            width: 78px;
+            height: 78px;
+            border-radius: 999px;
+            background: #f3f3f3;
+            display: grid;
+            place-items: center;
+            margin: 18px auto 0 auto;
+        }}
+
+        .newsletter-icon svg {{
+            width: 30px;
+            height: 30px;
+            color: #111;
+        }}
+
+        body.newsletter-open .newsletter-modal {{
+            animation: newsletterSlideDown 260ms cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+        }}
+
+        @keyframes newsletterFadeIn {{
+            from {{ opacity: 0; }}
+            to {{ opacity: 1; }}
+        }}
+
+        @keyframes newsletterSlideDown {{
+            from {{ transform: translateY(-14px); opacity: 0; }}
+            to {{ transform: translateY(0); opacity: 1; }}
         }}
 
         .newsletter-modal-header {{
-            padding: 18px 18px 14px 18px;
-            border-bottom: 1px solid var(--border-color);
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 12px;
+            padding: 14px 18px 10px 18px;
+            border-bottom: 0;
+            position: relative;
+            text-align: center;
         }}
 
         .newsletter-modal-title {{
             font-family: var(--sans-font);
-            font-size: 18px;
+            font-size: 26px;
             font-weight: 900;
-            letter-spacing: 0.2px;
+            letter-spacing: -0.6px;
             color: var(--brand-dark);
         }}
 
         .newsletter-modal-subtitle {{
             margin-top: 4px;
-            font-size: 13px;
-            color: #555;
+            font-size: 15px;
+            color: #666;
+            line-height: 1.5;
         }}
 
         .newsletter-close {{
+            position: absolute;
+            top: 12px;
+            right: 12px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -195,6 +220,7 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             border: 1px solid var(--border-color);
             background: #fff;
             font-weight: 900;
+            cursor: pointer;
         }}
 
         .newsletter-close:hover {{
@@ -202,28 +228,21 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         }}
 
         .newsletter-modal-body {{
-            padding: 18px;
+            padding: 6px 18px 18px 18px;
         }}
 
         .newsletter-field {{
             display: grid;
-            gap: 8px;
+            gap: 10px;
+            margin-top: 8px;
             margin-bottom: 14px;
-        }}
-
-        .newsletter-label {{
-            font-size: 12px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.6px;
-            color: #444;
         }}
 
         .newsletter-input {{
             width: 100%;
-            border: 1px solid var(--border-color);
+            border: 2px solid #d8d8d8;
             border-radius: 12px;
-            padding: 12px 14px;
+            padding: 13px 14px;
             font-size: 14px;
             outline: none;
         }}
@@ -237,13 +256,17 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             width: 100%;
             border: none;
             border-radius: 12px;
-            padding: 12px 14px;
-            background: var(--brand-naranja);
+            padding: 13px 14px;
+            background: linear-gradient(180deg, #111 0%, #000 100%);
             color: #fff;
             font-weight: 900;
-            letter-spacing: 0.6px;
-            text-transform: uppercase;
+            letter-spacing: 0.2px;
+            text-transform: none;
             cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }}
 
         .newsletter-submit:hover {{
@@ -254,7 +277,8 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             margin-top: 10px;
             font-size: 12px;
             color: #666;
-            line-height: 1.5;
+            line-height: 1.45;
+            text-align: center;
         }}
 
 
@@ -533,9 +557,6 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
     <!-- HEADER LOGO -->
     <header class="header-main">
         <div class="container">
-            <div class="header-top-right">
-                <a class="newsletter-btn" href="#newsletter-modal">Suscribirse</a>
-            </div>
             <a href="index.html" class="logo-container">
                 <img src="IMG/Logo IAKimi - Sin Fondo.png" alt="IAKimi Noticias" class="logo-img">
             </a>
@@ -548,26 +569,31 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
         </div>
     </header>
 
-    <!-- NEWSLETTER MODAL (solo index) -->
-    <div id="newsletter-modal" class="newsletter-overlay">
+    <!-- NEWSLETTER MODAL (auto al cargar) -->
+    <div id="newsletter-modal" class="newsletter-overlay" aria-hidden="true">
         <div class="newsletter-modal" role="dialog" aria-modal="true" aria-label="Suscripción al newsletter">
+            <div class="newsletter-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 7.5C4 6.67157 4.67157 6 5.5 6H18.5C19.3284 6 20 6.67157 20 7.5V16.5C20 17.3284 19.3284 18 18.5 18H5.5C4.67157 18 4 17.3284 4 16.5V7.5Z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M6 8.5L12 12.5L18 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
             <div class="newsletter-modal-header">
                 <div>
-                    <div class="newsletter-modal-title">Suscribirse al newsletter</div>
-                    <div class="newsletter-modal-subtitle">Es gratis. Recíbelo cada mañana y date de baja cuando quieras.</div>
+                    <div class="newsletter-modal-title">Mantente informado</div>
+                    <div class="newsletter-modal-subtitle">Recibe un resumen diario en tu correo.</div>
                 </div>
-                <a class="newsletter-close" href="#" aria-label="Cerrar">✕</a>
+                <button class="newsletter-close" type="button" aria-label="Cerrar">✕</button>
             </div>
             <div class="newsletter-modal-body">
                 <form method="POST" action="https://hook.eu2.make.com/94kgxoco8dvofwgecpctch39nb8nibdc">
                     <input type="hidden" name="accion" value="suscripcion">
                     <div class="newsletter-field">
-                        <label class="newsletter-label" for="newsletter-correo">Correo</label>
                         <input class="newsletter-input" id="newsletter-correo" name="correo" type="email" placeholder="tu@correo.com" required>
                     </div>
-                    <button class="newsletter-submit" type="submit">Enviar</button>
+                    <button class="newsletter-submit" type="submit">Suscribirme <span aria-hidden="true">→</span></button>
                     <div class="newsletter-note">
-                        Enviaremos el newsletter diariamente por la mañana. Es totalmente gratis y puedes desuscribirte en cualquier momento.
+                        Sin spam. Cancela cuando quieras.
                     </div>
                 </form>
             </div>
@@ -613,9 +639,55 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             <div class="footer-logo">
                 <img src="IMG/Logo IAKimi - Negativo.png" alt="IAKimi Noticias" class="logo-img-footer">
             </div>
+            <a class="newsletter-cta" href="#" data-newsletter-open="1">Suscribirse al newsletter</a>
         </div>
     </footer>
 
+    <script>
+        (function () {{
+            const body = document.body;
+            const overlay = document.getElementById('newsletter-modal');
+            const closeBtn = document.querySelector('.newsletter-close');
+            const input = document.getElementById('newsletter-correo');
+            const openLinks = document.querySelectorAll('[data-newsletter-open=\"1\"]');
+
+            function openNewsletter() {{
+                body.classList.add('newsletter-open');
+                if (overlay) overlay.setAttribute('aria-hidden', 'false');
+                if (input) {{
+                    setTimeout(() => input.focus(), 50);
+                }}
+            }}
+
+            function closeNewsletter() {{
+                body.classList.remove('newsletter-open');
+                if (overlay) overlay.setAttribute('aria-hidden', 'true');
+            }}
+
+            // CTA footer abre modal
+            openLinks.forEach((a) => {{
+                a.addEventListener('click', (e) => {{
+                    e.preventDefault();
+                    openNewsletter();
+                }});
+            }});
+
+            // Cerrar con botón X
+            if (closeBtn) closeBtn.addEventListener('click', closeNewsletter);
+
+            // Cerrar al hacer click fuera del modal
+            if (overlay) {{
+                overlay.addEventListener('click', (e) => {{
+                    if (e.target === overlay) closeNewsletter();
+                }});
+            }}
+
+            // Cerrar con ESC
+            document.addEventListener('keydown', (e) => {{
+                if (e.key === 'Escape') closeNewsletter();
+            }});
+        }})();
+    </script>
 
 </body>
 
