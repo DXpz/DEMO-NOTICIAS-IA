@@ -39,6 +39,11 @@ API_KEY = API_KEY_FILE.read_text().strip()
 
 MAKE_WEBHOOK_NOTIFICACION = "https://hook.eu2.make.com/smnd3366zz9hv9t0s5lf93x18rwut2q8"
 MAKE_WEBHOOK_CONFIRMACION = "https://hook.eu2.make.com/fu7d7r70mrhqvcxdqo79yfhuyeqas7jn"
+MAKE_WEBHOOK_NEWSLETTER = "https://hook.eu2.make.com/94kgxoco8dvofwgecpctch39nb8nibdc"
+
+# Desactivar el webhook de confirmación (+5 min) para evitar "pings" automáticos
+# (por ejemplo cuando Make muestra que el bundle llega vacío).
+ENVIAR_CONFIRMACION_WEBHOOK = False
 
 
 def llamar_webhook(url: str, payload: dict, nombre: str):
@@ -66,7 +71,7 @@ def notificar_make(exito: bool, mensaje: str, timestamp: str):
     }
     llamar_webhook(MAKE_WEBHOOK_NOTIFICACION, payload_notificacion, "notificacion")
 
-    if exito:
+    if exito and ENVIAR_CONFIRMACION_WEBHOOK:
         def enviar_confirmacion_diferida():
             logging.info("Esperando 5 minutos antes de enviar confirmación final...")
             time.sleep(300)
@@ -167,3 +172,29 @@ async def actualizar_noticias(request: Request, key: str = Security(verificar_ap
     logging.info("Sitio regenerado correctamente")
     notificar_make(True, "Sitio actualizado correctamente", timestamp)
     return {"status": "ok", "mensaje": "Sitio actualizado correctamente", "timestamp": timestamp}
+
+
+@app.post("/api/newsletter")
+async def suscribir_newsletter(request: Request):
+    """
+    Recibe el correo del usuario y delega el envío al flujo de Make.
+    El usuario final solo ve una confirmación simple, no la respuesta del webhook.
+    """
+    try:
+        data = await request.json()
+    except Exception:
+        raise HTTPException(status_code=400, detail="Body JSON inválido")
+
+    correo = (data or {}).get("correo")
+    if not correo or "@" not in correo:
+        raise HTTPException(status_code=400, detail="Correo inválido")
+
+    timestamp = datetime.now().isoformat()
+    payload = {
+        "accion": "suscripcion",
+        "correo": correo,
+        "timestamp": timestamp,
+        "origen": "web",
+    }
+    llamar_webhook(MAKE_WEBHOOK_NEWSLETTER, payload, "newsletter")
+    return {"status": "ok", "mensaje": "Suscripción recibida"}

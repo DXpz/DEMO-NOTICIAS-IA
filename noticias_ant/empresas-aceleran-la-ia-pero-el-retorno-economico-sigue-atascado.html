@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../IMG/Logo IAKimi - Sin Fondo.png">
+    <title>Empresas aceleran la IA, pero el retorno económico sigue atascado - IAKimi Noticias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --brand-negro: #000000;
+            --brand-naranja: #f34b26;
+            --brand-dark: #000000;
+            --text-grey: #333333;
+            --light-grey: #f4f4f4;
+            --border-color: #e5e5e5;
+            --bg-color: #ffffff;
+            --serif-font: 'Playfair Display', Georgia, serif;
+            --sans-font: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans-font);
+            background-color: var(--bg-color);
+            color: var(--text-grey);
+            line-height: 1.5;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--brand-naranja);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        .header-main {
+            padding: 25px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-main::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(to right, var(--brand-naranja) 0%, var(--brand-naranja) 50%, var(--brand-negro) 100%);
+        }
+
+        /* LOGO SVG - Adaptado y ampliado */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            height: 120px;
+        }
+
+        .logo-img {
+            width: 450px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        .logo-text {
+            font-size: 72px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1;
+            font-family: var(--sans-font);
+        }
+
+        .logo-red {
+            color: var(--brand-naranja);
+        }
+
+        .logo-noticias {
+            color: var(--brand-negro);
+        }
+
+        .collaboration-line {
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 5px;
+            font-style: italic;
+        }
+
+        .date-line {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        /* ARTÍCULO */
+        .article-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .full-article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .breadcrumbs {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .full-headline {
+            font-family: var(--sans-font);
+            font-size: 46px;
+            line-height: 1.1;
+            color: var(--brand-dark);
+            margin-bottom: 20px;
+        }
+
+        .full-lead {
+            font-family: var(--sans-font);
+            font-size: 20px;
+            line-height: 1.5;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .full-meta {
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .full-image-container {
+            margin-bottom: 30px;
+        }
+
+        .full-image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .full-image-caption {
+            font-size: 13px;
+            color: #777;
+            background: #f9f9f9;
+            padding: 8px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-body {
+            font-family: var(--sans-font);
+            font-size: 19px;
+            line-height: 1.8;
+            color: #222;
+        }
+
+        .article-body p {
+            margin-bottom: 25px;
+        }
+        
+        .article-body h2 {
+            font-family: var(--sans-font);
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--brand-dark);
+        }
+
+        .article-body ul {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .article-quote {
+            border-left: 4px solid var(--brand-naranja);
+            padding-left: 25px;
+            font-style: italic;
+            font-size: 24px;
+            color: #444;
+            margin: 40px 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+        }
+        .btn-back:hover {
+            color: var(--brand-naranja);
+            text-decoration: underline;
+        }
+
+        .sidebar-title {
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--brand-dark);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        .related-item {
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 15px;
+        }
+
+        .related-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: var(--brand-naranja);
+            font-weight: bold;
+        }
+
+        .related-item h4 {
+            font-family: var(--sans-font);
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px 0;
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid var(--brand-negro);
+        }
+
+        .newsletter-cta {
+            display: inline-block;
+            margin-top: 8px;
+            font-weight: 900;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: var(--brand-naranja);
+            text-decoration: none;
+            border-bottom: 2px solid rgba(243, 75, 38, 0.35);
+            padding-bottom: 2px;
+            transition: all 0.2s ease;
+        }
+
+        .newsletter-cta:hover {
+            border-bottom-color: var(--brand-naranja);
+            filter: brightness(0.95);
+        }
+
+        /* NEWSLETTER MODAL */
+        .newsletter-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 9999;
+        }
+
+        body.newsletter-open .newsletter-overlay {
+            display: flex;
+            animation: newsletterFadeIn 220ms ease-out;
+        }
+
+        .newsletter-modal {
+            width: 100%;
+            max-width: 520px;
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 18px 55px rgba(0, 0, 0, 0.25);
+            transform: translateY(-8px);
+            opacity: 0;
+            position: relative;
+        }
+
+        .newsletter-icon {
+            width: 90px;
+            height: 90px;
+            border-radius: 999px;
+            background: #f3f3f3;
+            display: grid;
+            place-items: center;
+            margin: 18px auto 0 auto;
+        }
+
+        .newsletter-icon svg {
+            width: 34px;
+            height: 34px;
+            color: #111;
+        }
+
+        body.newsletter-open .newsletter-modal {
+            animation: newsletterSlideDown 260ms cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+        }
+
+        @keyframes newsletterFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes newsletterSlideDown {
+            from { transform: translateY(-14px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .newsletter-modal-header {
+            padding: 14px 18px 10px 18px;
+            border-bottom: 0;
+            text-align: center;
+            color: var(--text-grey);
+        }
+
+        .newsletter-modal-title {
+            font-family: var(--sans-font);
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: -0.6px;
+            color: var(--brand-dark);
+        }
+
+        .newsletter-modal-subtitle {
+            margin-top: 4px;
+            font-size: 15px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .newsletter-close {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border: none;
+            background: transparent;
+            font-weight: 900;
+            color: #222;
+            cursor: pointer;
+        }
+
+        .newsletter-close:hover {
+            color: var(--brand-naranja);
+        }
+
+        .newsletter-modal-body {
+            padding: 6px 18px 18px 18px;
+            color: var(--text-grey);
+        }
+
+        .newsletter-field {
+            display: grid;
+            gap: 10px;
+            margin-top: 8px;
+            margin-bottom: 14px;
+        }
+
+        .newsletter-input {
+            width: 100%;
+            border: 2px solid #d8d8d8;
+            border-radius: 12px;
+            padding: 13px 14px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .newsletter-input:focus {
+            border-color: var(--brand-naranja);
+            box-shadow: 0 0 0 4px rgba(243, 75, 38, 0.12);
+        }
+
+        .newsletter-submit {
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+            padding: 13px 14px;
+            background: var(--brand-naranja);
+            color: #fff;
+            font-weight: 900;
+            letter-spacing: 0.2px;
+            text-transform: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .newsletter-submit:hover {
+            filter: brightness(0.95);
+        }
+
+        .newsletter-note {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #666;
+            line-height: 1.45;
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .logo-img-footer {
+            width: 300px;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 1024px) {
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+            .article-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .full-headline {
+                font-size: 32px;
+            }
+            .article-sidebar {
+                display: block;
+                margin-top: 40px;
+            }
+
+            /* Logo más pequeño en móvil */
+            .logo-container {
+                height: 80px;
+            }
+
+            .logo-img {
+                width: 280px;
+                transform: scale(1.0);
+            }
+
+            .footer-logo {
+                height: 60px;
+            }
+
+            .logo-img-footer {
+                width: 200px;
+                transform: scale(1.0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER LOGO -->
+    <header class="header-main">
+        <div class="container">
+            <a href="../index.html" class="logo-container">
+                <img src="../IMG/Logo IAKimi - Sin Fondo.png" alt="IAKimi Noticias" class="logo-img">
+            </a>
+            <div class="collaboration-line">
+                En colaboración con <strong>Diario El Mundo</strong>
+            </div>
+            <div class="date-line">
+                Miércoles, 18 de marzo de 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO ARTÍCULO -->
+    <main class="container">
+        <a href="../index.html" class="btn-back">&larr; VOLVER A PORTADA</a>
+        
+        <div class="article-layout">
+            <!-- CONTENIDO PRINCIPAL -->
+            <div class="article-content">
+                <header class="full-article-header">
+                    <span class="breadcrumbs">Empresas y economía</span>
+                    <h1 class="full-headline">Empresas aceleran la IA, pero el retorno económico sigue atascado</h1>
+                    <p class="full-lead">Gigantes tecnológicos y startups intensifican acuerdos, productos y litigios en torno a la IA, la nube y la logística. La adopción crece rápido, pero la mayoría de las compañías aún no logra convertirla en beneficios claros.</p>
+                    <div class="full-meta">
+                        <span>Por <strong>Redacción IAKimi Noticias</strong> | San Salvador</span>
+                        <span>Miércoles, 18 de marzo de 2026</span>
+                    </div>
+                </header>
+
+                <div class="full-image-container">
+                    <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1773842586/IMAGENES/vs6bnisvyrdvzue7rbty.png" alt="Empresas aceleran la IA, pero el retorno económico sigue atascado">
+                    <div class="full-image-caption">Ilustración IA</div>
+                </div>
+
+                <div class="article-body">
+                    <p><h2>La IA se expande más rápido que sus retornos</h2></p>
+<p><p>Las grandes empresas están desplegando inteligencia artificial a gran escala, pero los resultados económicos concretos siguen rezagados. Un reportaje de Infobae señala que <strong>alrededor del 88% de las compañías declara usar IA</strong>, aunque solo una fracción consigue monetizarla de forma directa. La principal brecha está entre proyectos piloto vistosos y aplicaciones integradas en procesos clave como ventas, atención al cliente o cadena de suministro.</p></p>
+<p><p>Los expertos consultados apuntan a tres cuellos de botella: falta de datos organizados, ausencia de métricas de negocio asociadas a los casos de uso y carencia de talento capaz de conectar modelos con operaciones. El resultado son pilotos de baja escala, difícilmente justificables en términos de ingresos o ahorros medibles.</p></p>
+<p><p>En paralelo, <strong>Mistral intenta capitalizar esta brecha</strong> con Forge, una plataforma de "build-your-own AI" que permite a empresas construir y desplegar modelos personalizados sobre su propia infraestructura de datos, en competencia directa con OpenAI y Anthropic en el segmento corporativo, según TechCrunch.</p></p>
+<p><h2>Competencia y fricción entre gigantes tecnológicos</h2></p>
+<p><p>La carrera por controlar la capa de infraestructura y servicios de IA se tensa. Hipertextual informa que <strong>Microsoft habría amenazado con demandar a OpenAI</strong> al considerar que su acuerdo con Amazon Web Services podría vulnerar compromisos previos. El foco no es solo la propiedad intelectual de modelos, sino el control de la nube donde se entrenan y ejecutan, un negocio multimillonario que condiciona precios, velocidad de despliegue y soberanía de datos para los clientes empresariales.</p></p>
+<p><p>En el ecosistema de extensiones y navegadores, Infobae detalla que <strong>Google bloqueó una popular extensión de Chrome</strong> tras detectar que ocultaba malware para atacar a usuarios. El movimiento refuerza la tendencia de las grandes plataformas a endurecer sus sistemas de revisión, combinando automatización y análisis de seguridad para reducir riesgos reputacionales y económicos.</p></p>
+<p><h2>Servicios digitales y regulación financiera bajo presión</h2></p>
+<p><p>En comercio electrónico, The Verge adelanta que Amazon prueba una nueva página llamada "getitfast", que <strong>filtra productos disponibles para entrega en una hora o tres horas</strong>. El objetivo es aumentar la conversión en compras de última hora y optimizar la utilización de su red logística urbana, un área donde el ajuste fino de inventarios y rutas depende crecientemente de algoritmos de predicción de demanda.</p></p>
+<p><p>En el ámbito financiero, TechCrunch recoge que Kalshi, una plataforma de mercados de predicción, enfrenta <strong>los primeros cargos penales estatales en Arizona por presunto negocio de apuestas ilegales</strong>. El caso ilustra la tensión regulatoria en torno a nuevos modelos de fintech basados en derivados y pronósticos de eventos, un espacio donde la línea entre cobertura financiera y juego de azar obliga a precisiones legales que afectarán a todo el sector.</p></p>
+<p><p>Finalmente, Supply Chain Digital destaca que firmas de consultoría y proveedores tecnológicos están llevando IA y analítica avanzada a la <strong>cadena de suministro sanitaria</strong>, así como al transporte y la logística global. Sus proyectos se orientan a previsión de demanda, rutas dinámicas y gestión de inventarios críticos, buscando convertir la adopción tecnológica en eficiencias cuantificables y no solo en experimentación.</p></p>
+
+                </div>
+            </div>
+
+            <!-- SIDEBAR -->
+            <aside class="article-sidebar">
+                <div class="sidebar-title">Noticias Relacionadas</div>
+                <div class="related-item">
+                    <div class="related-category">Contexto</div>
+                    <h4><a href="../index.html">Volver a la portada</a></h4>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="../IMG/Logo IAKimi - Negativo.png" alt="IAKimi Noticias" class="logo-img-footer">
+            </div>
+            <a class="newsletter-cta" href="#" data-newsletter-open="1">Suscribirse al newsletter</a>
+        </div>
+    </footer>
+
+    <!-- NEWSLETTER MODAL (auto al cargar) -->
+    <div id="newsletter-modal" class="newsletter-overlay" aria-hidden="true">
+        <div class="newsletter-modal" role="dialog" aria-modal="true" aria-label="Suscripción al newsletter">
+            <div class="newsletter-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 7.5C4 6.67157 4.67157 6 5.5 6H18.5C19.3284 6 20 6.67157 20 7.5V16.5C20 17.3284 19.3284 18 18.5 18H5.5C4.67157 18 4 17.3284 4 16.5V7.5Z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M6 8.5L12 12.5L18 8.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="newsletter-modal-header">
+                <div>
+                    <div class="newsletter-modal-title">Mantente informado</div>
+                    <div class="newsletter-modal-subtitle">Recibe un resumen diario en tu correo.</div>
+                </div>
+                <button class="newsletter-close" type="button" aria-label="Cerrar">✕</button>
+            </div>
+            <div class="newsletter-modal-body">
+                <form method="POST" action="https://hook.eu2.make.com/94kgxoco8dvofwgecpctch39nb8nibdc">
+                    <input type="hidden" name="accion" value="suscripcion">
+                    <div class="newsletter-field">
+                        <input class="newsletter-input" id="newsletter-correo" name="correo" type="email" placeholder="tu@correo.com" required>
+                    </div>
+                    <button class="newsletter-submit" type="submit">Suscribirme <span aria-hidden="true">→</span></button>
+                    <div class="newsletter-note">
+                        Sin spam. Cancela cuando quieras.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const body = document.body;
+            const overlay = document.getElementById('newsletter-modal');
+            const closeBtn = document.querySelector('.newsletter-close');
+            const input = document.getElementById('newsletter-correo');
+            const openLinks = document.querySelectorAll('[data-newsletter-open="1"]');
+
+            function openNewsletter() {
+                body.classList.add('newsletter-open');
+                if (overlay) overlay.setAttribute('aria-hidden', 'false');
+                if (input) setTimeout(() => input.focus(), 50);
+            }
+
+            function closeNewsletter() {
+                body.classList.remove('newsletter-open');
+                if (overlay) overlay.setAttribute('aria-hidden', 'true');
+            }
+
+            openLinks.forEach((a) => {
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openNewsletter();
+                });
+            });
+
+            if (closeBtn) closeBtn.addEventListener('click', closeNewsletter);
+
+            if (overlay) {
+                overlay.addEventListener('click', (e) => {
+                    if (e.target === overlay) closeNewsletter();
+                });
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeNewsletter();
+            });
+        })();
+    </script>
+
+    </body>
+    </html>
