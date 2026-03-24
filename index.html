@@ -259,6 +259,25 @@
             filter: brightness(0.95);
         }
 
+        .newsletter-submit:disabled {
+            opacity: 0.75;
+            cursor: not-allowed;
+        }
+
+        .newsletter-spinner {
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.4);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            display: none;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         .newsletter-note {
             margin-top: 10px;
             font-size: 12px;
@@ -550,7 +569,7 @@
                 En colaboración con <strong>Diario El Mundo</strong>
             </div>
             <div class="date-line">
-                Jueves, 19 de marzo de 2026
+                martes, 24 de marzo de 2026
             </div>
         </div>
     </header>
@@ -572,16 +591,21 @@
                 <button class="newsletter-close" type="button" aria-label="Cerrar">✕</button>
             </div>
             <div class="newsletter-modal-body">
-                <form method="POST" action="https://hook.eu2.make.com/94kgxoco8dvofwgecpctch39nb8nibdc">
-                    <input type="hidden" name="accion" value="suscripcion">
+                <form id="newsletter-form">
                     <div class="newsletter-field">
                         <input class="newsletter-input" id="newsletter-correo" name="correo" type="email" placeholder="tu@correo.com" required>
                     </div>
-                    <button class="newsletter-submit" type="submit">Suscribirme <span aria-hidden="true">→</span></button>
+                    <button class="newsletter-submit" type="submit">
+                        <span class="newsletter-spinner" id="newsletter-spinner"></span>
+                        <span id="newsletter-btn-text">Suscribirme →</span>
+                    </button>
                     <div class="newsletter-note">
                         Sin spam. Cancela cuando quieras.
                     </div>
                 </form>
+                <div id="newsletter-ok" style="display:none; text-align:center; padding: 20px 0; font-size:15px; color:#333;">
+                    ¡Te has suscrito correctamente! 🎉
+                </div>
             </div>
         </div>
     </div>
@@ -601,14 +625,14 @@
                 <!-- COLUMNA 1: PRINCIPAL -->
                 <section class="main-col">
                     <article class="article hero-article">
-                        <span class="article-kicker">Nvidia</span>
-                        <a href="noticias/nvidia-integra-chips-redes-y-agentes-de-ia-para-dominar-el-centro-de-datos.html">
-                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1773928955/IMAGENES/yk8hvf2wfijmgjtvobmb.png"
-                                alt="Nvidia integra chips, redes y agentes de IA para dominar el centro de datos" class="article-img">
+                        <span class="article-kicker">Espacio</span>
+                        <a href="noticias/la-nueva-carrera-espacial-mueve-datos-energia-y-cadenas-de-suministro.html">
+                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1774360966/IMAGENES/knenhgyxxsgvjgvd859t.png"
+                                alt="La nueva carrera espacial mueve datos, energía y cadenas de suministro" class="article-img">
                         </a>
-                        <h1 class="article-title"><a href="noticias/nvidia-integra-chips-redes-y-agentes-de-ia-para-dominar-el-centro-de-datos.html">Nvidia integra chips, redes y agentes de IA para dominar el centro de datos</a></h1>
+                        <h1 class="article-title"><a href="noticias/la-nueva-carrera-espacial-mueve-datos-energia-y-cadenas-de-suministro.html">La nueva carrera espacial mueve datos, energía y cadenas de suministro</a></h1>
                         <p class="article-summary">
-                            La compañía acelera nuevas GPU para IA, una plataforma de agentes y una división de redes multimillonaria. El objetivo es controlar de extremo a extremo la infraestructura que ejecuta modelos generativos y aplicaciones empresariales.
+                            Constelaciones de satélites, centros de datos orbitales, energía de fusión y la misión lunar Artemis II redefinen el uso económico del espacio. El foco pasa de la exploración aislada a una infraestructura crítica para conectividad, computación e industria.
                         </p>
                         <div class="article-author">
                             Por <strong>Redacción IAKimi Noticias</strong> | San Salvador
@@ -616,15 +640,15 @@
                     </article>
 
                     <article class="article" style="margin-top: 30px;">
-                        <a href="noticias/nvidia-impulsa-agentes-de-ia-y-presiona-el-equilibrio-de-poder-en-tech.html">
-                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1773929124/IMAGENES/newuuwpygiyw3ikkihaz.png" alt="Nvidia impulsa agentes de IA y presiona el equilibrio de poder en tech"
+                        <a href="noticias/nuevos-gadgets-con-ia-automatizan-tareas-mejoran-moviles-y-elevan-riesgos.html">
+                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1774361130/IMAGENES/hyyz1ulx4whbysov95ny.png" alt="Nuevos gadgets con IA automatizan tareas, mejoran móviles y elevan riesgos"
                                 class="article-img">
                         </a>
-                        <span class="article-kicker">Tech</span>
+                        <span class="article-kicker">Gadgets</span>
                         <h2 class="article-title" style="font-size: 28px;"><a
-                                href="noticias/nvidia-impulsa-agentes-de-ia-y-presiona-el-equilibrio-de-poder-en-tech.html">Nvidia impulsa agentes de IA y presiona el equilibrio de poder en tech</a></h2>
+                                href="noticias/nuevos-gadgets-con-ia-automatizan-tareas-mejoran-moviles-y-elevan-riesgos.html">Nuevos gadgets con IA automatizan tareas, mejoran móviles y elevan riesgos</a></h2>
                         <p class="article-summary" style="font-size: 16px;">
-                            Gigantes de chips, software y plataformas de nube aceleran el despliegue de agentes de IA, automatización y conectividad. El movimiento reconfigura la competencia desde el móvil y el streaming hasta la cadena de suministro y la geopolítica del 6G.
+                            Actualizaciones de sistemas, asistentes inteligentes y robots domésticos aceleran la automatización en móviles y hogar. En paralelo, crecen las alertas de ciberseguridad y el debate sobre el futuro de la inteligencia artificial.
                         </p>
                         <div class="article-author">
                             Por <strong>Redacción IAKimi Noticias</strong> | San Salvador
@@ -637,38 +661,38 @@
                     <div class="sidebar-title">Más Noticias de IA</div>
 
                     <article class="article list-article">
-                        <a href="noticias/la-carrera-por-la-ia-acelera-chips-agentes-y-plataformas-se-multiplican.html">
-                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1773929259/IMAGENES/cxnbuiymkjpkrue3oqia.png"
-                                alt="La carrera por la IA acelera: chips, agentes y plataformas se multiplican" class="article-img">
+                        <a href="noticias/la-economia-de-la-ia-se-acelera-chips-propios-anuncios-y-unicornios-de-2000-millones.html">
+                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1774361273/IMAGENES/mp0mscujr9xui0zr0ohn.png"
+                                alt="La economía de la IA se acelera: chips propios, anuncios y unicornios de 2.000 millones" class="article-img">
+                        </a>
+                        <span class="article-kicker">Empresas y economía</span>
+                        <h3 class="article-title"><a href="noticias/la-economia-de-la-ia-se-acelera-chips-propios-anuncios-y-unicornios-de-2000-millones.html">La economía de la IA se acelera: chips propios, anuncios y unicornios de 2.000 millones</a></h3>
+                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
+                            Gigantes tecnológicos y nuevos actores mueven ficha para capturar valor en la ola de la inteligencia artificial, desde hardware especializado hasta nuevas fórmulas de monetización. El impacto se extiende a entretenimiento, software, regulación y empleo.
+                        </p>
+                    </article>
+
+
+                    <article class="article list-article">
+                        <a href="noticias/la-expansion-de-la-ia-dispara-la-carrera-por-nueva-infraestructura-energetica.html">
+                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1774361432/IMAGENES/ouknanmbd6azza7mcfck.png"
+                                alt="La expansión de la IA dispara la carrera por nueva infraestructura energética" class="article-img">
+                        </a>
+                        <span class="article-kicker">Energía</span>
+                        <h3 class="article-title"><a href="noticias/la-expansion-de-la-ia-dispara-la-carrera-por-nueva-infraestructura-energetica.html">La expansión de la IA dispara la carrera por nueva infraestructura energética</a></h3>
+                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
+                            El crecimiento de los centros de datos impulsados por IA está forzando a las grandes tecnológicas y a los reguladores a reconfigurar la infraestructura energética global. Renovables, nuclear y eficiencia emergen como ejes para sostener la demanda sin agravar la crisis de combustibles fósiles.
+                        </p>
+                    </article>
+                    <article class="article list-article">
+                        <a href="noticias/de-los-taxis-sin-conductor-a-la-agi-la-semana-que-redefine-la-agenda-tech.html">
+                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1774361572/IMAGENES/xvjxhf3rgqamrr38sas1.png"
+                                alt="De los taxis sin conductor a la AGI: la semana que redefine la agenda tech" class="article-img">
                         </a>
                         <span class="article-kicker">Tech</span>
-                        <h3 class="article-title"><a href="noticias/la-carrera-por-la-ia-acelera-chips-agentes-y-plataformas-se-multiplican.html">La carrera por la IA acelera: chips, agentes y plataformas se multiplican</a></h3>
+                        <h3 class="article-title"><a href="noticias/de-los-taxis-sin-conductor-a-la-agi-la-semana-que-redefine-la-agenda-tech.html">De los taxis sin conductor a la AGI: la semana que redefine la agenda tech</a></h3>
                         <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Gigantes tecnológicos y proveedores especializados están ampliando inversión en chips de IA, agentes avanzados y plataformas en la nube. El objetivo: consolidar servicios más potentes para consumo, empresa y cadenas de suministro.
-                        </p>
-                    </article>
-
-
-                    <article class="article list-article">
-                        <a href="noticias/apple-acelera-adopcion-de-ios-26-y-dispara-ventas-con-el-iphone-17.html">
-                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1773929380/IMAGENES/umlzoczg7hjebj4bicdg.png"
-                                alt="Apple acelera adopción de iOS 26 y dispara ventas con el iPhone 17" class="article-img">
-                        </a>
-                        <span class="article-kicker">Apple</span>
-                        <h3 class="article-title"><a href="noticias/apple-acelera-adopcion-de-ios-26-y-dispara-ventas-con-el-iphone-17.html">Apple acelera adopción de iOS 26 y dispara ventas con el iPhone 17</a></h3>
-                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Apple combina fuerte renovación de hardware (iPhone 17 y nuevos portátiles) con alta adopción de iOS 26 y mejoras de software como el teclado más preciso. El empuje de este ecosistema le devuelve uno de sus trimestres más sólidos en años.
-                        </p>
-                    </article>
-                    <article class="article list-article">
-                        <a href="noticias/robots-con-ia-pasan-de-la-fabrica-a-la-calle-el-hospital-y-el-hogar.html">
-                            <img src="https://res.cloudinary.com/dnleji9rj/image/upload/v1773929529/IMAGENES/tkqjjkjiwwmmt9csttg6.png"
-                                alt="Robots con IA pasan de la fábrica a la calle, el hospital y el hogar" class="article-img">
-                        </a>
-                        <span class="article-kicker">Robótica e IA</span>
-                        <h3 class="article-title"><a href="noticias/robots-con-ia-pasan-de-la-fabrica-a-la-calle-el-hospital-y-el-hogar.html">Robots con IA pasan de la fábrica a la calle, el hospital y el hogar</a></h3>
-                        <p class="article-summary" style="font-size: 14px; margin-top: 8px;">
-                            Nuevas inversiones y proyectos consolidan a la robótica impulsada por IA como infraestructura básica: desde almacenes y diagnósticos médicos hasta vigilancia urbana y limpieza doméstica. El foco ya no es el prototipo, sino la integración masiva en servicios y cadenas de suministro.
+                            Vehículos autónomos se expanden en EE. UU., la IA se integra en móviles, música y cadenas de suministro, y se reabre el debate sobre la inteligencia artificial general. El foco se desplaza hacia servicios más útiles, sostenibles y conectados.
                         </p>
                     </article>
 
@@ -732,6 +756,36 @@
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape') closeNewsletter();
             });
+
+            // Enviar formulario con fetch
+            const form = document.getElementById('newsletter-form');
+            const okMsg = document.getElementById('newsletter-ok');
+            if (form) {
+                let enviando = false;
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    if (enviando) return;
+                    enviando = true;
+                    const btn = form.querySelector('.newsletter-submit');
+                    if (btn) {
+                        btn.disabled = true;
+                        const txt = document.getElementById('newsletter-btn-text');
+                        const spinner = document.getElementById('newsletter-spinner');
+                        if (txt) txt.textContent = 'Enviando...';
+                        if (spinner) spinner.style.display = 'inline-block';
+                    }
+                    const correo = document.getElementById('newsletter-correo').value.trim();
+                    try {
+                        await fetch('/api/newsletter', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ correo })
+                        });
+                    } catch (_) {}
+                    form.style.display = 'none';
+                    if (okMsg) okMsg.style.display = 'block';
+                });
+            }
         })();
     </script>
 

@@ -273,6 +273,25 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             filter: brightness(0.95);
         }}
 
+        .newsletter-submit:disabled {{
+            opacity: 0.75;
+            cursor: not-allowed;
+        }}
+
+        .newsletter-spinner {{
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255,255,255,0.4);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+            display: none;
+        }}
+
+        @keyframes spin {{
+            to {{ transform: rotate(360deg); }}
+        }}
+
         .newsletter-note {{
             margin-top: 10px;
             font-size: 12px;
@@ -586,16 +605,21 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
                 <button class="newsletter-close" type="button" aria-label="Cerrar">✕</button>
             </div>
             <div class="newsletter-modal-body">
-                <form method="POST" action="https://hook.eu2.make.com/94kgxoco8dvofwgecpctch39nb8nibdc">
-                    <input type="hidden" name="accion" value="suscripcion">
+                <form id="newsletter-form">
                     <div class="newsletter-field">
                         <input class="newsletter-input" id="newsletter-correo" name="correo" type="email" placeholder="tu@correo.com" required>
                     </div>
-                    <button class="newsletter-submit" type="submit">Suscribirme <span aria-hidden="true">→</span></button>
+                    <button class="newsletter-submit" type="submit">
+                        <span class="newsletter-spinner" id="newsletter-spinner"></span>
+                        <span id="newsletter-btn-text">Suscribirme →</span>
+                    </button>
                     <div class="newsletter-note">
                         Sin spam. Cancela cuando quieras.
                     </div>
                 </form>
+                <div id="newsletter-ok" style="display:none; text-align:center; padding: 20px 0; font-size:15px; color:#333;">
+                    ¡Te has suscrito correctamente! 🎉
+                </div>
             </div>
         </div>
     </div>
@@ -686,6 +710,36 @@ PLANTILLA_INDEX = """<!DOCTYPE html>
             document.addEventListener('keydown', (e) => {{
                 if (e.key === 'Escape') closeNewsletter();
             }});
+
+            // Enviar formulario con fetch
+            const form = document.getElementById('newsletter-form');
+            const okMsg = document.getElementById('newsletter-ok');
+            if (form) {{
+                let enviando = false;
+                form.addEventListener('submit', async (e) => {{
+                    e.preventDefault();
+                    if (enviando) return;
+                    enviando = true;
+                    const btn = form.querySelector('.newsletter-submit');
+                    if (btn) {{
+                        btn.disabled = true;
+                        const txt = document.getElementById('newsletter-btn-text');
+                        const spinner = document.getElementById('newsletter-spinner');
+                        if (txt) txt.textContent = 'Enviando...';
+                        if (spinner) spinner.style.display = 'inline-block';
+                    }}
+                    const correo = document.getElementById('newsletter-correo').value.trim();
+                    try {{
+                        await fetch('/api/newsletter', {{
+                            method: 'POST',
+                            headers: {{ 'Content-Type': 'application/json' }},
+                            body: JSON.stringify({{ correo }})
+                        }});
+                    }} catch (_) {{}}
+                    form.style.display = 'none';
+                    if (okMsg) okMsg.style.display = 'block';
+                }});
+            }}
         }})();
     </script>
 

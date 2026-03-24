@@ -6,6 +6,7 @@ y regenerar automáticamente el sitio web.
 """
 
 import json
+import re
 import subprocess
 import logging
 import urllib.request
@@ -41,12 +42,63 @@ MAKE_WEBHOOK_NOTIFICACION = "https://hook.eu2.make.com/smnd3366zz9hv9t0s5lf93x18
 MAKE_WEBHOOK_CONFIRMACION = "https://hook.eu2.make.com/fu7d7r70mrhqvcxdqo79yfhuyeqas7jn"
 MAKE_WEBHOOK_NEWSLETTER = "https://hook.eu2.make.com/94kgxoco8dvofwgecpctch39nb8nibdc"
 
-# Desactivar el webhook de confirmación (+5 min) para evitar "pings" automáticos
-# (por ejemplo cuando Make muestra que el bundle llega vacío).
-ENVIAR_CONFIRMACION_WEBHOOK = False
+# Dejar desactivado el webhook inmediato (el que notifica “servidor actualizado”).
+ENVIAR_NOTIFICACION_WEBHOOK = False
+
+# Dejar activo el webhook importante diferido (+5 min) con:
+# {"status": "ok", "timestamp": "..."}
+ENVIAR_CONFIRMACION_WEBHOOK = True
 
 
-def llamar_webhook(url: str, payload: dict, nombre: str):
+def obtener_fecha_actualizacion_ddmmyyyy() -> str:
+    """
+    Lee `config.fecha_actualizacion` desde `noticias.json` y lo convierte a DD/MM/YYYY.
+    Ejemplo origen: "Jueves, 19 de marzo de 2026".
+    """
+    try:
+        data = json.loads(NOTICIAS_JSON.read_text(encoding="utf-8"))
+        fecha_str = (data.get("config") or {}).get("fecha_actualizacion") or ""
+        # Captura: "19 de marzo de 2026" dentro de una frase más larga.
+        m = re.search(
+            r"(?P<dia>\d{1,2})\s+de\s+(?P<mes>[A-Za-záéíóúñÑ]+)\s+de\s+(?P<anio>\d{4})",
+            fecha_str,
+            flags=re.IGNORECASE,
+        )
+        if not m:
+            raise ValueError(f"No se pudo parsear fecha_actualizacion: {fecha_str!r}")
+
+        dia = int(m.group("dia"))
+        mes_es = m.group("mes").lower()
+        anio = int(m.group("anio"))
+
+        meses = {
+            "enero": 1,
+            "febrero": 2,
+            "marzo": 3,
+            "abril": 4,
+            "mayo": 5,
+            "junio": 6,
+            "julio": 7,
+            "agosto": 8,
+            "septiembre": 9,
+            "setiembre": 9,
+            "octubre": 10,
+            "noviembre": 11,
+            "diciembre": 12,
+        }
+
+        if mes_es not in meses:
+            raise ValueError(f"Mes no reconocido: {mes_es!r}")
+
+        mes = meses[mes_es]
+        return f"{dia:02d}/{mes:02d}/{anio:04d}"
+    except Exception as e:
+        logging.warning(f"No se pudo obtener fecha_actualizacion_ddmmyyyy: {e}")
+        # Fallback: fecha actual del servidor.
+        return datetime.now().strftime("%d/%m/%Y")
+
+
+def llamar_webhook(url: str, payload: dict, nombre: str, timeout: int = 30):
     """Envía un POST JSON a un webhook de Make."""
     data = json.dumps(payload).encode("utf-8")
     try:
@@ -56,7 +108,7 @@ def llamar_webhook(url: str, payload: dict, nombre: str):
             headers={"Content-Type": "application/json"},
             method="POST",
         )
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
             logging.info(f"Webhook [{nombre}] notificado — status {resp.status}")
     except Exception as e:
         logging.warning(f"No se pudo notificar al webhook [{nombre}]: {e}")
@@ -69,15 +121,18 @@ def notificar_make(exito: bool, mensaje: str, timestamp: str):
         "mensaje": mensaje,
         "timestamp": timestamp,
     }
-    llamar_webhook(MAKE_WEBHOOK_NOTIFICACION, payload_notificacion, "notificacion")
+    if ENVIAR_NOTIFICACION_WEBHOOK:
+        llamar_webhook(MAKE_WEBHOOK_NOTIFICACION, payload_notificacion, "notificacion")
 
     if exito and ENVIAR_CONFIRMACION_WEBHOOK:
         def enviar_confirmacion_diferida():
             logging.info("Esperando 5 minutos antes de enviar confirmación final...")
             time.sleep(300)
+            fecha_actualizacion_ddmmyyyy = obtener_fecha_actualizacion_ddmmyyyy()
             payload_confirmacion = {
                 "status": "ok",
                 "timestamp": datetime.now().isoformat(),
+                "fecha_actualizacion_ddmmyyyy": fecha_actualizacion_ddmmyyyy,
             }
             llamar_webhook(MAKE_WEBHOOK_CONFIRMACION, payload_confirmacion, "confirmacion")
 
